@@ -16,21 +16,55 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.icceceurope.prayerapp"
+      "bundleIdentifier": "com.icceceurope.prayerapp",
+      "buildNumber": "1",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false,
+        "NSUserTrackingUsageDescription": "This app does not track users.",
+        "NSLocationWhenInUseUsageDescription": "This app does not use location services.",
+        "NSCameraUsageDescription": "This app does not use the camera.",
+        "NSMicrophoneUsageDescription": "This app does not use the microphone.",
+        "NSPhotoLibraryUsageDescription": "This app does not access the photo library.",
+        "NSContactsUsageDescription": "This app does not access contacts.",
+        "NSCalendarsUsageDescription": "This app does not access calendars.",
+        "NSRemindersUsageDescription": "This app does not access reminders.",
+        "NSMotionUsageDescription": "This app does not use motion data.",
+        "NSHealthShareUsageDescription": "This app does not access health data.",
+        "NSHealthUpdateUsageDescription": "This app does not update health data.",
+        "NSBluetoothAlwaysUsageDescription": "This app does not use Bluetooth.",
+        "NSBluetoothPeripheralUsageDescription": "This app does not use Bluetooth peripheral mode.",
+        "NSSpeechRecognitionUsageDescription": "This app does not use speech recognition.",
+        "NSAppleMusicUsageDescription": "This app does not access Apple Music.",
+        "NSFaceIDUsageDescription": "This app does not use Face ID.",
+        "CFBundleDisplayName": "Prayer App",
+        "CFBundleName": "Prayer App",
+        "LSApplicationCategoryType": "public.app-category.lifestyle"
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.icceceurope.prayerapp"
+      "package": "com.icceceurope.prayerapp",
+      "versionCode": 1,
+      "permissions": []
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-localization"
+      "expo-localization",
+      "expo-font"
     ],
-    "sdkVersion": "53.0.0"
+    "extra": {
+      "eas": {
+        "projectId": "a37eaf42-4234-4359-8312-13f2ae415f5e"
+      }
+    },
+    "owner": "hmilitar",
+    "primaryColor": "#6366f1",
+    "description": "A comprehensive prayer and daily readings app for ICCEC Europe community. Features multi-language support (English, Tagalog, Estonian), daily liturgical readings, traditional prayers, and seasonal content.",
+    "githubUrl": "https://github.com/selahstudioph/prayer-app-iccec"
   }
 }
