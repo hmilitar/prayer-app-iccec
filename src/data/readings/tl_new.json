@@ -1,0 +1,343 @@
+{
+  "readings": [
+    {
+      "id": "2025-08-01",
+      "date": "2025-08-01",
+      "title": "Biyernes ng Ika-17 na Linggo sa Ordinaryong Panahon",
+      "season": "ordinary_time",
+      "week": 17,
+      "readings": {
+        "first": {
+          "reference": "Lev 23:1, 4-11, 15-16, 27, 34b-37",
+          "title": "Aklat ng Levitico",
+          "text": "Sinabi ng Panginoon kay Moises: Ito ang mga kapistahan ng Panginoon..."
+        },
+        "psalm": {
+          "reference": "Ps 81:3-4, 5-6, 10-11ab",
+          "title": "Awit 81",
+          "text": "Kumuha ng awit at tumugtog ng tambol..."
+        },
+        "gospel": {
+          "reference": "Mt 13:54-58",
+          "title": "Ebanghelyo ayon kay Mateo",
+          "text": "Pumunta si Jesus sa kanyang sariling lugar..."
+        }
+      },
+      "reflection": "Ngayong araw naalala natin na dumating ang Diyos sa mga ordinaryong paraan.",
+      "prayer": "Panginoon, tulungan mo kaming makilala ka sa mga pamilyar na lugar.",
+      "language": "tl"
+    },
+    {
+      "id": "2025-08-02",
+      "date": "2025-08-02",
+      "title": "Sabado ng Ika-17 na Linggo sa Ordinaryong Panahon",
+      "season": "ordinary_time",
+      "week": 17,
+      "readings": {
+        "first": {
+          "reference": "Lev 25:1, 8-17",
+          "title": "Aklat ng Levitico",
+          "text": "Sinabi ng Panginoon kay Moises sa Bundok Sinai..."
+        },
+        "psalm": {
+          "reference": "Ps 67:2-3, 5, 7-8",
+          "title": "Awit 67",
+          "text": "Nawa'y maawa sa amin ang Diyos..."
+        },
+        "gospel": {
+          "reference": "Mt 14:1-12",
+          "title": "Ebanghelyo ayon kay Mateo",
+          "text": "Narinig ni Herodes na tetrarca ang balita tungkol kay Jesus..."
+        }
+      },
+      "reflection": "Pagnilayan natin ang kahalagahan ng katarungan at kalayaan.",
+      "prayer": "Diyos, bigyan mo kami ng lakas ng loob na tumayo para sa katarungan.",
+      "language": "tl"
+    },
+    {
+      "id": "2025-08-03",
+      "date": "2025-08-03",
+      "title": "Ika-18 na Linggo sa Ordinaryong Panahon",
+      "season": "ordinary_time",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "Is 55:1-3",
+          "title": "Aklat ni Isaias",
+          "text": "Ganito ang sabi ng Panginoon: Lahat kayong nauuhaw, halina sa tubig..."
+        },
+        "psalm": {
+          "reference": "Ps 145:8-9, 15-16, 17-18",
+          "title": "Awit 145",
+          "text": "Ang Panginoon ay mapagkawanggawa at mahabagin..."
+        },
+        "second": {
+          "reference": "Rom 8:35, 37-39",
+          "title": "Sulat sa mga Romano",
+          "text": "Mga kapatid: Ano ang makakapaghiwalay sa amin sa pagmamahal ni Cristo?"
+        },
+        "gospel": {
+          "reference": "Mt 14:13-21",
+          "title": "Ebanghelyo ayon kay Mateo",
+          "text": "Nang marinig ni Jesus ang kamatayan ni Juan Bautista..."
+        }
+      },
+      "reflection": "Pinasisiyahan ng Diyos ang aming pinakamalalim na gutom at uhaw.",
+      "prayer": "Panginoon, pakainin mo kami ng inyong salita at pagmamahal.",
+      "language": "tl"
+    },
+    {
+      "id": "2025-08-04",
+      "date": "2025-08-04",
+      "title": "Lunes ng Ika-18 Linggo sa Karaniwang Panahon",
+      "season": "ordinary_time",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "Nm 11:4b-15",
+          "title": "Aklat ng mga Bilang",
+          "text": "Ang mga anak ng Israel ay nagtangis muli at nagsabi, 'Sana may laman tayo na makakain!'"
+        },
+        "psalm": {
+          "reference": "Awit 81:12-13, 14-15, 16-17",
+          "title": "Awit 81",
+          "text": "Hindi nakinig ang aking bayan sa aking tinig."
+        },
+        "gospel": {
+          "reference": "Mt 14:13-21",
+          "title": "Ebanghelyo ayon kay Mateo",
+          "text": "Nang marinig ni Jesus ang kamatayan ni Juan Bautista..."
+        }
+      },
+      "reflection": "Ang mga reklamo ng mga Israelita ay sumasalamin sa aming ugaling makalimutan ang mga pagpapala ng Diyos.",
+      "prayer": "Panginoon, tulungan mo kaming maging pasasalamat sa inyong mga pagpapala.",
+      "language": "tl"
+    },
+    {
+      "id": "2025-08-05",
+      "date": "2025-08-05",
+      "title": "Martes ng Ika-18 Linggo sa Karaniwang Panahon",
+      "season": "ordinary_time",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "Nm 12:1-13",
+          "title": "Aklat ng mga Bilang",
+          "text": "Nagsalita si Miriam at Aaron laban kay Moises."
+        },
+        "psalm": {
+          "reference": "Awit 51:3-4, 5-6ab, 6cd-7, 12-13",
+          "title": "Awit 51",
+          "text": "Maawa ka sa akin, O Diyos, sa inyong kabutihan."
+        },
+        "gospel": {
+          "reference": "Mt 14:22-36",
+          "title": "Ebanghelyo ayon kay Mateo",
+          "text": "Pagkatapos ay pinilit niya ang mga alagad na sumakay sa bangka."
+        }
+      },
+      "reflection": "Ang pagtatangkang maglakad ni Pedro sa tubig ay nagtuturo tungkol sa pananampalataya.",
+      "prayer": "Panginoong Jesus, tulungan mo kaming maglakad sa pananampalataya.",
+      "language": "tl"
+    },
+    {
+      "id": "2025-08-06",
+      "date": "2025-08-06",
+      "title": "Ang Pagbabago-anyo ng Panginoon",
+      "season": "feast",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "Dn 7:9-10, 13-14",
+          "title": "Aklat ni Daniel",
+          "text": "Habang ako'y nanonood: Mga trono ay naitayo."
+        },
+        "psalm": {
+          "reference": "Awit 97:1-2, 5-6, 9",
+          "title": "Awit 97",
+          "text": "Ang PANGINOON ay hari; magalak ang lupa."
+        },
+        "second": {
+          "reference": "2 Pt 1:16-19",
+          "title": "Ikalawang Liham ni Pedro",
+          "text": "Hindi namin sinundan ang mga kathang alamat."
+        },
+        "gospel": {
+          "reference": "Mt 17:1-9",
+          "title": "Ebanghelyo ayon kay Mateo",
+          "text": "Dinala ni Jesus sina Pedro, Santiago, at Juan sa mataas na bundok."
+        }
+      },
+      "reflection": "Sa Pista ng Pagbabago-anyo, ipinakita ni Jesus ang kanyang banal na kaluwalhatian.",
+      "prayer": "Panginoong Jesus, baguhin ninyo ang aming mga puso.",
+      "language": "tl"
+    },
+    {
+      "id": "2025-08-28",
+      "date": "2025-08-28",
+      "title": "Huwebes ng Ika-21 Linggo sa Karaniwang Panahon",
+      "season": "ordinary_time",
+      "week": 21,
+      "readings": {
+        "first": {
+          "reference": "1 Tes 3:7-13",
+          "title": "Unang Sulat sa mga Taga-Tesalonica",
+          "text": "Dahil dito'y nangaaliw kami, mga kapatid, tungkol sa inyo sa pamamagitan ng inyong pananampalataya sa lahat naming kagipitan at kapighatian. Sapagka't ngayon ay nangabubuhay kami, kung kayo'y nangamamalaging matibay sa Panginoon. Sapagka't ano ngang pagpapasalamat ang aming muling maibibigay sa Dios dahil sa inyo, dahil sa buong kagalakan na aming ikinagalak dahil sa inyo sa harapan ng aming Dios; Gabi't araw ay idinadalangin naming buong ningas na aming makita ang inyong mukha, at aming malubos ang inyong pananampalataya. Ngayo'y patnugutan nawa ng atin ding Dios at Ama, at ng ating Panginoong Jesus, ang aming paglalakbay sa inyo: At kayo'y palaguin at pasaganain ng Panginoon sa pagibig sa isa't isa, at sa lahat ng mga tao, na gaya naman ng amin sa inyo; Upang patibayin niya ang inyong mga puso, na walang maipipintas sa kabanalan sa harapan ng ating Dios at Ama, sa pagparito ng ating Panginoong Jesus na kasama ang kaniyang lahat na mga banal."
+        },
+        "psalm": {
+          "reference": "Awit 90:3-5, 12-14, 17",
+          "title": "Awit 90",
+          "text": "Iyong pinapagiging kapahamakan ang tao; at iyong sinasabi, Magsipanumbalik kayo, kayong mga anak ng mga tao. Sapagka't isang libong taon sa iyong paningin ay parang kahapon lamang nang makaraan, at parang pagpupuyat sa gabi. Iyong dinadala sila na parang baha; sila'y parang pagkakatulog: sa kinaumagahan ay parang damo sila na tumutubo... Kaya ituro mo sa amin ang pagbilang ng aming mga kaarawan, upang kami ay mangagtamo sa amin ng pusong may karunungan. Manumbalik ka, Oh Panginoon; hanggang kailan pa? Oh busugin mo kami sa kinaumagahan ng iyong kagandahang-loob; upang kami ay mangagalak at mangatuwa sa lahat ng kaarawan namin. At sumaamin nawa ang kagandahan ng Panginoong aming Dios: at iyong itatag sa amin ang gawa ng aming mga kamay; Oo, ang gawa ng aming mga kamay ay itatag mo."
+        },
+        "gospel": {
+          "reference": "Mt 24:42-51",
+          "title": "Ebanghelyo ayon kay Mateo",
+          "text": "Mangagpuyat nga kayo: sapagka't hindi ninyo nalalaman kung anong araw paririto ang inyong Panginoon. Datapuwa't ito'y talastasin ninyo, na kung nalalaman ng puno ng sangbahayan kung anong panahon darating ang magnanakaw, ay siya'y magpupuyat, at hindi niya pababayaang tibagin ang kaniyang bahay. Kaya nga kayo'y magsihanda naman; sapagka't paririto ang Anak ng tao sa oras na hindi ninyo iniisip. Sino nga baga ang aliping tapat at matalino, na pinagkatiwalaan ng kaniyang panginoon sa kaniyang sangbahayan, upang sila'y bigyan ng pagkain sa kapanahunan? Mapalad yaong aliping kung dumating ang kaniyang panginoon, ay maratnan siyang ngayon ang kaniyang ginagawa... Darating ang panginoon ng aliping yaon sa araw na hindi niya hinihintay, at oras na hindi niya nalalaman, At siya'y babaakin, at isasama ang kaniyang bahagi sa mga mapagpaimbabaw: doon na nga ang pagtangis at pagngangalit ng mga ngipin."
+        }
+      },
+      "reflection": "Ang pagbabantay-Kristiyano ay tapat na presensya, hindi pagkabalisa—ang paggawa ng maliliit na bagay na may pag-ibig habang hinihintay ang Panginoon.",
+      "prayer": "Panginoon, panatilihing gising ang aming mga puso sa iyong kalooban. Gawin mo kaming tapat sa maliliit na bagay at handang salubungin ka anumang oras.",
+      "language": "tl"
+    },
+    {
+      "id": "2025-08-29",
+      "date": "2025-08-29",
+      "title": "Biyernes ng Ika-21 Linggo sa Karaniwang Panahon",
+      "season": "ordinary_time",
+      "week": 21,
+      "readings": {
+        "first": {
+          "reference": "1 Tes 4:1-8",
+          "title": "Unang Sulat sa mga Taga-Tesalonica",
+          "text": "Katapustapusan nga, mga kapatid, kayo'y aming pinamamanhikan at inaaralan sa Panginoong Jesus, na, ayon sa tinanggap ninyo sa amin, na kung paanong kayo'y dapat magsilakad at mangagbigay lugod sa Dios, na gaya ng inyong paglakad, upang kayo'y magsipanagana ng higit at higit. Sapagka't talastas ninyo kung anong mga tagubilin ang ibinigay namin sa inyo sa pamamagitan ng Panginoong Jesus. Sapagka't ito ang kalooban ng Dios, sa makatuwid baga'y ang inyong pagpapakabanal, na kayo'y magsiilag sa pakikiapid; Na ang bawa't isa sa inyo'y makaalam na maging mapagpigil sa kaniyang sariling katawan sa pagpapakabanal at kapurihan, Hindi sa pita ng kahalayan, na gaya ng mga Gentil na hindi nangakakakilala sa Dios; Na sinoma'y huwag lumapastangan at magdaya sa kaniyang kapatid sa bagay na ito: sapagka't ang Panginoon ay mapaghiganti sa lahat ng mga bagay na ito, na gaya naman ng aming ipinatalastas nang una na sa inyo at pinatotohanan. Sapagka't tayo'y tinawag ng Dios hindi sa ikarurumi, kundi sa pagpapakabanal. Kaya't ang nagtatakuwil, hindi ang tao ang itinatakuwil, kundi ang Dios, na nagbibigay sa inyo ng kaniyang Espiritu Santo."
+        },
+        "psalm": {
+          "reference": "Awit 97:1-2, 5-6, 10-12",
+          "title": "Awit 97",
+          "text": "Ang Panginoon ay naghahari; magalak ang lupa; matuwa ang karamihan ng mga pulo. Mga ulap at kadiliman ay nasa palibot niya: katuwiran at kahatulan ay patibayin ng kaniyang luklukan... Ang mga bundok ay natunaw na parang pagkit sa harap ng Panginoon, sa harapan ng Panginoon ng buong lupa. Ipinahahayag ng langit ang kaniyang katuwiran, at nakita ng lahat na bayan ang kaniyang kaluwalhatian... Oh kayong nagsisiibig sa Panginoon, ipagtanim ninyo ang kasamaan... Liwanag ang itinanim na ukol sa mga banal, at kasayahan ay sa may matuwid na puso. Mangatuwa kayo sa Panginoon, kayong mga matuwid; at mangagpasalamat sa kaniyang banal na pangalan."
+        },
+        "gospel": {
+          "reference": "Mt 25:1-13",
+          "title": "Ebanghelyo ayon kay Mateo",
+          "text": "Kung magkagayon ay makakatulad ang kaharian ng langit ng sangpung dalaga, na kinuha ang kanilang mga ilawan, at nagsilabas upang salubungin ang kasintahang lalake... Datapuwa't pagkahating gabi ay may sumigaw, Narito, ang kasintahang lalake! Magsilabas kayo upang salubungin siya... At sinabi ng mga mangmang sa matatalino, Bigyan ninyo kami ng inyong langis; sapagka't nangamamatay ang aming mga ilawan... At samantalang sila'y nagsisiparoon sa pagbili, ay dumating ang kasintahang lalake; at ang mga nahahanda ay nagsipasok na kasama niya sa piging ng kasalan: at inilapat ang pintuan... Mangagpuyat nga kayo, sapagka't hindi ninyo nalalaman ang araw ni ang oras."
+        }
+      },
+      "reflection": "Hinuhubog sa araw-araw na pagpili ang pagiging handa. Ang langis ng ilawan ay napupuno sa panalangin, awa, at pagsunod—mga gawi na nag-iingat sa pag-ibig na buhay.",
+      "prayer": "Jesus, sindihan mo sa amin ang mapagmasid na pag-ibig. Nawa'y mapuno ang aming puso ng langis ng panalangin at awa, handang salubungin ka nang may kagalakan.",
+      "language": "tl"
+    },
+    {
+      "id": "2025-08-30",
+      "date": "2025-08-30",
+      "title": "Sabado ng Ika-21 Linggo sa Karaniwang Panahon",
+      "season": "ordinary_time",
+      "week": 21,
+      "readings": {
+        "first": {
+          "reference": "1 Tes 4:9-11",
+          "title": "Unang Sulat sa mga Taga-Tesalonica",
+          "text": "Datapuwa't tungkol sa pagiibigang kapatid ay hindi ninyo kailangan na kayo'y sulatan ng sinoman: sapagka't kayo rin ay tinuruan ng Dios na mangagibigan kayo sa isa't isa; Sapagka't katotohanang ginagawa ninyo ang gayon sa lahat ng kapatid na nangasa buong Macedonia. Nguni't aming iniaaral sa inyo, mga kapatid, na kayo'y lalo't lalong magsipanagana. At pagaralan ninyong maging matahimik, at gawin ang inyong sariling gawain, at kayo'y mangagpagal ng inyong sariling mga kamay, na gaya ng aming ipinagbilin sa inyo; Upang kayo'y magsilakad ng nararapat sa nangasa labas, at huwag kayong maging mapagkailangan."
+        },
+        "psalm": {
+          "reference": "Awit 98:1, 7-9",
+          "title": "Awit 98",
+          "text": "Oh magsiawit kayo sa Panginoon ng bagong awit; sapagka't siya'y gumawa ng mga kagilagilalas na bagay... Humugong ang dagat at ang buong naroon; ang sanglibutan at ang nagsisitahan doon; Ipakpak ng mga baha ang kanilang mga kamay; magawitan ang mga burol dahil sa kagalakan; Sa harap ng Panginoon, sapagka't siya'y dumarating upang hatulan ang lupa: kaniyang hahatulan ng katuwiran ang sanglibutan, at ng karapatan ang mga bayan."
+        },
+        "gospel": {
+          "reference": "Mt 25:14-30",
+          "title": "Ebanghelyo ayon kay Mateo",
+          "text": "Sapagka't tulad sa isang tao, na nang paroroon sa ibang lupain, ay tinawag ang kaniyang sariling mga alipin, at ipinamahala sa kanila ang kaniyang mga pag-aari... At ang tumanggap ng limang talento pagdaka'y yumaon at ipinangalakal niya ang mga yaon, at siya'y nakinabang ng lima pang talento... Datapuwa't ang tumanggap ng isa ay yumaon at humukay sa lupa, at itinago ang salapi ng kaniyang panginoon... Alisin nga ninyo sa kaniya ang talento, at ibigay ninyo sa may sangpung talento... At ang aliping walang kabuluhan ay inyong itapon sa kadiliman sa labas: diyan na nga ang pagtangis at ang pagngangalit ng mga ngipin."
+        }
+      },
+      "reflection": "Kinalulugdan ng Diyos kapag isinusugal natin ang pag-ibig gamit ang mga kaloob na tinanggap natin. Ang pagbaon ng yaman dahil sa takot ay pumipigil sa buhay na nais Niyang paramihin sa atin.",
+      "prayer": "Ama, bigyan mo kami ng tapang na gamitin nang may katapangan ang aming mga kaloob para sa iyong kaharian. Palayain mo kami sa takot at gawin kaming mabunga sa pag-ibig.",
+      "language": "tl"
+    },
+    {
+      "id": "2025-08-31",
+      "date": "2025-08-31",
+      "title": "Ika-22 na Linggo sa Ordinaryong Panahon",
+      "season": "ordinary_time",
+      "week": 22,
+      "readings": {
+        "first": {
+          "reference": "Dt 4:1-2, 6-8",
+          "title": "Aklat ng Deuteronomio",
+          "text": "At ngayon, Oh Israel, dinggin mo ang mga palatuntunan at ang mga kahatulan, na aking itinuturo sa inyo, upang sundin ninyo; upang kayo'y mabuhay, at pumasok, at inyong ariin ang lupain na ibinibigay sa inyo ng Panginoon, ng Dios ng inyong mga magulang. Huwag ninyong daragdagan ni babawasan ang salita na aking iniuutos sa inyo, upang inyong maingatan ang mga utos ng Panginoon ninyong Dios na aking iniuutos sa inyo... Ingatan nga ninyo at inyong isagawa; sapagka't ito ang inyong karunungan at ang inyong kaalaman sa paningin ng mga tao... Sapagka't anong dakilang bansa nga ang may dios na napakalapit sa kanila, na gaya ng Panginoon nating Dios kailan man tayo'y tumawag sa kaniya? At anong dakilang bansa nga, ang may mga palatuntunan at mga kahatulang napaka-tuwid na gaya ng buong kautusang ito, na aking inilalagda sa harap ninyo sa araw na ito?"
+        },
+        "psalm": {
+          "reference": "Awit 15",
+          "title": "Awit 15",
+          "text": "Panginoon, sinong makapanunuluyan sa iyong tabernakulo? Sinong tatahan sa iyong banal na bundok? Siyang lumalakad na matuwid, at gumagawa ng katuwiran, at nagsasalita ng katotohanan sa kaniyang puso... Siyang hindi naglalabas ng kaniyang salapi sa patubo, ni kumukuha man ng suhol laban sa walang sala. Siyang gumagawa ng mga bagay na ito ay hindi makikilos kailan man."
+        },
+        "second": {
+          "reference": "San 1:17-18, 21-22, 27",
+          "title": "Sulat ni Santiago",
+          "text": "Ang bawa't mabuting kaloob at ang bawa't sakdal na kaloob ay pawang buhat sa itaas, na bumababa mula sa Ama ng mga ilaw, na walang pagbabago, ni kahit anino man ng pagiiba. Sa kaniyang sariling kalooban ay kaniya tayong ipinanganak sa pamamagitan ng salita ng katotohanan, upang tayo'y maging isang uri ng mga pangunahing bunga ng kaniyang mga nilalang... Kaya't ihiwalay ninyo ang lahat na karumihan at ang pagapaw ng kasamaan, at tanggapin ninyo na may kaamuan ang salitang itinanim, na makapagliligtas ng inyong mga kaluluwa. Datapuwa't maging tagatupad kayo ng salita, at huwag tagapakinig lamang, na inyong dinadaya ang inyong sarili... Ang dalisay na relihion at walang dungis sa harapan ng ating Dios at Ama ay ito, dalawin ang mga ulila at mga babaing bao sa kanilang kapighatian, at pagingatang walang dungis ang kaniyang sarili sa sanglibutan."
+        },
+        "gospel": {
+          "reference": "Mk 7:1-8, 14-15, 21-23",
+          "title": "Ebanghelyo ayon kay Marcos",
+          "text": "Mabuti ang pagkahula ni Isaias tungkol sa inyong mga mapagpaimbabaw, ayon sa nasusulat, Ang bayang ito'y iginagalang ako ng kaniyang mga labi, Datapuwa't ang kanilang puso ay malayo sa akin. Datapuwa't walang kabuluhan ang pagsamba nila sa akin, Na nagtuturo ng kanilang pinakaaral ng mga utos ng mga tao. Nilisan ninyo ang utos ng Dios, at inyong pinanghahawakan ang sali't-saling sabi ng mga tao... Pakinggan ninyong lahat ako, at inyong unawain: Walang anomang nasa labas ng katawan ng tao, na pagpasok sa kaniya ay makakahawa sa kaniya; datapuwa't ang mga bagay na nagsisilabas sa tao yaon ang nangakakahawa sa tao... Sapagka't mula sa loob, mula sa puso ng mga tao, lumalabas ang masasamang pagiisip... Ang lahat ng masasamang bagay na ito ay sa loob nagsisipanggaling, at nangakakahawa sa tao."
+        }
+      },
+      "reflection": "Higit na hinahanap ng Diyos ang dalisay na puso kaysa sa walang dungis na kamay. Kapag pag-ibig ang humuhubog sa ating mga pagpili, nagkakaroon ng tamang saysay ang mga gawi at nagiging buhay ang ating pagsamba.",
+      "prayer": "Lumikha ka sa amin ng malinis na puso, O Diyos. Linisin mo ang aming layunin at gawing tunay na alay ng pag-ibig at awa ang aming buhay.",
+      "language": "tl"
+    },
+    {
+      "id": "2025-09-15",
+      "date": "2025-09-15",
+      "title": "Gunita ng Mahal na Birheng Maria ng mga Dalita",
+      "season": "ordinary_time",
+      "week": 24,
+      "readings": {
+        "first": {
+          "reference": "Heb 5:7-9",
+          "title": "Sulat sa mga Hebreo",
+          "text": "Sa mga araw ng kanyang laman, nag-alay si Cristo ng mga dalangin at pakiusap..."
+        },
+        "psalm": {
+          "reference": "Ps 31:2-3a, 3bc-4, 5-6, 15-16, 20",
+          "title": "Awit 31",
+          "text": "Sa iyo, Panginoon, ako'y tumakbo upang makakuha ng kanlungan..."
+        },
+        "gospel": {
+          "reference": "Jn 19:25-27",
+          "title": "Ebanghelyo ayon kay Juan",
+          "text": "Nakatayo sa tabi ng krus ni Jesus ang kanyang ina..."
+        }
+      },
+      "reflection": "Sa panahon ng pagdurusa, nakatayo si Maria sa tabi ng krus, nagpapatunay sa walang hanggang pag-ibig.",
+      "prayer": "Mahal na Birheng Maria, gabayan mo kami sa aming mga pagsubok upang matuto kaming magtiis at magtiwala sa Diyos.",       
+      "language": "tl"
+    },
+    {
+      "id": "2025-10-31",
+      "date": "2025-10-31",
+      "title": "Biyernes ng Ika-31 na Linggo sa Ordinaryong Panahon",
+      "season": "ordinary_time",
+      "week": 31,
+      "readings": {
+        "first": {
+          "reference": "Rom 9:1-5",
+          "title": "Sulat sa mga Romano",
+          "text": "Nagsasabi ako ng totoo sa pamamagitan ni Cristo..."
+        },
+        "psalm": {
+          "reference": "Ps 147:12-13, 14-15, 19-20",
+          "title": "Awit 147",
+          "text": "Purihin mo ang Panginoon, O Jerusalem..."
+        },
+        "gospel": {
+          "reference": "Lk 14:1-6",
+          "title": "Ebanghelyo ayon kay Lucas",
+          "text": "Nangyari na nang Sabado ay pumasok si Jesus..."
+        }
+      },
+      "reflection": "Ginagamit ni Jesus ang mga pagkakataong makipag-usap sa mga Pariseo upang ituro ang tunay na kahulugan ng Sabado.",
+      "prayer": "Panginoon Jesus, turuan mo kaming maging maunawain at mahabag sa lahat ng mga tao.",
+      "language": "tl"
+    }
+  ]
+}

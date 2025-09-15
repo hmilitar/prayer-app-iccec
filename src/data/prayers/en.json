@@ -1,0 +1,256 @@
+{
+  "prayers": [
+    {
+      "id": "lords-prayer",
+      "title": "The Lord's Prayer",
+      "category": "liturgical",
+      "content": "Our Father, who art in heaven, hallowed be thy name. Thy kingdom come, thy will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. For thine is the kingdom, and the power, and the glory, forever and ever. Amen.",
+      "source": "Matthew 6:9-13",
+      "tags": ["traditional", "jesus", "foundational"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "gloria-patri",
+      "title": "Gloria Patri",
+      "category": "liturgical",
+      "content": "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.",
+      "source": "Traditional",
+      "tags": ["traditional", "trinity", "doxology"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "apostles-creed",
+      "title": "The Apostles' Creed",
+      "category": "liturgical",
+      "content": "I believe in God, the Father almighty, creator of heaven and earth. I believe in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; he descended to the dead. On the third day he rose again; he ascended into heaven, he is seated at the right hand of the Father, and he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.",
+      "source": "Traditional",
+      "tags": ["creed", "faith", "foundational"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "come-holy-spirit",
+      "title": "Come, Holy Spirit",
+      "category": "charismatic",
+      "content": "Come, Holy Spirit, fill the hearts of your faithful and kindle in them the fire of your love. Send forth your Spirit and they shall be created, and you shall renew the face of the earth. O God, who by the light of the Holy Spirit did instruct the hearts of the faithful, grant that by the same Spirit we may be truly wise and ever rejoice in his consolation. Through Christ our Lord. Amen.",
+      "source": "Traditional Charismatic Prayer",
+      "tags": ["holy-spirit", "charismatic", "pentecost", "renewal"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "morning-prayer",
+      "title": "Morning Prayer",
+      "category": "personal",
+      "content": "Almighty God, we thank you for the gift of this new day. As the sun rises, may your light shine upon us and guide our steps. Grant us wisdom in our decisions, strength in our challenges, and peace in our hearts. Help us to serve you faithfully and to love our neighbors as ourselves. Through Jesus Christ our Lord. Amen.",
+      "source": "Book of Common Prayer tradition",
+      "tags": ["morning", "daily", "guidance"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "evening-prayer",
+      "title": "Evening Prayer",
+      "category": "personal",
+      "content": "Gracious God, as this day comes to an end, we thank you for your countless blessings. Forgive us for our shortcomings and failures. Grant us peaceful rest and restore our souls. Watch over our loved ones and all who are in need. May your angels guard us through the night, and may we wake refreshed to serve you tomorrow. In Jesus' name. Amen.",
+      "source": "Traditional",
+      "tags": ["evening", "rest", "forgiveness"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-spiritual-gifts",
+      "title": "Prayer for Spiritual Gifts",
+      "category": "charismatic",
+      "content": "Heavenly Father, we thank you for the gifts of your Holy Spirit. Grant us wisdom to use these gifts for the building up of your Church and the advancement of your Kingdom. May we desire earnestly the spiritual gifts, especially that we may prophesy and speak your word with boldness. Fill us afresh with your Spirit, that we may minister in power and demonstrate your love to the world. Through Jesus Christ our Lord. Amen.",
+      "source": "1 Corinthians 12-14",
+      "tags": ["spiritual-gifts", "charismatic", "ministry", "holy-spirit"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-communion",
+      "title": "Prayer Before Holy Communion",
+      "category": "sacramental",
+      "content": "Almighty God, unto whom all hearts are open, all desires known, and from whom no secrets are hid: Cleanse the thoughts of our hearts by the inspiration of your Holy Spirit, that we may perfectly love you, and worthily magnify your holy Name; through Christ our Lord. We do not presume to come to this your Table, O merciful Lord, trusting in our own righteousness, but in your manifold and great mercies. Grant us therefore, gracious Lord, so to eat the flesh of your dear Son Jesus Christ, and to drink his blood, that our sinful bodies may be made clean by his body, and our souls washed through his most precious blood. Amen.",
+      "source": "Book of Common Prayer tradition",
+      "tags": ["communion", "eucharist", "sacramental", "preparation"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-meals",
+      "title": "Prayer Before Meals",
+      "category": "thanksgiving",
+      "content": "Bless us, O Lord, and these thy gifts, which we are about to receive from thy bounty, through Christ our Lord. Amen.",
+      "source": "Traditional",
+      "tags": ["meals", "blessing", "gratitude"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-peace",
+      "title": "Prayer for Peace",
+      "category": "intercession",
+      "content": "Lord, make me an instrument of your peace. Where there is hatred, let me sow love; where there is injury, pardon; where there is doubt, faith; where there is despair, hope; where there is darkness, light; where there is sadness, joy. O Divine Master, grant that I may not so much seek to be consoled as to console; to be understood as to understand; to be loved as to love. For it is in giving that we receive; it is in pardoning that we are pardoned; and it is in dying that we are born to eternal life. Amen.",
+      "source": "Prayer of St. Francis",
+      "tags": ["peace", "service", "francis"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-healing",
+      "title": "Prayer for Healing",
+      "category": "intercession",
+      "content": "Heavenly Father, we come before you seeking your healing touch. You are the Great Physician, and nothing is impossible for you. We pray for those who are sick in body, mind, or spirit. Restore them to wholeness according to your perfect will. Give strength to caregivers, comfort to families, and hope to all who suffer. May your healing power flow through the hands of doctors and nurses. We trust in your love and mercy. Through Jesus Christ our Lord. Amen.",
+      "source": "Contemporary",
+      "tags": ["healing", "sick", "comfort"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-of-confession",
+      "title": "Prayer of Confession",
+      "category": "confession",
+      "content": "Most merciful God, we confess that we have sinned against you in thought, word, and deed, by what we have done, and by what we have left undone. We have not loved you with our whole heart; we have not loved our neighbors as ourselves. We are truly sorry and we humbly repent. For the sake of your Son Jesus Christ, have mercy on us and forgive us; that we may delight in your will, and walk in your ways, to the glory of your Name. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["confession", "repentance", "forgiveness"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-of-thanksgiving",
+      "title": "Prayer of Thanksgiving",
+      "category": "thanksgiving",
+      "content": "Almighty God, Father of all mercies, we your unworthy servants give you humble thanks for all your goodness and loving-kindness to us and to all whom you have made. We bless you for our creation, preservation, and all the blessings of this life; but above all for your immeasurable love in the redemption of the world by our Lord Jesus Christ; for the means of grace, and for the hope of glory. And, we pray, give us such an awareness of your mercies, that with truly thankful hearts we may show forth your praise, not only with our lips, but in our lives, by giving up our selves to your service, and by walking before you in holiness and righteousness all our days; through Jesus Christ our Lord, to whom, with you and the Holy Spirit, be honor and glory throughout all ages. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["thanksgiving", "gratitude", "praise"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "serenity-prayer",
+      "title": "Serenity Prayer",
+      "category": "contemporary",
+      "content": "God, grant me the serenity to accept the things I cannot change, courage to change the things I can, and wisdom to know the difference. Living one day at a time; enjoying one moment at a time; accepting hardships as the pathway to peace; taking, as He did, this sinful world as it is, not as I would have it; trusting that He will make all things right if I surrender to His Will; that I may be reasonably happy in this life, and supremely useful to God and my fellow beings. Amen.",
+      "source": "Reinhold Niebuhr",
+      "tags": ["serenity", "acceptance", "wisdom"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-guidance",
+      "title": "Prayer for Guidance",
+      "category": "personal",
+      "content": "Loving God, you know the path that lies ahead of us. When we are uncertain about the direction to take, be our guide. When we are afraid of the challenges we face, be our strength. When we are overwhelmed by the decisions before us, grant us your wisdom. Help us to trust in your perfect timing and to walk in faith, knowing that you are always with us. Lead us in the way everlasting. Through Jesus Christ our Lord. Amen.",
+      "source": "Contemporary",
+      "tags": ["guidance", "wisdom", "trust"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-family",
+      "title": "Prayer for Family",
+      "category": "intercession",
+      "content": "Heavenly Father, we thank you for the gift of family. Bless our homes with your presence and fill them with love, joy, and peace. Help us to be patient with one another, to forgive quickly, and to support each other through all of life's seasons. Protect our children and guide them in your ways. Strengthen the bonds between us and help us to be a reflection of your love to the world. Through Jesus Christ our Lord. Amen.",
+      "source": "Contemporary",
+      "tags": ["family", "home", "children"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-world",
+      "title": "Prayer for the World",
+      "category": "intercession",
+      "content": "Almighty God, ruler of all nations, we pray for our world. Bring peace where there is conflict, hope where there is despair, and healing where there is brokenness. Guide our leaders with wisdom and integrity. Help us to be good stewards of your creation and to care for those in need. Unite us in our common humanity and help us to work together for justice and peace. May your kingdom come on earth as it is in heaven. Through Jesus Christ our Lord. Amen.",
+      "source": "Contemporary",
+      "tags": ["world", "peace", "justice"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-strength",
+      "title": "Prayer for Strength",
+      "category": "personal",
+      "content": "Lord God, when we are weak, you are strong. When we are weary, you give us rest. When we are overwhelmed, you are our refuge. Grant us the strength we need for this day. Help us to rely not on our own power, but on your mighty strength. Renew our spirits and refresh our souls. May we find our hope and confidence in you alone. Through Jesus Christ our Lord. Amen.",
+      "source": "Contemporary",
+      "tags": ["strength", "weakness", "refuge"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "prayers": [
+    {
+      "id": "meie-isa",
+      "title": "Meie Isa",
+      "category": "liturgical",
+      "content": "Meie Isa, kes Sa oled taevas! Pühitsetud olgu Sinu nimi. Sinu riik tulgu. Sinu tahtmine sündigu nagu taevas, nõnda ka maa peal. Meie igapäevast leiba anna meile täna. Ja anna meile andeks meie võlad, nagu meiegi andeks anname oma võlglastele. Ja ära saada meid kiusatusse, vaid päästa meid kurjast. Sest Sinu on riik ja vägi ja au igavesti. Aamen.",
+      "source": "Matteuse 6:9-13",
+      "tags": ["traditsiooniline", "Jeesus", "põhiline"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "au-olgu-isale",
+      "title": "Au olgu Isale",
+      "category": "liturgical",
+      "content": "Au olgu Isale ja Pojale ja Pühale Vaimule, nagu oli alguses, on nüüd ja jääb igavesti, maailmata lõpuni. Aamen.",
+      "source": "Traditsiooniline",
+      "tags": ["traditsiooniline", "kolmainsus", "doksologia"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "apostlite-uskutunnistus",
+      "title": "Apostlite Uskutunnistus",
+      "category": "liturgical",
+      "content": "Ma usun Jumalasse, kõigeväelisse Isasse, taeva ja maa Loojasse. Ja Jeesusesse Kristusesse, Tema ainusündinud Pojasse, meie Issandasse, kes on saadud Pühast Vaimust, sündinud neitsist Maarjast, kannatanud Pontius Pilatuse all, risti löödud, surnud ja maetud, läinud alla põrgusse, kolmandal päeval üles tõusnud surnuist, läinud üles taevasse, istub Jumala, kõigeväelise Isa paremal käel, sealt Ta tuleb kohut mõistma elavate ja surnute üle. Ma usun Pühasse Vaimusse, pühasse üldkirikusse, pühade osadust, pattude andeksandmist, ihu ülesärkamist ja igavest elu. Aamen.",
+      "source": "Traditsiooniline",
+      "tags": ["uskutunnistus", "usk", "põhiline"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "come-holy-spirit",
+      "title": "Tule, Püha Vaim",
+      "category": "charismatic",
+      "content": "Tule, Püha Vaim, täida oma usklike südamed ja süüta neis Sinu armastuse tuli. Läkita oma Vaim ja nad luuakse, ja Sa uuendad maa palet. Oh Jumal, kes Püha Vaimu valguse kaudu õpetasid usklike südameid, anna, et sama Vaimu kaudu oleksime tõeliselt targad ja alati rõõmsad tema lohutuses. Kristuse, meie Issanda kaudu. Aamen.",
+      "source": "Traditsiooniline karismaatiline palve",
+      "tags": ["püha-vaim", "karismaatiline", "nelipüha", "uuendus"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-spiritual-gifts",
+      "title": "Palve vaimsete andide eest",
+      "category": "charismatic",
+      "content": "Taevane Isa, täname Sind Sinu Püha Vaimu andide eest. Anna meile tarkust kasutada neid ande Sinu Kiriku ülesehitamiseks ja Sinu Kuningriigi edendamiseks. Las me ihkame vaimseid ande, eriti et me võiksime prohvetlikult rääkida ja kuulutada Sinu sõna julgusega. Täida meid uuesti oma Vaimuga, et me võiksime teenida väes ja näidata Sinu armastust maailmale. Jeesuse Kristuse, meie Issanda kaudu. Aamen.",
+      "source": "1. Korintlastele 12-14",
+      "tags": ["vaimsed-anded", "karismaatiline", "teenistus", "püha-vaim"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "hommikupalve",
+      "title": "Hommikupalve",
+      "category": "personal",
+      "content": "Kõigevägev Jumal, täname Sind selle uue päeva eest. Kui päike tõuseb, las Sinu valgus särab meie südametes. Juhi meie samme sel päeval. Anna meile tarkust meie otsustes, jõudu meie väljakutsetes ja rahu meie südametes. Aita meil Sulle ustavalt teenida ja armastada oma ligimesi nagu iseennast. Jeesuse Kristuse, meie Issanda läbi. Aamen.",
+      "source": "Kaasaegne",
+      "tags": ["hommik", "igapäevane", "juhtimine"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "ohtupalve",
+      "title": "Õhtupalve",
+      "category": "personal",
+      "content": "Armuline Jumal, kui see päev lõpeb, täname Sind Sinu lugematute õnnistuste eest. Anna meile andeks meie puudused ja eksimused. Anna meile rahulik uni ja värskenda meie hingi. Valva meie lähedaste ja kõigi abivajajate üle. Las Sinu inglid kaitsevad meid läbi öö ja las ärkame homme valmis Sulle jälle teenima. Jeesuse nimel. Aamen.",
+      "source": "Traditsiooniline",
+      "tags": ["õhtu", "puhkus", "andeksandmine"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "palve-enne-sooki",
+      "title": "Palve enne sööki",
+      "category": "thanksgiving",
+      "content": "Õnnista, Issand, meid ja seda toitu, mida me Sinu heldusest saame, Kristuse, meie Issanda läbi. Aamen.",
+      "source": "Traditsiooniline",
+      "tags": ["toit", "õnnistus", "tänulikkus"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "palve-rahu-eest",
+      "title": "Palve rahu eest",
+      "category": "intercession",
+      "content": "Issand, tee mind Sinu rahu tööriistaks. Kus on viha, las ma külvan armastust; kus on haav, andestust; kus on kahtlus, usku; kus on meeleheide, lootust; kus on pimedus, valgust; kus on kurbus, rõõmu. Oh jumalik Meister, ära las ma otsi lohutust, vaid lohutan; mõistmist, vaid mõistan; armastust, vaid armastan. Sest andmisega me saame; andestamisega meile andeks antakse; ja surmisega me sünnime igavesse ellu. Aamen.",
+      "source": "Püha Franciscuse palve",
+      "tags": ["rahu", "teenistus", "Franciscus"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "palve-tervise-eest",
+      "title": "Palve tervise eest",
+      "category": "intercession",
+      "content": "Taevane Isa, me tuleme Sinu ette otsides Sinu tervendavat puudutust. Sina oled Suur Arst ja Sulle pole midagi võimatu. Me palvetame nende eest, kes on haiged kehalt, meelelt või hingelt. Taasta neid terveks vastavalt Sinu täiuslikule tahtmisele. Anna jõudu hooldajatele, lohutust peredele ja lootust kõigile kannatajatele. Las Sinu tervendav vägi voolab arstide ja õdede käte kaudu. Me usaldame Sinu armastust ja halastust. Jeesuse Kristuse, meie Issanda läbi. Aamen.",
+      "source": "Kaasaegne",
+      "tags": ["tervendamine", "haiged", "lohutus"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "patukahetsuse-palve",
+      "title": "Patukahetsuse palve",
+      "category": "confession",
+      "content": "Halastav meie Jumal, me tunnistame, et oleme pattu teinud Sinu vastu mõttes, sõnas ja teos, selle läbi, mida oleme teinud, ja selle läbi, mida oleme jätnud tegemata. Me ei ole armastanud Sind kogu oma südamega; me ei ole armastanud oma ligimesi nagu iseennast. Me kahetseme tõeliselt ja sügavalt. Oma Poja Jeesuse Kristuse pärast halasta meile ja anna meile andeks; et me võiksime rõõmustada Sinu tahtes ja käia Sinu teedel, Sinu nime auks. Aamen.",
+      "source": "Ühine palveraamat",
+      "tags": ["kahetsemine", "patukahetsus", "andeksandmine"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "tanupalve",
+      "title": "Tänupalve",
+      "category": "thanksgiving",
+      "content": "Kõigevägev Jumal, kõigi halastuste Isa, me, Sinu väärimatud teenrid, anname Sulle alandliku tänu kõigi Sinu headuste ja armastuse eest meie ja kõigi Sinu loodute vastu. Me kiidame Sind meie loomise, säilitamise ja kõigi selle elu õnnistuste eest; aga kõige enam Sinu mõõtmatu armastuse eest maailma lunastamisel meie Issanda Jeesuse Kristuse läbi; armu vahendite ja au lootuse eest. Ja me palume, anna meile selline Sinu halastuste teadvus, et tõeliselt tänuliku südamega võiksime näidata Sinu kiitust mitte ainult oma huultega, vaid oma eluga, andes ennast Sinu teenistusse ja käies Sinu ees pühaduses ja õiguses kõigil oma päevil; Jeesuse Kristuse, meie Issanda läbi. Aamen.",
+      "source": "Ühine palveraamat",
+      "tags": ["tänulikkus", "kiitus", "ülistamine"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "palve-pere-eest",
+      "title": "Palve pere eest",
+      "category": "intercession",
+      "content": "Kõigevägev Jumal, täname Sind pere anni eest. Õnnista meie kodusid Sinu kohalolekuga ja täida need armastuse, rõõmu ja rahuga. Aita meil olla kannatlikud üksteise vastu, kiiresti andestada ja toetada üksteist läbi kõigi elu aastaaegade. Kaitse meie lapsi ja juhi neid Sinu teedel. Tugevda sidemeid meie vahel ja aita meil olla Sinu armastuse peegeldus maailmale. Jeesuse Kristuse, meie Issanda läbi. Aamen.",
+      "source": "Kaasaegne",
+      "tags": ["pere", "kodu", "lapsed"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "palve-maailma-eest",
+      "title": "Palve maailma eest",
+      "category": "intercession",
+      "content": "Kõigevägev Jumal, kõigi rahvaste valitseja, me palvetame meie maailma eest. Too rahu, kus on konflikt, lootust, kus on meeleheide, ja tervendamist, kus on katkisus. Juhi meie juhte tarkuse ja ausameelsusega. Aita meil olla head Sinu loomingu hooldajad ja hoolitseda abivajajate eest. Ühenada meid meie ühises inimlikkuses ja aita meil töötada koos õigluse ja rahu nimel. Las Sinu riik tuleb maa peale nagu taevas. Jeesuse Kristuse, meie Issanda läbi. Aamen.",
+      "source": "Kaasaegne",
+      "tags": ["maailm", "rahu", "õiglus"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "palve-jou-eest",
+      "title": "Palve jõu eest",
+      "category": "personal",
+      "content": "Issand Jumal, kui me oleme nõrgad, Sina oled tugev. Kui me oleme väsinud, Sina annad puhkust. Kui me oleme ülekoormatult, Sina oled meie varjupaik. Anna meile jõudu, mida vajame selleks päevaks. Aita meil toetuda mitte oma jõule, vaid Sinu võimsale jõule. Värskenda meie vaimu ja taasta meie hingi. Las me leiame oma lootuse ja usalduse Sinus üksi. Jeesuse Kristuse, meie Issanda läbi. Aamen.",
+      "source": "Kaasaegne",
+      "tags": ["jõud", "nõrkus", "varjupaik"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "palve-juhenduse-eest",
+      "title": "Palve juhenduse eest",
+      "category": "personal",
+      "content": "Armastav Jumal, Sina tead teed, mis meie ees seisab. Kui me oleme ebakindlad suuna suhtes, ole meie juht. Kui me kardame väljakutseid, millega silmitsi seisame, ole meie jõud. Kui me oleme ülekoormatult otsustest, mis meie ees seisavad, anna meile Oma tarkust. Aita meil usaldada Sinu täiuslikku ajastust ja käia usus, teades, et Sina oled alati meiega. Juhi meid igavesele teele. Jeesuse Kristuse, meie Issanda läbi. Aamen.",
+      "source": "Kaasaegne",
+      "tags": ["juhendus", "tarkus", "usaldus"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "lutheri-hommikupalve",
+      "title": "Lutheri hommikupalve",
+      "category": "liturgical",
+      "content": "Tänan Sind, mu taevane Isa, Jeesuse Kristuse, Sinu armsa Poja kaudu, et Sa mind sel ööl kõigest kurjast ja kahjust kaitsnud oled, ja palun Sind, et Sa mind ka sel päeval patu ja kõigest kurjast hoiaksid, et kõik mu teod ja elu Sulle meeldiks. Sest ma annan enda, mu ihu ja hinge ja kõik Sinu kätesse. Sinu püha ingel olgu minuga, et kurjal vaimu ei oleks mingit võimu minu üle. Aamen.",
+      "source": "Martin Luther",
+      "tags": ["Luther", "hommik", "kaitse"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    }
+  ]
+}

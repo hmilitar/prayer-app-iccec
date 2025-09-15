@@ -1,0 +1,379 @@
+{
+  "readings": [
+    {
+      "id": "2025-08-01",
+      "date": "2025-08-01",
+      "title": "Biyernes - Ika-17 na Linggo sa Karaniwang Panahon",
+      "readings": [
+        {
+          "id": "ot-2025-08-01",
+          "type": "old_testament",
+          "reference": "Levitico 23:1, 4-11, 15-16, 27, 34b-37",
+          "text": "Nagsalita ang Panginoon kay Moises: Ito ang mga itinakdang pista ng Panginoon na inyong ipapahayag bilang mga banal na pagtitipon, mga itinakdang pista ko. Sa ikasampung araw ng ikapitong buwan ay araw ng pagtutubos; magiging banal na pagtitipon para sa inyo.",
+          "title": "Mga Itinakdang Pista"
+        },
+        {
+          "id": "psalm-2025-08-01", 
+          "type": "psalm",
+          "reference": "Awit 81:3-4, 5-6, 10-11ab",
+          "text": "Hipan ninyo ang trumpeta sa bagong buwan, sa buong buwan, sa aming araw ng pista. Sapagkat ito ay batas para sa Israel, kautusan ng Diyos ni Jacob. Pakinggan, bayan ko, habang pinapaalala ko kayo; O Israel, kung pakikinggan mo lang ako!",
+          "title": "Panawagan ng Diyos sa Matigas na Israel"
+        },
+        {
+          "id": "gospel-2025-08-01",
+          "type": "gospel", 
+          "reference": "Mateo 13:54-58",
+          "text": "Dumating si Jesus sa kanyang sariling bayan at nagsimulang magturo sa mga tao sa kanilang sinagoga, kaya't nabigla sila at nagsabi: 'Saan nakuha ng taong ito ang karunungang ito at ang mga gawang makapangyarihan?' At hindi siya nakagawa ng maraming gawang makapangyarihan doon dahil sa kanilang kawalang-pananampalataya.",
+          "title": "Pagtanggi sa Nazaret"
+        }
+      ],
+      "reflection": "Kahit si Jesus ay naranasan ang pagtanggi sa kanyang sariling bayan. Minsan ang pagkakakilala ay nagdudulot ng pagkukunware, at hindi nakikita ng mga tao ang nakakagulat sa karaniwan. Nawa'y magkaroon tayo ng mga matang makakita sa presensya ng Diyos sa mga pamilyar na lugar at tao sa aming buhay.",
+      "language": "tl",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 17,
+        "createdAt": "2025-08-01T00:00:00Z",
+        "updatedAt": "2025-08-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-02",
+      "date": "2025-08-02", 
+      "title": "Sabado - Ika-17 na Linggo sa Karaniwang Panahon",
+      "readings": [
+        {
+          "id": "ot-2025-08-02",
+          "type": "old_testament",
+          "reference": "Levitico 25:1, 8-17",
+          "text": "Nagsalita ang Panginoon kay Moises sa Bundok Sinai: Kailangan ninyong bilangin ang pitong linggo ng mga taon, pitong beses na pitong taon, kaya ang panahon ng pitong linggo ng mga taon ay aabot sa apatnapung siyam na taon. Pagkatapos ay ipahayag ninyo nang malakas ang trumpeta; sa ikasampung araw ng ikapitong buwan ay ipahayag ninyo ang trumpeta sa buong inyong lupain.",
+          "title": "Taon ng Jubileo"
+        },
+        {
+          "id": "psalm-2025-08-02",
+          "type": "psalm", 
+          "reference": "Awit 67:2-3, 5, 7-8",
+          "text": "Maging maawain sa amin ang Diyos at pagpalain niya kami at paningningin niya ang kanyang mukha sa amin, upang makilala sa lupa ang inyong daan, ang inyong kaligtasang kapangyarihan sa lahat ng bansa. Purihin ka ng mga bayan, O Diyos; purihin ka ng lahat ng bayan.",
+          "title": "Mga Bansang Tinawag na Purihin ang Diyos"
+        },
+        {
+          "id": "gospel-2025-08-02",
+          "type": "gospel",
+          "reference": "Mateo 14:1-12", 
+          "text": "Sa panahong iyon ay narinig ng mananakop na si Herodes ang mga balita tungkol kay Jesus; at sinabi niya sa kanyang mga lingkod: 'Ito si Juan Bautista; siya ay muling nabuhay mula sa mga patay, at dahil dito ang mga kapangyarihang ito ay gumagawa sa kanya.' Sapagkat hinuli ni Herodes si Juan, ginapos siya, at ipinabilanggo dahil kay Herodias.",
+          "title": "Kamatayan ni Juan Bautista"
+        }
+      ],
+      "reflection": "Ang pagkamartirio ni Juan Bautista ay nagpapaalala sa atin na ang pagsasabi ng katotohanan sa kapangyarihan ay madalas na may malaking halaga. Nawa'y magkaroon tayo ng lakas ng loob na tumayo para sa katuwiran, kahit na mahirap.",
+      "language": "tl",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 17,
+        "createdAt": "2025-08-02T00:00:00Z",
+        "updatedAt": "2025-08-02T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-03",
+      "date": "2025-08-03",
+      "title": "Ika-18 na Linggo sa Karaniwang Panahon",
+      "readings": [
+        {
+          "id": "ot-2025-08-03",
+          "type": "old_testament", 
+          "reference": "Exodo 16:2-4, 12-15",
+          "text": "Ang buong kapulungan ng mga Israelita ay nagreklamo laban kay Moises at Aaron sa ilang. Sinabi ng mga Israelita sa kanila: 'Sana namatay na lang kami sa kamay ng Panginoon sa lupain ng Ehipto, nang nakaupo kami sa tabi ng mga palyok ng karne at kumain ng tinapay hanggang sa mabusog; sapagkat dinala ninyo kami sa ilangang ito upang patayin ng gutom ang buong kapulungang ito.'",
+          "title": "Tinapay mula sa Langit"
+        },
+        {
+          "id": "psalm-2025-08-03",
+          "type": "psalm",
+          "reference": "Awit 78:3-4, 23-24, 25, 54",
+          "text": "Mga bagay na aming narinig at natutunan, na sinabi sa amin ng aming mga ninuno. Hindi namin itatago sa kanilang mga anak; sasabihin namin sa susunod na henerasyon ang mga maluwalhating gawa ng Panginoon, at ang kanyang kapangyarihan, at mga himala na ginawa niya.",
+          "title": "Kabutihan ng Diyos at Kawalan ng Pasasalamat ng Israel"
+        },
+        {
+          "id": "nt-2025-08-03",
+          "type": "new_testament",
+          "reference": "Mga Taga-Efeso 4:17, 20-24",
+          "text": "Ngayon, pinapahayag at pinagsasabi ko sa Panginoon: hindi na kayo dapat mabuhay tulad ng mga Gentil na nabubuhay, sa kawalaan ng kabuluhan ng kanilang isip. Hindi ganyan ang inyong natutunan tungkol kay Cristo! Sapagkat natutuhan ninyo na itapon ang inyong dating paraan ng pamumuhay, ang inyong lumang sarili, na nabulok at nalinlang ng mga pita.",
+          "title": "Lumang Buhay at Bagong Buhay"
+        },
+        {
+          "id": "gospel-2025-08-03",
+          "type": "gospel",
+          "reference": "Juan 6:24-35",
+          "text": "Kaya nang makita ng mga tao na hindi nandoon si Jesus o ang kanyang mga alagad, sumakay sila sa mga bangka at pumunta sa Capernaum na hinahanap si Jesus. Nang makita nila siya sa kabilang panig ng dagat, sinabi nila sa kanya: 'Rabbi, kailan ka nakarating dito?' Sumagot si Jesus sa kanila: 'Totoo, totoo ang sinasabi ko sa inyo, hinahanap ninyo ako, hindi dahil nakita ninyo ang mga tanda, kundi dahil nakakain kayo ng tinapay at nabusog.'",
+          "title": "Si Jesus ang Tinapay ng Buhay"
+        }
+      ],
+      "reflection": "Ipinakikita ni Jesus ang sarili niya bilang tinapay ng buhay, ang tunay na sustansya para sa aming mga kaluluwa. Habang madalas nating hinahanap ang Diyos dahil sa maaari niyang ibigay sa amin, tinatawag niya tayo na hanapin siya dahil sa kung sino siya - ang pinagmulan ng walang hanggang buhay at kahulugan.",
+      "language": "tl",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 18,
+        "createdAt": "2025-08-03T00:00:00Z",
+        "updatedAt": "2025-08-03T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-27",
+      "date": "2025-08-27",
+      "title": "Miyerkules - Ika-21 na Linggo sa Karaniwang Panahon",
+      "readings": [
+        {
+          "id": "ot-2025-08-27",
+          "type": "old_testament",
+          "reference": "1 Mga Taga-Tesalonica 2:9-13", 
+          "text": "Naaalala ninyo ang aming pagod at hirap, mga kapatid; nagtrabaho kami gabi at araw, upang hindi maging pabigat sa sinuman sa inyo habang ipinahahayag namin sa inyo ang ebanghelyo ng Diyos. Dahil dito patuloy rin kaming nagpapasalamat sa Diyos na nang tanggapin ninyo ang salita ng Diyos na narinig ninyo sa amin, tinanggap ninyo ito hindi bilang salita ng tao, kundi tulad ng tunay nitong pagkakahulugan, salita ng Diyos, na gumagawa rin sa inyong mga nanampalataya.",
+          "title": "Paglilingkod ni Pablo sa Tesalonica"
+        },
+        {
+          "id": "psalm-2025-08-27",
+          "type": "psalm",
+          "reference": "Awit 139:7-12",
+          "text": "Saan ako makakapunta mula sa inyong espiritu? O saan ako makakatakas mula sa inyong presensya? Kung umaakyat ako sa langit, nandoon kayo; kung ginagawa ko ang aking higaan sa Sheol, nandoon kayo. Kung kinukuha ko ang mga pakpak ng umaga at tumitira sa pinakamalayong hangganan ng dagat, kahit doon ang inyong kamay ay magiging gabay sa akin, at hahawakan ako ng inyong kanang kamay.",
+          "title": "Ang Hindi Matatakasang Diyos"
+        },
+        {
+          "id": "gospel-2025-08-27",
+          "type": "gospel",
+          "reference": "Mateo 23:27-32",
+          "text": "Aba sa inyo, mga eskriba at Pariseo, mga mapagkunware! Sapagkat kayo ay tulad ng mga libingang may kulay na puti, na sa labas ay mukhang magaganda, ngunit sa loob ay puno ng mga buto ng patay at lahat ng uri ng karumihan. Gayon din kayo sa labas ay mukhang matuwid sa mga tao, ngunit sa loob ay puno kayo ng pagkunware at kasamaan.",
+          "title": "Pinuna ni Jesus ang mga Eskriba at Pariseo"
+        }
+      ],
+      "reflection": "Ang mga pagbabasa ngayon ay tumatawag sa amin sa tunay na pananampalataya - hindi lamang panlabas na relihiyosong paggawa, kundi tunay na pagbabago ng puso. Nakikita ng Diyos higit pa sa aming panlabas na hitsura hanggang sa katotohanan ng kung sino tayo.",
+      "language": "tl",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 21,
+        "createdAt": "2025-08-27T00:00:00Z",
+        "updatedAt": "2025-08-27T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-28",
+      "date": "2025-08-28",
+      "title": "Huwebes - Ika-21 na Linggo sa Karaniwang Panahon",
+      "readings": [
+        {
+          "id": "ot-2025-08-28",
+          "type": "old_testament",
+          "reference": "1 Mga Taga-Tesalonica 3:7-13",
+          "text": "Dahil dito, mga kapatid, sa lahat ng aming kahirapan at pag-uusig napanatag kami tungkol sa inyo sa pamamagitan ng inyong pananampalataya. Sapagkat ngayon kami ay nabubuhay, kung kayo ay patuloy na matatag sa Panginoon. Paano namin maipapasalamat nang sapat sa Diyos tungkol sa inyo kapalit ng lahat ng kaligayahan na nararamdaman namin sa harap ng aming Diyos dahil sa inyo?",
+          "title": "Nakalakas na Loob na Ulat ni Timoteo"
+        },
+        {
+          "id": "psalm-2025-08-28", 
+          "type": "psalm",
+          "reference": "Awit 90:3-5a, 12-14, 17",
+          "text": "Binabawi mo ang tao sa alikabok at sinasabi: 'Bumalik kayo, mga mortal.' Sapagkat isang libong taon sa inyong paningin ay tulad ng kahapon na lumipas, o tulad ng isang bantay sa gabi. Kaya turuan ninyo kaming bilangin ang aming mga araw upang makakuha kami ng matalinong puso.",
+          "title": "Kawalang Hanggan ng Diyos at Kahinaan ng Tao"
+        },
+        {
+          "id": "gospel-2025-08-28",
+          "type": "gospel",
+          "reference": "Mateo 24:42-51",
+          "text": "Magbantay kaya, sapagkat hindi ninyo alam kung anong araw darating ang inyong Panginoon. Ngunit unawain ito: kung nalaman ng may-ari ng bahay kung anong oras ng gabi darating ang magnanakaw, siya ay nagbantay at hindi hinayaang pasukin ang kanyang bahay.",
+          "title": "Pangangailangan para sa Pagbabantay"
+        }
+      ],
+      "reflection": "Tinatawag tayo na mabuhay na may mga pusong umasa, handang para sa pagbabalik ni Cristo sa anumang sandali. Hindi ito nangangahulugang masugid na paghihintay, kundi tapat na pamumuhay araw-araw na parang ito ang aming huling pagkakataon na maglingkod.",
+      "language": "tl", 
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 21,
+        "createdAt": "2025-08-28T00:00:00Z",
+        "updatedAt": "2025-08-28T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-29",
+      "date": "2025-08-29",
+      "title": "Biyernes - Ika-21 na Linggo sa Karaniwang Panahon - Ang Hinaing ni San Juan Bautista",
+      "readings": [
+        {
+          "id": "ot-2025-08-29",
+          "type": "old_testament",
+          "reference": "Jeremias 1:17-19",
+          "text": "Ngunit ikaw, magbigkis ng inyong baywang; tumayo at sabihin sa kanila ang lahat na iniuutos ko sa inyo. Huwag kayong matakot sa kanila, o bubuin ko kayo sa harap nila. At ako, sa aking bahagi ay ginawa kong matibay na lungsod ngayong araw, isang haliging bakal, at isang pader na tanso, laban sa buong lupain.",
+          "title": "Pagkakatakda ni Jeremias"
+        },
+        {
+          "id": "psalm-2025-08-29",
+          "type": "psalm",
+          "reference": "Awit 71:1-6, 15ab, 17",
+          "text": "Sa inyo, O Panginoon, ako ay sumasaklaw; huwag ninyong hayaang mapahiya ako. Sa inyong katuwiran ay iligtas at tubusin ninyo ako; ikiling ang inyong tainga sa akin at iligtas ninyo ako. Maging bato para sa akin na takasan, isang matatag na kuta, upang ako ay mailigtas, sapagkat kayo ang aking bato at ang aking kuta.",
+          "title": "Panalangin para sa Habambuhay na Proteksyon at Tulong"
+        },
+        {
+          "id": "gospel-2025-08-29",
+          "type": "gospel",
+          "reference": "Marcos 6:17-29",
+          "text": "Sapagkat si Herodes mismo ang nagpadala ng mga lalaki na hinuli si Juan, ginapos siya, at ipinabilanggo dahil kay Herodias, asawa ng kanyang kapatid na si Felipe, dahil kinuha ni Herodes si Herodias. Sapagkat sinabi ni Juan kay Herodes: 'Hindi kayo may karapatang magkaroon ng asawa ng inyong kapatid.'",
+          "title": "Kamatayan ni Juan Bautista"
+        }
+      ],
+      "reflection": "Ang lakas ng loob ni Juan Bautista sa pagsasabi ng katotohanan, kahit hanggang kamatayan, ay naghahamon sa amin na suriin ang aming sariling pagkakatuon sa katuwiran. Handa ba tayong magsalita para sa kung ano ang tama, anuman ang halaga?",
+      "language": "tl",
+      "metadata": {
+        "liturgicalSeason": "ordinary", 
+        "feast": "Ang Hinaing ni San Juan Bautista",
+        "week": 21,
+        "createdAt": "2025-08-29T00:00:00Z",
+        "updatedAt": "2025-08-29T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-30",
+      "date": "2025-08-30",
+      "title": "Sabado - Ika-21 na Linggo sa Karaniwang Panahon",
+      "readings": [
+        {
+          "id": "ot-2025-08-30",
+          "type": "old_testament",
+          "reference": "1 Mga Taga-Tesalonica 4:9-11",
+          "text": "Ngayon tungkol sa pagmamahal sa mga kapatid, hindi ninyo kailangan na may magsulat sa inyo, sapagkat kayo mismo ay tinuruan ng Diyos na magmahalan; at totoo ngang ginagawa ninyo ito sa lahat ng mga kapatid sa buong Macedonia. Ngunit hinihikayat namin kayo, mga minamahal, na gawin ito nang higit pa.",
+          "title": "Buhay na Nakakalugod sa Diyos"
+        },
+        {
+          "id": "psalm-2025-08-30",
+          "type": "psalm",
+          "reference": "Awit 98:1, 7-9",
+          "text": "Umawit sa Panginoon ng bagong awit, sapagkat gumawa siya ng mga himala. Ang kanyang kanang kamay at ang kanyang banal na braso ay nakakuha sa kanya ng tagumpay. Magngalit ang dagat, at lahat ng laman nito; ang mundo at yaong nakatira dito.",
+          "title": "Purihin ang Hukom ng Mundo"
+        },
+        {
+          "id": "gospel-2025-08-30",
+          "type": "gospel",
+          "reference": "Mateo 25:14-30",
+          "text": "Sapagkat tulad ng isang taong pupunta sa paglalakbay, tinawag ang kanyang mga alipin at ipinagkatiwala sa kanila ang kanyang pag-aari; sa isa ay binigyan niya ng limang talento, sa isa ay dalawa, sa isa ay isa, sa bawat isa ayon sa kanyang kakayahan. Pagkatapos ay umalis siya.",
+          "title": "Talinghaga ng mga Talento"
+        }
+      ],
+      "reflection": "Ang talinghaga ng mga talento ay nagtuturo sa amin na binigyan ng Diyos ang bawat isa sa amin ng mga kaloob at kakayahan upang gamitin para sa kanyang kaluwalhatian. Tinatawag tayo na maging mga tapat na katiwala, gamitin ang ibinigay sa amin upang maglingkod sa iba at isulong ang kaharian ng Diyos.",
+      "language": "tl",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 21,
+        "createdAt": "2025-08-30T00:00:00Z",
+        "updatedAt": "2025-08-30T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-31",
+      "date": "2025-08-31",
+      "title": "Ika-22 na Linggo sa Karaniwang Panahon",
+      "readings": [
+        {
+          "id": "ot-2025-08-31",
+          "type": "old_testament",
+          "reference": "Deuteronomio 4:1-2, 6-8",
+          "text": "Kaya ngayon, Israel, pakinggan ang mga batas at kautusan na itinuro ko sa inyong sundin, upang kayo ay mabuhay at makapasok at maangkin ang lupang ibinibigay sa inyo ng Panginoon, Diyos ng inyong mga ninuno. Hindi ninyo dapat idagdag ang anuman sa iniuutos ko sa inyo o alisin ang anuman dito, ngunit sundin ang mga utos ng Panginoon ninyong Diyos na sinasabi ko sa inyo.",
+          "title": "Iniuutos ni Moises ang Pagsunod"
+        },
+        {
+          "id": "psalm-2025-08-31",
+          "type": "psalm", 
+          "reference": "Awit 15:2-5",
+          "text": "Yaong lumalakad nang walang-kapintasan, at gumagawa ng tama, at nagsasalita ng katotohanan mula sa kanilang puso; na hindi naninira sa kanilang dila, at hindi gumawa ng masama sa kanilang mga kaibigan, ni tumanggap ng sisi laban sa kanilang mga kapitbahay.",
+          "title": "Sino ang Maaaring Manirahan sa Santuwaryo ng Diyos?"
+        },
+        {
+          "id": "nt-2025-08-31",
+          "type": "new_testament",
+          "reference": "Santiago 1:17-18, 21b-22, 27",
+          "text": "Bawat mapagkalingang pagkilos ng pagbibigay, kasama ang bawat perpektong handog, ay mula sa itaas, bumababa mula sa Ama ng mga liwanag, na walang pagkakaiba o anino dahil sa pagbabago. Sa pagtupad ng kanyang sariling layunin ay binigyan niya tayo ng kapanganakan sa pamamagitan ng salita ng katotohanan, upang maging uri tayo ng mga pangunahing bunga ng kanyang mga nilikha.",
+          "title": "Pakikinig at Paggawa ng Salita"
+        },
+        {
+          "id": "gospel-2025-08-31",
+          "type": "gospel",
+          "reference": "Marcos 7:1-8, 14-15, 21-23",
+          "text": "Ngayon nang magtipon-tipon sa kanya ang mga Pariseo at ilang mga eskriba na nagmula sa Jerusalem, napansin nila na ang ilan sa kanyang mga alagad ay kumakain ng tinapay na may mga marumihang kamay, iyon ay, hindi hugasan. Kaya tinanong siya ng mga Pariseo at mga eskriba: 'Bakit ang inyong mga alagad ay hindi nabubuhay ayon sa tradisyon ng mga matatanda, kundi kumakain ng tinapay na may marumihang kamay?'",
+          "title": "Tradisyon ng mga Matatanda"
+        }
+      ],
+      "reflection": "Itinuro ni Jesus sa amin na ang tunay na kadalisayan ay nanggagaling mula sa loob, hindi mula sa panlabas na mga gawain. Mas nababahala ang Diyos sa kalagayan ng aming puso kaysa sa rituwal na kadalisayan. Nawa'y tumuon tayo sa paglinang ng panloob na katuwiran at tunay na pananampalataya.",
+      "language": "tl",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 22,
+        "createdAt": "2025-08-31T00:00:00Z",
+        "updatedAt": "2025-08-31T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-15",
+      "date": "2025-09-15",
+      "title": "Pag-alala ng Aming Birheng Maria ng mga Kalungkutan",
+      "readings": [
+        {
+          "id": "nt-2025-09-15",
+          "type": "new_testament",
+          "reference": "1 Timoteo 2:1-8",
+          "text": "Minamahal: Una sa lahat, hinihiling ko na gumawa ng mga pakiusap, panalangin, pagsasamo, at pagpapasalamat para sa lahat ng tao, para sa mga hari at sa lahat ng nasa kapangyarihan, upang mamuhay tayo ng tahimik at payapang buhay sa buong kabanalan at dungong. Ito ay mabuti at nakalulugod sa Diyos na aming Tagapagligtas, na nais na ang lahat ng tao ay maligtas at makamit ang kaalaman ng katotohanan.",
+          "title": "Panalangin para sa Lahat ng Tao"
+        },
+        {
+          "id": "psalm-2025-09-15",
+          "type": "psalm",
+          "reference": "Awit 28:2, 7, 8-9",
+          "text": "Marinig mo ang tinig ng aking pakiusap, nang ako'y tumawag sa iyo, itinaas ko ang aking mga kamay sa inyong banal na santuaryo. Ang Panginoon ay aking lakas at aking kalasag. Sa kanya nagtitiwala ang aking puso at nakakuha ako ng tulong; kaya nagalak ang aking puso at nagpupuri ako sa kanya sa pamamagitan ng aking awit.",
+          "title": "Pagkakabasbas sa Panginoon"
+        },
+        {
+          "id": "gospel-2025-09-15",
+          "type": "gospel",
+          "reference": "Juan 19:25-27",
+          "text": "Nakatayo sa tabi ng krus ni Jesus ang kanyang ina at ang kapatid ng kanyang ina, si Maria na asawa ni Cleopas, at si Maria Magdalena. Nang makita ni Jesus ang kanyang ina at ang alagad na minamahal niya na nakatayo roon, sinabi niya sa kanyang ina: 'Babae, narito ang inyong anak.' Pagkatapos sinabi niya sa alagad: 'Narito ang inyong ina.' At mula sa oras na iyon ay tinanggap ng alagad siya sa kanyang tahanan.",
+          "title": "Babae, Narito ang Inyong Anak"
+        }
+      ],
+      "reflection": "Ang mga kalungkutan ni Maria ay nagtuturo sa amin tungkol sa lalim ng pagmamahal ng isang ina at ang halaga ng pagiging alagad. Habang siya ay nakatayo sa tabi ng krus, nagtuturo siya sa amin na manatiling tapat kahit sa aming pinakamadilim na mga sandali, nagtitiwala sa mas dakilang plano ng Diyos.",
+      "language": "tl",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 24,
+        "createdAt": "2025-09-15T00:00:00Z",
+        "updatedAt": "2025-09-15T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-10-31",
+      "date": "2025-10-31",
+      "title": "Biyernes ng Ika-31 na Linggo sa Karaniwang Panahon",
+      "readings": [
+        {
+          "id": "nt-2025-10-31",
+          "type": "new_testament",
+          "reference": "Roma 9:1-5",
+          "text": "Mga kapatid: Nagsasalita ako ng katotohanan kay Cristo, hindi ako nagsisinungaling; sumaksi sa akin ang aking konsensya sa pamamagitan ng Banal na Espiritu na may malaking kalungkutan ako at patuloy na kalabisan sa aking puso. Sapagkat nais ko na ako mismo ay maging sinumpa at mahiwalay kay Cristo para sa kapakanan ng aking mga kababayan, ng aking mga kamag-anak ayon sa laman.",
+          "title": "Pagpili ng Diyos sa Israel"
+        },
+        {
+          "id": "psalm-2025-10-31",
+          "type": "psalm",
+          "reference": "Awit 147:12-13, 14-15, 19-20",
+          "text": "Purihin mo ang Panginoon, O Jerusalem; purihin mo ang inyong Diyos, O Sion. Sapagkat pinalakas niya ang mga baras ng inyong mga tarangkahan; pinagpala niya ang inyong mga anak sa loob ninyo. Nagbigay siya ng kapayapaan sa inyong mga hangganan; pinunuan kayo ng pinakamahusay na trigo.",
+          "title": "Mapagpasalamat na Pagpupuri ng Sion sa Kanyang Mapagbigay na Panginoon"
+        },
+        {
+          "id": "gospel-2025-10-31",
+          "type": "gospel",
+          "reference": "Lucas 14:1-6",
+          "text": "Sa isang araw ng pamamahinga, nagtungo si Jesus para kumain sa bahay ng isa sa mga nangunguna sa mga Pariseo, at ang mga taong naroon ay pinagmamasdan siya nang maingat. Sa harap niya ay may isang taong may sakit na manas. Nagsalita si Jesus sa mga dalubhasa sa kautusan at mga Pariseo, na nagtanong: 'Makatarungan ba ang magpagaling sa araw ng pamamahinga o hindi?' Ngunit nanahimik sila; kaya kinuha niya ang lalaki at, pagkatapos niyang mapagaling, pinayaon niya.",
+          "title": "Pagpapagaling sa Taong May Manas"
+        }
+      ],
+      "reflection": "Habang papalapit tayo sa Araw ng Lahat ng Banal, pinagninilay natin ang malalim na pagmamahal ni Pablo sa kanyang bayan at ang awa ni Jesus sa mga nagdudusa. Ang tunay na kabanalan ay nagpapakita sa tunay na pag-alaga sa iba, lalo na kapag hahamon nito ang aming mga pangunahing paniniwala.",
+      "language": "tl",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 31,
+        "createdAt": "2025-10-31T00:00:00Z",
+        "updatedAt": "2025-10-31T00:00:00Z"
+      }
+    }
+  ]
+}

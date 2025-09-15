@@ -1,0 +1,397 @@
+{
+  "readings": [
+    {
+      "id": "2025-08-01",
+      "date": "2025-08-01",
+      "title": "Reede 18. nädal tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "Lev 23:1, 4-11, 15-16, 27, 34b-37",
+          "title": "Leviticus raamat",
+          "text": "Issand ütles Moosesele: Need on Issanda tähtpäevad, püha koguduse päevad, mida te peate väljakuulutama oma määratud aegadel..."
+        },
+        "psalm": {
+          "reference": "Ps 81:3-4, 5-6, 10-11ab",
+          "title": "Psalm 81",
+          "text": "Võtke laul ja lööge trummi, mängige imelise häälega kannelt koos lüüriga..."
+        },
+        "gospel": {
+          "reference": "Mt 13:54-58",
+          "title": "Matteuse evangeelium",
+          "text": "Jeesus tuli oma kodulinna ja õpetas neid sünagoogis..."
+        }
+      },
+      "reflection": "Täna meenutame, et Jumal tuleb meie juurde tavalistel viisidel ja tavalistest kohtadest.",
+      "prayer": "Issand, aita meil sind ära tunda nii tuttavates kui ka ootamatutes kohtades.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-02",
+      "date": "2025-08-02",
+      "title": "Laupäev 18. nädal tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "Lev 25:1, 8-17",
+          "title": "Leviticus raamat",
+          "text": "Issand ütles Moosesele Siinai mäel: Loenda seitse sabatiaasta..."
+        },
+        "psalm": {
+          "reference": "Ps 67:2-3, 5, 7-8",
+          "title": "Psalm 67",
+          "text": "Jumal olgu meile armuline ja õnnistagu meid..."
+        },
+        "gospel": {
+          "reference": "Mt 14:1-12",
+          "title": "Matteuse evangeelium",
+          "text": "Sel ajal kuulis Herodes Jeesuse kuulsusest..."
+        }
+      },
+      "reflection": "Mõtisklegem täna õigluse ja vabaduse tähtsuse üle meie elus ja ühiskonnas.",
+      "prayer": "Jumal, anna meile julgust seista õigluse eest ja olla vabad sinu armust.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-03",
+      "date": "2025-08-03",
+      "title": "19. pühapäev tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 19,
+      "readings": {
+        "first": {
+          "reference": "1Kn 19:9a, 11-13a",
+          "title": "Esimene Kuningate raamat",
+          "text": "Eelija jõudis Jumala mäele Hoorebile..."
+        },
+        "psalm": {
+          "reference": "Ps 85:9, 10, 11-12, 13-14",
+          "title": "Psalm 85",
+          "text": "Kuulan, mida räägib Jumal Issand..."
+        },
+        "second": {
+          "reference": "Rm 9:1-5",
+          "title": "Roomlastele kiri",
+          "text": "Ütlen tõtt Kristuses, ei valeta..."
+        },
+        "gospel": {
+          "reference": "Mt 14:22-33",
+          "title": "Matteuse evangeelium",
+          "text": "Pärast rahva toitmist sundis Jeesus jüngreid paati minema..."
+        }
+      },
+      "reflection": "Jumal tuleb meie juurde vaikuses ja rahulikult. Kuulame tema häält meie südames.",
+      "prayer": "Issand Jeesus, anna meile usku, et astuda veele ja tulla sinu juurde.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-04",
+      "date": "2025-08-04",
+      "title": "Esmaspäev 18. nädal tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "Nm 11:4b-15",
+          "title": "Numbriraamat",
+          "text": "Iisraeli lapsed nutaksid jälle ja ütlesid: 'Kui meil oleks liha süüa!'"
+        },
+        "psalm": {
+          "reference": "Ps 81:12-13, 14-15, 16-17",
+          "title": "Psalm 81",
+          "text": "Mu rahvas ei kuulanud mu häält, Iisrael ei olnud mulle kuulekas..."
+        },
+        "gospel": {
+          "reference": "Mt 14:13-21",
+          "title": "Matteuse evangeelium",
+          "text": "Kui Jeesus kuulis Ristija Johannese surmast, läks ta paadiga..."
+        }
+      },
+      "reflection": "Jeesus näitab meile, et Jumal varustab meie vajadusi, nii füüsilisi kui vaimseid.",
+      "prayer": "Issand, aita meil usaldada sinu hoolitsust ja jagada heldelt teistega.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-05",
+      "date": "2025-08-05",
+      "title": "Teisipäev 18. nädal tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "Nm 12:1-13",
+          "title": "Numbriraamat",
+          "text": "Mirjam ja Aaron rääkisid Moosese vastu selle naise pärast, kelle ta oli võtnud..."
+        },
+        "psalm": {
+          "reference": "Ps 51:3-4, 5-6ab, 6cd-7, 12-13",
+          "title": "Psalm 51",
+          "text": "Halasta mulle, Jumal, oma helduse pärast..."
+        },
+        "gospel": {
+          "reference": "Mt 14:22-36",
+          "title": "Matteuse evangeelium",
+          "text": "Siis sundis ta jüngreid paati minema ja ette sõitma teisele kaldale..."
+        }
+      },
+      "reflection": "Õpime alandlikkusest ja ohtudest, mis kaasnevad Jumala valitute vastu rääkimisega.",
+      "prayer": "Jumal, hoia meid alandlikuna ja aita meil rääkida sõnu, mis ehitavad, mitte ei lõhu.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-06",
+      "date": "2025-08-06",
+      "title": "Issanda Muutmise püha",
+      "season": "feast",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "Dn 7:9-10, 13-14",
+          "title": "Taanieli raamat",
+          "text": "Kui ma vaatasin: troonid asetati paika ja Igipõline võttis oma trooni."
+        },
+        "psalm": {
+          "reference": "Ps 97:1-2, 5-6, 9",
+          "title": "Psalm 97",
+          "text": "ISSAND on kuningas; rõõmustagu maa; olgu rõõmsad paljud saared!"
+        },
+        "second": {
+          "reference": "2 Pt 1:16-19",
+          "title": "Peetruse teine kiri",
+          "text": "Me ei ole ju järginud nutikalt väljamõeldud muistendeid."
+        },
+        "gospel": {
+          "reference": "Mt 17:1-9",
+          "title": "Matteuse evangeelium",
+          "text": "Jeesus võttis Peetruse, Jaakobuse ja tema venna Johannese ning viis nad üksi kõrgele mäele."
+        }
+      },
+      "reflection": "Muutmise pühal näeme Jeesust ilmutamas oma jumalikku kirkust oma lähimatele jüngritele.",
+      "prayer": "Issand Jeesus, muutke meie südamed, et me peegeldaksime teie kirkust teistele.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-07",
+      "date": "2025-08-07",
+      "title": "Neljapäev 18. nädal tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "Nm 20:1-13",
+          "title": "Numbriraamat",
+          "text": "Kogu Iisraeli kogudus jõudis Siini kõrbesse esimesel kuul."
+        },
+        "psalm": {
+          "reference": "Ps 95:1-2, 6-7, 8-9",
+          "title": "Psalm 95",
+          "text": "Tulge, laulame rõõmuga ISSANDale; hõisakame rõõmuga oma pääste kaljule."
+        },
+        "gospel": {
+          "reference": "Mt 16:13-23",
+          "title": "Matteuse evangeelium",
+          "text": "Kui Jeesus jõudis Kaisaarea Filippise piirkonda, küsis ta oma jüngritelt."
+        }
+      },
+      "reflection": "Peetruse usutunnistus näitab nii inimlikku mõistmist kui ka jumalikku ilmutust.",
+      "prayer": "Issand, nagu Peetrus, aita meil tunda teid kui elava Jumala Poega.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-08",
+      "date": "2025-08-08",
+      "title": "Reede 18. nädal tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 18,
+      "readings": {
+        "first": {
+          "reference": "5Ms 4:32-40",
+          "title": "Viienda Moosese raamat",
+          "text": "Küsige nüüd endiste päevade kohta, enne teie aega."
+        },
+        "psalm": {
+          "reference": "Ps 77:12-13, 14-15, 16 ja 21",
+          "title": "Psalm 77",
+          "text": "Ma mäletan ISSANDA tegusid; jah, ma mäletan teie endisi imesid."
+        },
+        "gospel": {
+          "reference": "Mt 16:24-28",
+          "title": "Matteuse evangeelium",
+          "text": "Siis ütles Jeesus oma jüngritele: 'Kes tahab minu järel käia, see salaku iseennast.'"
+        }
+      },
+      "reflection": "Jeesus õpetab meile jüngerluse hinda: enesetehistamine ja oma risti kandmine.",
+      "prayer": "Jeesus, andke meile armu võtta üles oma igapäevane rist ja järgneda teile.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-28",
+      "date": "2025-08-28",
+      "title": "Neljapäev 21. nädal tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 21,
+      "readings": {
+        "first": {
+          "reference": "Valitud salmid",
+          "title": "Valvel püsimine",
+          "text": "Ärgem muutugem loiuks, vaid olgem valvsad ja kindlad, julgustades üksteist ja käies Issanda valguses."
+        },
+        "psalm": {
+          "reference": "Valitud salmid",
+          "title": "Usalduse psalm",
+          "text": "Õndsad on need, kes otsivad Issandat; tema on meie abi ja kilp ning tema sõna on igavesti ustav."
+        },
+        "gospel": {
+          "reference": "Mt 24:42-51",
+          "title": "Matteuse evangeelium",
+          "text": "Jeesus kutsub jüngreid valvama ja valmis olema nagu ustavad sulased, kes teevad oma tööd kuni isanda tagasitulekuni."
+        }
+      },
+      "reflection": "Kristlik valvsus pole ärevus, vaid ustav kohalolu—teha väikseid asju armastusega, oodates Issandat.",
+      "prayer": "Issand, hoia meie südamed ärksana sinu tahtele. Tee meid ustavaks väikestes asjades ja valmis sind vastu võtma igal tunnil.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-29",
+      "date": "2025-08-29",
+      "title": "Reede 21. nädal tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 21,
+      "readings": {
+        "first": {
+          "reference": "Valitud salmid",
+          "title": "Kutse pühadusele",
+          "text": "Jumal kutsub meid elama pühaduses ja armastuses, mida kinnitab lootus ja meis tegutsev Vaim."
+        },
+        "psalm": {
+          "reference": "Valitud salmid",
+          "title": "Tarkuse psalm",
+          "text": "Õpeta meid meie päevi arvestama, et me leiaksime targa südame ja käiksime sinu teedel."
+        },
+        "gospel": {
+          "reference": "Mt 25:1-13",
+          "title": "Matteuse evangeelium",
+          "text": "Kümne neitsi tähendamissõna kutsub hoidma usu lampi põlemas, valmis Peigmeest vastu võtma."
+        }
+      },
+      "reflection": "Valmidus kujuneb igapäevaste valikute kaudu. Õli lambi jaoks kogutakse palve, halastuse ja kuulekuse läbi—harjumused, mis hoiavad armastuse elus.",
+      "prayer": "Jeesus, süüta meis valvas armastus. Täida meie südamed palve ja halastuse õliga, et me kohtaksime sind rõõmuga.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-30",
+      "date": "2025-08-30",
+      "title": "Laupäev 21. nädal tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 21,
+      "readings": {
+        "first": {
+          "reference": "Valitud salmid",
+          "title": "And ja vastutus",
+          "text": "See, mis me oleme saanud, on meile usaldatud, et ehitada üles teisi. Igal andil on eesmärk ja selle eest antakse aru."
+        },
+        "psalm": {
+          "reference": "Valitud salmid",
+          "title": "Kiituselaul",
+          "text": "Laulge Issandale uus laul; jutustage tema au rahvaste seas, sest Issand on suur ja väga kiitust väärt."
+        },
+        "gospel": {
+          "reference": "Mt 25:14-30",
+          "title": "Matteuse evangeelium",
+          "text": "Talentide tähendamissõnas usaldab isand oma vara sulaste hoolde ja kutsub neid ustavalt tegutsema kuni tema tagasitulekuni."
+        }
+      },
+      "reflection": "Jumal rõõmustab, kui me kasutame julgelt armastust nendega andidega, mis oleme saanud. Hirmust aarete matmine lämmatab elu, mida Jumal tahab meie kaudu kasvatada.",
+      "prayer": "Isa, anna meile julgust kasutada oma ande julgesti sinu kuningriigi heaks. Vabasta meid hirmust ja tee meie elu viljakaks armastuses.",
+      "language": "et"
+    },
+    {
+      "id": "2025-08-31",
+      "date": "2025-08-31",
+      "title": "22. pühapäev tavalisel ajal",
+      "season": "ordinary_time",
+      "week": 22,
+      "readings": {
+        "first": {
+          "reference": "Valitud salmid",
+          "title": "Kutse ustavale sõnakuulmisele",
+          "text": "Hoidke Issanda teid laitmatult; ärge lisage tema sõnale ega jätke tähele panemata tema käske, sest elu leitakse koos temaga käies."
+        },
+        "psalm": {
+          "reference": "Ps 15 (valik)",
+          "title": "Psalm 15",
+          "text": "Kes võib elada sinu pühal mäel? See, kes käib laitmatult, räägib tõtt ja teeb, mis on õige."
+        },
+        "second": {
+          "reference": "Valitud salmid",
+          "title": "Olge sõna tegijad",
+          "text": "Võtke tasadusega vastu istutatud sõna; olge tegijad, mitte üksnes kuuljad, ning hoidke end rikutusest puhtana."
+        },
+        "gospel": {
+          "reference": "Mk 7:1-8, 14-15, 21-23",
+          "title": "Markuse evangeelium",
+          "text": "Jeesus õpetab, et tõeline rüvetus ei tule väljast, vaid südamest; Jumal ihaldab armastuses juurdunud südant, mitte tühje traditsioone."
+        }
+      },
+      "reflection": "Jumal igatseb eelkõige puhast südant, mitte vaid laitmatuid käsi. Kui armastus kujundab meie valikuid, saavad praktikad õige mõtte ja meie jumalateenistus toob elu.",
+      "prayer": "Loo meis, Jumal, puhas süda. Puhasta meie motiivid ja tee meie elust tõeline armastuse ja halastuse ohver.",
+      "language": "et"
+    },
+    {
+      "id": "2025-09-15",
+      "date": "2025-09-15",
+      "title": "Kibeduste Jumalaema mälestuspäev",
+      "season": "ordinary_time",
+      "week": 24,
+      "readings": {
+        "first": {
+          "reference": "1 Tim 2:1-8",
+          "title": "Esimene kiri Timoteosele",
+          "text": "Armas: Esmalt küsin, et palved, anumised, esipalved ja tänuavaldused tehakse kõigi inimeste heaks, kuningate ja kõigi võimukandjate heaks."
+        },
+        "psalm": {
+          "reference": "Ps 28:2, 7, 8-9",
+          "title": "Psalm 28",
+          "text": "Kuule mu anumise häält, kui ma sinule hüüan, tõstes oma käed su püha koha poole. Issand on mu jõud ja mu kilp."
+        },
+        "gospel": {
+          "reference": "Jn 19:25-27",
+          "title": "Johannese evangeelium",
+          "text": "Jeesuse risti juures seisid tema ema ja tema ema õde, Maarja, Kleopase naine, ja Maarja Magdaleena. Kui Jeesus nägi oma ema ja jüngrit, keda ta armastas, ütles ta oma emale: 'Naine, vaata, sinu poeg.'"
+        }
+      },
+      "reflection": "Maarja kibedused õpetavad meile ema armastuse sügavusest ja jüngerluse hinnast. Kui ta seisis risti juures, õpetab ta meid jääma ustavaks ka meie kõige pimedamatel hetkedel.",
+      "prayer": "Maarja, Kibeduste Ema, õpeta meid jääma ustavaks Jeesusele isegi siis, kui tema järgnemine viib meid risti juurde.",
+      "language": "et"
+    },
+    {
+      "id": "2025-10-31",
+      "date": "2025-10-31",
+      "title": "31. nädala reede tavalises ajas",
+      "season": "ordinary_time",
+      "week": 31,
+      "readings": {
+        "first": {
+          "reference": "Rom 9:1-5",
+          "title": "Roomlaste kiri",
+          "text": "Vennad ja õed: Ma räägin tõtt Kristuses, ma ei valeta; mu südametunnistus kinnitab mulle Püha Vaimu läbi, et mul on suur kurbus ja lakkamatu valu südames."
+        },
+        "psalm": {
+          "reference": "Ps 147:12-13, 14-15, 19-20",
+          "title": "Psalm 147",
+          "text": "Kiida Issandat, oh Jeruusalemm; kiida oma Jumalat, oh Siion. Sest ta on tugevdanud sinu väravate lukke; ta on õnnistanud sinu lapsi sinu sees."
+        },
+        "gospel": {
+          "reference": "Lk 14:1-6",
+          "title": "Luuka evangeelium",
+          "text": "Hingamispäeval läks Jeesus sööma ühe juhtiva variseri majja, ja seal olijad jälgisid teda tähelepanelikult. Siis ütles ta neile: 'Kes teist ei tõmbaks kohe välja oma poja või härja, kui see langeks kaevusse hingamispäeval?'"
+        }
+      },
+      "reflection": "Kui me läheneme Kõigi Pühade päevale, mõtleme Pauluse sügavale armastusele oma rahva vastu ja Jeesuse kaastundele kannatajate suhtes. Tõeline pühadus näitab ennast tõelises hoolitsuses teiste eest.",
+      "prayer": "Issand, kui me valmistume Kõigi Pühade päeva tähistamiseks, aita meil järgida nende eeskuju armastuses ja teenistuses oma ligimeste vastu.",
+      "language": "et"
+    }
+  ]
+}

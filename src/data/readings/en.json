@@ -1,0 +1,1307 @@
+{
+  "readings": [
+    {
+      "id": "2025-08-01",
+      "date": "2025-08-01",
+      "title": "Friday - 17th Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-08-01",
+          "type": "old_testament",
+          "reference": "Leviticus 23:1, 4-11, 15-16, 27, 34b-37",
+          "text": "The Lord spoke to Moses, saying: These are the appointed festivals of the Lord that you shall proclaim as holy convocations, my appointed festivals. On the tenth day of this seventh month is the day of atonement; it shall be a holy convocation for you.",
+          "title": "The Appointed Festivals"
+        },
+        {
+          "id": "psalm-2025-08-01", 
+          "type": "psalm",
+          "reference": "Psalm 81:3-4, 5-6, 10-11ab",
+          "text": "Blow the trumpet at the new moon, at the full moon, on our festal day. For it is a statute for Israel, an ordinance of the God of Jacob. Hear, O my people, while I admonish you; O Israel, if you would but listen to me!",
+          "title": "God's Appeal to Stubborn Israel"
+        },
+        {
+          "id": "gospel-2025-08-01",
+          "type": "gospel", 
+          "reference": "Matthew 13:54-58",
+          "text": "Jesus came to his hometown and began to teach the people in their synagogue, so that they were astounded and said, 'Where did this man get this wisdom and these deeds of power?' And he did not do many deeds of power there, because of their unbelief.",
+          "title": "The Rejection at Nazareth"
+        }
+      ],
+      "reflection": "Even Jesus faced rejection in his hometown. Sometimes familiarity breeds contempt, and people cannot see the extraordinary in the ordinary. May we have eyes to see God's presence in the familiar places and people of our lives.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 17,
+        "createdAt": "2025-08-01T00:00:00Z",
+        "updatedAt": "2025-08-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-02",
+      "date": "2025-08-02", 
+      "title": "Saturday - 17th Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-08-02",
+          "type": "old_testament",
+          "reference": "Leviticus 25:1, 8-17",
+          "text": "The Lord spoke to Moses on Mount Sinai, saying: You shall count off seven weeks of years, seven times seven years, so that the period of seven weeks of years gives forty-nine years. Then you shall have the trumpet sounded loud; on the tenth day of the seventh month you shall have the trumpet sounded throughout all your land.",
+          "title": "The Year of Jubilee"
+        },
+        {
+          "id": "psalm-2025-08-02",
+          "type": "psalm", 
+          "reference": "Psalm 67:2-3, 5, 7-8",
+          "text": "May God be gracious to us and bless us and make his face to shine upon us, that your way may be known upon earth, your saving power among all nations. Let the peoples praise you, O God; let all the peoples praise you.",
+          "title": "The Nations Called to Praise God"
+        },
+        {
+          "id": "gospel-2025-08-02",
+          "type": "gospel",
+          "reference": "Matthew 14:1-12", 
+          "text": "At that time Herod the ruler heard reports about Jesus; and he said to his servants, 'This is John the Baptist; he has been raised from the dead, and for this reason these powers are at work in him.' For Herod had arrested John, bound him, and put him in prison on account of Herodias, his brother Philip's wife.",
+          "title": "The Death of John the Baptist"
+        }
+      ],
+      "reflection": "John the Baptist's martyrdom reminds us that speaking truth to power often comes at great cost. May we have the courage to stand for righteousness, even when it is difficult.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 17,
+        "createdAt": "2025-08-02T00:00:00Z",
+        "updatedAt": "2025-08-02T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-03",
+      "date": "2025-08-03",
+      "title": "18th Sunday in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-08-03",
+          "type": "old_testament", 
+          "reference": "Exodus 16:2-4, 12-15",
+          "text": "The whole congregation of the Israelites complained against Moses and Aaron in the wilderness. The Israelites said to them, 'If only we had died by the hand of the Lord in the land of Egypt, when we sat by the fleshpots and ate our fill of bread; for you have brought us out into this wilderness to kill this whole assembly with hunger.'",
+          "title": "Bread from Heaven"
+        },
+        {
+          "id": "psalm-2025-08-03",
+          "type": "psalm",
+          "reference": "Psalm 78:3-4, 23-24, 25, 54",
+          "text": "Things that we have heard and known, that our ancestors have told us. We will not hide them from their children; we will tell to the coming generation the glorious deeds of the Lord, and his might, and the wonders that he has done.",
+          "title": "God's Goodness and Israel's Ingratitude"
+        },
+        {
+          "id": "nt-2025-08-03",
+          "type": "new_testament",
+          "reference": "Ephesians 4:17, 20-24",
+          "text": "Now this I affirm and insist on in the Lord: you must no longer live as the Gentiles live, in the futility of their minds. That is not the way you learned Christ! For you were taught to put away your former way of life, your old self, corrupt and deluded by its lusts.",
+          "title": "The Old Life and the New"
+        },
+        {
+          "id": "gospel-2025-08-03",
+          "type": "gospel",
+          "reference": "John 6:24-35",
+          "text": "So when the crowd saw that neither Jesus nor his disciples were there, they themselves got into the boats and went to Capernaum looking for Jesus. When they found him on the other side of the sea, they said to him, 'Rabbi, when did you come here?' Jesus answered them, 'Very truly, I tell you, you are looking for me, not because you saw signs, but because you ate your fill of the loaves.'",
+          "title": "Jesus the Bread of Life"
+        }
+      ],
+      "reflection": "Jesus reveals himself as the bread of life, the true nourishment for our souls. While we often seek God for what he can give us, he calls us to seek him for who he is - the source of eternal life and meaning.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 18,
+        "createdAt": "2025-08-03T00:00:00Z",
+        "updatedAt": "2025-08-03T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-04",
+      "date": "2025-08-04",
+      "title": "Memorial of Saint John Vianney, Priest",
+      "readings": [
+        {
+          "id": "nt-2025-08-04",
+          "type": "new_testament",
+          "reference": "1 Thessalonians 2:1-8",
+          "text": "You yourselves know, brothers and sisters, that our coming to you was not without effect. Rather, after we had suffered and been insolently treated, as you know, in Philippi, we drew courage through our God to speak to you the Gospel of God with much struggle.",
+          "title": "Paul's Ministry in Thessalonica"
+        },
+        {
+          "id": "psalm-2025-08-04",
+          "type": "psalm",
+          "reference": "Psalm 139:1-3, 4-6",
+          "text": "O LORD, you have probed me and you know me; you know when I sit and when I stand; you understand my thoughts from afar. My journeys and my rest you scrutinize, with all my ways you are familiar.",
+          "title": "The All-knowing and Ever-present God"
+        },
+        {
+          "id": "gospel-2025-08-04",
+          "type": "gospel",
+          "reference": "Matthew 23:8-12",
+          "text": "As for you, do not be called 'Rabbi.' You have but one teacher, and you are all brothers. Call no one on earth your father; you have but one Father in heaven. Do not be called 'Master'; you have but one master, the Christ.",
+          "title": "Against Ostentation"
+        }
+      ],
+      "reflection": "Saint John Vianney, the Curé of Ars, shows us that true greatness comes through humble service. Like him, we are called to be servants of one another, not seeking titles or recognition, but following Christ's example of humility.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 18,
+        "createdAt": "2025-08-04T00:00:00Z",
+        "updatedAt": "2025-08-04T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-05",
+      "date": "2025-08-05",
+      "title": "Tuesday of the Eighteenth Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "nt-2025-08-05",
+          "type": "new_testament",
+          "reference": "1 Thessalonians 2:9-13",
+          "text": "You recall, brothers and sisters, our toil and drudgery. Working night and day in order not to burden any of you, we proclaimed to you the Gospel of God. You are witnesses, and so is God, how devoutly and justly and blamelessly we behaved toward you believers.",
+          "title": "Paul's Example and Teaching"
+        },
+        {
+          "id": "psalm-2025-08-05",
+          "type": "psalm",
+          "reference": "Psalm 139:7-8, 9-10, 11-12ab",
+          "text": "Where can I go from your spirit? From your presence where can I flee? If I go up to the heavens, you are there; if I sink to the nether world, you are present there.",
+          "title": "The All-knowing and Ever-present God"
+        },
+        {
+          "id": "gospel-2025-08-05",
+          "type": "gospel",
+          "reference": "Matthew 23:23-26",
+          "text": "Woe to you, scribes and Pharisees, you hypocrites. You pay tithes of mint and dill and cummin, and have neglected the weightier things of the law: judgment and mercy and fidelity.",
+          "title": "Denunciation of the Scribes and Pharisees"
+        }
+      ],
+      "reflection": "Jesus reminds us that God looks at the heart, not just external observances. True religion involves justice, mercy, and faithfulness - the weightier matters that transform our relationship with God and others.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 18,
+        "createdAt": "2025-08-05T00:00:00Z",
+        "updatedAt": "2025-08-05T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-06",
+      "date": "2025-08-06",
+      "title": "Feast of the Transfiguration of the Lord",
+      "readings": [
+        {
+          "id": "ot-2025-08-06",
+          "type": "old_testament",
+          "reference": "Daniel 7:9-10, 13-14",
+          "text": "As I watched: Thrones were set up and the Ancient One took his throne. His clothing was snow bright, and the hair on his head as white as wool; his throne was flames of fire, with wheels of burning fire.",
+          "title": "Vision of the Son of Man"
+        },
+        {
+          "id": "psalm-2025-08-06",
+          "type": "psalm",
+          "reference": "Psalm 97:1-2, 5-6, 9",
+          "text": "The LORD is king; let the earth rejoice; let the many isles be glad. Clouds and darkness are round about him, justice and judgment are the foundation of his throne.",
+          "title": "The Divine Ruler of All"
+        },
+        {
+          "id": "nt-2025-08-06",
+          "type": "new_testament",
+          "reference": "2 Peter 1:16-19",
+          "text": "We did not follow cleverly devised myths when we made known to you the power and coming of our Lord Jesus Christ, but we had been eyewitnesses of his majesty.",
+          "title": "Apostolic Witness"
+        },
+        {
+          "id": "gospel-2025-08-06",
+          "type": "gospel",
+          "reference": "Matthew 17:1-9",
+          "text": "Jesus took Peter, James, and John his brother, and led them up a high mountain by themselves. And he was transfigured before them; his face shone like the sun and his clothes became white as light.",
+          "title": "The Transfiguration"
+        }
+      ],
+      "reflection": "In the Transfiguration, we glimpse the glory that Jesus shares with the Father. This feast reminds us that we too are called to be transformed, to let the light of Christ shine through us in our daily lives.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "feast",
+        "week": 18,
+        "createdAt": "2025-08-06T00:00:00Z",
+        "updatedAt": "2025-08-06T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-27",
+      "date": "2025-08-27",
+      "title": "Wednesday - 21st Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-08-27",
+          "type": "old_testament",
+          "reference": "1 Thessalonians 2:9-13", 
+          "text": "You remember our labor and toil, brothers and sisters; we worked night and day, so that we might not burden any of you while we proclaimed to you the gospel of God. For this reason we also constantly thank God that when you received the word of God that you heard from us, you accepted it not as a human word but as what it really is, God's word, which is also at work in you believers.",
+          "title": "Paul's Ministry in Thessalonica"
+        },
+        {
+          "id": "psalm-2025-08-27",
+          "type": "psalm",
+          "reference": "Psalm 139:7-12",
+          "text": "Where can I go from your spirit? Or where can I flee from your presence? If I ascend to heaven, you are there; if I make my bed in Sheol, you are there. If I take the wings of the morning and settle at the farthest limits of the sea, even there your hand shall lead me, and your right hand shall hold me fast.",
+          "title": "The Inescapable God"
+        },
+        {
+          "id": "gospel-2025-08-27",
+          "type": "gospel",
+          "reference": "Matthew 23:27-32",
+          "text": "Woe to you, scribes and Pharisees, hypocrites! For you are like whitewashed tombs, which on the outside look beautiful, but inside they are full of the bones of the dead and of all kinds of filth. So you also on the outside look righteous to others, but inside you are full of hypocrisy and lawlessness.",
+          "title": "Jesus Denounces Scribes and Pharisees"
+        }
+      ],
+      "reflection": "Today's readings call us to authentic faith - not merely external religious observance, but genuine transformation of the heart. God sees beyond our outward appearance to the truth of who we are.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 21,
+        "createdAt": "2025-08-27T00:00:00Z",
+        "updatedAt": "2025-08-27T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-28",
+      "date": "2025-08-28",
+      "title": "Thursday - 21st Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-08-28",
+          "type": "old_testament",
+          "reference": "1 Thessalonians 3:7-13",
+          "text": "For this reason, brothers and sisters, during all our distress and persecution we have been encouraged about you through your faith. For we now live, if you continue to stand firm in the Lord. How can we thank God enough for you in return for all the joy that we feel before our God because of you?",
+          "title": "Timothy's Encouraging Report"
+        },
+        {
+          "id": "psalm-2025-08-28", 
+          "type": "psalm",
+          "reference": "Psalm 90:3-5a, 12-14, 17",
+          "text": "You turn us back to dust, and say, 'Turn back, you mortals.' For a thousand years in your sight are like yesterday when it is past, or like a watch in the night. So teach us to count our days that we may gain a wise heart.",
+          "title": "God's Eternity and Human Frailty"
+        },
+        {
+          "id": "gospel-2025-08-28",
+          "type": "gospel",
+          "reference": "Matthew 24:42-51",
+          "text": "Keep awake therefore, for you do not know on what day your Lord is coming. But understand this: if the owner of the house had known in what part of the night the thief was coming, he would have stayed awake and would not have let his house be broken into.",
+          "title": "The Necessity for Watchfulness"
+        }
+      ],
+      "reflection": "We are called to live with expectant hearts, ready for Christ's return at any moment. This doesn't mean anxious waiting, but faithful living each day as if it were our last opportunity to serve.",
+      "language": "en", 
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 21,
+        "createdAt": "2025-08-28T00:00:00Z",
+        "updatedAt": "2025-08-28T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-29",
+      "date": "2025-08-29",
+      "title": "Friday - 21st Week in Ordinary Time - The Passion of St. John the Baptist",
+      "readings": [
+        {
+          "id": "ot-2025-08-29",
+          "type": "old_testament",
+          "reference": "Jeremiah 1:17-19",
+          "text": "But you, gird up your loins; stand up and tell them everything that I command you. Do not break down before them, or I will break you before them. And I for my part have made you today a fortified city, an iron pillar, and a bronze wall, against the whole land.",
+          "title": "Jeremiah's Commission"
+        },
+        {
+          "id": "psalm-2025-08-29",
+          "type": "psalm",
+          "reference": "Psalm 71:1-6, 15ab, 17",
+          "text": "In you, O Lord, I take refuge; let me never be put to shame. In your righteousness deliver me and rescue me; incline your ear to me and save me. Be to me a rock of refuge, a strong fortress, to save me, for you are my rock and my fortress.",
+          "title": "Prayer for Lifelong Protection and Help"
+        },
+        {
+          "id": "gospel-2025-08-29",
+          "type": "gospel",
+          "reference": "Mark 6:17-29",
+          "text": "For Herod himself had sent men who arrested John, bound him, and put him in prison on account of Herodias, his brother Philip's wife, because Herod had married her. For John had been telling Herod, 'It is not lawful for you to have your brother's wife.'",
+          "title": "The Death of John the Baptist"
+        }
+      ],
+      "reflection": "John the Baptist's courage in speaking truth, even unto death, challenges us to examine our own commitment to righteousness. Are we willing to speak up for what is right, regardless of the cost?",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary", 
+        "feast": "The Passion of St. John the Baptist",
+        "week": 21,
+        "createdAt": "2025-08-29T00:00:00Z",
+        "updatedAt": "2025-08-29T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-30",
+      "date": "2025-08-30",
+      "title": "Saturday - 21st Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-08-30",
+          "type": "old_testament",
+          "reference": "1 Thessalonians 4:9-11",
+          "text": "Now concerning love of the brothers and sisters, you do not need to have anyone write to you, for you yourselves have been taught by God to love one another; and indeed you do love all the brothers and sisters throughout Macedonia. But we urge you, beloved, to do so more and more.",
+          "title": "A Life Pleasing to God"
+        },
+        {
+          "id": "psalm-2025-08-30",
+          "type": "psalm",
+          "reference": "Psalm 98:1, 7-9",
+          "text": "O sing to the Lord a new song, for he has done marvelous things. His right hand and his holy arm have gotten him victory. Let the sea roar, and all that fills it; the world and those who live in it.",
+          "title": "Praise the Judge of the World"
+        },
+        {
+          "id": "gospel-2025-08-30",
+          "type": "gospel",
+          "reference": "Matthew 25:14-30",
+          "text": "For it is as if a man, going on a journey, summoned his slaves and entrusted his property to them; to one he gave five talents, to another two, to another one, to each according to his ability. Then he went away.",
+          "title": "The Parable of the Talents"
+        }
+      ],
+      "reflection": "The parable of the talents teaches us that God has given each of us gifts and abilities to use for his glory. We are called to be faithful stewards, using what we have been given to serve others and advance God's kingdom.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 21,
+        "createdAt": "2025-08-30T00:00:00Z",
+        "updatedAt": "2025-08-30T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-31",
+      "date": "2025-08-31",
+      "title": "22nd Sunday in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-08-31",
+          "type": "old_testament",
+          "reference": "Deuteronomy 4:1-2, 6-8",
+          "text": "So now, Israel, give heed to the statutes and ordinances that I am teaching you to observe, so that you may live to enter and occupy the land that the Lord, the God of your ancestors, is giving you. You must neither add anything to what I command you nor take away anything from it, but keep the commandments of the Lord your God with which I am charging you.",
+          "title": "Moses Commands Obedience"
+        },
+        {
+          "id": "psalm-2025-08-31",
+          "type": "psalm", 
+          "reference": "Psalm 15:2-5",
+          "text": "Those who walk blamelessly, and do what is right, and speak the truth from their heart; who do not slander with their tongue, and do no evil to their friends, nor take up a reproach against their neighbors.",
+          "title": "Who Shall Abide in God's Sanctuary?"
+        },
+        {
+          "id": "nt-2025-08-31",
+          "type": "new_testament",
+          "reference": "James 1:17-18, 21b-22, 27",
+          "text": "Every generous act of giving, with every perfect gift, is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change. In fulfillment of his own purpose he gave us birth by the word of truth, so that we would become a kind of first fruits of his creatures.",
+          "title": "Hearing and Doing the Word"
+        },
+        {
+          "id": "gospel-2025-08-31",
+          "type": "gospel",
+          "reference": "Mark 7:1-8, 14-15, 21-23",
+          "text": "Now when the Pharisees and some of the scribes who had come from Jerusalem gathered around him, they noticed that some of his disciples were eating with defiled hands, that is, without washing them. So the Pharisees and the scribes asked him, 'Why do your disciples not live according to the tradition of the elders, but eat with defiled hands?'",
+          "title": "The Tradition of the Elders"
+        }
+      ],
+      "reflection": "Jesus teaches us that true purity comes from within, not from external observances. God is more concerned with the condition of our hearts than with ritual cleanliness. May we focus on cultivating inner righteousness and authentic faith.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 22,
+        "createdAt": "2025-08-31T00:00:00Z",
+        "updatedAt": "2025-08-31T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-15",
+      "date": "2025-09-15",
+      "title": "Memorial of Our Lady of Sorrows",
+      "readings": [
+        {
+          "id": "nt-2025-09-15",
+          "type": "new_testament",
+          "reference": "1 Timothy 2:1-8",
+          "text": "Beloved: First of all, I ask that supplications, prayers, petitions, and thanksgivings be offered for everyone, for kings and for all in authority, that we may lead a quiet and tranquil life in all devotion and dignity. This is good and pleasing to God our savior, who wills everyone to be saved and to come to knowledge of the truth.",
+          "title": "Prayer for All People"
+        },
+        {
+          "id": "psalm-2025-09-15",
+          "type": "psalm",
+          "reference": "Psalm 28:2, 7, 8-9",
+          "text": "Hear the sound of my pleading, when I cry to you, lifting up my hands toward your holy shrine. The LORD is my strength and my shield. In him my heart trusts, and I find help; then my heart exults, and with my song I give him thanks.",
+          "title": "Blessed be the Lord"
+        },
+        {
+          "id": "gospel-2025-09-15",
+          "type": "gospel",
+          "reference": "John 19:25-27",
+          "text": "Standing by the cross of Jesus were his mother and his mother's sister, Mary the wife of Clopas, and Mary Magdalene. When Jesus saw his mother and the disciple there whom he loved he said to his mother, 'Woman, behold, your son.' Then he said to the disciple, 'Behold, your mother.' And from that hour the disciple took her into his home.",
+          "title": "Woman, Behold Your Son"
+        }
+      ],
+      "reflection": "Mary's sorrows teach us about the depth of a mother's love and the cost of discipleship. As she stood by the cross, she teaches us to remain faithful even in our darkest moments, trusting in God's greater plan.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 24,
+        "createdAt": "2025-09-15T00:00:00Z",
+        "updatedAt": "2025-09-15T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-16",
+      "date": "2025-09-16",
+      "title": "Memorial of Saints Cornelius, Pope, and Cyprian, Bishop, Martyrs",
+      "readings": [
+        {
+          "id": "nt-2025-09-16",
+          "type": "new_testament",
+          "reference": "1 Timothy 3:1-13",
+          "text": "Beloved, this saying is trustworthy: whoever aspires to the office of bishop desires a noble task. Therefore, a bishop must be irreproachable, married only once, temperate, self-controlled, decent, hospitable, able to teach, not a drunkard, not aggressive, but gentle, not contentious, not a lover of money.",
+          "title": "Qualifications of Bishops and Deacons"
+        },
+        {
+          "id": "psalm-2025-09-16",
+          "type": "psalm",
+          "reference": "Psalm 101:1-2, 2-3, 5, 6",
+          "text": "Of mercy and judgment I will sing; to you, O LORD, I will sing praise. I will persevere in the way of integrity; when will you come to me? I will walk with blameless heart, within my house; I will not set before my eyes any base thing.",
+          "title": "I Will Walk with Blameless Heart"
+        },
+        {
+          "id": "gospel-2025-09-16",
+          "type": "gospel",
+          "reference": "Luke 7:11-17",
+          "text": "Jesus journeyed to a city called Nain, and his disciples and a large crowd accompanied him. As he drew near to the gate of the city, a man who had died was being carried out, the only son of his mother, and she was a widow. When the Lord saw her, he was moved with pity for her and said to her, 'Do not weep.' He stepped forward and touched the coffin; at this the bearers halted, and he said, 'Young man, I tell you, arise!' The dead man sat up and began to speak, and Jesus gave him to his mother.",
+          "title": "Jesus Raises the Widow's Son"
+        }
+      ],
+      "reflection": "The martyrdom of Saints Cornelius and Cyprian reminds us that faithful leadership in the Church sometimes demands the ultimate sacrifice. Their witness encourages us to serve with integrity and courage.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 24,
+        "createdAt": "2025-09-16T00:00:00Z",
+        "updatedAt": "2025-09-16T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-17",
+      "date": "2025-09-17",
+      "title": "Wednesday of the Twenty-fourth Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "nt-2025-09-17",
+          "type": "new_testament",
+          "reference": "1 Timothy 3:14-16",
+          "text": "Beloved: I am writing you, although I hope to visit you soon. But if I should be delayed, you should know how to behave in the household of God, which is the Church of the living God, the pillar and foundation of truth. Undeniably great is the mystery of devotion, Who was manifested in the flesh, vindicated in the spirit, seen by angels, proclaimed to the Gentiles, believed in throughout the world, taken up in glory.",
+          "title": "The Mystery of Our Religion"
+        },
+        {
+          "id": "psalm-2025-09-17",
+          "type": "psalm",
+          "reference": "Psalm 111:1-2, 3-4, 5-6",
+          "text": "I will give thanks to the LORD with all my heart in the company and assembly of the upright. Great are the works of the LORD, exquisite in all their delights. Majesty and glory are his work, and his justice endures forever.",
+          "title": "Praise of God's Works"
+        },
+        {
+          "id": "gospel-2025-09-17",
+          "type": "gospel",
+          "reference": "Luke 7:31-35",
+          "text": "Jesus said to the crowds: 'To what shall I compare the people of this generation? What are they like? They are like children who sit in the marketplace and call to one another, \"We played the flute for you, but you did not dance. We sang a dirge, but you did not weep.\" For John the Baptist came neither eating food nor drinking wine, and you said, \"He is possessed by a demon.\" The Son of Man came eating and drinking and you said, \"Look, he is a glutton and a drunkard, a friend of tax collectors and sinners.\" But wisdom is vindicated by all her children.'",
+          "title": "Jesus Speaks about John the Baptist"
+        }
+      ],
+      "reflection": "Jesus challenges us to examine our hearts and see if we are truly open to God's message, or if we find excuses to reject it. Wisdom is proven right by those who embrace it with sincere hearts.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 24,
+        "createdAt": "2025-09-17T00:00:00Z",
+        "updatedAt": "2025-09-17T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-18",
+      "date": "2025-09-18",
+      "title": "Thursday of the Twenty-fourth Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "nt-2025-09-18",
+          "type": "new_testament",
+          "reference": "1 Timothy 4:12-16",
+          "text": "Beloved: Let no one have contempt for your youth, but set an example for those who believe, in speech, conduct, love, faith, and purity. Until I arrive, attend to the reading, exhortation, and teaching. Do not neglect the gift you have, which was conferred on you through the prophetic word with the imposition of hands of the presbyterate. Be diligent in these matters, be absorbed in them, so that your progress may be evident to everyone. Attend to yourself and to your teaching; persevere in both, for by doing so you will save both yourself and those who listen to you.",
+          "title": "A Good Minister of Jesus Christ"
+        },
+        {
+          "id": "psalm-2025-09-18",
+          "type": "psalm",
+          "reference": "Psalm 111:7-8, 9, 10",
+          "text": "The works of his hands are faithful and just; sure are all his precepts, reliable forever and ever, wrought in truth and equity. He has sent deliverance to his people; he has ratified his covenant forever; holy and awesome is his name.",
+          "title": "Holy and Awesome Is His Name"
+        },
+        {
+          "id": "gospel-2025-09-18",
+          "type": "gospel",
+          "reference": "Luke 7:36-50",
+          "text": "A Pharisee invited Jesus to dine with him, and he entered the Pharisee's house and reclined at table. Now there was a sinful woman in the city who learned that he was at table in the house of the Pharisee. Bringing an alabaster flask of ointment, she stood behind him at his feet weeping and began to bathe his feet with her tears. Then she wiped them with her hair, kissed them, and anointed them with the ointment. Her many sins have been forgiven; hence, she has shown great love. But the one to whom little is forgiven, loves little.",
+          "title": "A Sinful Woman Forgiven"
+        }
+      ],
+      "reflection": "The sinful woman's profound love flows from her recognition of God's abundant mercy. When we truly understand how much we have been forgiven, our hearts overflow with gratitude and love.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 24,
+        "createdAt": "2025-09-18T00:00:00Z",
+        "updatedAt": "2025-09-18T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-19",
+      "date": "2025-09-19",
+      "title": "Friday of the Twenty-fourth Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "nt-2025-09-19",
+          "type": "new_testament",
+          "reference": "1 Timothy 6:2-12",
+          "text": "Beloved: Teach and urge these things. Whoever teaches something different and does not agree with the sound words of our Lord Jesus Christ and the religious teaching is conceited, understanding nothing, and has a morbid disposition for arguments and verbal disputes. From these come envy, rivalry, insults, evil suspicions, and mutual friction among people with corrupted minds, who are deprived of the truth, supposing religion to be a means of gain. Indeed, religion with contentment is a great gain.",
+          "title": "The Good Fight of Faith"
+        },
+        {
+          "id": "psalm-2025-09-19",
+          "type": "psalm",
+          "reference": "Psalm 49:6-7, 8-10, 17-18, 19-20",
+          "text": "Why should I fear in evil days when my wicked ensnarers surround me? They trust in their wealth; the abundance of their riches is their boast. Yet in no way can a man redeem himself, or pay his own ransom to God; too high the price to redeem one's life; he would never have enough to remain alive always and not see destruction.",
+          "title": "The Folly of Trust in Riches"
+        },
+        {
+          "id": "gospel-2025-09-19",
+          "type": "gospel",
+          "reference": "Luke 8:1-3",
+          "text": "Jesus journeyed from one town and village to another, preaching and proclaiming the good news of the Kingdom of God. Accompanying him were the Twelve and some women who had been cured of evil spirits and infirmities, Mary, called Magdalene, from whom seven demons had gone out, Joanna, the wife of Herod's steward Chuza, Susanna, and many others who provided for them out of their resources.",
+          "title": "Some Women Accompany Jesus"
+        }
+      ],
+      "reflection": "The women who followed Jesus show us that discipleship involves both receiving God's healing and giving generously from what we have been given. True contentment comes from serving God, not from accumulating wealth.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 24,
+        "createdAt": "2025-09-19T00:00:00Z",
+        "updatedAt": "2025-09-19T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-20",
+      "date": "2025-09-20",
+      "title": "Memorial of Saint Andrew Kim Tae-gŏn, Priest, and Paul Chŏng Ha-sang, and Companions, Martyrs",
+      "readings": [
+        {
+          "id": "nt-2025-09-20",
+          "type": "new_testament",
+          "reference": "1 Timothy 6:13-16",
+          "text": "Beloved: I charge you before God, who gives life to all things, and before Christ Jesus, who gave testimony under Pontius Pilate for the noble confession, to keep the commandment without stain or reproach until the appearance of our Lord Jesus Christ that the blessed and only ruler will make manifest at the proper time, the King of kings and Lord of lords, who alone has immortality, who dwells in unapproachable light, and whom no human being has seen or can see. To him be honor and eternal power. Amen.",
+          "title": "The Good Confession"
+        },
+        {
+          "id": "psalm-2025-09-20",
+          "type": "psalm",
+          "reference": "Psalm 100:1-2, 3, 4, 5",
+          "text": "Sing joyfully to the LORD, all you lands; serve the LORD with gladness; come before him with joyful song. Know that the LORD is God; he made us, his we are; his people, the flock he tends. Enter his gates with thanksgiving, his courts with praise; give thanks to him; bless his name, for he is good: the LORD, whose kindness endures forever, and his faithfulness, to all generations.",
+          "title": "Joy Before the Lord"
+        },
+        {
+          "id": "gospel-2025-09-20",
+          "type": "gospel",
+          "reference": "Luke 8:4-15",
+          "text": "When a large crowd gathered, with people from one town after another journeying to Jesus, he spoke in a parable: 'A sower went out to sow his seed. And as he sowed, some seed fell on the path and was trampled, and the birds of the sky ate it up. Some seed fell on rocky ground, and when it grew, it withered for lack of moisture. Some seed fell among thorns, and the thorns grew with it and choked it. But some seed fell on good soil, and when it grew, it produced fruit a hundredfold.' The seed is the word of God. Those on the path are the ones who have heard, but the Devil comes and takes away the word from their hearts that they may not believe and be saved. Those on rocky ground are the ones who, when they hear, receive the word with joy, but they have no root; they believe only for a time and fall away in time of trial. As for the seed that fell among thorns, they are the ones who have heard, but as they go along, they are choked by the anxieties and riches and pleasures of life, and they fail to produce mature fruit. But as for the seed that fell on rich soil, they are the ones who, when they have heard the word, embrace it with a generous and good heart, and bear fruit through perseverance.",
+          "title": "The Parable of the Sower"
+        }
+      ],
+      "reflection": "The Korean martyrs show us what it means to be good soil for God's word. Their witness of faith, even unto death, produced abundant fruit that continues to nourish the Church today.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 24,
+        "createdAt": "2025-09-20T00:00:00Z",
+        "updatedAt": "2025-09-20T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-21",
+      "date": "2025-09-21",
+      "title": "Twenty-fifth Sunday in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-09-21",
+          "type": "old_testament",
+          "reference": "Wisdom 2:12, 17-20",
+          "text": "The wicked say: Let us beset the just one, because he is obnoxious to us; he sets himself against our doings, reproaches us for transgressions of the law and charges us with violations of our training. Let us see whether his words be true; let us find out what will happen to him. For if the just one be the son of God, God will defend him and deliver him from the hand of his foes. With revilement and torture let us put the just one to the test that we may have proof of his gentleness and try his patience. Let us condemn him to a shameful death; for according to his own words, God will take care of him.",
+          "title": "The Wicked Plan Against the Righteous"
+        },
+        {
+          "id": "psalm-2025-09-21",
+          "type": "psalm",
+          "reference": "Psalm 54:3-4, 5, 6-8",
+          "text": "O God, by your name save me, and by your might defend my cause. O God, hear my prayer; hearken to the words of my mouth. For the haughty men have risen up against me, the ruthless seek my life; they set not God before their eyes.",
+          "title": "Prayer for Help Against Enemies"
+        },
+        {
+          "id": "nt-2025-09-21",
+          "type": "new_testament",
+          "reference": "James 3:16—4:3",
+          "text": "Beloved: Where jealousy and selfish ambition exist, there is disorder and every foul practice. But the wisdom from above is first of all pure, then peaceable, gentle, compliant, full of mercy and good fruits, without inconstancy or insincerity. And the fruit of righteousness is sown in peace for those who cultivate peace. Where do the wars and where do the conflicts among you come from? Is it not from your passions that make war within your members? You covet but do not possess. You kill and envy but you cannot obtain; you fight and wage war. You do not possess because you do not ask. You ask but do not receive, because you ask wrongly, to spend it on your passions.",
+          "title": "True Wisdom and Humble Prayer"
+        },
+        {
+          "id": "gospel-2025-09-21",
+          "type": "gospel",
+          "reference": "Mark 9:30-37",
+          "text": "Jesus and his disciples left from there and began a journey through Galilee, but he did not wish anyone to know about it. He was teaching his disciples and telling them, 'The Son of Man is to be handed over to men and they will kill him, and three days after his death the Son of Man will rise.' But they did not understand the saying, and they were afraid to question him. They came to Capernaum and, once inside the house, he began to ask them, 'What were you arguing about on the way?' But they remained silent. They had been discussing among themselves on the way who was the greatest. Then he sat down, called the Twelve, and said to them, 'If anyone wishes to be first, he shall be the last of all and the servant of all.' Taking a child, he placed it in their midst, and putting his arms around it, he said to them, 'Whoever receives one child such as this in my name, receives me; and whoever receives me, receives not me but the One who sent me.'",
+          "title": "The Greatest in the Kingdom"
+        }
+      ],
+      "reflection": "True greatness in God's kingdom is measured not by power or status, but by our willingness to serve others, especially the most vulnerable. Jesus himself shows us the way by embracing the cross.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 25,
+        "createdAt": "2025-09-21T00:00:00Z",
+        "updatedAt": "2025-09-21T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-22",
+      "date": "2025-09-22",
+      "title": "Monday of the Twenty-fifth Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-09-22",
+          "type": "old_testament",
+          "reference": "Ezra 1:1-6",
+          "text": "In the first year of Cyrus, king of Persia, in order to fulfill the word of the LORD spoken by Jeremiah, the LORD moved the spirit of Cyrus, king of Persia, to issue a proclamation throughout his kingdom, both by word of mouth and in writing: 'Thus says Cyrus, king of Persia: All the kingdoms of the earth the LORD, the God of heaven, has given to me, and he has also charged me to build him a house in Jerusalem, which is in Judah. Therefore, whoever among you belongs to any part of his people, let him go up, and may his God be with him! Let everyone who has survived, in whatever place he may have dwelt, be assisted by the people of that place with silver, gold, goods, and cattle, together with free-will offerings for the house of God in Jerusalem.'",
+          "title": "The Proclamation of Cyrus"
+        },
+        {
+          "id": "psalm-2025-09-22",
+          "type": "psalm",
+          "reference": "Psalm 126:1-2, 2-3, 4-5, 6",
+          "text": "When the LORD brought back the captives of Zion, we were like men dreaming. Then our mouth was filled with laughter, and our tongue with rejoicing. Then they said among the nations, 'The LORD has done great things for them.' The LORD has done great things for us; we are glad indeed.",
+          "title": "The Joy of Israel's Return"
+        },
+        {
+          "id": "gospel-2025-09-22",
+          "type": "gospel",
+          "reference": "Luke 8:16-18",
+          "text": "Jesus said to the crowd: 'No one who lights a lamp conceals it with a vessel or sets it under a bed; rather, he places it on a lampstand so that those who enter may see the light. For there is nothing hidden that will not become visible, and nothing secret that will not be known and come to light. Take care, then, how you hear. To anyone who has, more will be given, and from the one who has not, even what he seems to have will be taken away.'",
+          "title": "A Lamp Under a Bushel Basket"
+        }
+      ],
+      "reflection": "God's light within us is meant to shine forth for others to see. Like the return from exile, God brings us from darkness to light so that we might be beacons of hope for the world.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 25,
+        "createdAt": "2025-09-22T00:00:00Z",
+        "updatedAt": "2025-09-22T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-23",
+      "date": "2025-09-23",
+      "title": "Memorial of Saint Pius of Pietrelcina, Priest",
+      "readings": [
+        {
+          "id": "ot-2025-09-23",
+          "type": "old_testament",
+          "reference": "Ezra 6:7-8, 12b, 14-20",
+          "text": "King Darius issued an order: 'Let the governor and the elders of the Jews continue the work on that house of God; they are to rebuild it on its former site. I also issue this decree concerning your dealing with these elders of the Jews in the rebuilding of that house of God: From the royal revenue, the taxes of West-of-Euphrates, let these men be repaid for their expenses, in full and without delay. I, Darius, have issued this decree; let it be carefully executed.'",
+          "title": "The Decree of Darius"
+        },
+        {
+          "id": "psalm-2025-09-23",
+          "type": "psalm",
+          "reference": "Psalm 122:1-2, 3-4ab, 4cd-5",
+          "text": "I rejoiced because they said to me, 'We will go up to the house of the LORD.' And now we have set foot within your gates, O Jerusalem. Jerusalem, built as a city with compact unity. To it the tribes go up, the tribes of the LORD, according to the decree for Israel, to give thanks to the name of the LORD.",
+          "title": "Song of Praise and Prayer for Jerusalem"
+        },
+        {
+          "id": "gospel-2025-09-23",
+          "type": "gospel",
+          "reference": "Luke 8:19-21",
+          "text": "The mother of Jesus and his brothers came to him but were unable to join him because of the crowd. He was told, 'Your mother and your brothers are standing outside and they wish to see you.' He said to them in reply, 'My mother and my brothers are those who hear the word of God and act on it.'",
+          "title": "The True Family of Jesus"
+        }
+      ],
+      "reflection": "Saint Padre Pio shows us that true discipleship, like that described by Jesus, means hearing God's word and putting it into action with profound love and sacrifice for others.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 25,
+        "createdAt": "2025-09-23T00:00:00Z",
+        "updatedAt": "2025-09-23T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-24",
+      "date": "2025-09-24",
+      "title": "Wednesday of the Twenty-fifth Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-09-24",
+          "type": "old_testament",
+          "reference": "Ezra 9:5-9",
+          "text": "At the time of the evening sacrifice, I rose in my wretchedness, and with cloak and mantle torn I fell on my knees, stretching out my hands to the LORD, my God. I said: 'My God, I am too ashamed and confounded to raise my face to you, O my God, for our wicked deeds are heaped up above our heads and our guilt reaches up to heaven. From the time of our fathers even to this day great has been our guilt, and for our wicked deeds we have been delivered over, we and our kings and our priests, to the will of the kings of foreign lands, to the sword, to captivity, to pillage, and to disgrace, as is the case today.'",
+          "title": "Ezra's Prayer About Intermarriage"
+        },
+        {
+          "id": "psalm-2025-09-24",
+          "type": "psalm",
+          "reference": "Tobit 13:2, 3-4, 4-5, 7-8",
+          "text": "Blessed be God who lives forever, because his kingdom lasts for all ages. For he scourges and then has mercy; he casts down to the depths of the nether world, and he brings up from the great abyss. No one can escape his hand. Praise him, you children of Israel, before the Gentiles, for though he has scattered you among them, he has shown you his greatness even there.",
+          "title": "A Song of Praise"
+        },
+        {
+          "id": "gospel-2025-09-24",
+          "type": "gospel",
+          "reference": "Luke 9:1-6",
+          "text": "Jesus summoned the Twelve and gave them power and authority over all demons and to cure diseases, and he sent them to proclaim the Kingdom of God and to heal the sick. He said to them, 'Take nothing for the journey, neither walking stick, nor sack, nor food, nor money, and let no one take a second tunic. Whatever house you enter, stay there and leave from there. And as for those who do not welcome you, when you leave that town, shake the dust from your feet in testimony against them.' Then they set out and went from village to village proclaiming the good news and curing diseases everywhere.",
+          "title": "The Mission of the Twelve"
+        }
+      ],
+      "reflection": "Jesus sends his disciples out with nothing but trust in God's providence. True mission work depends not on material resources but on faith, courage, and the power of God working through us.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 25,
+        "createdAt": "2025-09-24T00:00:00Z",
+        "updatedAt": "2025-09-24T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-25",
+      "date": "2025-09-25",
+      "title": "Thursday of the Twenty-fifth Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-09-25",
+          "type": "old_testament",
+          "reference": "Haggai 1:1-8",
+          "text": "On the first day of the sixth month in the second year of King Darius, the word of the LORD came through the prophet Haggai to the governor of Judah, Zerubbabel, son of Shealtiel, and to the high priest Joshua, son of Jehozadak: Thus says the LORD of hosts: This people says: 'The time has not yet come to rebuild the house of the LORD.' Then this word of the LORD came through Haggai the prophet: Is it time for you to dwell in your own paneled houses, while this house lies in ruins?",
+          "title": "The Command to Rebuild the Temple"
+        },
+        {
+          "id": "psalm-2025-09-25",
+          "type": "psalm",
+          "reference": "Psalm 149:1-2, 3-4, 5-6, 9",
+          "text": "Sing to the LORD a new song of praise in the assembly of the faithful. Let Israel be glad in their maker, let the children of Zion rejoice in their king. Let them praise his name in the festive dance, let them sing praise to him with timbrel and harp. For the LORD loves his people, and he adorns the lowly with victory.",
+          "title": "Praise God with Song and Dance"
+        },
+        {
+          "id": "gospel-2025-09-25",
+          "type": "gospel",
+          "reference": "Luke 9:7-9",
+          "text": "Herod the tetrarch heard about all that was happening, and he was greatly perplexed because some were saying, 'John has been raised from the dead'; others were saying, 'Elijah has appeared'; still others, 'One of the ancient prophets has arisen.' But Herod said, 'John I beheaded. Who then is this about whom I hear such things?' And he kept trying to see him.",
+          "title": "Herod's Perplexity"
+        }
+      ],
+      "reflection": "Haggai challenges us to examine our priorities. Are we too focused on our own comfort while neglecting what God calls us to build? Jesus' identity perplexes those who encounter him - may we recognize him as Lord.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 25,
+        "createdAt": "2025-09-25T00:00:00Z",
+        "updatedAt": "2025-09-25T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-26",
+      "date": "2025-09-26",
+      "title": "Friday of the Twenty-fifth Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-09-26",
+          "type": "old_testament",
+          "reference": "Haggai 2:1-9",
+          "text": "In the second year of King Darius, on the twenty-first day of the seventh month, the word of the LORD came through the prophet Haggai: Tell this to the governor of Judah, Zerubbabel, son of Shealtiel, and to the high priest Joshua, son of Jehozadak, and to the remnant of the people: Who is left among you that saw this house in its former glory? And how do you see it now? Does it not seem like nothing in your eyes? But now take courage, Zerubbabel, says the LORD, and take courage, Joshua, high priest, son of Jehozadak, and take courage, all you people of the land, says the LORD, and work! For I am with you, says the LORD of hosts.",
+          "title": "Future Glory of the New Temple"
+        },
+        {
+          "id": "psalm-2025-09-26",
+          "type": "psalm",
+          "reference": "Psalm 43:1, 2, 3, 4",
+          "text": "Do me justice, O God, and fight my fight against a faithless people; from the deceitful and impious man rescue me. For you, O God, are my strength. Why do you keep me so far away? Why must I go about in mourning, with the enemy oppressing me?",
+          "title": "Longing for God's House"
+        },
+        {
+          "id": "gospel-2025-09-26",
+          "type": "gospel",
+          "reference": "Luke 9:18-22",
+          "text": "Once when Jesus was praying in solitude, and the disciples were with him, he asked them, 'Who do the crowds say that I am?' They said in reply, 'John the Baptist; others, Elijah; still others, 'One of the ancient prophets has arisen.' Then he said to them, 'But who do you say that I am?' Peter said in reply, 'The Christ of God.' He rebuked them and directed them not to tell this to anyone. He said, 'The Son of Man must suffer greatly and be rejected by the elders, the chief priests, and the scribes, and be killed and on the third day be raised.'",
+          "title": "Peter's Declaration About Jesus"
+        }
+      ],
+      "reflection": "Peter's confession of faith leads directly to Jesus' prediction of his passion. True recognition of Jesus as the Christ means accepting both his glory and the way of the cross that leads to it.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 25,
+        "createdAt": "2025-09-26T00:00:00Z",
+        "updatedAt": "2025-09-26T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-27",
+      "date": "2025-09-27",
+      "title": "Memorial of Saint Vincent de Paul, Priest",
+      "readings": [
+        {
+          "id": "ot-2025-09-27",
+          "type": "old_testament",
+          "reference": "Zechariah 2:5-9, 14-15a",
+          "text": "I raised my eyes and looked: there was a man with a measuring line in his hand. 'Where are you going?' I asked. 'To measure Jerusalem,' he answered; 'to see how great is its width and how great its length.' Then the angel who spoke with me advanced, and another angel came out to meet him and said to him, 'Run, tell this to that young man: Jerusalem shall be unwalled, because of the multitude of men and beasts in her midst. But I will be for her an encircling wall of fire, says the LORD, and I will be the glory in her midst.'",
+          "title": "God Protects and Prospers Zion"
+        },
+        {
+          "id": "psalm-2025-09-27",
+          "type": "psalm",
+          "reference": "Jeremiah 31:10, 11-12ab, 13",
+          "text": "Hear the word of the LORD, O nations, proclaim it on distant isles, and say: He who scattered Israel, now gathers them together, he guards them as a shepherd his flock. The LORD shall ransom Jacob, he shall redeem him from the hand of his conqueror. Shouting, they shall mount the heights of Zion, they shall come streaming to the LORD's blessings.",
+          "title": "The Restoration of Israel"
+        },
+        {
+          "id": "gospel-2025-09-27",
+          "type": "gospel",
+          "reference": "Luke 9:43b-45",
+          "text": "While they were all amazed at his every deed, Jesus said to his disciples, 'Pay attention to what I am telling you. The Son of Man is to be handed over to men.' But they did not understand this saying; its meaning was hidden from them so that they should not understand it, and they were afraid to question him about this saying.",
+          "title": "Jesus Again Foretells His Death"
+        }
+      ],
+      "reflection": "Saint Vincent de Paul understood that serving the poor is at the heart of the Gospel. Like the disciples, we sometimes struggle to understand Jesus' way of self-sacrificial love, but it is through serving others that we find Christ.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 25,
+        "createdAt": "2025-09-27T00:00:00Z",
+        "updatedAt": "2025-09-27T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-28",
+      "date": "2025-09-28",
+      "title": "Twenty-sixth Sunday in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-09-28",
+          "type": "old_testament",
+          "reference": "Numbers 11:25-29",
+          "text": "The LORD came down in the cloud and spoke to Moses. Taking some of the spirit that was on Moses, the LORD bestowed it on the seventy elders; and as the spirit came to rest on them, they prophesied. Now two men, one named Eldad and the other Medad, were not in the gathering but had been left in the camp. They too had been on the list, but had not gone out to the tent; yet the spirit came to rest on them also, and they prophesied in the camp. So, when a young man quickly told Moses, 'Eldad and Medad are prophesying in the camp,' Joshua, son of Nun, who from his youth had been Moses' aide, said, 'Moses, my lord, stop them.' But Moses answered him, 'Are you jealous for my sake? Would that all the people of the LORD were prophets! Would that the LORD might bestow his spirit on them all!'",
+          "title": "The Spirit Rests on the Seventy Elders"
+        },
+        {
+          "id": "psalm-2025-09-28",
+          "type": "psalm",
+          "reference": "Psalm 19:8, 10, 12-13, 14",
+          "text": "The law of the LORD is perfect, refreshing the soul; the decree of the LORD is trustworthy, giving wisdom to the simple. The fear of the LORD is pure, enduring forever; the ordinances of the LORD are true, all of them just. Though your servant is careful of them, very diligent in keeping them, yet who can detect failings? Cleanse me from my unknown faults!",
+          "title": "God's Glory in Creation and in the Law"
+        },
+        {
+          "id": "nt-2025-09-28",
+          "type": "new_testament",
+          "reference": "James 5:1-6",
+          "text": "Come now, you rich, weep and wail over your impending miseries. Your wealth has rotted away, your clothes have become moth-eaten, your gold and silver have corroded, and that corrosion will be a testimony against you; it will devour your flesh like a fire. You have stored up treasure for the last days. Behold, the wages you withheld from the workers who harvested your fields are crying aloud; and the cries of the harvesters have reached the ears of the Lord of hosts. You have lived on earth in luxury and pleasure; you have fattened your hearts for the day of slaughter. You have condemned; you have murdered the righteous one; he offers you no resistance.",
+          "title": "Warning to Rich Oppressors"
+        },
+        {
+          "id": "gospel-2025-09-28",
+          "type": "gospel",
+          "reference": "Mark 9:38-43, 45, 47-48",
+          "text": "At that time, John said to Jesus, 'Teacher, we saw someone driving out demons in your name and we tried to prevent him because he does not follow us.' Jesus replied, 'Do not prevent him. There is no one who performs a mighty deed in my name who can at the same time speak ill of me. For whoever is not against us is for us. Anyone who gives you a cup of water to drink because you belong to Christ, amen, I say to you, will surely not lose his reward. Whoever causes one of these little ones who believe in me to sin, it would be better for him if a great millstone were put around his neck and he were thrown into the sea. If your hand causes you to sin, cut it off. It is better for you to enter into life maimed than with two hands to go into Gehenna, into the unquenchable fire. And if your foot causes you to sin, cut it off. It is better for you to enter into life crippled than with two feet to be thrown into Gehenna. And if your eye causes you to sin, pluck it out. Better for you to enter into the kingdom of God with one eye than with two eyes to be thrown into Gehenna, where their worm does not die, and the fire is not quenched.'",
+          "title": "Another Exorcist; Temptations to Sin"
+        }
+      ],
+      "reflection": "God's spirit is not limited to our expectations or our groups. Jesus calls us to welcome all who do good in his name and to take seriously the responsibility we have not to cause others to stumble in their faith.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 26,
+        "createdAt": "2025-09-28T00:00:00Z",
+        "updatedAt": "2025-09-28T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-29",
+      "date": "2025-09-29",
+      "title": "Feast of Saints Michael, Gabriel, and Raphael, Archangels",
+      "readings": [
+        {
+          "id": "ot-2025-09-29",
+          "type": "old_testament",
+          "reference": "Daniel 7:9-10, 13-14",
+          "text": "As I watched: Thrones were set up and the Ancient One took his throne. His clothing was snow bright, and the hair on his head as white as wool; his throne was flames of fire, with wheels of burning fire. A surging stream of fire flowed out from where he sat; thousands upon thousands were ministering to him, and myriads upon myriads attended him. The court was convened and the books were opened. As the visions during the night continued, I saw: One like a Son of man coming, on the clouds of heaven; when he reached the Ancient One and was presented before him, the one like a Son of man received dominion, glory, and kingship; all peoples, nations, and languages serve him. His dominion is an everlasting dominion that shall not be taken away, his kingship shall not be destroyed.",
+          "title": "Visions of the Four Beasts"
+        },
+        {
+          "id": "psalm-2025-09-29",
+          "type": "psalm",
+          "reference": "Psalm 138:1-2ab, 2cde-3, 4-5",
+          "text": "I will give thanks to you, O LORD, with all my heart, for you have heard the words of my mouth; in the presence of the angels I will sing your praise; I will worship at your holy temple. I will give thanks to your name, because of your kindness and your truth: When I called, you answered me; you built up strength within me.",
+          "title": "Thanksgiving for God's Favors"
+        },
+        {
+          "id": "gospel-2025-09-29",
+          "type": "gospel",
+          "reference": "John 1:47-51",
+          "text": "Jesus saw Nathanael coming toward him and said of him, 'Here is a true child of Israel. There is no duplicity in him.' Nathanael said to him, 'How do you know me?' Jesus answered and said to him, 'Before Philip called you, I saw you under the fig tree.' Nathanael answered him, 'Rabbi, you are the Son of God; you are the King of Israel.' Jesus answered and said to him, 'Do you believe because I told you that I saw you under the fig tree? You will see greater things than this.' And he said to him, 'Amen, amen, I say to you, you will see the sky opened and the angels of God ascending and descending on the Son of Man.'",
+          "title": "The Calling of Philip and Nathanael"
+        }
+      ],
+      "reflection": "The archangels remind us of the vast spiritual reality that surrounds us. Like Nathanael, we are called to recognize Jesus as the bridge between heaven and earth, where angels minister to God's people.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary", 
+        "week": 26,
+        "createdAt": "2025-09-29T00:00:00Z",
+        "updatedAt": "2025-09-29T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-30",
+      "date": "2025-09-30",
+      "title": "Memorial of Saint Jerome, Priest and Doctor of the Church",
+      "readings": [
+        {
+          "id": "ot-2025-09-30",
+          "type": "old_testament",
+          "reference": "Zechariah 8:1-8",
+          "text": "This word of the LORD of hosts came: Thus says the LORD of hosts: I am intensely jealous for Zion, stirred to jealous wrath for her. Thus says the LORD: I will return to Zion, and I will dwell within Jerusalem; Jerusalem shall be called the faithful city, and the mountain of the LORD of hosts shall be called the holy mountain. Thus says the LORD of hosts: Old men and old women, each with staff in hand because of old age, shall again sit in the streets of Jerusalem. The city shall be filled with boys and girls playing in her streets.",
+          "title": "God's Promises to Zion"
+        },
+        {
+          "id": "psalm-2025-09-30",
+          "type": "psalm",
+          "reference": "Psalm 102:16-18, 19-21, 29, 22-23",
+          "text": "The nations shall revere your name, O LORD, and all the kings of the earth your glory, when the LORD has rebuilt Zion and appeared in his glory; when he has regarded the prayer of the destitute and not despised their prayer. Let this be written for the generation to come, so that a people yet to be created may praise the LORD.",
+          "title": "Prayer of an Afflicted Person"
+        },
+        {
+          "id": "gospel-2025-09-30",
+          "type": "gospel",
+          "reference": "Luke 9:57-62",
+          "text": "As they were proceeding on their journey someone said to him, 'I will follow you wherever you go.' Jesus answered him, 'Foxes have dens and birds of the sky have nests, but the Son of Man has nowhere to rest his head.' And to another he said, 'Follow me.' But he replied, 'Lord, let me go first and bury my father.' But he answered him, 'Let the dead bury their dead. But you, go and proclaim the kingdom of God.' And another said, 'I will follow you, Lord, but first let me say farewell to my family at home.' To him Jesus said, 'No one who sets a hand to the plow and looks to what was left behind is fit for the kingdom of God.'",
+          "title": "Would-Be Followers of Jesus"
+        }
+      ],
+      "reflection": "Saint Jerome's dedication to studying Scripture shows us the radical commitment that discipleship requires. Following Jesus means putting the Kingdom of God first, even above our natural attachments and obligations.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 26,
+        "createdAt": "2025-09-30T00:00:00Z",
+        "updatedAt": "2025-09-30T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-10-01",
+      "date": "2025-10-01",
+      "title": "Memorial of Saint Thérèse of the Child Jesus, Virgin and Doctor of the Church",
+      "readings": [
+        {
+          "id": "ot-2025-10-01",
+          "type": "old_testament",
+          "reference": "Zechariah 8:20-23",
+          "text": "Thus says the LORD of hosts: There shall yet come peoples, the inhabitants of many cities; and the inhabitants of one city shall approach those of another, and say, 'Come! let us go to implore the favor of the LORD'; and, 'I too will go to seek the LORD.' Many peoples and strong nations shall come to seek the LORD of hosts in Jerusalem and to implore the favor of the LORD. Thus says the LORD of hosts: In those days ten men of every nationality, speaking different tongues, shall take hold, yes, take hold of every Jew by the edge of his garment and say, 'Let us go with you, for we have heard that God is with you.'",
+          "title": "Many Peoples Drawn to the Lord"
+        },
+        {
+          "id": "psalm-2025-10-01",
+          "type": "psalm",
+          "reference": "Psalm 87:1-3, 4-5, 6-7",
+          "text": "His foundation upon the holy mountains the LORD loves: the gates of Zion, more than any dwelling of Jacob. Glorious things are said of you, O city of God! I tell of Egypt and Babylon among those that know the LORD; of Philistia, Tyre, Ethiopia: 'This man was born there.' And of Zion they shall say: 'One and all were born in her; And he who has established her is the Most High LORD.'",
+          "title": "Zion, the City of God"
+        },
+        {
+          "id": "gospel-2025-10-01",
+          "type": "gospel",
+          "reference": "Luke 10:1-12",
+          "text": "After this the Lord appointed seventy-two others whom he sent ahead of him in pairs to every town and place he intended to visit. He said to them, 'The harvest is abundant but the laborers are few; so ask the master of the harvest to send out laborers for his harvest. Go on your way; behold, I am sending you like lambs among wolves. Carry no money bag, no sack, no sandals; and greet no one along the way. Into whatever house you enter, first say, \"Peace to this household.\" If a peaceful person lives there, your peace will rest on him; but if not, it will return to you. Stay in the same house and eat and drink what is offered to you, for the laborer deserves his payment. Do not move about from one house to another. Whatever town you enter and they welcome you, eat what is set before you, cure the sick in it and say to them, \"The kingdom of God is at hand for you.\" Whatever town you enter and they do not receive you, go out into the streets and say, \"The dust of your town that clings to our feet, even that we shake off against you. Yet know this: the kingdom of God is at hand.\" I tell you, it will be more tolerable for Sodom on that day than for that town.'",
+          "title": "The Mission of the Seventy-Two"
+        }
+      ],
+      "reflection": "Saint Thérèse's 'little way' reminds us that mission work doesn't require grand gestures but simple trust in God's love. Like the seventy-two disciples, we are sent to share God's peace with everyone we meet.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 27,
+        "createdAt": "2025-10-01T00:00:00Z",
+        "updatedAt": "2025-10-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-10-02",
+      "date": "2025-10-02",
+      "title": "Memorial of the Holy Guardian Angels",
+      "readings": [
+        {
+          "id": "ot-2025-10-02",
+          "type": "old_testament",
+          "reference": "Nehemiah 2:1-8",
+          "text": "In the month Nisan of the twentieth year of King Artaxerxes, when the wine was in my charge, I took some and offered it to the king. As I had never before been sad in his presence, the king asked me, 'Why do you look sad? If you are not sick, you must be sad at heart.' Though I was seized with great fear, I answered the king: 'May the king live forever! How could I not look sad when the city where my ancestors are buried lies in ruins, and its gates have been eaten out by fire?' The king asked me, 'What is it, then, that you wish?' I prayed to the God of heaven and then answered the king: 'If it please the king, and if your servant is deserving of your favor, send me to Judah, to the city of my ancestors' graves, to rebuild it.'",
+          "title": "Nehemiah's Prayer"
+        },
+        {
+          "id": "psalm-2025-10-02",
+          "type": "psalm",
+          "reference": "Psalm 137:1-2, 3, 4-5, 6",
+          "text": "By the streams of Babylon we sat and wept when we remembered Zion. On the aspens of that land we hung up our harps, for there our captors asked of us the lyrics of our songs, and our despoilers urged us to be joyous: 'Sing for us the songs of Zion!' How could we sing a song of the LORD in a foreign land?",
+          "title": "Lament over the Destruction of Jerusalem"
+        },
+        {
+          "id": "gospel-2025-10-02",
+          "type": "gospel",
+          "reference": "Luke 10:13-16",
+          "text": "Jesus said: 'Woe to you, Chorazin! Woe to you, Bethsaida! For if the mighty deeds done in your midst had been done in Tyre and Sidon, they would long ago have repented, sitting in sackcloth and ashes. But it will be more tolerable for Tyre and Sidon at the judgment than for you. And as for you, Capernaum, will you be exalted to heaven? You will go down to the netherworld. Whoever listens to you listens to me. Whoever rejects you rejects me. And whoever rejects me rejects the one who sent me.'",
+          "title": "Woes to Unrepentant Cities"
+        }
+      ],
+      "reflection": "Our guardian angels watch over us as we respond to God's call. Like Nehemiah rebuilding Jerusalem, we are called to rebuild what has been broken, trusting in God's protection and guidance.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 27,
+        "createdAt": "2025-10-02T00:00:00Z",
+        "updatedAt": "2025-10-02T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-10-03",
+      "date": "2025-10-03",
+      "title": "Friday of the Twenty-seventh Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-10-03",
+          "type": "old_testament",
+          "reference": "Nehemiah 8:1-4a, 5-6, 7b-12",
+          "text": "The whole people gathered as one in the open space before the Water Gate, and they called upon Ezra the scribe to bring forth the book of the law of Moses which the LORD prescribed for Israel. On the first day of the seventh month, therefore, Ezra the priest brought the law before the assembly, which consisted of men, women, and those children old enough to understand. Standing at one end of the open place that was before the Water Gate, he read out of the book from daybreak till midday, in the presence of the men, the women, and those children old enough to understand; and all the people listened attentively to the book of the law.",
+          "title": "Ezra Reads the Law"
+        },
+        {
+          "id": "psalm-2025-10-03",
+          "type": "psalm",
+          "reference": "Psalm 19:8, 9, 10, 11",
+          "text": "The law of the LORD is perfect, refreshing the soul; the decree of the LORD is trustworthy, giving wisdom to the simple. The precepts of the LORD are right, rejoicing the heart; the command of the LORD is clear, enlightening the eye. The fear of the LORD is pure, enduring forever; the ordinances of the LORD are true, all of them just.",
+          "title": "God's Glory in Creation and in the Law"
+        },
+        {
+          "id": "gospel-2025-10-03",
+          "type": "gospel",
+          "reference": "Luke 10:17-24",
+          "text": "The seventy-two returned rejoicing, and said, 'Lord, even the demons are subject to us because of your name.' Jesus said, 'I have observed Satan fall like lightning from the sky. Behold, I have given you the power to 'tread upon serpents' and scorpions and upon the full force of the enemy and nothing will harm you. Nevertheless, do not rejoice because the spirits are subject to you, but rejoice because your names are written in heaven.' At that very moment he rejoiced in the holy Spirit and said, 'I give you praise, Father, Lord of heaven and earth, for although you have hidden these things from the wise and the learned you have revealed them to the childlike. Yes, Father, such has been your gracious will. All things have been handed over to me by my Father. No one knows who the Son is except the Father, and who the Father is except the Son and anyone to whom the Son wishes to reveal him.'",
+          "title": "The Return of the Seventy-Two"
+        }
+      ],
+      "reflection": "Like the people listening to Ezra read the law, we find joy in hearing God's word. Jesus reminds us that our greatest joy comes not from our accomplishments but from knowing we belong to God.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 27,
+        "createdAt": "2025-10-03T00:00:00Z",
+        "updatedAt": "2025-10-03T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-10-04",
+      "date": "2025-10-04",
+      "title": "Memorial of Saint Francis of Assisi",
+      "readings": [
+        {
+          "id": "ot-2025-10-04",
+          "type": "old_testament",
+          "reference": "Baruch 1:15-22",
+          "text": "Justice is with the Lord, our God; and we today are flushed with shame, we men of Judah and citizens of Jerusalem, that we, with our kings and rulers and priests and prophets, and with our fathers, have sinned in the Lord's sight and disobeyed him. We have neither heeded the voice of the Lord, our God, nor followed the precepts which the Lord set before us. From the time the Lord led our fathers out of the land of Egypt until the present day, we have been disobedient to the Lord, our God, and only too ready to disregard his voice.",
+          "title": "Prayer for Deliverance"
+        },
+        {
+          "id": "psalm-2025-10-04",
+          "type": "psalm",
+          "reference": "Psalm 79:1-2, 3-5, 8, 9",
+          "text": "O God, the nations have come into your inheritance; they have defiled your holy temple, they have laid Jerusalem in ruins. They have given the corpses of your servants as food to the birds of heaven, the flesh of your faithful to the beasts of the earth. They have poured out their blood like water round about Jerusalem, and there is no one to bury them.",
+          "title": "A Prayer for Deliverance from Enemies"
+        },
+        {
+          "id": "gospel-2025-10-04",
+          "type": "gospel",
+          "reference": "Luke 10:25-37",
+          "text": "There was a scholar of the law who stood up to test Jesus and said, 'Teacher, what must I do to inherit eternal life?' Jesus said to him, 'What is written in the law? How do you read it?' He said in reply, 'You shall love the Lord, your God, with all your heart, with all your being, with all your strength, and with all your mind, and your neighbor as yourself.' He replied to him, 'You have answered correctly; do this and you will live.' But because he wished to justify himself, he said to Jesus, 'And who is my neighbor?' Jesus replied and said: 'A man fell victim to robbers as he went down from Jerusalem to Jericho. They stripped and beat him and went off leaving him half-dead. A priest happened to be going down that road, but when he saw him, he passed by on the opposite side. Likewise a Levite came to the place, and when he saw him, he passed by on the opposite side. But a Samaritan traveler who came upon him was moved with compassion at the sight. He approached the victim, poured oil and wine over his wounds and bandaged them. Then he lifted him up on his own animal, took him to an inn, and cared for him. The next day he took out two silver coins and gave them to the innkeeper with the instruction, \"Take care of him. If you spend more than what I have given you, I will repay you on my way back.\" Which of these three, in your opinion, was neighbor to the robbers' victim?' He answered, 'The one who treated him with mercy.' Jesus said to him, 'Go and do likewise.'",
+          "title": "The Parable of the Good Samaritan"
+        }
+      ],
+      "reflection": "Saint Francis embodies the Good Samaritan's spirit of compassion for all creation. His radical following of Christ shows us that love of God and neighbor transforms not just individuals but the whole world around us.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 27,
+        "createdAt": "2025-10-04T00:00:00Z",
+        "updatedAt": "2025-10-04T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-10-05",
+      "date": "2025-10-05",
+      "title": "Twenty-seventh Sunday in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-10-05",
+          "type": "old_testament",
+          "reference": "Genesis 2:18-24",
+          "text": "The LORD God said: 'It is not good for the man to be alone. I will make a suitable partner for him.' So the LORD God formed out of the ground various wild animals and various birds of the air, and he brought them to the man to see what he would call them; whatever the man called each of them would be its name. The man gave names to all the cattle, all the birds of the air, and all wild animals; but none proved to be the suitable partner for the man. So the LORD God cast a deep sleep on the man, and while he was asleep, he took out one of his ribs and closed up its place with flesh. The LORD God then built up into a woman the rib that he had taken from the man. When he brought her to the man, the man said: 'This one, at last, is bone of my bones and flesh of my flesh; this one shall be called \"woman,\" for out of \"her man\" this one has been taken.' That is why a man leaves his father and mother and clings to his wife, and the two of them become one body.",
+          "title": "The Garden of Eden"
+        },
+        {
+          "id": "psalm-2025-10-05",
+          "type": "psalm",
+          "reference": "Psalm 128:1-2, 3, 4-5, 6",
+          "text": "Blessed are you who fear the LORD, who walk in his ways! For you shall eat the fruit of your handiwork; blessed shall you be, and favored. Your wife shall be like a fruitful vine in the recesses of your home; your children like olive plants around your table.",
+          "title": "The Happy Home of the Just"
+        },
+        {
+          "id": "nt-2025-10-05",
+          "type": "new_testament",
+          "reference": "Hebrews 2:9-11",
+          "text": "Brothers and sisters: We see Jesus 'crowned with glory and honor because he suffered death, he who for a little while was made lower than the angels,' that 'by the grace of God he might taste death for everyone.' For it was fitting that he, for whom and through whom all things exist, in bringing many children to glory, should make the leader to their salvation perfect through suffering. He who consecrates and those who are being consecrated all have one origin. Therefore, he is not ashamed to call them 'brothers.'",
+          "title": "Exaltation Through Abasement"
+        },
+        {
+          "id": "gospel-2025-10-05",
+          "type": "gospel",
+          "reference": "Mark 10:2-16",
+          "text": "The Pharisees approached Jesus and asked, 'Is it lawful for a husband to divorce his wife?' They were testing him. He said to them in reply, 'What did Moses command you?' They replied, 'Moses permitted a husband to write a bill of divorce and dismiss her.' But Jesus told them, 'Because of the hardness of your hearts he wrote you this commandment. But from the beginning of creation, God made them male and female. For this reason a man shall leave his father and mother and be joined to his wife, and the two shall become one flesh. So they are no longer two but one flesh. Therefore what God has joined together, no human being must separate.' In the house the disciples again questioned him about this. He said to them, 'Whoever divorces his wife and marries another commits adultery against her; and if she divorces her husband and marries another, she commits adultery.' And people were bringing children to him that he might touch them, but the disciples rebuked them. When Jesus saw this he became indignant and said to them, 'Let the children come to me; do not prevent them, for the kingdom of God belongs to such as these. Amen, I say to you, whoever does not accept the kingdom of God like a child will not enter it.' Then he embraced them and blessed them, placing his hands on them.",
+          "title": "Marriage and Divorce; Blessing of the Children"
+        }
+      ],
+      "reflection": "Jesus calls us back to God's original plan for human relationships - marked by faithful commitment, mutual respect, and the openness of children. In marriage and in all relationships, we are called to reflect God's enduring love.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 27,
+        "createdAt": "2025-10-05T00:00:00Z",
+        "updatedAt": "2025-10-05T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-10-06",
+      "date": "2025-10-06",
+      "title": "Monday of the Twenty-seventh Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "ot-2025-10-06",
+          "type": "old_testament",
+          "reference": "Jonah 1:1—2:2, 11",
+          "text": "This is the word of the LORD that came to Jonah, son of Amittai: 'Set out for the great city of Nineveh, and preach against it; their wickedness has come up before me.' But Jonah made ready to flee to Tarshish away from the LORD. He went down to Joppa, found a ship going to Tarshish, paid the fare, and went aboard to journey with them to Tarshish, away from the LORD. The LORD, however, hurled a violent wind upon the sea, and in the furious tempest that arose the ship was on the point of breaking up. Then the mariners became frightened and each one cried to his god. To lighten the ship for themselves, they threw its cargo into the sea. Meanwhile, Jonah had gone down into the hold of the ship, and lay there fast asleep.",
+          "title": "Jonah Tries to Run Away from God"
+        },
+        {
+          "id": "psalm-2025-10-06",
+          "type": "psalm",
+          "reference": "Jonah 2:3, 4, 5, 8",
+          "text": "Out of my distress I called to the LORD, and he answered me; from the belly of the nether world I cried for help, and you heard my voice. For you cast me into the deep, into the heart of the sea, and the flood enveloped me; all your breakers and your billows passed over me.",
+          "title": "A Prayer of Thanksgiving"
+        },
+        {
+          "id": "gospel-2025-10-06",
+          "type": "gospel",
+          "reference": "Luke 10:38-42",
+          "text": "Jesus entered a village where a woman whose name was Martha welcomed him. She had a sister named Mary who sat beside the Lord at his feet listening to him speak. Martha, burdened with much serving, came to him and said, 'Lord, do you not care that my sister has left me by myself to do the serving? Tell her to help me.' The Lord said to her in reply, 'Martha, Martha, you are anxious and worried about many things. There is need of only one thing. Mary has chosen the better part and it will not be taken from her.'",
+          "title": "Martha and Mary"
+        }
+      ],
+      "reflection": "Like Jonah, we sometimes try to run from God's call. Like Martha, we can become overwhelmed by activity. Mary shows us the importance of taking time to listen to Jesus and be present to his word.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 27,
+        "createdAt": "2025-10-06T00:00:00Z",
+        "updatedAt": "2025-10-06T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-10-07",
+      "date": "2025-10-07",
+      "title": "Memorial of Our Lady of the Rosary",
+      "readings": [
+        {
+          "id": "ot-2025-10-07",
+          "type": "old_testament",
+          "reference": "Jonah 3:1-10",
+          "text": "The word of the LORD came to Jonah a second time: 'Set out for the great city of Nineveh, and announce to it the message that I will tell you.' So Jonah made ready and went to Nineveh, according to the LORD's bidding. Now Nineveh was an enormously large city; it took three days to go through it. Jonah began his journey through the city, and had gone but a single day's walk announcing, 'Forty days more and Nineveh shall be destroyed,' when the people of Nineveh believed God; they proclaimed a fast and all of them, great and small, put on sackcloth.",
+          "title": "Conversion of Nineveh"
+        },
+        {
+          "id": "psalm-2025-10-07",
+          "type": "psalm",
+          "reference": "Psalm 130:1-2, 3-4, 7-8",
+          "text": "Out of the depths I cry to you, O LORD; LORD, hear my voice! Let your ears be attentive to my voice in supplication: If you, O LORD, mark iniquities, LORD, who can stand? But with you is forgiveness, that you may be revered.",
+          "title": "Prayer for Pardon and Mercy"
+        },
+        {
+          "id": "gospel-2025-10-07",
+          "type": "gospel",
+          "reference": "Luke 11:1-4",
+          "text": "Jesus was praying in a certain place, and when he had finished, one of his disciples said to him, 'Lord, teach us to pray just as John taught his disciples.' He said to them, 'When you pray, say: Father, hallowed be your name, your kingdom come. Give us each day our daily bread and forgive us our sins for we ourselves forgive everyone in debt to us, and do not subject us to the final test.'",
+          "title": "The Lord's Prayer"
+        }
+      ],
+      "reflection": "On this feast of Our Lady of the Rosary, we remember Mary's role in teaching us to pray. Like the Ninevites who repented at Jonah's message, we are called to ongoing conversion through prayer and penance.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 27,
+        "createdAt": "2025-10-07T00:00:00Z",
+        "updatedAt": "2025-10-07T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-10-31",
+      "date": "2025-10-31",
+      "title": "Friday of the Thirty-first Week in Ordinary Time",
+      "readings": [
+        {
+          "id": "nt-2025-10-31",
+          "type": "new_testament",
+          "reference": "Romans 9:1-5",
+          "text": "Brothers and sisters: I speak the truth in Christ, I do not lie; my conscience joins with the Holy Spirit in bearing me witness that I have great sorrow and constant anguish in my heart. For I could wish that I myself were accursed and cut off from Christ for the sake of my own people, my kindred according to the flesh. They are Israelites; theirs the adoption, the glory, the covenants, the giving of the law, the worship, and the promises; theirs the patriarchs, and from them, according to the flesh, is the Christ, who is over all, God blessed forever. Amen.",
+          "title": "God's Election of Israel"
+        },
+        {
+          "id": "psalm-2025-10-31",
+          "type": "psalm",
+          "reference": "Psalm 147:12-13, 14-15, 19-20",
+          "text": "Glorify the LORD, O Jerusalem; praise your God, O Zion. For he has strengthened the bars of your gates; he has blessed your children within you. He has granted peace in your borders; with the best of wheat he fills you. He sends forth his command to the earth; swiftly runs his word!",
+          "title": "Zion's Grateful Praise to Her Bountiful Lord"
+        },
+        {
+          "id": "gospel-2025-10-31",
+          "type": "gospel",
+          "reference": "Luke 14:1-6",
+          "text": "On a sabbath Jesus went to dine at the home of one of the leading Pharisees, and the people there were observing him carefully. In front of him there was a man suffering from dropsy. Jesus spoke to the scholars of the law and Pharisees in reply, asking, 'Is it lawful to cure on the sabbath or not?' But they kept silent; so he took the man and, after he had healed him, dismissed him. Then he said to them, 'Who among you, if your son or ox falls into a cistern, would not immediately pull him out on the sabbath day?' But they were unable to answer his question.",
+          "title": "Healing of the Man with Dropsy"
+        }
+      ],
+      "reflection": "As we near All Saints Day, we reflect on Paul's deep love for his people and Jesus' compassion for the suffering. True holiness shows itself in genuine care for others, especially when it challenges our preconceptions.",
+      "language": "en",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 31,
+        "createdAt": "2025-10-31T00:00:00Z",
+        "updatedAt": "2025-10-31T00:00:00Z"
+      }
+    }
+  ]
+}

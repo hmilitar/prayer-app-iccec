@@ -1,0 +1,379 @@
+{
+  "readings": [
+    {
+      "id": "2025-08-01",
+      "date": "2025-08-01",
+      "title": "Reede - 17. nädal tavalises ajas",
+      "readings": [
+        {
+          "id": "ot-2025-08-01",
+          "type": "old_testament",
+          "reference": "Leviitide raamat 23:1, 4-11, 15-16, 27, 34b-37",
+          "text": "Issand kõneles Moosesele: Need on Issanda pühakogu päevad, mida te kuulutate pühadeks kogudumisteks, minu pühakogu päevad. Selle seitsmenda kuu kümnendal päeval on lepitamispäev; see olgu teile püha kogudumise päev.",
+          "title": "Määratud pühad"
+        },
+        {
+          "id": "psalm-2025-08-01", 
+          "type": "psalm",
+          "reference": "Psalm 81:3-4, 5-6, 10-11ab",
+          "text": "Puhuge pasuna uue kuu ajal, täiskuu ajal, meie pidupäeval. Sest see on määrus Iisraelile, korraldus Jaakobi Jumalalt. Kuule, mu rahvas, kui ma sind noomitan; oh Iisrael, kui sa mulle kuuleksid!",
+          "title": "Jumala üleskutse jonnakas Iisraelile"
+        },
+        {
+          "id": "gospel-2025-08-01",
+          "type": "gospel", 
+          "reference": "Matteuse evangeelium 13:54-58",
+          "text": "Jeesus tuli oma kodulinna ja hakkas inimesi synagoogis õpetama, nii et nad hämmastusid ja ütlesid: 'Kust tal see tarkus ja need väe teod?' Ja ta ei teinud seal palju väe tegusid nende uskmatuse pärast.",
+          "title": "Tagasilükkamine Naatsaretis"
+        }
+      ],
+      "reflection": "Isegi Jeesus seisis vastakuti tagasilükkamisega oma kodulinnas. Mõnikord sünnitab tuttavus põlgust ja inimesed ei suuda näha erakordset tavapärases. Las meil oleksid silmad nägemaks Jumala kohalolekut tuttavates kohtades ja inimestes.",
+      "language": "et",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 17,
+        "createdAt": "2025-08-01T00:00:00Z",
+        "updatedAt": "2025-08-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-02",
+      "date": "2025-08-02", 
+      "title": "Laupäev - 17. nädal tavalises ajas",
+      "readings": [
+        {
+          "id": "ot-2025-08-02",
+          "type": "old_testament",
+          "reference": "Leviitide raamat 25:1, 8-17",
+          "text": "Issand kõneles Moosesele Siinai mäel: Te peate loendama seitse aastanädalat, seitse korda seitse aastat, nii et seitsme aastanädala aeg annab nelikümmend üheksa aastat. Siis lasete valjusti mässata pasunat; seitsmenda kuu kümnendal päeval lasete pasunat mässata kogu oma maal.",
+          "title": "Juubeli aasta"
+        },
+        {
+          "id": "psalm-2025-08-02",
+          "type": "psalm", 
+          "reference": "Psalm 67:2-3, 5, 7-8",
+          "text": "Olgu Jumal meile armulik ja õnnistagu meid ning laskgu oma palge meie üle särada, et sinu tee oleks tuntud maa peal, sinu päästev vägi kõigi rahvaste seas. Las rahvad sind kiidavad, oh Jumal; las kõik rahvad sind kiidavad.",
+          "title": "Rahvad kutsutud Jumalat kiitma"
+        },
+        {
+          "id": "gospel-2025-08-02",
+          "type": "gospel",
+          "reference": "Matteuse evangeelium 14:1-12", 
+          "text": "Sel ajal kuulis valitseja Herodes teateid Jeesusest ja ütles oma teenijatele: 'See on Ristija Johannes; ta on surnuist üles äratatud ja seetõttu toimivad temas need väed.' Sest Herodes oli Johannese kinni võtnud, seonu ja vangitorni pannud Herodiase pärast.",
+          "title": "Ristija Johannese surm"
+        }
+      ],
+      "reflection": "Ristija Johannese märtrisurm meenutab meile, et tõe rääkimise võimul on sageli suur hind. Las meil on julgust seista õiguse eest, isegi kui see on raske.",
+      "language": "et",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 17,
+        "createdAt": "2025-08-02T00:00:00Z",
+        "updatedAt": "2025-08-02T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-03",
+      "date": "2025-08-03",
+      "title": "18. pühapäev tavalises ajas",
+      "readings": [
+        {
+          "id": "ot-2025-08-03",
+          "type": "old_testament", 
+          "reference": "2. Moosese raamat 16:2-4, 12-15",
+          "text": "Kogu Iisraeli laste kogudus nurises Moosese ja Aaroni vastu kõrbes. Iisraeli lapsed ütlesid neile: 'Oleksime ikka surnud Issanda käe läbi Egiptuse maal, kui me istusime lihakatelde juures ja sõime leiba küllalt; sest te olete meid välja toonud sellesse kõrbe, et kogu see kogudus näljaga sureks.'",
+          "title": "Leib taevast"
+        },
+        {
+          "id": "psalm-2025-08-03",
+          "type": "psalm",
+          "reference": "Psalm 78:3-4, 23-24, 25, 54",
+          "text": "Mida me oleme kuulnud ja teame, mida meie esivanemad on meile jutustanud. Me ei varja neid nende lastelt; me jutustame tulevale põlvkonnale Issanda kiiduväärseid tegusid ja tema väge ja imesid, mida ta on teinud.",
+          "title": "Jumala headus ja Iisraeli tänamatus"
+        },
+        {
+          "id": "nt-2025-08-03",
+          "type": "new_testament",
+          "reference": "Efeslastele kiri 4:17, 20-24",
+          "text": "Nüüd ma kinnitatan ja nõuan Issandas: te ei tohi enam elada, nagu paganad elavad, oma mõistuse tühisuses. Aga teie ei ole Kristust nii õppinud! Sest teid on õpetatud ära heitma oma endist eluviisi, oma vana inimest, kes rikub himu pettusega.",
+          "title": "Vana elu ja uus elu"
+        },
+        {
+          "id": "gospel-2025-08-03",
+          "type": "gospel",
+          "reference": "Johannese evangeelium 6:24-35",
+          "text": "Kui rahvas nägi, et ei Jeesus ega tema jüngrid pole seal, läksid nemad paatidega Kapernauma ja otsisid Jeesust. Kui nad ta leidsid mere tagant, ütlesid nad talle: 'Rabbi, millal sa siia tulid?' Jeesus vastas neile: 'Tõesti, tõesti ma ütlen teile, te otsiteimnt, mitte sellepärast, et nägite tunnustähti, vaid sellepärast, et sõite leiba ja saite küllalt.'",
+          "title": "Jeesus eluleib"
+        }
+      ],
+      "reflection": "Jeesus näitab ennast elu leivana, tõelise toitluse allikana meie hingedele. Kuigi me sageli otsime Jumalat selle pärast, mida ta meile anda saab, kutsub ta meid otsima tema sellepärast, kes ta on - igavese elu ja mõtte allikas.",
+      "language": "et",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 18,
+        "createdAt": "2025-08-03T00:00:00Z",
+        "updatedAt": "2025-08-03T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-27",
+      "date": "2025-08-27",
+      "title": "Kolmapäev - 21. nädal tavalises ajas",
+      "readings": [
+        {
+          "id": "ot-2025-08-27",
+          "type": "old_testament",
+          "reference": "1. Tessalooniklaste kiri 2:9-13", 
+          "text": "Te mäletate meie vaeva ja tööd, vennad ja õed; me töötasime ööd ja päevad, et me ei saaks kellelegi teist koormaks, kui kuulutasime teile Jumala evangeeliumi. Seetõttu me ka pidevalt täname Jumalat, et kui te võtsite vastu Jumala sõna, mida te meilt kuulsite, siis te võtsite selle vastu mitte inimese sõnana, vaid nagu see tõesti on, Jumala sõnana.",
+          "title": "Pauluse teenistus Tessaloonikis"
+        },
+        {
+          "id": "psalm-2025-08-27",
+          "type": "psalm",
+          "reference": "Psalm 139:7-12",
+          "text": "Kuhu ma võin minna sinu vaimu eest? Või kuhu ma võin põgeneda sinu palge eest? Kui ma lähen üles taevasse, siis sa oled seal; kui ma teen oma voodi põrgusse, siis sa oled seal. Kui ma võtan hommikupuna tiivad ja asan mere äärmistesse paikadesse, siis ka seal su käsi mind juhib.",
+          "title": "Pagematu Jumal"
+        },
+        {
+          "id": "gospel-2025-08-27",
+          "type": "gospel",
+          "reference": "Matteuse evangeelium 23:27-32",
+          "text": "Häda teile, kirjatundjad ja variserid, silmakirjatsejad! Sest te olete nagu lubistatud hauad, mis väljastpoolt näivad ilusad, kuid seestpoolt on täis surnuid luid ja igasugust mustust. Nii ka teie väljastpoolt näite inimestele õiged, kuid seestpoolt olete täis silmakirjalikkust ja ülekohtut.",
+          "title": "Jeesus süüdistab kirjatundjaid ja varisereid"
+        }
+      ],
+      "reflection": "Tänased lugemised kutsuvad meid tõelise usu juurde - mitte ainult välisele religioossele kombestikule, vaid südame tõelisele muutumisele. Jumal näeb kaugemale meie välisest ilmest meie tõelisse olemusse.",
+      "language": "et",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 21,
+        "createdAt": "2025-08-27T00:00:00Z",
+        "updatedAt": "2025-08-27T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-28",
+      "date": "2025-08-28",
+      "title": "Neljapäev - 21. nädal tavalises ajas",
+      "readings": [
+        {
+          "id": "ot-2025-08-28",
+          "type": "old_testament",
+          "reference": "1. Tessalooniklaste kiri 3:7-13",
+          "text": "Seetõttu, vennad ja õed, kõigi meie viletsuste ja tagakiusamiste keskel oleme saanud lohutust teie usu läbi. Sest nüüd me elame, kui te seisate kindlalt Issandas. Kuidas me saame Jumalat piisavalt tänada teie eest kõigi nende rõõmude eest, mida me tunneme oma Jumala ees teie pärast?",
+          "title": "Timoteose julgustav teade"
+        },
+        {
+          "id": "psalm-2025-08-28", 
+          "type": "psalm",
+          "reference": "Psalm 90:3-5a, 12-14, 17",
+          "text": "Sa pöörad inimese tolmuks tagasi ja ütled: 'Pöörduge tagasi, surelikud!' Sest tuhat aastat on sinu silmis nagu eile, mis on möödas, või nagu vahtkord öösel. Õpeta meid meie päevi loendama, et me saaksime targa südame.",
+          "title": "Jumala igavik ja inimese haprus"
+        },
+        {
+          "id": "gospel-2025-08-28",
+          "type": "gospel",
+          "reference": "Matteuse evangeelium 24:42-51",
+          "text": "Valvake siis, sest te ei tea, mis päeval teie Issand tuleb. Aga mõistke seda: kui maja peremees oleks teadnud, mis öösel ajal varas tuleb, siis ta oleks valvanud ega lasknud oma majja sisse murda.",
+          "title": "Valvsuse vajadus"
+        }
+      ],
+      "reflection": "Meid kutsutakse elama ootusrikkalt, valmis Kristuse tagasitulekuks igal hetkel. See ei tähenda ärevat ootamist, vaid ustav elumine igal päeval, nagu see oleks meie viimane võimalus teenida.",
+      "language": "et", 
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 21,
+        "createdAt": "2025-08-28T00:00:00Z",
+        "updatedAt": "2025-08-28T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-29",
+      "date": "2025-08-29",
+      "title": "Reede - 21. nädal tavalises ajas - Püha Ristija Johannese kannatused",
+      "readings": [
+        {
+          "id": "ot-2025-08-29",
+          "type": "old_testament",
+          "reference": "Jeremija raamat 1:17-19",
+          "text": "Aga sina, vööta oma vööd; tõuse ja ütle neile kõik, mida ma sulle käsin. Ära lange nende ees kokku, muidu ma kukutan sind nende ees kokku. Ja mina oman poolt olen teinud sind täna kindlustatud linnaks, raud-sambaks ja pronks-müüriks kogu maa vastu.",
+          "title": "Jeremija määramine"
+        },
+        {
+          "id": "psalm-2025-08-29",
+          "type": "psalm",
+          "reference": "Psalm 71:1-6, 15ab, 17",
+          "text": "Sinus, oh Issand, ma otsin pelgupaika; ära lase mul kunagi häbi saada. Oma õiguses päästa ja pääste mind; kalluta oma kõrv minu poole ja päästa mind. Ole mulle kaljuks, milleks pageda, tugev kindlus, et mind päästa, sest sina oled mu kalju ja mu kindlus.",
+          "title": "Palve eluaegse kaitse ja abi eest"
+        },
+        {
+          "id": "gospel-2025-08-29",
+          "type": "gospel",
+          "reference": "Markuse evangeelium 6:17-29",
+          "text": "Sest Herodes ise oli läkitanud mehed, kes võtsid Johannese kinni, sidusid ta ja panid vanglasse Herodiase pärast, oma venna Filippuse naise pärast, sest Herodes oli ta ära võtnud. Sest Johannes oli Herodasele öelnud: 'Sul ei ole õigus oma venna naist omada.'",
+          "title": "Ristija Johannese surm"
+        }
+      ],
+      "reflection": "Ristija Johannese julgus tõe rääkimises, isegi surmani, kutsub meid uurima oma pühendumust õigusele. Kas me oleme valmis rääkima selle eest, mis on õige, hinnast hoolimata?",
+      "language": "et",
+      "metadata": {
+        "liturgicalSeason": "ordinary", 
+        "feast": "Püha Ristija Johannese kannatused",
+        "week": 21,
+        "createdAt": "2025-08-29T00:00:00Z",
+        "updatedAt": "2025-08-29T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-30",
+      "date": "2025-08-30",
+      "title": "Laupäev - 21. nädal tavalises ajas",
+      "readings": [
+        {
+          "id": "ot-2025-08-30",
+          "type": "old_testament",
+          "reference": "1. Tessalooniklaste kiri 4:9-11",
+          "text": "Mis puutub vendade ja õdede armastamisse, siis te ei vaja, et keegi teile kirjutaks, sest teid on Jumal ise õpetanud üksteist armastama; ja te ka armastate kõiki vendi ja õdesid kogu Makedoonias. Kuid me palume teid, kallid, et te seda veelgi rohkem teeksite.",
+          "title": "Jumalale meeldiv elu"
+        },
+        {
+          "id": "psalm-2025-08-30",
+          "type": "psalm",
+          "reference": "Psalm 98:1, 7-9",
+          "text": "Laulge Issandale uut laulu, sest ta on teinud imesid. Tema parem käsi ja tema püha käsivars on toonud talle võidu. Las meri müriseb ja kõik, mis selles on; maailm ja need, kes selles elavad.",
+          "title": "Kiitke maailma kohtumõistjat"
+        },
+        {
+          "id": "gospel-2025-08-30",
+          "type": "gospel",
+          "reference": "Matteuse evangeelium 25:14-30",
+          "text": "Sest nagu üks mees, kes läks teele, kutsus kokku oma sulased ja andis neile üle oma vara; ühele andis ta viis talenti, teisele kaks, kolmandale ühe, igaühele tema võime järgi. Siis ta läks ära.",
+          "title": "Tünnimeeste tähendamissõna"
+        }
+      ],
+      "reflection": "Tünnimeeste tähendamissõna õpetab meile, et Jumal on andnud igaühele meist anded ja võimed, et kasutada neid tema au heaks. Meid kutsutakse olema ustavad majapidajad, kasutades seda, mis meile on antud, teiste teenimiseks ja Jumala riigi edendamiseks.",
+      "language": "et",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 21,
+        "createdAt": "2025-08-30T00:00:00Z",
+        "updatedAt": "2025-08-30T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-08-31",
+      "date": "2025-08-31",
+      "title": "22. pühapäev tavalises ajas",
+      "readings": [
+        {
+          "id": "ot-2025-08-31",
+          "type": "old_testament",
+          "reference": "5. Moosese raamat 4:1-2, 6-8",
+          "text": "Nüüd siis, Iisrael, kuule käske ja õigusi, mida ma teid õpetan pidama, et te elaksite ja läheksite ja võtaksite valdusesse maa, mille Issand, teie vanemate Jumal, teile annab. Te ei tohi lisada midagi sellele, mida ma teile käsin, ega võtta sellest midagi ära, vaid pidage Issanda, oma Jumala käske, mida ma teile annan.",
+          "title": "Mooses käsib kuulekust"
+        },
+        {
+          "id": "psalm-2025-08-31",
+          "type": "psalm", 
+          "reference": "Psalm 15:2-5",
+          "text": "Kes käib laitmatus ja teeb õigust ja räägib tõtt oma südamest; kes ei laimata oma keelega ja ei tee kurja oma ligimesele ega võta üles teotamist oma naabri vastu.",
+          "title": "Kes võib elada Jumala pühamus?"
+        },
+        {
+          "id": "nt-2025-08-31",
+          "type": "new_testament",
+          "reference": "Jaakobuse kiri 1:17-18, 21b-22, 27",
+          "text": "Iga hea and ja iga täiuslik kingitus on ülalt, tuleb alla valguse Isalt, kelle juures ei ole muutumist ega varjutava pöördumise varju. Oma tahte järgi on ta meid sünnitanud tõe sõnaga, et me oleksime nagu tema loodud olevuste esikud.",
+          "title": "Sõna kuulamine ja täitmine"
+        },
+        {
+          "id": "gospel-2025-08-31",
+          "type": "gospel",
+          "reference": "Markuse evangeelium 7:1-8, 14-15, 21-23",
+          "text": "Kui variserid ja mõned kirjatundjad, kes olid tulnud Jeruusalemmast, kogunesid tema juurde, märkasid nad, et mõned tema jüngritest sõid leiba rüvetatud, see tähendab pesmata kätega. Variserid ja kirjatundjad küsisid temalt: 'Miks su jüngrid ei ela vanemate komme järgi, vaid sõid leiba rüvetatud kätega?'",
+          "title": "Vanemate komme"
+        }
+      ],
+      "reflection": "Jeesus õpetab meile, et tõeline puhtus tuleb seestpoolt, mitte välistest kommetest. Jumal hoolib rohkem meie südame seisukorrast kui rituaalsest puhtusest. Las me keskendume sisemise õiguse ja autentse usu kasvatamisele.",
+      "language": "et",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 22,
+        "createdAt": "2025-08-31T00:00:00Z",
+        "updatedAt": "2025-08-31T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-09-15",
+      "date": "2025-09-15",
+      "title": "Kibeduste Jumalaema mälestuspäev",
+      "readings": [
+        {
+          "id": "nt-2025-09-15",
+          "type": "new_testament",
+          "reference": "1. Timoteose kiri 2:1-8",
+          "text": "Armas: Esmalt küsin, et palved, anumised, esipalved ja tänuavaldused tehakse kõigi inimeste heaks, kuningate ja kõigi võimukandjate heaks, et me võiksime elada rahulikku ja vaikset elu kogu jumalakartuses ja väärikuses. See on hea ja meele järgi meie Päästja Jumalale, kes tahab, et kõik inimesed pääseksid ja jõuaksid tõe tunnetamisele.",
+          "title": "Palve kõigi inimeste eest"
+        },
+        {
+          "id": "psalm-2025-09-15",
+          "type": "psalm",
+          "reference": "Psalm 28:2, 7, 8-9",
+          "text": "Kuule mu anumise häält, kui ma sinule hüüan, tõstes oma käed su püha koha poole. Issand on mu jõud ja mu kilp. Tema peale mu süda loodab ja ma saan abi; siis mu süda rõõmustab ja ma tänan teda oma lauluga.",
+          "title": "Õnnistatud olgu Issand"
+        },
+        {
+          "id": "gospel-2025-09-15",
+          "type": "gospel",
+          "reference": "Johannese evangeelium 19:25-27",
+          "text": "Jeesuse risti juures seisid tema ema ja tema ema õde, Maarja, Kleopase naine, ja Maarja Magdaleena. Kui Jeesus nägi oma ema ja jüngrit, keda ta armastas, seal seismas, ütles ta oma emale: 'Naine, vaata, sinu poeg.' Siis ütles ta jüngrile: 'Vaata, sinu ema.' Ja sellest tunnist võttis jünger ta oma koju.",
+          "title": "Naine, vaata, sinu poeg"
+        }
+      ],
+      "reflection": "Maarja kibedused õpetavad meile ema armastuse sügavusest ja jüngerluse hinnast. Kui ta seisis risti juures, õpetab ta meid jääma ustavaks ka meie kõige pimedamatel hetkedel, usaldades Jumala suurepärasemat plaani.",
+      "language": "et",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 24,
+        "createdAt": "2025-09-15T00:00:00Z",
+        "updatedAt": "2025-09-15T00:00:00Z"
+      }
+    },
+    {
+      "id": "2025-10-31",
+      "date": "2025-10-31",
+      "title": "31. nädala reede tavalises ajas",
+      "readings": [
+        {
+          "id": "nt-2025-10-31",
+          "type": "new_testament",
+          "reference": "Roomlaste kiri 9:1-5",
+          "text": "Vennad ja õed: Ma räägin tõtt Kristuses, ma ei valeta; mu südametunnistus kinnitab mulle Püha Vaimu läbi, et mul on suur kurbus ja lakkamatu valu südames. Sest ma võiksin soovida, et mina ise oleksin neetud ja Kristusest eraldatud oma rahva, oma lihalikku suguvõsa pärast.",
+          "title": "Jumala valimine Iisraelit"
+        },
+        {
+          "id": "psalm-2025-10-31",
+          "type": "psalm",
+          "reference": "Psalm 147:12-13, 14-15, 19-20",
+          "text": "Kiida Issandat, oh Jeruusalemm; kiida oma Jumalat, oh Siion. Sest ta on tugevdanud sinu väravate lukke; ta on õnnistanud sinu lapsi sinu sees. Ta on andnud rahu sinu piiridesse; parima nisuga ta täidab sind.",
+          "title": "Siioni tänulik kiitus oma helde Issanda poole"
+        },
+        {
+          "id": "gospel-2025-10-31",
+          "type": "gospel",
+          "reference": "Luuka evangeelium 14:1-6",
+          "text": "Hingamispäeval läks Jeesus sööma ühe juhtiva variseri majja, ja seal olijad jälgisid teda tähelepanelikult. Tema ees oli mees, kes kannatas veetõve all. Jeesus rääkis õigusesõna teadjaile ja variseridele, küsides: 'Kas on lubatud hingamispäeval tervendada või mitte?' Aga nad vaikisid; nii ta võttis mehe ja, pärast seda kui ta oli teda tervendanud, lasi tal minna.",
+          "title": "Veetõvega mehe tervendamine"
+        }
+      ],
+      "reflection": "Kui me läheneme Kõigi Pühade päevale, mõtleme Pauluse sügavale armastusele oma rahva vastu ja Jeesuse kaastundele kannatajate suhtes. Tõeline pühadus näitab ennast tõelises hoolitsuses teiste eest, eriti siis, kui see väljakutseks meie eelarvamused.",
+      "language": "et",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "week": 31,
+        "createdAt": "2025-10-31T00:00:00Z",
+        "updatedAt": "2025-10-31T00:00:00Z"
+      }
+    }
+  ]
+}
