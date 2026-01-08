@@ -23,10 +23,14 @@ function AppContent() {
   }, [localizationLoading, settingsLoading]);
 
   // Determine theme based on settings or system preference
+  const isDarkMode = 
+    settings?.theme === 'dark' || 
+    (settings?.theme === 'system' && colorScheme === 'dark');
+
   const getTheme = () => {
-    if (settings?.theme === 'light') return lightTheme;
-    if (settings?.theme === 'dark') return darkTheme;
-    return colorScheme === 'dark' ? darkTheme : lightTheme;
+    // Note: This local theme logic is for the loading screen only.
+    // The main app uses the useTheme hook which includes Liturgical updates.
+    return isDarkMode ? darkTheme : lightTheme;
   };
 
   const theme = getTheme();
@@ -44,6 +48,7 @@ function AppContent() {
             {localizationError || settingsError}
           </Text>
         )}
+        <StatusBar style={isDarkMode ? 'light' : 'dark'} />
       </View>
     );
   }
@@ -51,7 +56,7 @@ function AppContent() {
   return (
     <SafeAreaProvider>
       <AppNavigator />
-      <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
+      <StatusBar style={isDarkMode ? 'light' : 'dark'} />
     </SafeAreaProvider>
   );
 }
