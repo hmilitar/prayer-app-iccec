@@ -254,9 +254,23 @@ export default function SettingsScreen() {
   }, [theme, settings]);
 
   const handleLanguageChange = useCallback(async (language: string) => {
+    // If currently changing, block attempts
+    if (saving) return;
+
     try {
-      await updateLanguage(language as SupportedLanguage);
-      await changeLanguage(language as SupportedLanguage);
+      // Defensive programming: Validate language
+      const targetLanguage = language as SupportedLanguage;
+      if (!getSupportedLanguages().includes(targetLanguage)) {
+        throw new Error(`Unsupported language: ${language}`);
+      }
+
+      // 1. Persist settings first
+      await updateLanguage(targetLanguage);
+      
+      // 2. Update localization context (this triggers the event emitter)
+      // This will convert "simultaneously" across other screens
+      await changeLanguage(targetLanguage);
+
     } catch (err) {
       console.error('Failed to change language:', err);
       Alert.alert(
@@ -265,7 +279,7 @@ export default function SettingsScreen() {
         [{ text: t('common.ok') || 'OK' }]
       );
     }
-  }, [updateLanguage, changeLanguage, t]);
+  }, [updateLanguage, changeLanguage, t, getSupportedLanguages, saving]);
 
   const handleFontSizeChange = useCallback(async (fontSize: string) => {
     try {
@@ -345,11 +359,22 @@ export default function SettingsScreen() {
   }
 
   const languageOptions = getSupportedLanguages().map(lang => {
-    let label = 'English';
-    if (lang === 'tl') label = 'Tagalog';
-    if (lang === 'et') label = 'Estonian';
+    // Use native language names for better UX
+    const languageLabels: Record<string, string> = {
+      en: 'English',
+      tl: 'Tagalog',
+      et: 'Eesti',
+      es: 'Español',
+      it: 'Italiano',
+      fr: 'Français',
+      de: 'Deutsch',
+      pl: 'Polski'
+    };
     
-    return { label, value: lang };
+    return { 
+      label: languageLabels[lang] ?? lang.toUpperCase(), 
+      value: lang 
+    };
   });
 
   const fontSizeOptions = [

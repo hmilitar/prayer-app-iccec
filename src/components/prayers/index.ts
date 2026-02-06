@@ -5,3 +5,5 @@ export type { PrayerCardProps } from './PrayerCard';
 
 export { default as PrayerList } from './PrayerList';
 export type { PrayerListProps } from './PrayerList';
+
+export { SourceFooter } from './SourceFooter';

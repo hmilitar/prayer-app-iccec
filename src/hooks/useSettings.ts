@@ -1,57 +1,109 @@
 // Custom hook for managing user settings
 
 import { useState, useEffect, useCallback } from 'react';
+import { EventEmitter } from 'fbemitter';
 import { UserSettings, FontSize, ThemeMode } from '../types/Settings';
 import { AsyncStorageService } from '../services/StorageService';
 import { SupportedLanguage } from '../types/Prayer';
 
+// Global Event Emitter for Settings synchronization across the app
+// This ensures that when settings change in one screen, all other screens update instantly
+const settingsEmitter = new EventEmitter();
+const EVENT_SETTINGS_CHANGED = 'settings_changed';
+
+// In-memory cache to serve settings immediately to new subscribers without async delay
+let globalSettingsCache: UserSettings | null = null;
+
 export function useSettings() {
-  const [settings, setSettings] = useState<UserSettings | null>(null);
-  const [loading, setLoading] = useState(true);
+  // Initialize with cache if available to prevent layout shift/flicker
+  const [settings, setSettings] = useState<UserSettings | null>(globalSettingsCache);
+  const [loading, setLoading] = useState(!globalSettingsCache); // Only loading if cache is empty
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
 
   const storageService = new AsyncStorageService();
 
   useEffect(() => {
-    loadSettings();
+    // If we don't have settings yet (fresh app launch), load them
+    if (!globalSettingsCache) {
+      loadSettings();
+    }
+
+    // Subscribe to global setting changes
+    const subscription = settingsEmitter.addListener(EVENT_SETTINGS_CHANGED, (newSettings: UserSettings) => {
+      // Update local state (this triggers re-render)
+      setSettings(newSettings);
+      
+      // Update cache
+      globalSettingsCache = newSettings;
+    });
+
+    return () => {
+      subscription.remove();
+    };
   }, []);
 
   const loadSettings = async () => {
     try {
-      setLoading(true);
+      // Only set loading if we don't have data
+      if (!settings) setLoading(true);
+      
       setError(null);
       const userSettings = await storageService.getSettings();
+      
+      // Update local state and global cache
       setSettings(userSettings);
+      globalSettingsCache = userSettings;
+      
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load settings');
+      // On error, we might want to use default settings
+      if (!settings) {
+         // Fallback could be added here
+      }
     } finally {
       setLoading(false);
     }
   };
 
   const updateSettings = useCallback(async (newSettings: Partial<UserSettings>) => {
-    if (!settings) return false;
+    // Defensive check: ensure we have base settings to merge into
+    const baseSettings = settings || globalSettingsCache;
+    if (!baseSettings) {
+        console.warn('Cannot update settings: Settings not loaded yet');
+        return false;
+    }
 
     try {
       setSaving(true);
       setError(null);
       
       const updatedSettings: UserSettings = {
-        ...settings,
+        ...baseSettings,
         ...newSettings,
         metadata: {
-          ...settings.metadata,
-          version: settings.metadata.version + 1,
+          ...baseSettings.metadata,
+          version: baseSettings.metadata.version + 1,
           lastUpdated: new Date().toISOString(),
         },
       };
 
-      await storageService.saveSettings(updatedSettings);
+      // Optimistic update: Broadcast fast, then save
+      // This makes the UI feel instant
       setSettings(updatedSettings);
+      globalSettingsCache = updatedSettings;
+      settingsEmitter.emit(EVENT_SETTINGS_CHANGED, updatedSettings);
+
+      // Persist to storage
+      await storageService.saveSettings(updatedSettings);
+      
       return true;
     } catch (err) {
+      // Rollback logic could be implemented here if save fails
+      console.error('Failed to save settings:', err);
       setError(err instanceof Error ? err.message : 'Failed to save settings');
+      
+      // In a real robust app, we might emit the old settings back to revert UI
       return false;
     } finally {
       setSaving(false);
@@ -64,9 +116,15 @@ export function useSettings() {
       setError(null);
       
       // Get fresh default settings
-      const defaultSettings = new AsyncStorageService()['getDefaultSettings']();
-      await storageService.saveSettings(defaultSettings);
+      const defaultSettings = new AsyncStorageService().getDefaultSettings();
+      
+      // Optimistic update
       setSettings(defaultSettings);
+      globalSettingsCache = defaultSettings;
+      settingsEmitter.emit(EVENT_SETTINGS_CHANGED, defaultSettings);
+
+      await storageService.saveSettings(defaultSettings);
+      
       return true;
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to reset settings');
@@ -75,6 +133,7 @@ export function useSettings() {
       setSaving(false);
     }
   }, [storageService]);
+
 
   // Convenience methods for specific settings
   const updateLanguage = useCallback(async (language: SupportedLanguage) => {

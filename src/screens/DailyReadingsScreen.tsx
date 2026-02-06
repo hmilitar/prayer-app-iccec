@@ -1,13 +1,14 @@
 // Daily Readings Screen - Display daily scripture readings and reflections
 
 import React, { useEffect, useState, useCallback } from 'react';
-import { View, Text, StyleSheet, ScrollView, ActivityIndicator, RefreshControl } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, ActivityIndicator, RefreshControl, TouchableOpacity, Linking } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { Ionicons } from '@expo/vector-icons';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { TabParamList } from '../types/Navigation';
-import { DailyReading } from '../types/Reading';
+import { DailyReading, getBibleGatewayUrl } from '../types/Reading';
 import { Header, PrimaryButton } from '../components';
-import { ReadingCard } from '../components/readings';
+import { ReadingCard, CalendarView } from '../components/readings';
 import { useLocalization } from '../hooks/useLocalization';
 import { useTheme } from '../hooks/useTheme';
 import { useData } from '../hooks/useData';
@@ -19,7 +20,9 @@ import {
   getNextDay, 
   getPreviousDay, 
   parseISODate,
-  getLiturgicalSeason 
+  getLiturgicalSeason,
+  getLiturgicalColor,
+  formatDateToISO
 } from '../utils/dateUtils';
 
 type DailyReadingsScreenNavigationProp = StackNavigationProp<TabParamList, 'DailyReadings'>;
@@ -33,6 +36,8 @@ export default function DailyReadingsScreen() {
   const [currentReading, setCurrentReading] = useState<DailyReading | null>(null);
   const [loadingReading, setLoadingReading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
+  const [viewMode, setViewMode] = useState<'daily' | 'calendar'>('calendar'); // Default to calendar view
+  const [currentMonth, setCurrentMonth] = useState(new Date());
   
   const theme = useTheme();
   const today = getTodayISO();
@@ -97,9 +102,30 @@ export default function DailyReadingsScreen() {
   };
 
   const selectedDateObj = parseISODate(selectedDate);
+  const navigateMonth = (direction: 'next' | 'previous') => {
+    const newMonth = new Date(currentMonth);
+    if (direction === 'next') {
+      newMonth.setMonth(newMonth.getMonth() + 1);
+    } else {
+      newMonth.setMonth(newMonth.getMonth() - 1);
+    }
+    setCurrentMonth(newMonth);
+  };
+
+  const handleDateSelectFromCalendar = (dateISO: string) => {
+    setSelectedDate(dateISO);
+    setViewMode('daily'); // Switch to daily view when date is selected
+  };
+
+  const openBibleLink = (reference: string) => {
+    const url = getBibleGatewayUrl(reference);
+    Linking.openURL(url).catch(err => console.error('Failed to open Bible link:', err));
+  };
+
   const isToday = selectedDate === today;
   const displayDate = formatDisplayDate(selectedDateObj, currentLanguage);
   const liturgicalSeason = getLiturgicalSeason(selectedDateObj);
+  const liturgicalColor = getLiturgicalColor(selectedDateObj);
 
   const styles = createStyles(theme);
 
@@ -109,6 +135,36 @@ export default function DailyReadingsScreen() {
         title={t('dailyReadings')}
         variant="elevated"
       />
+
+      {/* View Toggle */}
+      <View style={styles.viewToggle}>
+        <TouchableOpacity
+          style={[styles.toggleButton, viewMode === 'calendar' && styles.toggleButtonActive]}
+          onPress={() => setViewMode('calendar')}
+        >
+          <Ionicons 
+            name="calendar-outline" 
+            size={20} 
+            color={viewMode === 'calendar' ? '#FFFFFF' : theme.colors.text.secondary} 
+          />
+          <Text style={[styles.toggleText, viewMode === 'calendar' && styles.toggleTextActive]}>
+            {t('calendar') || 'Calendar'}
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.toggleButton, viewMode === 'daily' && styles.toggleButtonActive]}
+          onPress={() => setViewMode('daily')}
+        >
+          <Ionicons 
+            name="book-outline" 
+            size={20} 
+            color={viewMode === 'daily' ? '#FFFFFF' : theme.colors.text.secondary} 
+          />
+          <Text style={[styles.toggleText, viewMode === 'daily' && styles.toggleTextActive]}>
+            {t('daily') || 'Daily'}
+          </Text>
+        </TouchableOpacity>
+      </View>
       
       <ScrollView 
         style={styles.content} 
@@ -124,69 +180,129 @@ export default function DailyReadingsScreen() {
           />
         }
       >
-        {/* Date Navigation */}
-        <View style={styles.dateNavigation}>
-          <PrimaryButton
-            title="←"
-            onPress={() => navigateToDate('previous')}
-            variant="ghost"
-            size="small"
-          />
-          
-          <View style={styles.dateInfo}>
-            <Text style={styles.dateText}>
-              {displayDate}
-            </Text>
-            {!!liturgicalSeason && (
-              <Text style={styles.seasonText}>
-                {t(liturgicalSeason)}
+        {viewMode === 'calendar' ? (
+          <>
+            {/* Month Navigation */}
+            <View style={styles.monthNavigation}>
+              <PrimaryButton
+                title="←"
+                onPress={() => navigateMonth('previous')}
+                variant="ghost"
+                size="small"
+              />
+              <Text style={styles.monthText}>
+                {currentMonth.toLocaleDateString(currentLanguage, { month: 'long', year: 'numeric' })}
               </Text>
+              <PrimaryButton
+                title="→"
+                onPress={() => navigateMonth('next')}
+                variant="ghost"
+                size="small"
+              />
+            </View>
+
+            {/* Calendar View */}
+            <CalendarView
+              currentMonth={currentMonth}
+              selectedDate={selectedDate}
+              onDateSelect={handleDateSelectFromCalendar}
+              availableDates={[]} // TODO: Load available dates from data
+            />
+          </>
+        ) : (
+          <>
+            {/* Date Navigation */}
+            <View style={styles.dateNavigation}>
+              <PrimaryButton
+                title="←"
+                onPress={() => navigateToDate('previous')}
+                variant="ghost"
+                size="small"
+              />
+              
+              <View style={styles.dateInfo}>
+                <Text style={styles.dateText}>
+                  {displayDate}
+                </Text>
+                {!!liturgicalSeason && (
+                  <View style={styles.seasonContainer}>
+                    <View 
+                      style={[styles.seasonDot, { backgroundColor: liturgicalColor }]} 
+                    />
+                    <Text style={styles.seasonText}>
+                      {t(liturgicalSeason)}
+                    </Text>
+                  </View>
+                )}
+              </View>
+              
+              <PrimaryButton
+                title="→"
+                onPress={() => navigateToDate('next')}
+                variant="ghost"
+                size="small"
+              />
+            </View>
+
+            {/* Today/Latest Button */}
+            {!isToday && (
+              <PrimaryButton
+                title={t('goToToday')}
+                onPress={navigateToToday}
+                variant="outline"
+                size="small"
+                style={styles.todayButton}
+              />
             )}
-          </View>
-          
-          <PrimaryButton
-            title="→"
-            onPress={() => navigateToDate('next')}
-            variant="ghost"
-            size="small"
-          />
-        </View>
 
-        {/* Today/Latest Button */}
-        {!isToday && (
-          <PrimaryButton
-            title={t('goToToday')}
-            onPress={navigateToToday}
-            variant="outline"
-            size="small"
-            style={styles.todayButton}
-          />
-        )}
+            {/* Reading Content */}
+            {loadingReading && (
+              <View style={styles.loadingContainer}>
+                <ActivityIndicator size="large" color={theme.colors.primary[500]} />
+                <Text style={styles.loadingText}>
+                  {t('loadingReading')}
+                </Text>
+              </View>
+            )}
+            
+            {!loadingReading && currentReading && (
+              <>
+                <ReadingCard 
+                  reading={currentReading} 
+                  onPress={handleReadingPress}
+                  showDate={false}
+                />
 
-        {/* Reading Content */}
-        {loadingReading && (
-          <View style={styles.loadingContainer}>
-            <ActivityIndicator size="large" color={theme.colors.primary[500]} />
-            <Text style={styles.loadingText}>
-              {t('loadingReading')}
-            </Text>
-          </View>
-        )}
-        
-        {!loadingReading && currentReading && (
-          <ReadingCard 
-            reading={currentReading} 
-            onPress={handleReadingPress}
-            showDate={false}
-          />
-        )}
-        
-        {!loadingReading && !currentReading && (
-          <View style={styles.noReadingContainer}>
-            <Text style={styles.noReadingText}>
-              {t('noReadingAvailable')}
-            </Text>
-          </View>
+                {/* Bible Links */}
+                {currentReading.readings.length > 0 && (
+                  <View style={styles.bibleLinksContainer}>
+                    <Text style={styles.bibleLinksTitle}>
+                      {t('readOnline') || 'Read Online'}
+                    </Text>
+                    {currentReading.readings.map((reading) => (
+                      <TouchableOpacity
+                        key={reading.id}
+                        style={styles.bibleLink}
+                        onPress={() => openBibleLink(reading.reference)}
+                      >
+                        <Ionicons name="book-outline" size={20} color={theme.colors.primary[500]} />
+                        <Text style={styles.bibleLinkText}>{reading.reference}</Text>
+                        <Ionicons name="open-outline" size={16} color={theme.colors.text.secondary} />
+                      </TouchableOpacity>
+                    ))}
+                  </View>
+                )}
+              </>
+            )}
+            
+            {!loadingReading && !currentReading && (
+              <View style={styles.noReadingContainer}>
+                <Text style={styles.noReadingText}>
+                  {t('noReadingAvailable')}
+                </Text>
+              </View>
+            )}
+          </>
         )}
       </ScrollView>
     </SafeAreaView>
@@ -203,6 +319,47 @@ const createStyles = (theme: Theme & { userFontSize: string }) => StyleSheet.cre
   content: {
     flex: 1,
     paddingHorizontal: theme.spacing.md,
+  },
+  viewToggle: {
+    flexDirection: 'row',
+    backgroundColor: theme.colors.background.primary,
+    marginHorizontal: theme.spacing.md,
+    marginTop: theme.spacing.sm,
+    borderRadius: theme.borderRadius.lg,
+    padding: theme.spacing.xs,
+    ...theme.shadows.sm,
+  },
+  toggleButton: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingVertical: theme.spacing.sm,
+    paddingHorizontal: theme.spacing.md,
+    borderRadius: theme.borderRadius.md,
+    gap: theme.spacing.xs,
+  },
+  toggleButtonActive: {
+    backgroundColor: theme.colors.primary[500],
+  },
+  toggleText: {
+    fontSize: getScaledFontSize(theme.typography.fontSize.sm, theme.userFontSize),
+    fontWeight: '600',
+    color: theme.colors.text.secondary,
+  },
+  toggleTextActive: {
+    color: '#FFFFFF',
+  },
+  monthNavigation: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: theme.spacing.md,
+  },
+  monthText: {
+    fontSize: getScaledFontSize(theme.typography.fontSize.lg, theme.userFontSize),
+    fontWeight: '600',
+    color: theme.colors.text.primary,
   },
   dateNavigation: {
     flexDirection: 'row',
@@ -225,12 +382,22 @@ const createStyles = (theme: Theme & { userFontSize: string }) => StyleSheet.cre
     color: theme.colors.text.primary,
     textAlign: 'center',
   },
+  seasonContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: theme.spacing.xs,
+    gap: theme.spacing.xs,
+  },
+  seasonDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+  },
   seasonText: {
     fontSize: getScaledFontSize(theme.typography.fontSize.sm, theme.userFontSize),
     fontStyle: 'italic',
     color: theme.colors.primary[500],
     textAlign: 'center',
-    marginTop: theme.spacing.xs,
   },
   todayButton: {
     alignSelf: 'center',
@@ -245,6 +412,35 @@ const createStyles = (theme: Theme & { userFontSize: string }) => StyleSheet.cre
     color: theme.colors.text.secondary,
     marginTop: theme.spacing.md,
     textAlign: 'center',
+  },
+  bibleLinksContainer: {
+    backgroundColor: theme.colors.background.primary,
+    borderRadius: theme.borderRadius.lg,
+    padding: theme.spacing.md,
+    marginTop: theme.spacing.md,
+    ...theme.shadows.sm,
+  },
+  bibleLinksTitle: {
+    fontSize: getScaledFontSize(theme.typography.fontSize.base, theme.userFontSize),
+    fontWeight: '600',
+    color: theme.colors.text.primary,
+    marginBottom: theme.spacing.sm,
+  },
+  bibleLink: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingVertical: theme.spacing.sm,
+    paddingHorizontal: theme.spacing.md,
+    backgroundColor: theme.colors.background.secondary,
+    borderRadius: theme.borderRadius.md,
+    marginTop: theme.spacing.xs,
+    gap: theme.spacing.sm,
+  },
+  bibleLinkText: {
+    flex: 1,
+    fontSize: getScaledFontSize(theme.typography.fontSize.sm, theme.userFontSize),
+    color: theme.colors.primary[500],
+    fontWeight: '500',
   },
   noReadingContainer: {
     backgroundColor: theme.colors.background.primary,

@@ -7,7 +7,7 @@ import { useColorScheme, Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import HomeScreen from '../screens/HomeScreen';
-import DailyReadingsScreen from '../screens/DailyReadingsScreen';
+import DailyDevotionsScreen from '../screens/DailyDevotionsScreen';
 import PrayersScreen from '../screens/PrayersScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import { TabParamList } from '../types/Navigation';
@@ -82,7 +82,7 @@ export default function TabNavigator() {
       />
       <Tab.Screen
         name="DailyReadings"
-        component={DailyReadingsScreen}
+        component={DailyDevotionsScreen}
         options={{ tabBarLabel: t('navigation.dailyReadings') }}
       />
       <Tab.Screen

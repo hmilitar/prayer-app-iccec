@@ -3,28 +3,42 @@
 import { useState, useEffect, useCallback } from 'react';
 import { Prayer, SupportedLanguage } from '../types/Prayer';
 import { DailyReading } from '../types/Reading';
+import { DailyDevotion, DevotionDay } from '../types/Devotion';
 import { DataService, LocalDataSource } from '../services/DataService';
 
 export function useData() {
   const [prayers, setPrayers] = useState<Prayer[]>([]);
   const [readings, setReadings] = useState<DailyReading[]>([]);
+  const [devotions, setDevotions] = useState<DevotionDay[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [lastLoadedLanguage, setLastLoadedLanguage] = useState<SupportedLanguage | null>(null);
 
-  const dataService = new DataService(new LocalDataSource());
+  // Use useMemo to create dataService only once
+  const [dataService] = useState(() => new DataService(new LocalDataSource()));
 
   const loadPrayers = useCallback(async (language: SupportedLanguage, forceReload: boolean = false) => {
-    // Skip loading if same language and not forcing reload and we have data
-    if (!forceReload && lastLoadedLanguage === language && prayers.length > 0) {
+    // Force reload if language changed
+    const languageChanged = lastLoadedLanguage !== null && lastLoadedLanguage !== language;
+    const shouldReload = forceReload || languageChanged || prayers.length === 0;
+    
+    if (!shouldReload) {
       return;
     }
 
     try {
       setLoading(true);
       setError(null);
+      
+      // Clear cache if language changed
+      if (languageChanged) {
+        console.log('useData: Language changed, clearing cache and reloading');
+        setPrayers([]);
+        setDevotions([]);
+      }
+      
       const prayerData = await dataService.getPrayers(language);
-      console.log('useData: loadPrayers setting prayers:', prayerData.length);
+      console.log('useData: loadPrayers setting prayers:', prayerData.length, 'for language:', language);
       setPrayers(prayerData);
       setLastLoadedLanguage(language);
     } catch (err) {
@@ -52,7 +66,7 @@ export function useData() {
       setError(err instanceof Error ? err.message : 'Failed to load prayer');
       return null;
     }
-  }, [prayers, dataService]);
+  }, [prayers]);
 
   const loadDailyReading = useCallback(async (date: string, language: SupportedLanguage): Promise<DailyReading | null> => {
     try {
@@ -70,7 +84,7 @@ export function useData() {
       setError(err instanceof Error ? err.message : 'Failed to load daily reading');
       return null;
     }
-  }, [readings, dataService]);
+  }, [readings]);
 
   const loadReadingsRange = useCallback(async (startDate: string, endDate: string, language: SupportedLanguage) => {
     try {
@@ -84,7 +98,7 @@ export function useData() {
     } finally {
       setLoading(false);
     }
-  }, [dataService]);
+  }, []);
 
   const searchPrayers = useCallback((searchTerm: string, category?: string): Prayer[] => {
     if (!prayers.length) return [];
@@ -105,9 +119,38 @@ export function useData() {
     return prayers.filter(prayer => prayer.category === category);
   }, [prayers]);
 
+  const loadDailyDevotions = useCallback(async (date: string, language: SupportedLanguage): Promise<DevotionDay | null> => {
+    try {
+      setError(null);
+      
+      // First try to find in already loaded devotions
+      const existingDevotion = devotions.find(d => d.date === date);
+      if (existingDevotion) {
+        return existingDevotion;
+      }
+      
+      // If not found, load from data service
+      return await dataService.getDailyDevotions(date, language);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to load daily devotions');
+      return null;
+    }
+  }, [devotions]);
+
+  const loadDevotionByTimeOfDay = useCallback(async (date: string, timeOfDay: string, language: SupportedLanguage): Promise<DailyDevotion | null> => {
+    try {
+      setError(null);
+      return await dataService.getDevotionsByTimeOfDay(date, timeOfDay, language);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to load devotion');
+      return null;
+    }
+  }, []);
+
   const clearCache = useCallback(() => {
     setPrayers([]);
     setReadings([]);
+    setDevotions([]);
     setLastLoadedLanguage(null);
     setError(null);
   }, []);
@@ -119,17 +162,20 @@ export function useData() {
   return {
     prayers,
     readings,
+    devotions,
     loading,
     error,
     loadPrayers,
     loadPrayerById,
     loadDailyReading,
     loadReadingsRange,
+    loadDailyDevotions,
+    loadDevotionByTimeOfDay,
     searchPrayers,
     getPrayersByCategory,
     clearCache,
     refreshData,
-    isDataLoaded: prayers.length > 0 || readings.length > 0,
+    isDataLoaded: prayers.length > 0 || readings.length > 0 || devotions.length > 0,
     lastLoadedLanguage,
   };
 }

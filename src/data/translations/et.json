@@ -79,12 +79,16 @@
     "morning": "Hommikupalve",
     "evening": "Õhtupalve",
     "noon": "Keskpäevapalve",
+    "family": "Perepalve",
+    "occasions": "Erinevate Puhkude Jaoks",
     "liturgical": "Liturgilised",
     "contemporary": "Kaasaegsed",
     "personal": "Isiklikud",
     "intercession": "Eestpalved",
     "thanksgiving": "Tänupalved",
     "confession": "Patukahetsus",
+    "charismatic": "Karismaatilised",
+    "sacramental": "Sakramentaalsed",
     "searchPlaceholder": "Otsi palveid...",
     "noResults": "Palveid ei leitud",
     "noPrayers": "Palveid ei leitud. Proovige otsingu või filtrite kohandamist.",
@@ -354,9 +358,20 @@
   "loadingReading": "Lugemise laadimine...",
   "noReadingAvailable": "Sellel kuupäeval sisu puudub",
   "failedToLoadReading": "Lugemise laadimine ebaõnnestus",
+  "prayerJournal": {
+    "title": "Palvepäevik",
+    "comingSoon": "Tulekul",
+    "description": "Palvepäevik võimaldab sul salvestada oma mõtteid, palveid ja vastuseid. See funktsioon on peagi saadaval."
+  },
+  "sourceFooter": {
+    "viewSource": "Vaata allikat",
+    "sourceDocument": "Allikdokument",
+    "pdfGuide": "Palvejuhend PDF",
+    "page": "Lehekülg"
+  },
+  "Ordinary": "Tavaline aeg",
   "Advent": "Advent",
   "Christmas": "Jõulud",
-  "Ordinary Time": "Tavaline aeg",
   "Lent": "Paastuaeg",
   "Easter": "Ülestõusmispühad",
   "Pentecost": "Nelipühi"

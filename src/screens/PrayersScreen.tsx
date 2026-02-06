@@ -84,11 +84,12 @@ export default function PrayersScreen() {
     // forcing a re-render of the component when settings are updated
   }, [theme, currentLanguage]);
 
-  // Load prayers and favorites on mount
+  // Load prayers and favorites when language changes
   useEffect(() => {
     const loadData = async () => {
       try {
-        await loadPrayers(currentLanguage);
+        // Force reload when language changes
+        await loadPrayers(currentLanguage, true);
         await loadFavorites();
       } catch (error) {
         console.error('PrayersScreen: Error loading data:', error);
@@ -96,7 +97,7 @@ export default function PrayersScreen() {
     };
     
     loadData();
-  }, [currentLanguage]); // Only depend on currentLanguage
+  }, [currentLanguage]);
 
   const handlePrayerPress = useCallback((prayer: Prayer) => {
     // Navigate to prayer detail screen

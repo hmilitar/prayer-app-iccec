@@ -28,6 +28,7 @@ import {
   getBorderRadius, 
   getHeaderHeight
 } from '../utils/responsive';
+import { SourceFooter } from '../components/prayers/SourceFooter';
 
 type PrayerDetailRouteProp = RouteProp<RootStackParamList, 'PrayerDetail'>;
 type PrayerDetailNavigationProp = StackNavigationProp<RootStackParamList, 'PrayerDetail'>;
@@ -48,33 +49,57 @@ export default function PrayerDetailScreen() {
   const [fadeAnim] = useState(new Animated.Value(0));
   
   const theme = useTheme();
-  const storageService = new AsyncStorageService();
+  const [storageService] = useState(() => new AsyncStorageService());
 
-  const loadPrayerData = useCallback(async () => {
-    if (!initialLoad && loading) return; // Prevent unnecessary loads
+  // Load prayer data when prayer ID or language changes
+  useEffect(() => {
+    let cancelled = false;
     
-    try {
-      setLoading(true);
+    const loadPrayerData = async () => {
+      if (cancelled) return;
       
-      console.log(`Loading prayer with ID: ${prayerId}, language: ${currentLanguage}`);
-      
-      // Load prayer by ID using the data service (now with mapping support)
-      const foundPrayer = await loadPrayerById(prayerId, currentLanguage);
-      if (foundPrayer) {
-        console.log(`Prayer found: ${foundPrayer.title} (ID: ${foundPrayer.id})`);
-        setPrayer(foundPrayer);
+      try {
+        setLoading(true);
         
-        // Check if prayer is in favorites using the found prayer's actual ID
-        const favorites = await storageService.getFavoritePrayers();
-        const isInFavorites = favorites.includes(foundPrayer.id);
-        setIsFavorite(isInFavorites);
-        console.log(`Prayer favorite status: ${isInFavorites}`);
-      } else {
-        console.log(`Prayer not found for ID: ${prayerId}, language: ${currentLanguage}`);
-        // Prayer not found
+        console.log(`Loading prayer with ID: ${prayerId}, language: ${currentLanguage}`);
+        
+        // Load prayer by ID using the data service (now with mapping support)
+        const foundPrayer = await loadPrayerById(prayerId, currentLanguage);
+        
+        if (cancelled) return;
+        
+        if (foundPrayer) {
+          console.log(`Prayer found: ${foundPrayer.title} (ID: ${foundPrayer.id})`);
+          setPrayer(foundPrayer);
+          
+          // Check if prayer is in favorites using the found prayer's actual ID
+          const favorites = await storageService.getFavoritePrayers();
+          if (cancelled) return;
+          
+          const isInFavorites = favorites.includes(foundPrayer.id);
+          setIsFavorite(isInFavorites);
+          console.log(`Prayer favorite status: ${isInFavorites}`);
+        } else {
+          console.log(`Prayer not found for ID: ${prayerId}, language: ${currentLanguage}`);
+          // Prayer not found
+          Alert.alert(
+            t('error.title') || 'Error',
+            t('prayers.notFound') || 'Prayer not found.',
+            [
+              {
+                text: t('common.ok') || 'OK',
+                onPress: () => navigation.goBack(),
+              },
+            ]
+          );
+        }
+      } catch (err) {
+        if (cancelled) return;
+        
+        console.error('Failed to load prayer:', err);
         Alert.alert(
           t('error.title') || 'Error',
-          t('prayers.notFound') || 'Prayer not found.',
+          t('error.loadPrayer') || 'Failed to load prayer. Please try again.',
           [
             {
               text: t('common.ok') || 'OK',
@@ -82,38 +107,27 @@ export default function PrayerDetailScreen() {
             },
           ]
         );
+      } finally {
+        if (!cancelled) {
+          setLoading(false);
+          setInitialLoad(false);
+          
+          // Fade in content
+          Animated.timing(fadeAnim, {
+            toValue: 1,
+            duration: 300,
+            useNativeDriver: true,
+          }).start();
+        }
       }
-    } catch (err) {
-      console.error('Failed to load prayer:', err);
-      Alert.alert(
-        t('error.title') || 'Error',
-        t('error.loadPrayer') || 'Failed to load prayer. Please try again.',
-        [
-          {
-            text: t('common.ok') || 'OK',
-            onPress: () => navigation.goBack(),
-          },
-        ]
-      );
-    } finally {
-      setLoading(false);
-      setInitialLoad(false);
-      
-      // Fade in content
-      Animated.timing(fadeAnim, {
-        toValue: 1,
-        duration: 300,
-        useNativeDriver: true,
-      }).start();
-    }
-  }, [prayerId, currentLanguage, loadPrayerById, storageService, t, navigation, initialLoad, loading]);
-
-  // Load prayer data and favorite status - only on mount or when prayer ID changes
-  useEffect(() => {
-    if (initialLoad) {
-      loadPrayerData();
-    }
-  }, [prayerId]); // Only depend on prayerId to prevent unnecessary loads
+    };
+    
+    loadPrayerData();
+    
+    return () => {
+      cancelled = true;
+    };
+  }, [prayerId, currentLanguage]);
 
   const handleFavoriteToggle = useCallback(async () => {
     if (!prayer) return;
@@ -321,6 +335,12 @@ export default function PrayerDetailScreen() {
         )}
         </ScrollView>
       </Animated.View>
+      
+      {/* Source Footer */}
+      <SourceFooter 
+        source={prayer.source}
+        sourceReference={(prayer as any).sourceReference}
+      />
     </SafeAreaView>
   );
 }

@@ -79,12 +79,16 @@
     "morning": "Panalangin sa Umaga",
     "evening": "Panalangin sa Gabi",
     "noon": "Panalangin sa Tanghali",
+    "family": "Panalangin ng Pamilya",
+    "occasions": "Para sa Iba't Ibang Okasyon",
     "liturgical": "Liturgikal",
     "contemporary": "Kontemporaryo",
     "personal": "Personal",
     "intercession": "Panalangin para sa Iba",
     "thanksgiving": "Pasasalamat",
     "confession": "Pagsisisi",
+    "charismatic": "Karismatiko",
+    "sacramental": "Sakramental",
     "searchPlaceholder": "Maghanap ng mga panalangin...",
     "noResults": "Walang nahanap na panalangin",
     "noPrayers": "Walang nahanap na panalangin. Subukan na ayusin ang inyong paghahanap o mga filter.",
@@ -354,9 +358,20 @@
   "loadingReading": "Naglo-load ng pagbabasa...",
   "noReadingAvailable": "Walang nilalaman sa petsang ito",
   "failedToLoadReading": "Hindi na-load ang pagbabasa",
+  "prayerJournal": {
+    "title": "Talaarawan ng Panalangin",
+    "comingSoon": "Malapit Na",
+    "description": "Ang Talaarawan ng Panalangin ay magbibigay-daan sa iyo na itala ang iyong mga iniisip, kahilingan, at mga sagot sa panalangin. Ang feature na ito ay malapit nang maging available."
+  },
+  "sourceFooter": {
+    "viewSource": "Tingnan ang Pinagmulan",
+    "sourceDocument": "Dokumentong Pinagmulan",
+    "pdfGuide": "Prayer Guide PDF",
+    "page": "Pahina"
+  },
+  "Ordinary": "Ordinaryong Panahon",
   "Advent": "Adbento",
   "Christmas": "Pasko",
-  "Ordinary Time": "Ordinaryong Panahon",
   "Lent": "Kuwaresma",
   "Easter": "Pasko ng Pagkabuhay",
   "Pentecost": "Pentekostes"

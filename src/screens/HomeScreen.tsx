@@ -114,6 +114,14 @@ export default function HomeScreen() {
     navigation.navigate('DailyReadings');
   };
 
+  const handleDevotionNavigation = (timeOfDay: 'morning' | 'noon' | 'evening' | 'family' | string) => {
+    // Cast to valid time value if it matches
+    const validTime = (['morning', 'noon', 'evening', 'family'].includes(timeOfDay) 
+      ? timeOfDay 
+      : 'morning') as 'morning' | 'noon' | 'evening' | 'family';
+    navigation.navigate('DailyReadings', { timeOfDay: validTime });
+  };
+
   const styles = createStyles(theme);
 
   // Generate a unique key based on current settings for forced re-render
@@ -167,12 +175,13 @@ export default function HomeScreen() {
             title={recommendedPrayer.title}
             subtitle={recommendedPrayer.subtitle}
             icon={recommendedPrayer.icon}
-            onPress={() => handlePrayerNavigation(recommendedPrayer.category)}
+            onPress={() => handleDevotionNavigation(recommendedPrayer.category)}
             variant="primary"
             style={styles.recommendedTile}
           />
 
           {/* Daily Readings */}
+          {/*
           <TileCard
             title={t('readings.daily') || 'Daily Readings'}
             subtitle={t('readings.dailyDetails.subtitle') || "Today's scripture and reflections"}
@@ -180,38 +189,48 @@ export default function HomeScreen() {
             onPress={handleDailyReadingsNavigation}
             style={styles.actionTile}
           />
+          */}
         </View>
 
         {/* Prayer Times */}
         <View style={styles.prayerTimesSection}>
           <Text style={styles.sectionTitle}>
-            {t('home.prayerTimes') || 'Prayer Times'}
+            {t('home.prayerTimes') || 'Daily Prayer Times'}
           </Text>
           
           <View style={styles.prayerTimesGrid}>
             <TileCard
-              title={t('prayers.morning') || 'Morning'}
-              subtitle="6:00 AM"
+              title={t('devotions.morning') || 'Morning'}
+              subtitle={t('devotions.morningSubtitle') || 'Start your day'}
               icon="sunny-outline"
-              onPress={() => handlePrayerNavigation('morning')}
+              onPress={() => handleDevotionNavigation('morning')}
               
               style={styles.prayerTimeTile}
             />
             
             <TileCard
-              title={t('prayers.noon') || 'Midday'}
-              subtitle="12:00 PM"
+              title={t('devotions.noon') || 'Midday'}
+              subtitle={t('devotions.noonSubtitle') || 'Pause & reflect'}
               icon="partly-sunny-outline"
-              onPress={() => handlePrayerNavigation('noon')}
+              onPress={() => handleDevotionNavigation('noon')}
               
               style={styles.prayerTimeTile}
             />
             
             <TileCard
-              title={t('prayers.evening') || 'Evening'}
-              subtitle="6:00 PM"
+              title={t('devotions.evening') || 'Evening'}
+              subtitle={t('devotions.eveningSubtitle') || 'Close your day'}
               icon="moon-outline"
-              onPress={() => handlePrayerNavigation('evening')}
+              onPress={() => handleDevotionNavigation('evening')}
+              
+              style={styles.prayerTimeTile}
+            />
+            
+            <TileCard
+              title={t('devotions.family') || 'Family'}
+              subtitle={t('devotions.familySubtitle') || 'Pray together'}
+              icon="people-outline"
+              onPress={() => handleDevotionNavigation('family')}
               
               style={styles.prayerTimeTile}
             />
@@ -225,11 +244,28 @@ export default function HomeScreen() {
           </Text>
           
           <TileCard
+            title={t('prayers.occasions') || 'Prayers for Occasions'}
+            subtitle={t('prayers.occasionsDetails.subtitle') || 'For special moments'}
+            icon="star-outline"
+            onPress={() => handlePrayerNavigation('occasions')}
+            variant="secondary"
+            style={styles.actionTile}
+          />
+          
+          <TileCard
             title={t('prayers.all') || 'All Prayers'}
             subtitle={t('prayers.allDetails.subtitle') || 'Browse prayer collections'}
             icon="library-outline"
             onPress={() => navigation.navigate('Prayers')}
             
+            style={styles.actionTile}
+          />
+          
+          <TileCard
+            title={t('prayerJournal.title') || 'Prayer Journal'}
+            subtitle={t('prayerJournal.comingSoon') || 'Coming Soon'}
+            icon="journal-outline"
+            onPress={() => {}}
             style={styles.actionTile}
           />
           

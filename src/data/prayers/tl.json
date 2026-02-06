@@ -1,7 +1,7 @@
 {
   "prayers": [
     {
-      "id": "ama-namin",
+      "id": "lords-prayer",
       "title": "Ama Namin",
       "category": "liturgical",
       "content": "Ama namin, sumasalangit Ka, sambahin ang ngalan Mo. Mapasaamin ang kaharian Mo. Sundin ang loob Mo, dito sa lupa para nang sa langit. Bigyan Mo kami ngayon ng aming kakanin sa araw-araw. At patawarin Mo kami sa aming mga sala, para nang pagpapatawad namin sa nagsasala sa amin. At huwag Mo kaming ipahintulot sa tukso, at iadya Mo kami sa lahat ng masama. Amen.",
@@ -15,7 +15,7 @@
       }
     },
     {
-      "id": "luwalhati-sa-diyos",
+      "id": "gloria-patri",
       "title": "Luwalhati sa Diyos",
       "category": "liturgical",
       "content": "Luwalhati sa Diyos sa kaitaasan, at sa lupa ay kapayapaan sa mga taong may mabuting kalooban. Pinupuri namin Kayo, pinagmamalaki namin Kayo, sinasamba namin Kayo, niluluwalhati namin Kayo, nagpapasalamat kami sa Inyo dahil sa inyong dakila at malaking kaluwalhatian.",
@@ -29,7 +29,7 @@
       }
     },
     {
-      "id": "sumasampalataya-ako",
+      "id": "apostles-creed",
       "title": "Sumasampalataya Ako",
       "category": "liturgical",
       "content": "Sumasampalataya ako sa Diyos Ama na Makapangyarihan sa lahat, na Lumikha ng langit at lupa. At kay Jesucristo, kaisa niyang Anak, Panginoon natin, na ipinaglihi sa pamamagitan ng Espiritu Santo, ipinanganak kay Maria na Birhen, nagdusa sa kapangyarihan ni Poncio Pilato, ipinako sa krus, namatay at inilibing, bumaba sa impyerno, muling nabuhay nang ikatlong araw, umakyat sa langit, nakaupo sa kanan ng Diyos Ama na Makapangyarihan sa lahat, at mula roon ay babalik upang hatulan ang mga buhay at patay. Sumasampalataya ako sa Espiritu Santo, sa banal na Simbahang Katolika, sa pakikipagkakaisa ng mga banal, sa kapatawaran ng mga kasalanan, sa muling pagkabuhay ng katawan, at sa buhay na walang hanggan. Amen.",
@@ -57,11 +57,12 @@
       }
     },
     {
-      "id": "panalangin-sa-umaga",
+      "id": "morning-prayer",
       "title": "Panalangin sa Umaga",
-      "category": "personal",
+      "category": "morning",
       "content": "Makapangyarihang Diyos, salamat sa bagong araw na ito. Habang sumisilang ang araw, nawa'y magsilang din ang Inyong liwanag sa aming mga puso. Gabayan ninyo ang aming mga hakbang ngayong araw. Bigyan ninyo kami ng karunungan sa aming mga desisyon, lakas sa aming mga pagsubok, at kapayapaan sa aming mga puso. Tulungan ninyo kaming maglingkod sa Inyo nang tapat at mahalin ang aming kapwa tulad ng pagmamahal ninyo sa amin. Sa pamamagitan ni Jesucristo, aming Panginoon. Amen.",
       "source": "Kontemporaryo",
+      "sourceReference": "Prayer Guide PDF, Page 8 - Daily Devotions",
       "tags": ["umaga", "araw-araw", "gabay"],
       "language": "tl",
       "metadata": {
@@ -71,11 +72,12 @@
       }
     },
     {
-      "id": "panalangin-sa-gabi",
+      "id": "evening-prayer",
       "title": "Panalangin sa Gabi",
-      "category": "personal",
+      "category": "evening",
       "content": "Mahabaging Diyos, habang nagtatapos ang araw na ito, nagpapasalamat kami sa Inyong walang hanggang mga pagpapala. Patawarin ninyo kami sa aming mga pagkukulang at pagkakamali. Bigyan ninyo kami ng mapayapang pahinga at muling buhayin ang aming mga kaluluwa. Bantayan ninyo ang aming mga mahal sa buhay at lahat ng nangangailangan. Nawa'y gabayan ninyo kami ng Inyong mga anghel sa buong gabi, at nawa'y magising kami bukas na handa na muling maglingkod sa Inyo. Sa pangalan ni Jesus. Amen.",
       "source": "Tradisyonal",
+      "sourceReference": "Prayer Guide PDF, Page 10 - An Order of Worship for the Evening",
       "tags": ["gabi", "pahinga", "kapatawaran"],
       "language": "tl",
       "metadata": {
@@ -113,7 +115,7 @@
       }
     },
     {
-      "id": "panalangin-bago-kumain",
+      "id": "prayer-before-meals",
       "title": "Panalangin Bago Kumain",
       "category": "thanksgiving",
       "content": "Pagpalain Mo, Panginoon, kami at ang pagkaing ito na aming matatanggap mula sa Inyong kabutihan, sa pamamagitan ni Cristo, aming Panginoon. Amen.",
@@ -127,7 +129,7 @@
       }
     },
     {
-      "id": "panalangin-para-sa-kapayapaan",
+      "id": "prayer-for-peace",
       "title": "Panalangin para sa Kapayapaan",
       "category": "intercession",
       "content": "Panginoon, gawing ninyo akong kasangkapan ng Inyong kapayapaan. Kung saan may pagkakamuhi, hayaan ninyong maghasik ako ng pagmamahal; kung saan may pagkakasakit, kapatawaran; kung saan may pagdududa, pananampalataya; kung saan may pagkawalang-pag-asa, pag-asa; kung saan may kadiliman, liwanag; kung saan may kalungkutan, kagalakan. O Banal na Maestro, huwag ninyong hayaang hanapin ko pa ang aliw kundi ang pag-aliw; ang pag-unawa kundi ang pag-intindi; ang pagmamahal kundi ang pagmamahal. Sapagkat sa pagbibigay tayo tumatanggap; sa pagpapatawad tayo pinapatawad; at sa pagkamatay tayo nabubuhay sa walang hanggang buhay. Amen.",
@@ -141,7 +143,7 @@
       }
     },
     {
-      "id": "panalangin-para-sa-pagpapagaling",
+      "id": "prayer-for-healing",
       "title": "Panalangin para sa Pagpapagaling",
       "category": "intercession",
       "content": "Makapangyarihang Diyos, lumapit kami sa Inyo na humihingi ng Inyong pagpapagaling. Kayo ang Dakila naming Manggagamot, at walang imposible sa Inyo. Ipanalangin namin ang mga may sakit sa katawan, isip, o kaluluwa. Ibalik ninyo sila sa kalusugan ayon sa Inyong perpektong kalooban. Bigyan ninyo ng lakas ang mga nag-aalaga, aliw ang mga pamilya, at pag-asa ang lahat ng nagdurusa. Nawa'y dumaloy ang Inyong kapangyarihang pagpapagaling sa mga kamay ng mga doktor at nars. Nagtitiwala kami sa Inyong pagmamahal at awa. Sa pamamagitan ni Jesucristo, aming Panginoon. Amen.",
@@ -155,7 +157,7 @@
       }
     },
     {
-      "id": "panalangin-ng-pagsisisi",
+      "id": "prayer-of-confession",
       "title": "Panalangin ng Pagsisisi",
       "category": "confession",
       "content": "Maawain naming Diyos, inamin namin na nagkasala kami laban sa Inyo sa pamamagitan ng aming isip, salita, at gawa, sa mga ginawa namin, at sa mga hindi namin ginawa. Hindi namin minahal kayo ng buong puso; hindi namin minahal ang aming kapwa tulad ng pagmamahal namin sa aming sarili. Tunay kaming nagsisisi at lubos kaming nagsisisi. Dahil sa inyong Anak na si Jesucristo, maawa kayo sa amin at patawarin kami; upang kami ay matuwa sa Inyong kalooban, at lumakad sa Inyong mga daan, sa kaluwalhatian ng Inyong Pangalan. Amen.",
@@ -169,7 +171,7 @@
       }
     },
     {
-      "id": "panalangin-ng-pasasalamat",
+      "id": "prayer-of-thanksgiving",
       "title": "Panalangin ng Pasasalamat",
       "category": "thanksgiving",
       "content": "Makapangyarihang Diyos, Ama ng lahat ng awa, kaming hindi karapat-dapat na mga lingkod ay nagbibigay sa Inyo ng mapagkumbabang pasasalamat para sa lahat ng Inyong kabutihan at pagmamahal sa amin at sa lahat ng Inyong nilikha. Pinupuri namin Kayo dahil sa aming pagkakalikha, pag-iingat, at sa lahat ng mga pagpapala ng buhay na ito; ngunit higit sa lahat dahil sa Inyong walang sukat na pagmamahal sa pagtubos ng mundo sa pamamagitan ng aming Panginoong Jesucristo; para sa mga paraan ng biyaya, at para sa pag-asa ng kaluwalhatian. At ipanalangin namin, bigyan ninyo kami ng ganitong kamalayan sa Inyong mga awa, na sa tunay na mapagpasalamat na mga puso ay maipakita namin ang Inyong papuri, hindi lamang sa aming mga labi, kundi sa aming mga buhay, sa pamamagitan ng pagsuko ng aming mga sarili sa Inyong paglilingkod, at sa paglalakad sa harap ninyo sa kabanalan at katuwiran sa lahat ng aming mga araw; sa pamamagitan ni Jesucristo, aming Panginoon. Amen.",
@@ -183,7 +185,7 @@
       }
     },
     {
-      "id": "panalangin-para-sa-pamilya",
+      "id": "prayer-for-family",
       "title": "Panalangin para sa Pamilya",
       "category": "intercession",
       "content": "Makapangyarihang Diyos, nagpapasalamat kami sa Inyo sa kaloob ng pamilya. Pagpalain ninyo ang aming mga tahanan ng Inyong presensya at punuin ninyo ito ng pagmamahal, kagalakan, at kapayapaan. Tulungan ninyo kaming maging matiyaga sa isa't isa, mabilis na magpatawad, at suportahan ang isa't isa sa lahat ng panahon ng buhay. Protektahan ninyo ang aming mga anak at gabayan ninyo sila sa Inyong mga daan. Palakasin ninyo ang mga ugnayan sa pagitan namin at tulungan ninyo kaming maging salamin ng Inyong pagmamahal sa mundo. Sa pamamagitan ni Jesucristo, aming Panginoon. Amen.",
@@ -197,7 +199,7 @@
       }
     },
     {
-      "id": "panalangin-para-sa-mundo",
+      "id": "prayer-for-world",
       "title": "Panalangin para sa Mundo",
       "category": "intercession",
       "content": "Makapangyarihang Diyos, tagapamahala ng lahat ng bansa, ipanalangin namin ang aming mundo. Dalhin ninyo ang kapayapaan kung saan may tunggalian, pag-asa kung saan may pagkawalang-pag-asa, at pagpapagaling kung saan may pagkakabasag. Gabayan ninyo ang aming mga pinuno ng karunungan at integridad. Tulungan ninyo kaming maging mabubuting tagapag-alaga ng Inyong pagkakalikha at mag-alaga sa mga nangangailangan. Pagkakaisahin ninyo kami sa aming pagkakatulad bilang tao at tulungan ninyo kaming magtrabaho nang sama-sama para sa katarungan at kapayapaan. Nawa'y dumating ang Inyong kaharian dito sa lupa tulad nang sa langit. Sa pamamagitan ni Jesucristo, aming Panginoon. Amen.",
@@ -211,7 +213,7 @@
       }
     },
     {
-      "id": "panalangin-para-sa-lakas",
+      "id": "prayer-for-strength",
       "title": "Panalangin para sa Lakas",
       "category": "personal",
       "content": "Panginoong Diyos, kapag kami ay mahina, Kayo ay malakas. Kapag kami ay pagod, Kayo ay nagbibigay ng pahinga. Kapag kami ay nalulunod, Kayo ay aming kanlungan. Bigyan ninyo kami ng lakas na kailangan namin para sa araw na ito. Tulungan ninyo kaming umasa hindi sa aming sariling kapangyarihan, kundi sa Inyong makapangyarihang lakas. Buhayin ninyo ang aming mga espiritu at sariwain ninyo ang aming mga kaluluwa. Nawa'y makita namin ang aming pag-asa at tiwala sa Inyo lamang. Sa pamamagitan ni Jesucristo, aming Panginoon. Amen.",
@@ -225,7 +227,7 @@
       }
     },
     {
-      "id": "panalangin-para-sa-gabay",
+      "id": "prayer-for-guidance",
       "title": "Panalangin para sa Gabay",
       "category": "personal",
       "content": "Mahal naming Diyos, alam ninyo ang daan na nakaharap sa amin. Kapag hindi kami sigurado sa direksyong tatahakin, maging gabay namin. Kapag kami ay natatakot sa mga hamon na kinakaharap namin, maging lakas namin. Kapag kami ay nalulunod sa mga desisyong nasa harap namin, bigyan ninyo kami ng Inyong karunungan. Tulungan ninyo kaming magtiwala sa Inyong perpektong panahon at lumakad sa pananampalataya, na alam na lagi kayong kasama namin. Pangunahan ninyo kami sa daang walang hanggan. Sa pamamagitan ni Jesucristo, aming Panginoon. Amen.",
@@ -245,6 +247,124 @@
       "content": "Ang anghel ng Panginoon ay nagbalita kay Maria. At siya'y naglihi sa pamamagitan ng Espiritu Santo. Aba Ginoong Maria... Narito po ang alipin ng Panginoon. Mangyari po sa akin ayon sa inyong salita. Aba Ginoong Maria... At ang Salita ay naging tao. At nanahan sa amin. Aba Ginoong Maria... Ipanalangin mo kami, Santa Maria, Ina ng Diyos. Upang kami ay maging karapat-dapat sa mga pangako ni Cristo. Panalanginan: Ibuhos Mo, Panginoon, ang Inyong biyaya sa aming mga puso; upang kami na nakaalam sa pagkakatao ng Inyong Anak sa pamamagitan ng pagbalita ng anghel, ay sa pamamagitan ng Kanyang Pagdurusa at Pagkamatay sa Krus ay madala sa kaluwalhatian ng Pagkabuhay na muli, sa pamamagitan ng parehong Jesucristo, aming Panginoon. Amen.",
       "source": "Tradisyonal",
       "tags": ["angelus", "Maria", "pagkakatao"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "noon-prayer",
+      "title": "Panalangin sa Tanghali",
+      "category": "noon",
+      "content": "Panginoong Hesukristo, sa oras na ito ng araw, huminto kami sa aming mga gawain upang alalahanin ang Inyong presensya. Buhayin ninyo ang aming lakas para sa mga gawain na natitira pa. Tulungan ninyo kaming lumakad kasama ninyo sa natitirang bahagi ng araw na ito. Sa pangalan ninyo kami nananalangin. Amen.",
+      "source": "Tradisyong liturgiko",
+      "sourceReference": "Prayer Guide PDF, Page 9 - Daily Devotions",
+      "tags": ["tanghali", "pahinga", "pagpapanibago"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "serenity-prayer",
+      "title": "Panalangin ng Katahimikan",
+      "category": "contemporary",
+      "content": "Diyos, ipagkaloob Mo sa akin ang katahimikan upang tanggapin ang mga bagay na hindi ko maaaring baguhin, tapang upang baguhin ang mga bagay na maaari kong baguhin, at karunungan upang malaman ang pagkakaiba. Namumuhay nang isang araw sa isang pagkakataon; tinatamasa ang isang sandali sa isang pagkakataon; tinatanggap ang mga kahirapan bilang landas tungo sa kapayapaan; tinatanggap, tulad ng ginawa Niya, ang makasalanang mundong ito kung ano ito, hindi kung ano ang gusto kong maging; nagtitiwala na Siya ay gagawing tama ang lahat ng mga bagay kung ako ay susuko sa Kanyang Kalooban; upang ako ay maging makatwirang masaya sa buhay na ito at lubhang mapakinabangan sa Diyos at sa aking mga kapwa-tao. Amen.",
+      "source": "Reinhold Niebuhr",
+      "tags": ["katahimikan", "pagtanggap", "karunungan"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "family-prayer",
+      "title": "Panalangin ng Pamilya",
+      "category": "family",
+      "content": "Makapangyarihang Diyos, nagpapasalamat kami sa Inyo sa kaloob ng pamilya. Pagpalain ninyo ang aming mga tahanan ng Inyong presensya at punuin ninyo ito ng pagmamahal, kagalakan, at kapayapaan. Tulungan ninyo kaming maging matiyaga sa isa't isa, mabilis na magpatawad, at suportahan ang isa't isa sa lahat ng panahon ng buhay. Protektahan ninyo ang aming mga anak at gabayan ninyo sila sa Inyong mga daan. Palakasin ninyo ang mga ugnayan sa pagitan namin at tulungan ninyo kaming maging salamin ng Inyong pagmamahal sa mundo. Sa pamamagitan ni Jesucristo, aming Panginoon. Amen.",
+      "source": "Kontemporaryo",
+      "sourceReference": "Prayer Guide PDF, Page 10",
+      "tags": ["pamilya", "tahanan", "mga-anak"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-exam",
+      "title": "Panalangin Bago sa Pagsusulit",
+      "category": "occasions",
+      "content": "Panginoon, hinihingi ko ang Inyong pagpapala habang naghahanda ako para sa pagsusulit na ito. Pakalmahin ninyo ang aking mga nerbiyos at linawin ang aking isipan. Tulungan ninyong maalala ko ang aking pinag-aralan at gawin ang aking makakaya. Bigyan ninyo ako ng tiwala sa aking mga kakayahan at kapayapaan sa aking puso. Nawa'y gawin ko ang Inyong kalooban sa lahat ng bagay. Amen.",
+      "source": "Kontemporaryo",
+      "sourceReference": "Prayer Guide PDF",
+      "tags": ["estudyante", "pagsusulit", "kalma"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-travel",
+      "title": "Panalangin para sa Paglalakbay",
+      "category": "occasions",
+      "content": "Makapangyarihang Diyos, hinihingi namin ang Inyong proteksyon sa paglalakbay na ito. Ingatan ninyo ang lahat ng manlalakbay mula sa panganib at aksidente. Bigyan ninyo sila ng ligtas na paglalakbay at masayang muling pagkikita sa kanilang mga mahal sa buhay. Pagpalain ninyo ang lahat ng naglalakbay sa lupa, dagat, o hangin. Sa pamamagitan ni Cristo, aming Panginoon. Amen.",
+      "source": "Book of Common Prayer",
+      "sourceReference": "Prayer Guide PDF",
+      "tags": ["paglalakbay", "proteksyon", "kaligtasan"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-new-job",
+      "title": "Panalangin para sa Bagong Trabaho",
+      "category": "occasions",
+      "content": "Makapangyarihang Ama, salamat sa Inyo para sa bagong oportunidad na ito. Gabayan ninyo ako habang nagsisimula ako ng bagong kabanata ng aking buhay. Bigyan ninyo ako ng karunungan upang matuto, biyaya upang makipag-ugnayan sa iba, at lakas upang harapin ang mga hamon. Nawa'y maging liwanag ako para sa Inyo sa lugar na ito. Sa pangalan ni Hesus. Amen.",
+      "source": "Kontemporaryo",
+      "sourceReference": "Prayer Guide PDF",
+      "tags": ["trabaho", "bagong-simula", "gabay"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-anxiety",
+      "title": "Panalangin sa Panahon ng Pagkabalisa",
+      "category": "occasions",
+      "content": "Diyos ng kapayapaan, ang aking puso ay nababalisa at ang aking isipan ay hindi mapakali. Dalhin ninyo ang Inyong katahimikan sa aking nabahaling espiritu. Tulungan ninyong magtiwala ako sa Inyo ng buong puso at huwag umasa sa aking sariling pag-unawa. Ipaalala ninyo sa akin na Kayo ay nakakontrol at ang Inyong mga plano para sa akin ay mabuti. Punuin ninyo ang aking puso ng Inyong kapayapaang lumampas sa lahat ng pag-unawa. Sa pangalan ni Hesus. Amen.",
+      "source": "Kontemporaryo - base sa Filipos 4:6-7",
+      "sourceReference": "Prayer Guide PDF",
+      "tags": ["pagkabalisa", "kapayapaan", "tiwala"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "lutheri-hommikupalve",
+      "title": "Panalangin sa Umaga ni Luther",
+      "category": "liturgical",
+      "content": "Nagpapasalamat ako sa Inyo, aking Makalangit na Ama, sa pamamagitan ni Hesukristo, Inyong minamahal na Anak, na Kayo ay nag-ingat sa akin sa gabing ito mula sa lahat ng kapahamakan at panganib; at ipinanalangin ko na Kayo ay mag-ingat din sa akin sa araw na ito mula sa kasalanan at lahat ng kasamaan, upang ang lahat ng aking mga gawa at buhay ay makalugod sa Inyo. Sapagkat sa Inyong mga kamay ay ipinagkatiwala ko ang aking sarili, ang aking katawan at kaluluwa, at lahat ng mga bagay. Nawa'y ang Inyong banal na anghel ay makasama ko, upang ang masasamang Kaaway ay walang kapangyarihan sa akin. Amen.",
+      "source": "Martin Luther",
+      "tags": ["luther", "umaga", "proteksyon"],
       "language": "tl",
       "metadata": {
         "createdAt": "2024-01-01T00:00:00Z",

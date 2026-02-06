@@ -9,6 +9,11 @@ import { AsyncStorageService } from './StorageService';
 import enTranslations from '../data/translations/en.json';
 import tlTranslations from '../data/translations/tl.json';
 import etTranslations from '../data/translations/et.json';
+import esTranslations from '../data/translations/es.json';
+import itTranslations from '../data/translations/it.json';
+import frTranslations from '../data/translations/fr.json';
+import deTranslations from '../data/translations/de.json';
+import plTranslations from '../data/translations/pl.json';
 
 export interface LocalizationConfig {
   defaultLanguage: SupportedLanguage;
@@ -23,14 +28,19 @@ export class LocalizationService {
   private translations: Record<SupportedLanguage, any> = {
     en: {},
     tl: {},
-    et: {}
+    et: {},
+    es: {},
+    it: {},
+    fr: {},
+    de: {},
+    pl: {}
   };
 
   private constructor() {
     this.config = {
       defaultLanguage: 'en',
       fallbackLanguage: 'en',
-      supportedLanguages: ['en', 'tl', 'et']
+      supportedLanguages: ['en', 'tl', 'et', 'es', 'it', 'fr', 'de', 'pl']
     };
 
     this.i18n = new I18n();
@@ -72,7 +82,12 @@ export class LocalizationService {
       this.translations = {
         en: enTranslations,
         tl: tlTranslations,
-        et: etTranslations
+        et: etTranslations,
+        es: esTranslations,
+        it: itTranslations,
+        fr: frTranslations,
+        de: deTranslations,
+        pl: plTranslations
       };
 
       this.i18n.translations = this.translations;
@@ -82,7 +97,12 @@ export class LocalizationService {
       this.translations = {
         en: {},
         tl: {},
-        et: {}
+        et: {},
+        es: {},
+        it: {},
+        fr: {},
+        de: {},
+        pl: {}
       };
       this.i18n.translations = this.translations;
     }

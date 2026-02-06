@@ -93,7 +93,7 @@ export class AsyncStorageService implements StorageService {
     }
   }
 
-  private getDefaultSettings(): UserSettings {
+  getDefaultSettings(): UserSettings {
     return {
       language: 'en',
       fontSize: FontSize.MEDIUM,

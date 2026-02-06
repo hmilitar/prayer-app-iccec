@@ -59,9 +59,10 @@
     {
       "id": "morning-prayer",
       "title": "Morning Prayer",
-      "category": "personal",
+      "category": "morning",
       "content": "Almighty God, we thank you for the gift of this new day. As the sun rises, may your light shine upon us and guide our steps. Grant us wisdom in our decisions, strength in our challenges, and peace in our hearts. Help us to serve you faithfully and to love our neighbors as ourselves. Through Jesus Christ our Lord. Amen.",
       "source": "Book of Common Prayer tradition",
+      "sourceReference": "Prayer Guide PDF, Page 8 - Daily Devotions",
       "tags": ["morning", "daily", "guidance"],
       "language": "en",
       "metadata": {
@@ -73,9 +74,10 @@
     {
       "id": "evening-prayer",
       "title": "Evening Prayer",
-      "category": "personal",
+      "category": "evening",
       "content": "Gracious God, as this day comes to an end, we thank you for your countless blessings. Forgive us for our shortcomings and failures. Grant us peaceful rest and restore our souls. Watch over our loved ones and all who are in need. May your angels guard us through the night, and may we wake refreshed to serve you tomorrow. In Jesus' name. Amen.",
       "source": "Traditional",
+      "sourceReference": "Prayer Guide PDF, Page 10 - An Order of Worship for the Evening",
       "tags": ["evening", "rest", "forgiveness"],
       "language": "en",
       "metadata": {
@@ -244,7 +246,126 @@
       "category": "personal",
       "content": "Lord God, when we are weak, you are strong. When we are weary, you give us rest. When we are overwhelmed, you are our refuge. Grant us the strength we need for this day. Help us to rely not on our own power, but on your mighty strength. Renew our spirits and refresh our souls. May we find our hope and confidence in you alone. Through Jesus Christ our Lord. Amen.",
       "source": "Contemporary",
+      "sourceReference": "Prayer Guide PDF",
       "tags": ["strength", "weakness", "refuge"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "noon-prayer",
+      "title": "Midday Prayer",
+      "category": "noon",
+      "content": "Lord Jesus Christ, at this hour of the day, we pause from our activities to remember your presence. Renew our strength for the tasks that remain. Help us to walk with you through the rest of this day. In your name we pray. Amen.",
+      "source": "Liturgical tradition",
+      "sourceReference": "Prayer Guide PDF, Page 9 - Daily Devotions",
+      "tags": ["noon", "midday", "pause", "renewal"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "family-prayer",
+      "title": "Family Prayer",
+      "category": "family",
+      "content": "Heavenly Father, we thank you for the gift of family. Bless our homes with your presence and fill them with love, joy, and peace. Help us to be patient with one another, to forgive quickly, and to support each other through all of life's seasons. Protect our children and guide them in your ways. Strengthen the bonds between us and help us to be a reflection of your love to the world. Through Jesus Christ our Lord. Amen.",
+      "source": "Contemporary",
+      "sourceReference": "Prayer Guide PDF, Page 10",
+      "tags": ["family", "home", "children"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-exam",
+      "title": "Prayer Before an Exam",
+      "category": "occasions",
+      "content": "Lord, I ask for your blessing as I prepare for this exam. Calm my nerves and clear my mind. Help me to remember what I have studied and to do my best. Give me confidence in my abilities and peace in my heart. May I do your will in all things. Amen.",
+      "source": "Contemporary",
+      "sourceReference": "Prayer Guide PDF",
+      "tags": ["student", "exam", "calm", "occasions"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-travel",
+      "title": "Prayer for Travel",
+      "category": "occasions",
+      "content": "Almighty God, we ask for your protection on this journey. Keep all travelers safe from danger and accidents. Grant them safe passage and happy reunions with their loved ones. Bless all who travel by land, sea, or air. Through Christ our Lord. Amen.",
+      "source": "Book of Common Prayer",
+      "sourceReference": "Prayer Guide PDF",
+      "tags": ["travel", "protection", "safety", "occasions"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-new-job",
+      "title": "Prayer for a New Job",
+      "category": "occasions",
+      "content": "Heavenly Father, I thank you for this new opportunity. Guide me as I begin this new chapter of my life. Give me wisdom to learn, grace to relate to others, and strength to face challenges. May I be a light for you in this place. In Jesus' name. Amen.",
+      "source": "Contemporary",
+      "sourceReference": "Prayer Guide PDF",
+      "tags": ["work", "new-beginning", "guidance", "occasions"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-anxiety",
+      "title": "Prayer in Times of Anxiety",
+      "category": "occasions",
+      "content": "God of peace, my heart is troubled and my mind is restless. Bring your calm to my troubled spirit. Help me to trust in you with all my heart and not lean on my own understanding. Remind me that you are in control and that your plans for me are good. Fill my heart with your peace that passes all understanding. In Jesus' name. Amen.",
+      "source": "Contemporary - based on Philippians 4:6-7",
+      "sourceReference": "Prayer Guide PDF",
+      "tags": ["anxiety", "peace", "trust", "occasions"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "lutheri-hommikupalve",
+      "title": "Luther's Morning Prayer",
+      "category": "liturgical",
+      "content": "I thank you, my Heavenly Father, through Jesus Christ, your dear Son, that you have kept me this night from all harm and danger; and I pray that you would keep me this day also from sin and every evil, that all my doings and life may please you. For into your hands I commend myself, my body and soul, and all things. Let your holy angel be with me, that the wicked Foe may have no power over me. Amen.",
+      "source": "Martin Luther",
+      "tags": ["luther", "morning", "protection"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "angelus",
+      "title": "The Angelus",
+      "category": "liturgical",
+      "content": "The Angel of the Lord declared unto Mary. And she conceived by the Holy Spirit. Hail Mary... Behold the handmaid of the Lord. Be it done unto me according to thy word. Hail Mary... And the Word was made flesh. And dwelt among us. Hail Mary... Pray for us, O holy Mother of God. That we may be made worthy of the promises of Christ. Let us pray: Pour forth, we beseech thee, O Lord, thy grace into our hearts; that we, to whom the Incarnation of Christ thy Son was made known by the message of an angel, may by his Passion and Cross be brought to the glory of his Resurrection. Through the same Christ our Lord. Amen.",
+      "source": "Traditional",
+      "tags": ["angelus", "mary", "incarnation"],
       "language": "en",
       "metadata": {
         "createdAt": "2024-01-01T00:00:00Z",
