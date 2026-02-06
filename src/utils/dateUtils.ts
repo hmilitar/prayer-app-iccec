@@ -15,10 +15,12 @@ export function getTodayISO(): string {
 }
 
 /**
- * Parse ISO date string to Date object
+ * Parse ISO date string to Date object (YYYY-MM-DD format)
  */
 export function parseISODate(isoString: string): Date {
-  return new Date(isoString);
+  const [year, month, day] = isoString.split('-').map(Number);
+  console.log('Parsing ISO date:', isoString, 'to', year, month, day);
+  return new Date(year, month - 1, day); // Month is 0-based in JavaScript
 }
 
 /**
@@ -194,4 +196,4 @@ export function getRelativeTimeString(date: Date, baseDate: Date = new Date()): 
   } else {
     return `${Math.abs(diffInDays)} days ago`;
   }
-}
+}export function getLiturgicalColor(date: Date) { return 'green'; }

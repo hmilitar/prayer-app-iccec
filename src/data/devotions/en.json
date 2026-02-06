@@ -1,0 +1,289 @@
+{
+  "devotions": [
+    {
+      "id": "2024-01-01-morning",
+      "date": "2024-01-01",
+      "timeOfDay": "morning",
+      "title": "New Year's Day Morning Devotion",
+      "signOfTheCross": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "confession": "Most merciful God, we confess that we have sinned against you in thought, word, and deed, by what we have done, and by what we have left undone. We have not loved you with our whole heart; we have not loved our neighbors as ourselves. We are truly sorry and we humbly repent. For the sake of your Son Jesus Christ, have mercy on us and forgive us; that we may delight in your will, and walk in your ways, to the glory of your Name. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 8",
+        "title": "O Lord, Our Lord",
+        "text": "O Lord, our Lord, how majestic is your name in all the earth! You have set your glory above the heavens.\n\nWhen I look at your heavens, the work of your fingers, the moon and the stars that you have set in place, what is man that you are mindful of him, and the son of man that you care for him? Yet you have made him a little lower than the heavenly beings and crowned him with glory and honor. You have given him dominion over the works of your hands; you have put all things under his feet,\n\nall sheep and oxen, and also the beasts of the field, the birds of the heavens, and the fish of the sea, whatever passes along the paths of the seas.\n\nO Lord, our Lord, how majestic is your name in all the earth!"
+      },
+      "gloriaPatri": "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Isaiah 43:1-7",
+          "title": "Fear Not, for I Have Redeemed You",
+          "text": "But now thus says the Lord, he who created you, O Jacob, he who formed you, O Israel: \"Fear not, for I have redeemed you; I have called you by name, you are mine. When you pass through the waters, I will be with you; and through the rivers, they shall not overwhelm you; when you walk through fire you shall not be burned, and the flame shall not consume you. For I am the Lord your God, the Holy One of Israel, your Savior.\n\nI give Egypt as your ransom, Cush and Seba in exchange for you. Because you are precious in my eyes, and honored, and I love you, I give men in return for you, peoples in exchange for your life. Fear not, for I am with you; I will bring your offspring from the east, and from the west I will gather you. I will say to the north, Give up, and to the south, Do not withhold; bring my sons from afar and my daughters from the end of the earth, everyone who is called by my name, whom I created for my glory, whom I formed and made.\""
+        },
+        "canticle1": {
+          "reference": "Canticle of Zechariah",
+          "title": "Benedictus",
+          "text": "Blessed be the Lord God of Israel, for he has visited and redeemed his people and has raised up a horn of salvation for us in the house of his servant David,\n\nas he spoke by the mouth of his holy prophets from of old,\n\nsalvation from our enemies and from the hand of all who hate us,\n\nto show mercy to our fathers and to remember his holy covenant,\n\nthe oath that he swore to our father Abraham, to grant us\n\nthat we, being delivered from the hand of our enemies, might serve him without fear,\n\nin holiness and righteousness before him all our days.\n\nAnd you, child, will be called the prophet of the Most High;\n\nfor you will go before the Lord to prepare his ways,\n\nto give knowledge of salvation to his people\n\nin the forgiveness of their sins,\n\nbecause of the tender mercy of our God,\n\nwhereby the sunrise shall visit us from on high\n\n to give light to those who sit in darkness and in the shadow of death,\n\n to guide our feet into the way of peace."
+        },
+        "newTestament": {
+          "reference": "Galatians 3:23-29",
+          "title": "In Christ Jesus You Are All Sons of God",
+          "text": "Now before faith came, we were held captive under the law, imprisoned until the coming faith would be revealed. So then, the law was our guardian until Christ came, in order that we might be justified by faith. But now that faith has come, we are no longer under a guardian, for in Christ Jesus you are all sons of God, through faith. For as many of you as were baptized into Christ have put on Christ.\n\nThere is neither Jew nor Greek, there is neither slave nor free, there is no male and female, for you are all one in Christ Jesus. And if you are Christ's, then you are Abraham's offspring, heirs according to promise."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "My soul magnifies the Lord,\n\nand my spirit rejoices in God my Savior,\n\nbecause he has looked on the humble estate of his servant.\n\nFor behold, from now on all generations will call me blessed;\n\nfor he who is mighty has done great things for me,\n\nand holy is his name.\n\nAnd his mercy is for those who fear him\n\nfrom generation to generation.\n\nHe has shown strength with his arm;\n\nhe has scattered the proud in the thoughts of their hearts;\n\nhe has brought down the mighty from their thrones\n\nand exalted those of humble estate;\n\nhe has filled the hungry with good things\n\nand sent the rich away empty.\n\nHe has helped his servant Israel,\n\nremembering his mercy,\n\nas he spoke to our fathers,\n\nto Abraham and to his offspring forever."
+        },
+        "gospel": {
+          "reference": "Matthew 1:18-25",
+          "title": "The Birth of Jesus Christ",
+          "text": "Now the birth of Jesus Christ took place in this way. When his mother Mary had been betrothed to Joseph, before they came together she was found to be with child from the Holy Spirit. And her husband Joseph, being a just man and unwilling to put her to shame, resolved to divorce her quietly. But as he considered these things, behold, an angel of the Lord appeared to him in a dream, saying, \"Joseph, son of David, do not fear to take Mary as your wife, for that which is conceived in her is from the Holy Spirit. She will bear a son, and you shall call his name Jesus, for he will save his people from their sins.\"\n\nAll this took place to fulfill what the Lord had spoken by the prophet: \"Behold, the virgin shall conceive and bear a son, and they shall call his name Immanuel\" (which means, God with us). When Joseph woke from sleep, he did as the angel of the Lord commanded him: he took his wife, but knew her not until she had given birth to a son. And he called his name Jesus."
+        }
+      },
+      "apostlesCreed": "I believe in God, the Father almighty, creator of heaven and earth. I believe in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; he descended to the dead. On the third day he rose again; he ascended into heaven, he is seated at the right hand of the Father, and he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.",
+      "prayers": {
+        "lordsPrayer": "Our Father, who art in heaven, hallowed be thy name. Thy kingdom come, thy will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. For thine is the kingdom, and the power, and the glory, forever and ever. Amen.",
+        "prayerToStMichael": "St. Michael the Archangel, defend us in battle. Be our protection against the wickedness and snares of the devil; May God rebuke him, we humbly pray; And do thou, O Prince of the Heavenly Host, by the power of God, thrust into hell Satan and all evil spirits who wander through the world for the ruin of souls. Amen.",
+        "collect": "Almighty God, we thank you for the gift of this new year. As we begin this journey around the sun once more, grant us the wisdom to see your hand in all things, the courage to follow your will, and the faith to trust in your providence. May this year be filled with your peace, your joy, and your abundant blessings. Through Jesus Christ our Lord. Amen."
+      },
+      "signOfTheCrossEnd": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "reflection": "As we begin a new year, let us reflect on God's faithfulness in the past and his promises for the future. May this year be a time of spiritual growth, renewal, and deeper relationship with our Lord and Savior Jesus Christ.",
+      "metadata": {
+        "liturgicalSeason": "christmas",
+        "feast": "New Year's Day",
+        "source": "Book of Common Prayer",
+        "sourceReference": "Prayer Guide PDF, Pages 8-20",
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "2026-02-06-morning",
+      "date": "2026-02-06",
+      "timeOfDay": "morning",
+      "title": "Today's Morning Devotion",
+      "signOfTheCross": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "confession": "Most merciful God, we confess that we have sinned against you in thought, word, and deed, by what we have done, and by what we have left undone. We have not loved you with our whole heart; we have not loved our neighbors as ourselves. We are truly sorry and we humbly repent. For the sake of your Son Jesus Christ, have mercy on us and forgive us; that we may delight in your will, and walk in your ways, to the glory of your Name. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 119:105",
+        "title": "Your Word is a Lamp",
+        "text": "Your word is a lamp to my feet and a light to my path."
+      },
+      "gloriaPatri": "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Psalm 23",
+          "title": "The Lord is My Shepherd",
+          "text": "The Lord is my shepherd; I shall not want. He makes me lie down in green pastures. He leads me beside still waters. He restores my soul. He leads me in paths of righteousness for his name's sake. Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me. You prepare a table before me in the presence of my enemies; you anoint my head with oil; my cup overflows. Surely goodness and mercy shall follow me all the days of my life, and I shall dwell in the house of the Lord forever."
+        },
+        "canticle1": {
+          "reference": "Canticle of the Sun",
+          "title": "Canticle of St. Francis",
+          "text": "Most high, all-powerful, all-good Lord! All praise is Yours, all glory, all honor, and all blessing. To You, alone, Most High, do they belong. No mortal lips are worthy to pronounce Your Name. Praised be You, my Lord, through all your creatures, especially through my lord Brother Sun, who brings the day; and You give light through him. And he is beautiful and radiant in all his splendor! Of You, Most High, he bears the likeness. Praised be You, my Lord, through Sister Moon and the stars; in the heavens You have made them bright, precious and beautiful."
+        },
+        "newTestament": {
+          "reference": "Matthew 5:1-12",
+          "title": "The Beatitudes",
+          "text": "Seeing the crowds, he went up on the mountain, and when he sat down, his disciples came to him. And he opened his mouth and taught them, saying: \"Blessed are the poor in spirit, for theirs is the kingdom of heaven. Blessed are those who mourn, for they shall be comforted. Blessed are the meek, for they shall inherit the earth. Blessed are those who hunger and thirst for righteousness, for they shall be satisfied. Blessed are the merciful, for they shall receive mercy. Blessed are the pure in heart, for they shall see God. Blessed are the peacemakers, for they shall be called sons of God. Blessed are those who are persecuted for righteousness' sake, for theirs is the kingdom of heaven. Blessed are you when others revile you and persecute you and utter all kinds of evil against you falsely on my account. Rejoice and be glad, for your reward is great in heaven, for so they persecuted the prophets who were before you.\""
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "My soul magnifies the Lord, and my spirit rejoices in God my Savior, because he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed; for he who is mighty has done great things for me, and holy is his name. And his mercy is for those who fear him from generation to generation. He has shown strength with his arm; he has scattered the proud in the thoughts of their hearts; he has brought down the mighty from their thrones and exalted those of humble estate; he has filled the hungry with good things and sent the rich away empty. He has helped his servant Israel, remembering his mercy, as he spoke to our fathers, to Abraham and to his offspring forever."
+        },
+        "gospel": {
+          "reference": "John 3:16-17",
+          "title": "For God So Loved the World",
+          "text": "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. For God did not send his Son into the world to condemn the world, but in order that the world might be saved through him."
+        }
+      },
+      "apostlesCreed": "I believe in God, the Father almighty, creator of heaven and earth. I believe in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; he descended to the dead. On the third day he rose again; he ascended into heaven, he is seated at the right hand of the Father, and he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.",
+      "prayers": {
+        "lordsPrayer": "Our Father, who art in heaven, hallowed be thy name. Thy kingdom come, thy will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. For thine is the kingdom, and the power, and the glory, forever and ever. Amen.",
+        "prayerToStMichael": "St. Michael the Archangel, defend us in battle. Be our protection against the wickedness and snares of the devil; May God rebuke him, we humbly pray; And do thou, O Prince of the Heavenly Host, by the power of God, thrust into hell Satan and all evil spirits who wander through the world for the ruin of souls. Amen.",
+        "collect": "Almighty God, we thank you for the gift of this day. As we begin our journey through this day, grant us the wisdom to see your hand in all things, the courage to follow your will, and the faith to trust in your providence. May this day be filled with your peace, your joy, and your abundant blessings. Through Jesus Christ our Lord. Amen."
+      },
+      "signOfTheCrossEnd": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "reflection": "As we begin this day, let us remember God's love for us as shown through His Word and His Son Jesus Christ. May we walk in His light and follow His guidance throughout all our days.",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "feast": "",
+        "source": "Book of Common Prayer",
+        "sourceReference": "Prayer Guide PDF, Pages 8-20",
+        "createdAt": "2026-02-06T04:10:43.652Z",
+        "updatedAt": "2026-02-06T04:10:43.652Z"
+      }
+    },
+    {
+      "id": "2026-02-06-noon",
+      "date": "2026-02-06",
+      "timeOfDay": "noon",
+      "title": "Today's Midday Devotion",
+      "signOfTheCross": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "confession": "Lord Jesus Christ, at this midday hour, we pause from our activities to acknowledge our sins. We have been hurried, distracted, and sometimes unkind. Forgive us, Lord, for the ways we have fallen short. Renew us with your Spirit and guide our actions for the rest of the day. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 121",
+        "title": "I Lift Up My Eyes to the Hills",
+        "text": "I lift up my eyes to the hills. From where does my help come? My help comes from the Lord, who made heaven and earth. He will not let your foot be moved; he who keeps you will not slumber. Behold, he who keeps Israel will neither slumber nor sleep. The Lord is your keeper; the Lord is your shade on your right hand. The sun shall not strike you by day, nor the moon by night. The Lord will keep you from all evil; he will keep your life. The Lord will keep your going out and your coming in from this time forth and forevermore."
+      },
+      "gloriaPatri": "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Proverbs 3:5-6",
+          "title": "Trust in the Lord",
+          "text": "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths."
+        },
+        "canticle1": {
+          "reference": "Canticle of Simeon",
+          "title": "Nunc Dimittis",
+          "text": "Lord, now you are letting your servant depart in peace, according to your word; for my eyes have seen your salvation that you have prepared in the presence of all peoples, a light for revelation to the Gentiles, and for glory to your people Israel."
+        },
+        "newTestament": {
+          "reference": "Matthew 11:28-30",
+          "title": "Come to Me, All Who Labor",
+          "text": "Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "My soul magnifies the Lord, and my spirit rejoices in God my Savior, because he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed; for he who is mighty has done great things for me, and holy is his name."
+        },
+        "gospel": {
+          "reference": "Luke 12:19-21",
+          "title": "The Rich Fool",
+          "text": "And I will say to my soul, 'Soul, you have ample goods laid up for many years; relax, eat, drink, be merry.' But God said to him, 'Fool! This night your soul is required of you, and the things you have prepared, whose will they be?' So is the one who lays up treasure for himself and is not rich toward God."
+        }
+      },
+      "apostlesCreed": "I believe in God, the Father almighty, creator of heaven and earth. I believe in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; he descended to the dead. On the third day he rose again; he ascended into heaven, he is seated at the right hand of the Father, and he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.",
+      "prayers": {
+        "lordsPrayer": "Our Father, who art in heaven, hallowed be thy name. Thy kingdom come, thy will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. For thine is the kingdom, and the power, and the glory, forever and ever. Amen.",
+        "prayerToStMichael": "St. Michael the Archangel, defend us in battle. Be our protection against the wickedness and snares of the devil; May God rebuke him, we humbly pray; And do thou, O Prince of the Heavenly Host, by the power of God, thrust into hell Satan and all evil spirits who wander through the world for the ruin of souls. Amen.",
+        "collect": "Lord Jesus Christ, at this midday pause, we thank you for your presence with us. Renew our strength for the tasks ahead. Help us to focus on what is true, noble, right, pure, lovely, and admirable. Guide our thoughts and actions for the rest of this day. In your name we pray. Amen."
+      },
+      "signOfTheCrossEnd": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "reflection": "At this midpoint of the day, let us pause to refocus on God's presence. Let us let go of the stresses and distractions of the morning, and prepare our hearts and minds for the afternoon ahead. May we walk in peace and trust, knowing that God is with us every step of the way.",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "feast": "",
+        "source": "Book of Common Prayer",
+        "sourceReference": "Prayer Guide PDF, Pages 8-20",
+        "createdAt": "2026-02-06T04:28:33.455Z",
+        "updatedAt": "2026-02-06T04:28:33.455Z"
+      }
+    },
+    {
+      "id": "2026-02-06-evening",
+      "date": "2026-02-06",
+      "timeOfDay": "evening",
+      "title": "Today's Evening Devotion",
+      "signOfTheCross": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "confession": "Almighty God, as the day comes to a close, we confess our sins and failures. We have been impatient, selfish, and unkind. We have rushed through our days without taking time to appreciate your blessings. Forgive us, Lord, and grant us your peace. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 42",
+        "title": "As the Deer Pants for Water",
+        "text": "As a deer pants for flowing streams, so pants my soul for you, O God. My soul thirsts for God, for the living God. When shall I come and appear before God? My tears have been my food day and night, while they say to me all the day long, 'Where is your God?' These things I remember, as I pour out my soul: how I would go with the throng and lead them in procession to the house of God with glad shouts and songs of praise, a multitude keeping festival."
+      },
+      "gloriaPatri": "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Ecclesiastes 3:1-8",
+          "title": "To Everything There is a Season",
+          "text": "For everything there is a season, and a time for every matter under heaven: a time to be born, and a time to die; a time to plant, and a time to pluck up what is planted; a time to kill, and a time to heal; a time to break down, and a time to build up; a time to weep, and a time to laugh; a time to mourn, and a time to dance; a time to cast away stones, and a time to gather stones together; a time to embrace, and a time to refrain from embracing; a time to seek, and a time to lose; a time to keep, and a time to cast away; a time to tear, and a time to sew; a time to keep silence, and a time to speak; a time to love, and a time to hate; a time for war, and a time for peace."
+        },
+        "canticle1": {
+          "reference": "Canticle of Zechariah",
+          "title": "Benedictus",
+          "text": "Blessed be the Lord God of Israel, for he has visited and redeemed his people and has raised up a horn of salvation for us in the house of his servant David, as he spoke by the mouth of his holy prophets from of old, salvation from our enemies and from the hand of all who hate us, to show mercy to our fathers and to remember his holy covenant."
+        },
+        "newTestament": {
+          "reference": "Philippians 4:6-7",
+          "title": "Be Anxious for Nothing",
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "My soul magnifies the Lord, and my spirit rejoices in God my Savior, because he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed; for he who is mighty has done great things for me, and holy is his name."
+        },
+        "gospel": {
+          "reference": "John 14:27",
+          "title": "Peace I Leave with You",
+          "text": "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid."
+        }
+      },
+      "apostlesCreed": "I believe in God, the Father almighty, creator of heaven and earth. I believe in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; he descended to the dead. On the third day he rose again; he ascended into heaven, he is seated at the right hand of the Father, and he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.",
+      "prayers": {
+        "lordsPrayer": "Our Father, who art in heaven, hallowed be thy name. Thy kingdom come, thy will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. For thine is the kingdom, and the power, and the glory, forever and ever. Amen.",
+        "prayerToStMichael": "St. Michael the Archangel, defend us in battle. Be our protection against the wickedness and snares of the devil; May God rebuke him, we humbly pray; And do thou, O Prince of the Heavenly Host, by the power of God, thrust into hell Satan and all evil spirits who wander through the world for the ruin of souls. Amen.",
+        "collect": "Gracious God, as this day ends, we thank you for your faithfulness. We remember your blessings, your guidance, and your love. Forgive us for our mistakes and failures. Grant us restful sleep and restore us for tomorrow. Watch over our loved ones and all who are in need. In your mercy, hear our prayer. Amen."
+      },
+      "signOfTheCrossEnd": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "reflection": "As we end this day, let us reflect on God's faithfulness throughout the day. Let us release the events of the day into God's hands and trust in his providence for tomorrow. May we rest in his peace and wake refreshed to serve him again.",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "feast": "",
+        "source": "Book of Common Prayer",
+        "sourceReference": "Prayer Guide PDF, Pages 8-20",
+        "createdAt": "2026-02-06T04:28:33.455Z",
+        "updatedAt": "2026-02-06T04:28:33.455Z"
+      }
+    },
+    {
+      "id": "2026-02-06-family",
+      "date": "2026-02-06",
+      "timeOfDay": "family",
+      "title": "Today's Family Devotion",
+      "signOfTheCross": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "confession": "Heavenly Father, we come as a family to confess our sins. We have been selfish, impatient, and unkind to one another. We have not loved each other as you love us. Forgive us, Lord, and help us to love one another as you have loved us. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 133",
+        "title": "How Good and Pleasant",
+        "text": "Behold, how good and pleasant it is when brothers dwell in unity! It is like the precious oil on the head, running down on the beard, on the beard of Aaron, running down on the collar of his robes! It is like the dew of Hermon, which falls on the mountains of Zion! For there the Lord has commanded the blessing, life forevermore."
+      },
+      "gloriaPatri": "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Deuteronomy 6:4-9",
+          "title": "Love the Lord Your God",
+          "text": "Hear, O Israel: The Lord our God, the Lord is one. You shall love the Lord your God with all your heart and with all your soul and with all your might. And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise. You shall bind them as a sign on your hand, and they shall be as frontlets between your eyes. You shall write them on the doorposts of your house and on your gates."
+        },
+        "canticle1": {
+          "reference": "Canticle of Simeon",
+          "title": "Nunc Dimittis",
+          "text": "Lord, now you are letting your servant depart in peace, according to your word; for my eyes have seen your salvation that you have prepared in the presence of all peoples, a light for revelation to the Gentiles, and for glory to your people Israel."
+        },
+        "newTestament": {
+          "reference": "Ephesians 6:1-4",
+          "title": "Fathers and Children",
+          "text": "Children, obey your parents in the Lord, for this is right. \"Honor your father and mother\" (this is the first commandment with a promise), \"that it may go well with you and that you may live long in the land.\" Fathers, do not provoke your children to anger, but bring them up in the discipline and instruction of the Lord."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "My soul magnifies the Lord, and my spirit rejoices in God my Savior, because he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed; for he who is mighty has done great things for me, and holy is his name."
+        },
+        "gospel": {
+          "reference": "Matthew 18:20",
+          "title": "Where Two or Three Are Gathered",
+          "text": "For where two or three are gathered in my name, there am I among them."
+        }
+      },
+      "apostlesCreed": "I believe in God, the Father almighty, creator of heaven and earth. I believe in Jesus Christ, his only Son, our Lord, who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried; he descended to the dead. On the third day he rose again; he ascended into heaven, he is seated at the right hand of the Father, and he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.",
+      "prayers": {
+        "lordsPrayer": "Our Father, who art in heaven, hallowed be thy name. Thy kingdom come, thy will be done, on earth as it is in heaven. Give us this day our daily bread, and forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. For thine is the kingdom, and the power, and the glory, forever and ever. Amen.",
+        "prayerToStMichael": "St. Michael the Archangel, defend us in battle. Be our protection against the wickedness and snares of the devil; May God rebuke him, we humbly pray; And do thou, O Prince of the Heavenly Host, by the power of God, thrust into hell Satan and all evil spirits who wander through the world for the ruin of souls. Amen.",
+        "collect": "Heavenly Father, bless our family. Help us to love one another, to forgive one another, and to support one another. Teach us to walk in your ways and to honor your name. Protect us from harm and guide us in your truth. In Jesus' name we pray. Amen."
+      },
+      "signOfTheCrossEnd": "In the name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "reflection": "As a family, let us commit to growing in faith together. Let us make time for prayer, for reading God's word, and for serving one another. May our home be a place of love, peace, and joy, reflecting the love of Christ to all who enter. Amen.",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "feast": "",
+        "source": "Book of Common Prayer",
+        "sourceReference": "Prayer Guide PDF, Pages 8-20",
+        "createdAt": "2026-02-06T04:28:33.455Z",
+        "updatedAt": "2026-02-06T04:28:33.455Z"
+      }
+    }
+  ]
+}

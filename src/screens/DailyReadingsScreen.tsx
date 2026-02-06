@@ -29,15 +29,16 @@ type DailyReadingsScreenNavigationProp = StackNavigationProp<TabParamList, 'Dail
 
 export default function DailyReadingsScreen() {
   const { t, currentLanguage } = useLocalization();
-  const { loadDailyReading } = useData();
+  const { loadDailyReading, getAvailableReadingDates } = useData();
   const { settings } = useSettings();
+  
+  const [availableDates, setAvailableDates] = useState<string[]>([]);
   
   const [selectedDate, setSelectedDate] = useState(getTodayISO());
   const [currentReading, setCurrentReading] = useState<DailyReading | null>(null);
   const [loadingReading, setLoadingReading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
-  const [viewMode, setViewMode] = useState<'daily' | 'calendar'>('calendar'); // Default to calendar view
-  const [currentMonth, setCurrentMonth] = useState(new Date());
+  const [calendarVisible, setCalendarVisible] = useState(false);
   
   const theme = useTheme();
   const today = getTodayISO();
@@ -77,9 +78,15 @@ export default function DailyReadingsScreen() {
 
   // Removed useFocusEffect to prevent re-run loops tied to loading state changes
 
-  // Load reading when selected date or language changes
+  // Load available dates and reading when language changes
   useEffect(() => {
-    loadReadingForDate(selectedDate).catch(() => setCurrentReading(null));
+    const loadData = async () => {
+      const dates = await getAvailableReadingDates(currentLanguage);
+      setAvailableDates(dates);
+      await loadReadingForDate(selectedDate);
+    };
+    
+    loadData().catch(() => setCurrentReading(null));
   }, [selectedDate, currentLanguage]); // Removed loadReadingForDate from dependencies to prevent loop
 
   const navigateToDate = (direction: 'next' | 'previous') => {
@@ -102,20 +109,6 @@ export default function DailyReadingsScreen() {
   };
 
   const selectedDateObj = parseISODate(selectedDate);
-  const navigateMonth = (direction: 'next' | 'previous') => {
-    const newMonth = new Date(currentMonth);
-    if (direction === 'next') {
-      newMonth.setMonth(newMonth.getMonth() + 1);
-    } else {
-      newMonth.setMonth(newMonth.getMonth() - 1);
-    }
-    setCurrentMonth(newMonth);
-  };
-
-  const handleDateSelectFromCalendar = (dateISO: string) => {
-    setSelectedDate(dateISO);
-    setViewMode('daily'); // Switch to daily view when date is selected
-  };
 
   const openBibleLink = (reference: string) => {
     const url = getBibleGatewayUrl(reference);
@@ -136,34 +129,14 @@ export default function DailyReadingsScreen() {
         variant="elevated"
       />
 
-      {/* View Toggle */}
-      <View style={styles.viewToggle}>
-        <TouchableOpacity
-          style={[styles.toggleButton, viewMode === 'calendar' && styles.toggleButtonActive]}
-          onPress={() => setViewMode('calendar')}
-        >
-          <Ionicons 
-            name="calendar-outline" 
-            size={20} 
-            color={viewMode === 'calendar' ? '#FFFFFF' : theme.colors.text.secondary} 
-          />
-          <Text style={[styles.toggleText, viewMode === 'calendar' && styles.toggleTextActive]}>
-            {t('calendar') || 'Calendar'}
-          </Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.toggleButton, viewMode === 'daily' && styles.toggleButtonActive]}
-          onPress={() => setViewMode('daily')}
-        >
-          <Ionicons 
-            name="book-outline" 
-            size={20} 
-            color={viewMode === 'daily' ? '#FFFFFF' : theme.colors.text.secondary} 
-          />
-          <Text style={[styles.toggleText, viewMode === 'daily' && styles.toggleTextActive]}>
-            {t('daily') || 'Daily'}
-          </Text>
-        </TouchableOpacity>
+       {/* Calendar Button */}
+      <View style={styles.calendarButtonContainer}>
+        <PrimaryButton
+          title={t('calendar') || 'Calendar'}
+          onPress={() => setCalendarVisible(true)}
+          variant="outline"
+          size="small"
+        />
       </View>
       
       <ScrollView 
@@ -180,36 +153,7 @@ export default function DailyReadingsScreen() {
           />
         }
       >
-        {viewMode === 'calendar' ? (
-          <>
-            {/* Month Navigation */}
-            <View style={styles.monthNavigation}>
-              <PrimaryButton
-                title="←"
-                onPress={() => navigateMonth('previous')}
-                variant="ghost"
-                size="small"
-              />
-              <Text style={styles.monthText}>
-                {currentMonth.toLocaleDateString(currentLanguage, { month: 'long', year: 'numeric' })}
-              </Text>
-              <PrimaryButton
-                title="→"
-                onPress={() => navigateMonth('next')}
-                variant="ghost"
-                size="small"
-              />
-            </View>
-
-            {/* Calendar View */}
-            <CalendarView
-              currentMonth={currentMonth}
-              selectedDate={selectedDate}
-              onDateSelect={handleDateSelectFromCalendar}
-              availableDates={[]} // TODO: Load available dates from data
-            />
-          </>
-        ) : (
+        {/* Daily View (always visible) */}
           <>
             {/* Date Navigation */}
             <View style={styles.dateNavigation}>
@@ -303,8 +247,18 @@ export default function DailyReadingsScreen() {
               </View>
             )}
           </>
-        )}
       </ScrollView>
+       {/* Calendar Popup */}
+      <CalendarView
+        visible={calendarVisible}
+        onClose={() => setCalendarVisible(false)}
+        selectedDate={selectedDate}
+        availableDates={availableDates}
+        onDateSelect={(dateISO) => {
+          setSelectedDate(dateISO);
+          setCalendarVisible(false);
+        }}
+      />
     </SafeAreaView>
   );
 }
@@ -319,6 +273,10 @@ const createStyles = (theme: Theme & { userFontSize: string }) => StyleSheet.cre
   content: {
     flex: 1,
     paddingHorizontal: theme.spacing.md,
+  },
+  calendarButtonContainer: {
+    paddingHorizontal: theme.spacing.md,
+    paddingVertical: theme.spacing.sm,
   },
   viewToggle: {
     flexDirection: 'row',

@@ -1,0 +1,289 @@
+{
+  "devotions": [
+    {
+      "id": "2024-01-01-morning",
+      "date": "2024-01-01",
+      "timeOfDay": "morning",
+      "title": "Uue aasta hommikupalve",
+      "signOfTheCross": "Isa, Poja ja Pühase Vaimu nimel. Aamen.",
+      "confession": "Halastav meie Jumal, me tunnistame, et oleme pattu teinud Sinu vastu mõttes, sõnas ja teos, selle läbi, mida oleme teinud, ja selle läbi, mida oleme jätnud tegemata. Me ei ole armastanud Sind kogu oma südamega; me ei ole armastanud oma ligimesi nagu iseennast. Me kahetseme tõeliselt ja sügavalt. Oma Poja Jeesuse Kristuse pärast halasta meile ja anna meile andeks; et me võiksime rõõmustada Sinu tahtes ja käia Sinu teedel, Sinu nime auks. Aamen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 8",
+        "title": "Oh Issand, meie Issand",
+        "text": "Oh Issand, meie Issand, kui maagiline on Sinu nimi kogu maa peal! Sa oled pannud oma au taevaste üles.\n\nKui ma vaatan Sinu taevasi, Sinu sõrme töödeid, kuu ja tähti, mis Sa paigaldanud oled, mis on mees, et Sa oleksid teda meeles, ja inimese poeg, et Sa hoolitseda would teda? Siiski olete teinud teda natuke madalamaks kui taevalised olenemised ja kronitud teda au ja auuga. Sa olete andnud talle valitsemise üle Sinu käte tegemiste; Sa olete pannud kõik asjad tema jalge alla,\n\n kõik lambad ja härjad, ning ka põllu loomad, taeva linnud ja meri kala, kõik, mis möödab mere teedel.\n\nOh Issand, meie Issand, kui maagiline on Sinu nimi kogu maa peal!"
+      },
+      "gloriaPatri": "Au olgu Isale ja Pojale ja Pühale Vaimule, nagu oli alguses, on nüüd ja jääb igavesti, maailmata lõpuni. Aamen.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Esaja 43:1-7",
+          "title": "Ära kart, sest ma olen sind lunastanud",
+          "text": "Aga nüüd nii ütleb Issand, kes sind, Jakob, loonud, kes sind, Iisrael, moodustanud: \"Ära kart, sest ma olen sind lunastanud; ma olen sind nimega välja kutsunud, sa oled minu oma. Kui sa lähed vee kaudu, ma olen sinuga koos; ja jõgede kaudu ei ära Sind põhjusta; kui sa käid tule kaudu, sa ei põle ja leek ei söe Sind ära. Sest ma olen Issand, sind Jumal, Iisraeli Püha, sind Päästja.\n\nMa annan sinu eest Egipti, Kusi ja Seba kurssis. Sest sa oled minu silmis hindelised ja auhinnatud, ja ma armastan Sind, ma annan sind eest mehi, rahvasi sinu elu eest. Ära kart, sest ma olen sinuga koos; ma toon sinu järglasi idast ja loen sind lõuna alt. Ma ütlen põhjal, Anna up, ja lõunale, Ära hoida tagasi; toon minu poegi kaugelt ja minu tütardeid maa otsast, kõik, kes on minu nimel välja kutsunud, keda ma olen loonud minu au eest, keda ma olen moodustanud ja tehtud.\""
+        },
+        "canticle1": {
+          "reference": "Tsaharia kaantikeel",
+          "title": "Benedictus",
+          "text": "Püha on Issand, Iisraeli Jumal, sest Ta on külastanud ja lunastanud oma rahu ja on meile tõstnud päästuse sarvi oma teenija Daavidis majas,\n\n nagu Ta rääkis oma püha prohvettide suust varasemast ajast,\n\n päästust meie vaenlaste ja kõigi, kes meid vihastavad, käest,\n\n et näidata meie isaadele halastust ja meenutada oma püha sõidu,\n\n võltsi, mille Ta andis meie isa Abrahamile, et anda meile\n\n et me, vabastatud meie vaenlaste käest, võiksime Talle teenida kartmatult,\n\n pühaduses ja õiguses enne Teda kõik meie päevad.\n\nJa sina, laps, saadud prohvet kõige kõrgemast;\n\n sest sa lähed Issanda ees, et ette valmistada tema teid,\n\n andes oma rahvale päästuse teadmise\n\n nende patude andeksandmisel,\n\n meie Jumala õrnate halastuste tõttu,\n\n millest päike tuleb meiega kohalikult,\n\n et anda valgust neile, kes istuvad pimeduses ja surma varjus,\n\n et juhtida meie jalgu rahu teele."
+        },
+        "newTestament": {
+          "reference": "Galatiitlastele 3:23-29",
+          "title": "Kristuses Jeesusel olete kõik Jumala pojad",
+          "text": "Nüüd enne usu tulekut olime me seadusega vangistatud, vangis kuni tulevane usu avalikustatakse. Nii et seadus oli meie valvaja kuni Kristus tuli, et me võiksime usuga õigustatud olla. Kuid nüüd, kui usus on tulnud, me ei ole enam valvaja all, sest Kristuses Jeesusel olete kõik Jumala pojad, usuga läbi. Sest nii palju teistest, kes on ristitud Kristusesse, on üles pandud Kristus.\n\nPole Juut ega Kreeka, pole orju ega vaba, pole mees ja naine, sest te olete kõik üks Kristuses Jeesusel. Ja kui te olete Kristuse oma, siis olete te Abrahamile järglased, pärandi saajad vastavalt lubadusele."
+        },
+        "canticle2": {
+          "reference": "Maaria kaantikeel",
+          "title": "Magnificat",
+          "text": "Minu hing ülistab Issandat,\n\n ja minu vaim rõõmustab Jumalas, minu Päästjas,\n\n sest Ta on vaadanud oma teenija ühine elu.\n\nSest näha, alates nüüdst kõigi põlvkondadeks kutsutakse mind õnnistatud;\n\n sest see, kes on vägev, on teinud minu jaoks suuri asju,\n\n ja tema nimi on püha.\n\nJa tema halastus on neile, kes teda karda\n\n põlvkondadest põlvkonda.\n\nTa on näidanud jõudu oma käärme kaudu;\n\n Ta on hajutanud uhked oma südame mõttetes;\n\n Ta on võidnud vägevad oma troonidest\n\n ja tõstnud üles ühise elu inimesi;\n\n Ta on täitnud nälgid head asjadega\n\n ja saatnud jõude tühjaks.\n\nTa on aidanud oma teenijale Iisraelile,\n\n meenutades oma halastust,\n\n nagu Ta rääkis meie isaadele,\n\n Abrahamile ja tema järglastele igavesti."
+        },
+        "gospel": {
+          "reference": "Matteuse 1:18-25",
+          "title": "Jeesuse Kristuse sündimine",
+          "text": "Nüüd Jeesuse Kristuse sündimine juhtus sellisel kujul. Kui tema ema Maarja oli Josefile pandud, enne kui nad koos tuleksid, leiti, et ta oli lastega Pühast Vaimust. Ja tema mees Josef, olnud õige mees ja ei tahtnud teda häbistada, otsustas tema vaikselt lahutada. Kuid kui ta neid asju arutas, nägime, Issanda ingel ilmus talle unes, ütlevad: \"Josef, Daavidi poeg, ära kart Maarja oma naiseks võtta, sest see, mis tema sees on, on Pühast Vaimust. Ta sünnib poja ja sa peaksid tema nime Jeesuseks nimetama, sest Ta päästab oma rahu oma patudest.\"\n\nKõik see juhtus, et täita see, mida Issand oli prohveti kaudu rääkinud: \"Vaata, neitset sünnitavad ja sünnivad poja, ja nad kõnevad tema nime Immanuel\" (mis tähendab, Jumal koos meiega). Kui Josef ärkas uneist, ta tegi, nagu Issanda ingel talle käskis: ta võttis oma naise, kuid ei teadnud teda, kuni ta ei olnud poega sünnitanud. Ja ta nimetas tema nime Jeesuseks."
+        }
+      },
+      "apostlesCreed": "Ma usun Jumalasse, kõigeväelisse Isasse, taeva ja maa Loojasse. Ja Jeesusesse Kristusesse, Tema ainusündinud Pojasse, meie Issandasse, kes on saadud Pühast Vaimust, sündinud neitsist Maarjast, kannatanud Pontius Pilatuse all, risti löödud, surnud ja maetud, läinud alla põrgusse, kolmandal päeval üles tõusnud surnuist, läinud üles taevasse, istub Jumala, kõigeväelise Isa paremal käel, sealt Ta tuleb kohut mõistma elavate ja surnute üle. Ma usun Pühasse Vaimusse, pühasse üldkirikusse, pühade osadust, pattude andeksandmist, ihu ülesärkamist ja igavest elu. Aamen.",
+      "prayers": {
+        "lordsPrayer": "Meie Isa, kes Sa oled taevas! Pühitsetud olgu Sinu nimi. Sinu riik tulgu. Sinu tahtmine sündigu nagu taevas, nõnda ka maa peal. Meie igapäevast leiba anna meile täna. Ja anna meile andeks meie võlad, nagu meiegi andeks anname oma võlglastele. Ja ära saada meid kiusatusse, vaid päästa meid kurjast. Sest Sinu on riik ja vägi ja au igavesti. Aamen.",
+        "prayerToStMichael": "Püha Mihkel, arhangels, kaitsege meid sõjas. Ole meie kaitsmine kurjuse ja kurjuse vaimude vastu; Las Jumal teda krahvaks, me alandlikult palvetame; Ja sa, O Taeva armee prints, Jumala väe kaudu, lükkake põrgu Satan ja kõik kurjad vaimud, kes ringlevad maailmas hinge hävitamiseks. Aamen.",
+        "collect": "Kõigevägev Jumal, me täname Sind selle uue aasta eest. Kui alustame seda teekonda päikese ümber veel üks kord, anna meile tarkust näha Sinu käest kõikides asjadest, jõudu järgida Sinu tahtele ja usku, et usaldada Sinu valitsemist. Või see aasta on täidetud Sinu rahuga, Sinu rõõmuga ja Sinu piisavalt õnnistustega. Jeesuse Kristuse, meie Issanda kaudu. Aamen."
+      },
+      "signOfTheCrossEnd": "Isa, Poja ja Pühase Vaimu nimel. Aamen.",
+      "reflection": "Kui alustame uut aastat, las me mõtiskleme Jumala aususe kohta minevikus ja tema lubaduste kohta tulevikus. Või see aasta on aeg vaimulikuks kasvuks, uuendamiseks ja sügavamaks suhteks meie Issandaga ja Päästjaga Jeesus Kristusega.",
+      "metadata": {
+        "liturgicalSeason": "jõulud",
+        "feast": "Uue aasta päev",
+        "source": "Ühine palveraamat",
+        "sourceReference": "Prayer Guide PDF, Leheküljed 8-20",
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "2026-02-06-morning",
+      "date": "2026-02-06",
+      "timeOfDay": "morning",
+      "title": "Tänane hommikupalve",
+      "signOfTheCross": "Isa, Poja ja Pühase Vaimu nimel. Aamen.",
+      "confession": "Halastav meie Jumal, me tunnistame, et oleme pattu teinud Sinu vastu mõttes, sõnas ja teos, selle läbi, mida oleme teinud, ja selle läbi, mida oleme jätnud tegemata. Me ei ole armastanud Sind kogu oma südamega; me ei ole armastanud oma ligimesi nagu iseennast. Me kahetseme tõeliselt ja sügavalt. Oma Poja Jeesuse Kristuse pärast halasta meile ja anna meile andeks; et me võiksime rõõmustada Sinu tahtes ja käia Sinu teedel, Sinu nime auks. Aamen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 119:105",
+        "title": "Sinu sõna on kaug",
+        "text": "Sinu sõna on kaug minu jalule ja valgus minu teele."
+      },
+      "gloriaPatri": "Au olgu Isale ja Pojale ja Pühale Vaimule, nagu oli alguses, on nüüd ja jääb igavesti, maailmata lõpuni. Aamen.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Psalm 23",
+          "title": "Issand on mu lammasotsija",
+          "text": "Issand on mu lammasotsija; mul ei ole puudust. Ta teeb mind magama rohelistel õedel. Ta viibib mind vaiksete veede kõrval. Ta värskendab mu hingi. Ta viibib mind õiguse teedel oma nime auks. Isegi kui ma kõndin surma varju orus, ma ei karda kurju, sest sa oled minuga; sinu ridu ja sinu staf, nad meeldivad mind. Sa valmistad mulle lauda minu vaenlaste ees; sa maitsed mu pea õliga; mu tassi üleb ümber. Kindlasti heaolu ja halastus järgib mind kõikide minu elupäevade jooksul, ja ma elan Issanda majas igavesti."
+        },
+        "canticle1": {
+          "reference": "Päike kaantikeel",
+          "title": "Püha Franciscuse kaantikeel",
+          "text": "Kõigevägev, kõigivõimeline, kõigihuviline Issand! Kõik kiitus on sulle, kõik au, kõik auks ja kõik õnnistus. Sinule, üksinda, kõigevägevale, kuuluvad nad. Ei ole surnukate huult, mis väärtusega on Sinu nime välja ütlemiseks. Kiidetud saad, mu Issand, kõikide Sinu loomade kaudu, eriti mu herra vend Päike, kes toob päeva; ja sa annad valgust tema kaudu. Ja ta on ilus ja särav kogu oma maagilisus! Sinu, kõigevägevale, ta kannab võrdlus. Kiidetud saad, mu Issand, õde Kuu ja tähtede kaudu; taevas Sa olete teinud neid heledaks, väärtuslikuks ja ilusaks."
+        },
+        "newTestament": {
+          "reference": "Matteuse 5:1-12",
+          "title": "Beatitudid",
+          "text": "Nähes rahvahulk, ta läks mäele, ja kui ta istus alla, tulid tema jüngrid temasse. Ja ta avas oma suud ja õpetas neile, ütlevad: \"Õnnistatud on need, kes on vaimus vaesed, sest nende jaoks on taevase riigi. Õnnistatud on need, kes kaastundavad, sest nad saavad lohutust. Õnnistatud on need, kes on nõrgad, sest nad pärinevad maa. Õnnistatud on need, kes nälgivad ja jooksevad õiguse pärast, sest nad saavad rahulolekut. Õnnistatud on need, kes on halastavad, sest nad saavad halastust. Õnnistatud on need, kes on südamelt puhased, sest nad näevad Jumalat. Õnnistatud on rahuloodjad, sest nad saavad kutsutud Jumala pojadeks. Õnnistatud on need, kes on õiguse pärast tagakiusatud, sest nende jaoks on taevase riigi. Õnnistatud sa oled, kui teised teid vääritavad ja tagakiusavad teid ja ütlevad kõik sortsi pahad asjad teie vastu valesti minu nimel. Õnnistatud ja õnnistatud, sest teie palk on suur taevas, sest nad tagakiusasid prohvetteid, kes olid teie ees."
+        },
+        "canticle2": {
+          "reference": "Maaria kaantikeel",
+          "title": "Magnificat",
+          "text": "Minu hing ülistab Issandat, ja minu vaim rõõmustab Jumalas, minu Päästjas, sest Ta on vaadanud oma teenija ühine elu. Sest näha, alates nüüdst kõigi põlvkondadeks kutsutakse mind õnnistatud; sest see, kes on vägev, on teinud minu jaoks suuri asju, ja tema nimi on püha. Ja tema halastus on neile, kes teda karda põlvkondadest põlvkonda. Ta on näidanud jõudu oma käärme kaudu; Ta on hajutanud uhked oma südame mõttetes; Ta on võidnud vägevad oma troonidest ja tõstnud üles ühise elu inimesi; Ta on täitnud nälgid head asjadega ja saatnud jõude tühjaks. Ta on aidanud oma teenijale Iisraelile, meenutades oma halastust, nagu Ta rääkis meie isaadele, Abrahamile ja tema järglastele igavesti."
+        },
+        "gospel": {
+          "reference": "Johanese 3:16-17",
+          "title": "Sest Jumal armastas maailma nii palju",
+          "text": "Sest Jumal armastas maailma nii palju, et Ta andis oma ainusündinud Poja, et kõik, kes teda usuvad, ei hukuks, vaid igavest elu saaks. Sest Jumal ei saanud oma Poja maailma ette, et maailma mõistaks, vaid et maailm võiks Ta kaudu päästuda."
+        }
+      },
+      "apostlesCreed": "Ma usun Jumalasse, kõigeväelisse Isasse, taeva ja maa Loojasse. Ja Jeesusesse Kristusesse, Tema ainusündinud Pojasse, meie Issandasse, kes on saadud Pühast Vaimust, sündinud neitsist Maarjast, kannatanud Pontius Pilatuse all, risti löödud, surnud ja maetud, läinud alla põrgusse, kolmandal päeval üles tõusnud surnuist, läinud üles taevasse, istub Jumala, kõigeväelise Isa paremal käel, sealt Ta tuleb kohut mõistma elavate ja surnute üle. Ma usun Pühasse Vaimusse, pühasse üldkirikusse, pühade osadust, pattude andeksandmist, ihu ülesärkamist ja igavest elu. Aamen.",
+      "prayers": {
+        "lordsPrayer": "Meie Isa, kes Sa oled taevas! Pühitsetud olgu Sinu nimi. Sinu riik tulgu. Sinu tahtmine sündigu nagu taevas, nõnda ka maa peal. Meie igapäevast leiba anna meile täna. Ja anna meile andeks meie võlad, nagu meiegi andeks anname oma võlglastele. Ja ära saada meid kiusatusse, vaid päästa meid kurjast. Sest Sinu on riik ja vägi ja au igavesti. Aamen.",
+        "prayerToStMichael": "Püha Mihkel, arhangels, kaitsege meid sõjas. Ole meie kaitsmine kurjuse ja kurjuse vaimude vastu; Las Jumal teda krahvaks, me alandlikult palvetame; Ja sa, O Taeva armee prints, Jumala väe kaudu, lükkake põrgu Satan ja kõik kurjad vaimud, kes ringlevad maailmas hinge hävitamiseks. Aamen.",
+        "collect": "Kõigevägev Jumal, me täname Sind selle päeva eest. Kui alustame meie teekonda selle päeva läbi, anna meile tarkust näha Sinu käest kõikides asjadest, jõudu järgida Sinu tahtele ja usku, et usaldada Sinu valitsemist. Või see päev on täidetud Sinu rahuga, Sinu rõõmuga ja Sinu piisavalt õnnistustega. Jeesuse Kristuse, meie Issanda kaudu. Aamen."
+      },
+      "signOfTheCrossEnd": "Isa, Poja ja Pühase Vaimu nimel. Aamen.",
+      "reflection": "Kui alustame seda päeva, las me meenutame Jumala armastust meie vastu, nagu see on nähtud Tema Sõna ja Tema Poja Jeesus Kristuse kaudu. Või me kõndida Sinu valguses ja järgida Sinu juhtimist kõikide meie päevade jooksul.",
+      "metadata": {
+        "liturgicalSeason": "tavaline",
+        "feast": "",
+        "source": "Ühine palveraamat",
+        "sourceReference": "Prayer Guide PDF, Leheküljed 8-20",
+        "createdAt": "2026-02-06T04:10:43.652Z",
+        "updatedAt": "2026-02-06T04:10:43.652Z"
+      }
+    },
+    {
+      "id": "2026-02-06-noon",
+      "date": "2026-02-06",
+      "timeOfDay": "noon",
+      "title": "Tänane's Keskpäevapalve Devotion",
+      "signOfTheCross": "Isa, Poja ja Pühase Vaimu nimel. Aamen.",
+      "confession": "Issand Jeesus Kristus, at this midday hour, we pause from our activities to acknowledge our sins. We have been hurried, distracted, and sometimes unkind. Forgive us, Issand, for the ways we have fallen short. Renew us with your Spirit and guide our actions for the rest of the day. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 121",
+        "title": "I Lift Up Minu Eyes to the Hills",
+        "text": "I lift up my eyes to the hills. From where does my help come? Minu help comes from the Issand, who made heaven and earth. He will not let your foot be moved; he who keeps you will not slumber. Behold, he who keeps Israel will neither slumber nor sleep. The Issand is your keeper; the Issand is your shade on your right hand. The sun shall not strike you by day, nor the moon by night. The Issand will keep you from all evil; he will keep your life. The Issand will keep your going out and your coming in from this time forth and forevermore."
+      },
+      "gloriaPatri": "Au olgu Isale ja Pojale ja Pühale Vaimule, nagu oli alguses, on nüüd ja jääb igavesti, maailmata lõpuni. Aamen.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Proverbs 3:5-6",
+          "title": "Trust in the Issand",
+          "text": "Trust in the Issand with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths."
+        },
+        "canticle1": {
+          "reference": "Canticle of Simeon",
+          "title": "Nunc Dimittis",
+          "text": "Issand, now you are letting your servant depart in peace, according to your word; for my eyes have seen your salvation that you have prepared in the presence of all peoples, a light for revelation to the Gentiles, and for glory to your people Israel."
+        },
+        "newTestament": {
+          "reference": "Matthew 11:28-30",
+          "title": "Come to Me, All Who Labor",
+          "text": "Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "Minu soul magnifies the Issand, and my spirit rejoices in God my Savior, because he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed; for he who is mighty has done great things for me, and holy is his name."
+        },
+        "gospel": {
+          "reference": "Luke 12:19-21",
+          "title": "The Rich Fool",
+          "text": "And I will say to my soul, 'Soul, you have ample goods laid up for many years; relax, eat, drink, be merry.' But God said to him, 'Fool! This night your soul is required of you, and the things you have prepared, whose will they be?' So is the one who lays up treasure for himself and is not rich toward God."
+        }
+      },
+      "apostlesCreed": "Ma usun Jumalasse, kõigeväelisse Isasse, taeva ja maa Loojasse. Ja Jeesusesse Kristusesse, Tema ainusündinud Pojasse, meie Issandasse, kes on saadud Pühast Vaimust, sündinud neitsist Maarjast, kannatanud Pontius Pilatuse all, risti löödud, surnud ja maetud, läinud alla põrgusse, kolmandal päeval üles tõusnud surnuist, läinud üles taevasse, istub Jumala, kõigeväelise Isa paremal käel, sealt Ta tuleb kohut mõistma elavate ja surnute üle. Ma usun Pühasse Vaimusse, pühasse üldkirikusse, pühade osadust, pattude andeksandmist, ihu ülesärkamist ja igavest elu. Aamen.",
+      "prayers": {
+        "lordsPrayer": "Meie Isa, kes Sa oled taevas! Pühitsetud olgu Sinu nimi. Sinu riik tulgu. Sinu tahtmine sündigu nagu taevas, nõnda ka maa peal. Meie igapäevast leiba anna meile täna. Ja anna meile andeks meie võlad, nagu meiegi andeks anname oma võlglastele. Ja ära saada meid kiusatusse, vaid päästa meid kurjast. Sest Sinu on riik ja vägi ja au igavesti. Aamen.",
+        "prayerToStMichael": "Püha Mihkel, arhangels, kaitsege meid sõjas. Ole meie kaitsmine kurjuse ja kurjuse vaimude vastu; Las Jumal teda krahvaks, me alandlikult palvetame; Ja sa, O Taeva armee prints, Jumala väe kaudu, lükkake põrgu Satan ja kõik kurjad vaimud, kes ringlevad maailmas hinge hävitamiseks. Aamen.",
+        "collect": "Issand Jeesus Kristus, at this midday pause, we thank you for your presence with us. Renew our strength for the tasks ahead. Help us to focus on what is true, noble, right, pure, lovely, and admirable. Guide our thoughts and actions for the rest of this day. In your name we pray. Amen."
+      },
+      "signOfTheCrossEnd": "Isa, Poja ja Pühase Vaimu nimel. Aamen.",
+      "reflection": "At this midpoint of the day, let us pause to refocus on God's presence. Let us let go of the stresses and distractions of the morning, and prepare our hearts and minds for the afternoon ahead. May we walk in peace and trust, knowing that God is with us every step of the way.",
+      "metadata": {
+        "liturgicalSeason": "tavaline",
+        "feast": "",
+        "source": "Ühine palveraamat",
+        "sourceReference": "Prayer Guide PDF, Leheküljed 8-20",
+        "createdAt": "2026-02-06T04:28:33.455Z",
+        "updatedAt": "2026-02-06T04:28:33.455Z"
+      }
+    },
+    {
+      "id": "2026-02-06-eveting",
+      "date": "2026-02-06",
+      "timeOfDay": "evening",
+      "title": "Tänane's Õhtupalve Devotion",
+      "signOfTheCross": "Isa, Poja ja Pühase Vaimu nimel. Aamen.",
+      "confession": "Almighty God, as the day comes to a close, we confess our sins and failures. We have been impatient, selfish, and unkind. We have rushed through our days without taking time to appreciate your blessings. Forgive us, Issand, and grant us your peace. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 42",
+        "title": "As the Deer Pants for Water",
+        "text": "As a deer pants for flowing streams, so pants my soul for you, O God. Minu soul thirsts for God, for the living God. When shall I come and appear before God? Minu tears have been my food day and night, while they say to me all the day long, 'Where is your God?' These things I remember, as I pour out my soul: how I would go with the throng and lead them in procession to the house of God with glad shouts and songs of praise, a multitude keeping festival."
+      },
+      "gloriaPatri": "Au olgu Isale ja Pojale ja Pühale Vaimule, nagu oli alguses, on nüüd ja jääb igavesti, maailmata lõpuni. Aamen.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Ecclesiastes 3:1-8",
+          "title": "To Everything There is a Season",
+          "text": "For everything there is a season, and a time for every matter under heaven: a time to be born, and a time to die; a time to plant, and a time to pluck up what is planted; a time to kill, and a time to heal; a time to break down, and a time to build up; a time to weep, and a time to laugh; a time to mourn, and a time to dance; a time to cast away stones, and a time to gather stones together; a time to embrace, and a time to refrain from embracing; a time to seek, and a time to lose; a time to keep, and a time to cast away; a time to tear, and a time to sew; a time to keep silence, and a time to speak; a time to love, and a time to hate; a time for war, and a time for peace."
+        },
+        "canticle1": {
+          "reference": "Canticle of Zechariah",
+          "title": "Benedictus",
+          "text": "Blessed be the Issand God of Israel, for he has visited and redeemed his people and has raised up a horn of salvation for us in the house of his servant David, as he spoke by the mouth of his holy prophets from of old, salvation from our enemies and from the hand of all who hate us, to show mercy to our fathers and to remember his holy covenant."
+        },
+        "newTestament": {
+          "reference": "Philippians 4:6-7",
+          "title": "Be Anxious for Nothing",
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "Minu soul magnifies the Issand, and my spirit rejoices in God my Savior, because he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed; for he who is mighty has done great things for me, and holy is his name."
+        },
+        "gospel": {
+          "reference": "John 14:27",
+          "title": "Peace I Leave with You",
+          "text": "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid."
+        }
+      },
+      "apostlesCreed": "Ma usun Jumalasse, kõigeväelisse Isasse, taeva ja maa Loojasse. Ja Jeesusesse Kristusesse, Tema ainusündinud Pojasse, meie Issandasse, kes on saadud Pühast Vaimust, sündinud neitsist Maarjast, kannatanud Pontius Pilatuse all, risti löödud, surnud ja maetud, läinud alla põrgusse, kolmandal päeval üles tõusnud surnuist, läinud üles taevasse, istub Jumala, kõigeväelise Isa paremal käel, sealt Ta tuleb kohut mõistma elavate ja surnute üle. Ma usun Pühasse Vaimusse, pühasse üldkirikusse, pühade osadust, pattude andeksandmist, ihu ülesärkamist ja igavest elu. Aamen.",
+      "prayers": {
+        "lordsPrayer": "Meie Isa, kes Sa oled taevas! Pühitsetud olgu Sinu nimi. Sinu riik tulgu. Sinu tahtmine sündigu nagu taevas, nõnda ka maa peal. Meie igapäevast leiba anna meile täna. Ja anna meile andeks meie võlad, nagu meiegi andeks anname oma võlglastele. Ja ära saada meid kiusatusse, vaid päästa meid kurjast. Sest Sinu on riik ja vägi ja au igavesti. Aamen.",
+        "prayerToStMichael": "Püha Mihkel, arhangels, kaitsege meid sõjas. Ole meie kaitsmine kurjuse ja kurjuse vaimude vastu; Las Jumal teda krahvaks, me alandlikult palvetame; Ja sa, O Taeva armee prints, Jumala väe kaudu, lükkake põrgu Satan ja kõik kurjad vaimud, kes ringlevad maailmas hinge hävitamiseks. Aamen.",
+        "collect": "Gracious God, as this day ends, we thank you for your faithfulness. We remember your blessings, your guidance, and your love. Forgive us for our mistakes and failures. Grant us restful sleep and restore us for tomorrow. Watch over our loved ones and all who are in need. In your mercy, hear our prayer. Amen."
+      },
+      "signOfTheCrossEnd": "Isa, Poja ja Pühase Vaimu nimel. Aamen.",
+      "reflection": "As we end this day, let us reflect on God's faithfulness throughout the day. Let us release the events of the day into God's hands and trust in his providence for tomorrow. May we rest in his peace and wake refreshed to serve him again.",
+      "metadata": {
+        "liturgicalSeason": "tavaline",
+        "feast": "",
+        "source": "Ühine palveraamat",
+        "sourceReference": "Prayer Guide PDF, Leheküljed 8-20",
+        "createdAt": "2026-02-06T04:28:33.455Z",
+        "updatedAt": "2026-02-06T04:28:33.455Z"
+      }
+    },
+    {
+      "id": "2026-02-06-family",
+      "date": "2026-02-06",
+      "timeOfDay": "family",
+      "title": "Tänane's Perepalve Devotion",
+      "signOfTheCross": "Isa, Poja ja Pühase Vaimu nimel. Aamen.",
+      "confession": "Heavenly Father, we come as a family to confess our sins. We have been selfish, impatient, and unkind to one another. We have not loved each other as you love us. Forgive us, Issand, and help us to love one another as you have loved us. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 133",
+        "title": "How Good and Pleasant",
+        "text": "Behold, how good and pleasant it is when brothers dwell in unity! It is like the precious oil on the head, running down on the beard, on the beard of Aaron, running down on the collar of his robes! It is like the dew of Hermon, which falls on the mountains of Zion! For there the Issand has commanded the blessing, life forevermore."
+      },
+      "gloriaPatri": "Au olgu Isale ja Pojale ja Pühale Vaimule, nagu oli alguses, on nüüd ja jääb igavesti, maailmata lõpuni. Aamen.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Deuteronomy 6:4-9",
+          "title": "Love the Issand Sinu God",
+          "text": "Hear, O Israel: The Issand our God, the Issand is one. You shall love the Issand your God with all your heart and with all your soul and with all your might. And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise. You shall bind them as a sign on your hand, and they shall be as frontlets between your eyes. You shall write them on the doorposts of your house and on your gates."
+        },
+        "canticle1": {
+          "reference": "Canticle of Simeon",
+          "title": "Nunc Dimittis",
+          "text": "Issand, now you are letting your servant depart in peace, according to your word; for my eyes have seen your salvation that you have prepared in the presence of all peoples, a light for revelation to the Gentiles, and for glory to your people Israel."
+        },
+        "newTestament": {
+          "reference": "Ephesians 6:1-4",
+          "title": "Fathers and Children",
+          "text": "Children, obey your parents in the Issand, for this is right. \"Honor your father and mother\" (this is the first commandment with a promise), \"that it may go well with you and that you may live long in the land.\" Fathers, do not provoke your children to anger, but bring them up in the discipline and instruction of the Issand."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "Minu soul magnifies the Issand, and my spirit rejoices in God my Savior, because he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed; for he who is mighty has done great things for me, and holy is his name."
+        },
+        "gospel": {
+          "reference": "Matthew 18:20",
+          "title": "Where Two or Three Are Gathered",
+          "text": "For where two or three are gathered in my name, there am I among them."
+        }
+      },
+      "apostlesCreed": "Ma usun Jumalasse, kõigeväelisse Isasse, taeva ja maa Loojasse. Ja Jeesusesse Kristusesse, Tema ainusündinud Pojasse, meie Issandasse, kes on saadud Pühast Vaimust, sündinud neitsist Maarjast, kannatanud Pontius Pilatuse all, risti löödud, surnud ja maetud, läinud alla põrgusse, kolmandal päeval üles tõusnud surnuist, läinud üles taevasse, istub Jumala, kõigeväelise Isa paremal käel, sealt Ta tuleb kohut mõistma elavate ja surnute üle. Ma usun Pühasse Vaimusse, pühasse üldkirikusse, pühade osadust, pattude andeksandmist, ihu ülesärkamist ja igavest elu. Aamen.",
+      "prayers": {
+        "lordsPrayer": "Meie Isa, kes Sa oled taevas! Pühitsetud olgu Sinu nimi. Sinu riik tulgu. Sinu tahtmine sündigu nagu taevas, nõnda ka maa peal. Meie igapäevast leiba anna meile täna. Ja anna meile andeks meie võlad, nagu meiegi andeks anname oma võlglastele. Ja ära saada meid kiusatusse, vaid päästa meid kurjast. Sest Sinu on riik ja vägi ja au igavesti. Aamen.",
+        "prayerToStMichael": "Püha Mihkel, arhangels, kaitsege meid sõjas. Ole meie kaitsmine kurjuse ja kurjuse vaimude vastu; Las Jumal teda krahvaks, me alandlikult palvetame; Ja sa, O Taeva armee prints, Jumala väe kaudu, lükkake põrgu Satan ja kõik kurjad vaimud, kes ringlevad maailmas hinge hävitamiseks. Aamen.",
+        "collect": "Heavenly Father, bless our family. Help us to love one another, to forgive one another, and to support one another. Teach us to walk in your ways and to honor your name. Protect us from harm and guide us in your truth. In Jesus' name we pray. Amen."
+      },
+      "signOfTheCrossEnd": "Isa, Poja ja Pühase Vaimu nimel. Aamen.",
+      "reflection": "As a family, let us commit to growing in faith together. Let us make time for prayer, for reading God's word, and for serving one another. May our home be a place of love, peace, and joy, reflecting the love of Christ to all who enter. Amen.",
+      "metadata": {
+        "liturgicalSeason": "tavaline",
+        "feast": "",
+        "source": "Ühine palveraamat",
+        "sourceReference": "Prayer Guide PDF, Leheküljed 8-20",
+        "createdAt": "2026-02-06T04:28:33.455Z",
+        "updatedAt": "2026-02-06T04:28:33.455Z"
+      }
+    }
+  ]
+}

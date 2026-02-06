@@ -24,4 +24,4 @@ export enum PrayerCategory {
   CONFESSION = 'confession'
 }
 
-export type SupportedLanguage = 'en' | 'tl' | 'et';
+export type SupportedLanguage = 'en' | 'tl' | 'et' | 'es' | 'it' | 'fr' | 'de' | 'pl';

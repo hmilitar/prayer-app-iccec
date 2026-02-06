@@ -36,6 +36,7 @@ export interface DataSource {
   getReadingsRange(startDate: string, endDate: string, language: SupportedLanguage): Promise<DailyReading[]>;
   getDailyDevotions(date: string, language: SupportedLanguage): Promise<DevotionDay | null>;
   getDevotionsByTimeOfDay(date: string, timeOfDay: string, language: SupportedLanguage): Promise<DailyDevotion | null>;
+  getAvailableReadingDates(language: SupportedLanguage): Promise<string[]>;
 }
 
 // Local JSON data source implementation
@@ -260,6 +261,20 @@ export class LocalDataSource implements DataSource {
       return null;
     }
   }
+
+  async getAvailableReadingDates(language: SupportedLanguage): Promise<string[]> {
+    try {
+      const devotions = this.devotionData[language] || [];
+      const uniqueDates = new Set<string>();
+      devotions.forEach(devotion => {
+        uniqueDates.add(devotion.date);
+      });
+      return Array.from(uniqueDates);
+    } catch (error) {
+      console.error('Error loading available reading dates:', error);
+      return [];
+    }
+  }
 }
 
 // Future API data source implementation
@@ -301,6 +316,11 @@ export class RemoteDataSource implements DataSource {
     // Remote data source is not implemented; returning null for now.
     return null;
   }
+
+  async getAvailableReadingDates(language: SupportedLanguage): Promise<string[]> {
+    // Remote data source is not implemented; returning empty list for now.
+    return [];
+  }
 }
 
 // Main data service with unified interface
@@ -333,5 +353,9 @@ export class DataService {
 
   async getDevotionsByTimeOfDay(date: string, timeOfDay: string, language: SupportedLanguage): Promise<DailyDevotion | null> {
     return this.dataSource.getDevotionsByTimeOfDay(date, timeOfDay, language);
+  }
+
+  async getAvailableReadingDates(language: SupportedLanguage): Promise<string[]> {
+    return this.dataSource.getAvailableReadingDates(language);
   }
 }

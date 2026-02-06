@@ -1,0 +1,289 @@
+{
+  "devotions": [
+    {
+      "id": "2024-01-01-morning",
+      "date": "2024-01-01",
+      "timeOfDay": "morning",
+      "title": "Pangunahing Panalangin ng Bagong Taon",
+      "signOfTheCross": "Sa pangalan ng Ama, at ng Anak, at ng Banal na Espiritu. Amen.",
+      "confession": "Maawain naming Diyos, inamin namin na nagkasala kami laban sa Inyo sa pamamagitan ng aming isip, salita, at gawa, sa mga ginawa namin, at sa mga hindi namin ginawa. Hindi namin minahal kayo ng buong puso; hindi namin minahal ang aming kapwa tulad ng pagmamahal namin sa aming sarili. Tunay kaming nagsisisi at lubos kaming nagsisisi. Dahil sa inyong Anak na si Jesucristo, maawa kayo sa amin at patawarin kami; upang kami ay matuwa sa Inyong kalooban, at lumakad sa Inyong mga daan, sa kaluwalhatian ng Inyong Pangalan. Amen.",
+      "psalmForTheDay": {
+        "reference": "Awit 8",
+        "title": "Oh Panginoon, Aming Panginoon",
+        "text": "Oh Panginoon, aming Panginoon, kung gaano kahanga-hanga ang iyong pangalan sa buong mundo! Inilagay mo ang iyong kaluwalhatian sa itaas ng langit.\n\nKapag tinitingnan ko ang iyong langit, ang gawa ng iyong mga daliri, ang buwan at mga bituin na iyong inilagay sa lugar, ano ang tao na iyong naaalala at ang anak ng tao na iyong inaasikaso? Gayunpaman, ginawa mo siyang isang maliit na mas mababa sa mga langit na nilalang at inikot siya sa kaluwalhatian at karangalan. Binigyan mo siya ng kapangyarihan sa mga gawa ng iyong mga kamay; inilagay mo ang lahat ng bagay sa ilalim ng kanyang mga paa,\n\nlahat ng mga tupa at baka, at mga hayop sa bukid, mga ibon sa langit, at mga isda sa dagat, kung anuman ang dumaan sa mga daan ng dagat.\n\nOh Panginoon, aming Panginoon, kung gaano kahanga-hanga ang iyong pangalan sa buong mundo!"
+      },
+      "gloriaPatri": "Luwalhati sa Diyos sa kaitaasan, at sa lupa ay kapayapaan sa mga taong may mabuting kalooban. Pinupuri namin Kayo, pinagmamalaki namin Kayo, sinasamba namin Kayo, niluluwalhati namin Kayo, nagpapasalamat kami sa Inyo dahil sa inyong dakila at malaking kaluwalhatian.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Isaias 43:1-7",
+          "title": "Huwag Kang Matakot, Sapagkat Aking Iniligtas Ka",
+          "text": "Ngunit ngayon ganito ang sinasabi ng Panginoon, na lumikha sa iyo, Oh Jacob, na naghubog sa iyo, Oh Israel: \"Huwag kang matakot, sapagkat aking iniligtas ka; tinawag kita sa iyong pangalan, ikaw ay akin. Kapag ikaw ay dumaan sa tubig, ako ay kasama mo; at sa mga ilog, hindi ka mababasa; kapag ikaw ay naglalakad sa apoy, hindi ka masusunog, at ang apoy ay hindi ka kakainin. Sapagkat ako ang Panginoon mong Diyos, ang Banal na Tao sa Israel, ang iyong Tagapagligtas.\n\nBinibigyan ko ang Egipto bilang iyong ransom, Cush at Seba bilang exchange sa iyo. Dahil ikaw ay mahalaga sa aking mga mata, at may karangalan, at mahal kita, binibigyan kita ng mga tao bilang exchange sa iyo, mga tao bilang exchange sa iyong buhay. Huwag kang matakot, sapagkat ako ay kasama mo; dadalhin ko ang iyong mga anak mula sa silangan, at mula sa kanluran ay aking ipon-ipon. Sasabihin ko sa hilaga, Ibibigay, at sa timog, Huwag magpigil; dalhin ang aking mga anak mula sa malayo at ang aking mga anak mula sa dulo ng mundo, lahat ng tinatawag sa aking pangalan, na aking nilikha para sa aking kaluwalhatian, na aking hinubog at ginawa.\""
+        },
+        "canticle1": {
+          "reference": "Canticle of Zechariah",
+          "title": "Benedictus",
+          "text": "Pinupuri ang Panginoon Diyos ng Israel, sapagkat siya ay bumisita at nagpalaya sa kanyang bayan at itinaas ang isang sungay ng kaligtasan para sa amin sa bahay ng kanyang lingkod na si David,\n\nbilang kanyang sinabi sa bibig ng kanyang mga banal na propeta mula noon,\n\nkaligtasan mula sa aming mga kaaway at mula sa kamay ng lahat ng naglalait sa amin,\n\nupang magpakita ng awa sa aming mga ama at upang maalala ang kanyang banal na tipan,\n\nang pangako na kanyang binigkas sa aming ama Abraham, upang bigyan kami\n\nna kami, na malaya mula sa kamay ng aming mga kaaway, ay maaaring maglingkod sa kanya nang walang takot,\n\nsa kabanalan at katuwiran sa harap niya sa lahat ng aming mga araw.\n\nAt ikaw, bata, tatawaging propeta ng Most High;\n\npara sa ikaw ay pupunta bago ang Panginoon upang maghanda ng kanyang mga daan,\n\nupang magbigay ng kaalaman sa kaligtasan sa kanyang bayan\n\nsa pagpapatawad ng kanilang mga kasalanan,\n\ndahil sa malambot na awa ng aming Diyos,\n\nkung saan ang pagsikat ng araw ay darating sa amin mula sa itaas\n\nupang magbigay ng liwanag sa mga nakaupo sa kadiliman at sa anino ng kamatayan,\n\nupang gabayan ang aming mga paa sa daan ng kapayapaan."
+        },
+        "newTestament": {
+          "reference": "Galacia 3:23-29",
+          "title": "Sa Kristong Hesus, Ikaw Ay Lahat na Anak ng Diyos",
+          "text": "Ngayon bago dumating ang pananampalataya, kami ay nakakulong sa ilalim ng batas, nakakulong hanggang sa darating na pananampalataya ay malalantad. Kaya, ang batas ay aming tagapagbantay hanggang sa dumating si Kristo, upang kami ay makakuha ng karapatan sa pamamagitan ng pananampalataya. Ngunit ngayon na ang pananampalataya ay dumating, hindi na kami nasa ilalim ng tagapagbantay, sapagkat sa Kristong Hesus, kayong lahat ay mga anak ng Diyos, sa pamamagitan ng pananampalataya. Para sa marami sa inyo na nabinyagan sa Kristo ay nagsusuot ng Kristo.\n\nWalang Hudyo o Griyego, walang alipin o malaya, walang lalaki at babae, sapagkat kayong lahat ay iisa sa Kristong Hesus. At kung kayo ay sa Kristo, kung gayon kayo ay mga inapo ni Abraham, mga tagapagmana ayon sa pangako."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "Ang aking kaluluwa ay nagpupuri sa Panginoon,\n\nat ang aking espiritu ay nagnanais sa Diyos na aking Tagapagligtas,\n\ndahil tinignan niya ang kahinaan ng kanyang lingkod.\n\nDahil ngayon, lahat ng mga henerasyon ay tatawagin akong mapalad;\n\ndahil ang makapangyarihan ay gumawa ng malalaking bagay para sa akin,\n\nat banal ang kanyang pangalan.\n\nAt ang kanyang awa ay para sa mga takot sa kanya\n\nmula sa mga henerasyon hanggang sa mga henerasyon.\n\nNagpakita siya ng lakas sa pamamagitan ng kanyang bisig;\n\npinaghiwa-hiwalay niya ang mga mapagmataas sa mga pag-iisip ng kanilang mga puso;\n\nibaba niya ang mga makapangyarihan mula sa kanilang mga trono\n\nat itinaas ang mga may mababang estado;\n\npinuno niya ng mabubuting bagay ang mga nagugutom\n\nat pinapunta ang mayaman na walang laman.\n\nTumulong siya sa kanyang lingkod na si Israel,\n\nnaaalala ang kanyang awa,\n\nbilang sinabi niya sa aming mga ama,\n\nkay Abraham at sa kanyang mga inapo magpakailanman."
+        },
+        "gospel": {
+          "reference": "Mateo 1:18-25",
+          "title": "Ang Kapanganakan ni Jesucristo",
+          "text": "Ngayon ang kapanganakan ni Jesucristo ay nangyari sa ganitong paraan. Nang ang kanyang ina na si Maria ay nakatakda na magpakasal kay Jose, bago sila magsama, natagpuan siyang may anak mula sa Banal na Espiritu. At ang kanyang asawang si Jose, bilang isang matuwid na tao at ayaw siyang ikahiya, nagpasya na hiwalayan siya nang tahimik. Ngunit habang iniisip niya ang mga bagay na ito, isang anghel ng Panginoon ang lumitaw sa kanya sa panaginip, sinasabi, \"Jose, anak ni David, huwag kang matakot na kunin si Maria bilang iyong asawa, dahil ang ipinaglihi sa kanya ay mula sa Banal na Espiritu. Magbubuntis siya ng isang anak, at tatanggalin mo ang kanyang pangalan na Jesucristo, dahil siya ang magliligtas sa kanyang bayan mula sa kanilang mga kasalanan.\"\n\nLahat ng ito ay nangyari upang matupad ang sinabi ng Panginoon sa pamamagitan ng propeta: \"Tingnan, ang birhen ay magbubuntis at manganganak ng isang anak, at tatawagin nila ang kanyang pangalan na Immanuel\" (na nangangahulugang, Diyos kasama natin). Nang magising si Jose mula sa kanyang pagtulog, ginawa niya ang sinabi ng anghel ng Panginoon: kinuha niya ang kanyang asawa, ngunit hindi niya ito nakilala hanggang sa siya ay nagkaroon ng anak. At tinawag niya ang kanyang pangalan na Jesucristo."
+        }
+      },
+      "apostlesCreed": "Sumasampalataya ako sa Diyos Ama na Makapangyarihan sa lahat, na Lumikha ng langit at lupa. At kay Jesucristo, kaisa niyang Anak, Panginoon natin, na ipinaglihi sa pamamagitan ng Espiritu Santo, ipinanganak kay Maria na Birhen, nagdusa sa kapangyarihan ni Poncio Pilato, ipinako sa krus, namatay at inilibing, bumaba sa impyerno, muling nabuhay nang ikatlong araw, umakyat sa langit, nakaupo sa kanan ng Diyos Ama na Makapangyarihan sa lahat, at mula roon ay babalik upang hatulan ang mga buhay at patay. Sumasampalataya ako sa Espiritu Santo, sa banal na Simbahang Katolika, sa pakikipagkakaisa ng mga banal, sa kapatawaran ng mga kasalanan, sa muling pagkabuhay ng katawan, at sa buhay na walang hanggan. Amen.",
+      "prayers": {
+        "lordsPrayer": "Ama namin, sumasalangit Ka, sambahin ang ngalan Mo. Mapasaamin ang kaharian Mo. Sundin ang loob Mo, dito sa lupa para nang sa langit. Bigyan Mo kami ngayon ng aming kakanin sa araw-araw. At patawarin Mo kami sa aming mga sala, para nang pagpapatawad namin sa nagsasala sa amin. At huwag Mo kaming ipahintulot sa tukso, at iadya Mo kami sa lahat ng masama. Amen.",
+        "prayerToStMichael": "San Miguel Arkanghel, ipagtanggol kami sa labanan. Maging aming proteksyon laban sa kasamaan at mga patibong ng diyablo; Maaaring husgahan siya ng Diyos, kami ay nagpapalakas ng aming panalangin; At ikaw, O Prinsipe ng Lahat ng mga Anghel, sa pamamagitan ng kapangyarihan ng Diyos, itulak sa impyerno si Satanas at lahat ng mga masasamang espiritu na gumagala sa mundo para sa pagkasira ng mga kaluluwa. Amen.",
+        "collect": "Makapangyarihang Diyos, nagpapasalamat kami sa Inyo sa regalo ng bagong taon na ito. Habang nagsisimula kami sa paglalakbay na ito sa paligid ng araw muli, bigyan kami ng karunungan upang makita ang iyong kamay sa lahat ng bagay, ang lakas upang sundin ang iyong kalooban, at ang pananampalataya upang maniwala sa iyong pagpapala. Nawa'y ang taong ito ay puno ng iyong kapayapaan, iyong kasiyahan, at iyong maraming pagpapala. Sa pamamagitan ni Jesucristo, aming Panginoon. Amen."
+      },
+      "signOfTheCrossEnd": "Sa pangalan ng Ama, at ng Anak, at ng Banal na Espiritu. Amen.",
+      "reflection": "Habang nagsisimula kami ng bagong taon, hayaan tayong mag-isip-isip sa katapatan ng Diyos sa nakaraan at ang kanyang mga pangako para sa hinaharap. Nawa'y ang taong ito ay isang panahon ng espirituwal na paglago, pagpapanibago, at mas malalim na relasyon sa ating Panginoon at Tagapagligtas na si Jesucristo.",
+      "metadata": {
+        "liturgicalSeason": "pasko",
+        "feast": "Araw ng Bagong Taon",
+        "source": "Book of Common Prayer",
+        "sourceReference": "Prayer Guide PDF, Mga Pahina 8-20",
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "2026-02-06-morning",
+      "date": "2026-02-06",
+      "timeOfDay": "morning",
+      "title": "Ang Pangunahing Panalangin Ngayon",
+      "signOfTheCross": "Sa pangalan ng Ama, at ng Anak, at ng Banal na Espiritu. Amen.",
+      "confession": "Maawain naming Diyos, inamin namin na nagkasala kami laban sa Inyo sa pamamagitan ng aming isip, salita, at gawa, sa mga ginawa namin, at sa mga hindi namin ginawa. Hindi namin minahal kayo ng buong puso; hindi namin minahal ang aming kapwa tulad ng pagmamahal namin sa aming sarili. Tunay kaming nagsisisi at lubos kaming nagsisisi. Dahil sa inyong Anak na si Jesucristo, maawa kayo sa amin at patawarin kami; upang kami ay matuwa sa Inyong kalooban, at lumakad sa Inyong mga daan, sa kaluwalhatian ng Inyong Pangalan. Amen.",
+      "psalmForTheDay": {
+        "reference": "Awit 119:105",
+        "title": "Ang Iyong Salita ay isang Lampara",
+        "text": "Ang iyong salita ay isang lampara sa aking mga paa at ilaw sa aking daan."
+      },
+      "gloriaPatri": "Luwalhati sa Diyos sa kaitaasan, at sa lupa ay kapayapaan sa mga taong may mabuting kalooban. Pinupuri namin Kayo, pinagmamalaki namin Kayo, sinasamba namin Kayo, niluluwalhati namin Kayo, nagpapasalamat kami sa Inyo dahil sa inyong dakila at malaking kaluwalhatian.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Awit 23",
+          "title": "Ang Panginoon ang Aking Mag aalaga ng mga Tupa",
+          "text": "Ang Panginoon ang aking mag-aalaga ng mga tupa; hindi ako magkakaroon ng kakulangan. Ginagawa niya akong humiga sa luntiang pastulan. Pinapunta niya ako sa tabi ng malalambing na tubig. Pinapagaling niya ang aking kaluluwa. Pinapunta niya ako sa daan ng katuwiran para sa kanyang pangalan. Kahit na ako ay maglalakad sa lambak ng anino ng kamatayan, hindi ako matatakot sa kasamaan, dahil ikaw ay kasama ko; ang iyong tungkod at iyong staff, ang iyong mga sandata ay nagpapalagay sa akin ng kapanatagan. Naghahanda ka ng mesa para sa akin sa harap ng aking mga kaaway; inaani mo ang aking ulo ng langis; ang aking tasa ay umaapaw. Tiyak na ang kabutihan at awa ay susunod sa akin sa lahat ng araw ng aking buhay, at ako ay maninirahan sa bahay ng Panginoon magpakailanman."
+        },
+        "canticle1": {
+          "reference": "Canticle of the Sun",
+          "title": "Canticle ni San Francis",
+          "text": "Pinakamataas na, pinakamakapangyarihan, pinakabuti na Panginoon! Lahat ng papuri ay para sa iyo, lahat ng kaluwalhatian, lahat ng karangalan, at lahat ng pagpapala. Sa iyo, nag-iisa, Pinakamataas na, ang mga ito ay kabilang. Walang makapagbibigay ng wastong pagbabasa sa iyong pangalan. Pinupuri ka, aking Panginoon, sa pamamagitan ng lahat ng iyong mga nilalang, lalo na sa pamamagitan ng aking kapatid na si Kapatid na Araw, na nagdadala ng araw; at ikaw ay nagbibigay ng liwanag sa pamamagitan niya. At siya ay maganda at maliliwanag sa lahat ng kanyang kagandahan! Sa iyo, Pinakamataas na, siya ay nagbibigay ng pagkakahalintulad. Pinupuri ka, aking Panginoon, sa pamamagitan ng kapatid na Buwan at ng mga bituin; sa langit mo sila ginawang maliliwanag, mahalaga at maganda."
+        },
+        "newTestament": {
+          "reference": "Mateo 5:1-12",
+          "title": "Ang Mga Beatitudo",
+          "text": "Nakita niya ang mga tao, tumayo siya sa bundok, at kapag siya ay umupo, ang kanyang mga alagad ay lumapit sa kanya. At binuksan niya ang kanyang bibig at tinuruan sila, na sinasabi: \"Mapalad ang mga mahirap sa espiritu, dahil sa kanila ang kaharian ng langit. Mapalad ang mga nagdadalamhati, dahil sila ay pagpapalain. Mapalad ang mga mahina, dahil sila ay manunuluyan sa lupa. Mapalad ang mga nagugutom at nauuhaw sa katuwiran, dahil sila ay mabibigyan ng kasiyahan. Mapalad ang mga magpapatawad, dahil sila ay magkakaroon ng kapatawaran. Mapalad ang mga malinis sa puso, dahil sila ay makikita ang Diyos. Mapalad ang mga gumagawa ng kapayapaan, dahil sila ay tatawaging mga anak ng Diyos. Mapalad ang mga tinuturing na masama para sa katuwiran, dahil sa kanila ang kaharian ng langit. Mapalad ka kapag ibang tao ay nagsasabi ng masama sa iyo at tinuturing ka na masama sa aking pangalan. Magalak at magalak, dahil ang iyong gantimpala ay malaki sa langit, dahil sa ganito sila tinuring ng mga propeta na nauna sa iyo.\""
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "Ang aking kaluluwa ay nagpupuri sa Panginoon, at ang aking espiritu ay nagnanais sa Diyos na aking Tagapagligtas, dahil tinignan niya ang kahinaan ng kanyang lingkod. Dahil ngayon, lahat ng mga henerasyon ay tatawagin akong mapalad; dahil ang makapangyarihan ay gumawa ng malalaking bagay para sa akin, at banal ang kanyang pangalan. At ang kanyang awa ay para sa mga takot sa kanya mula sa mga henerasyon hanggang sa mga henerasyon. Nagpakita siya ng lakas sa pamamagitan ng kanyang bisig; pinaghiwa-hiwalay niya ang mga mapagmataas sa mga pag-iisip ng kanilang mga puso; ibaba niya ang mga makapangyarihan mula sa kanilang mga trono at itinaas ang mga may mababang estado; pinuno niya ng mabubuting bagay ang mga nagugutom at pinapunta ang mayaman na walang laman. Tumulong siya sa kanyang lingkod na si Israel, naaalala ang kanyang awa, bilang sinabi niya sa aming mga ama, kay Abraham at sa kanyang mga inapo magpakailanman."
+        },
+        "gospel": {
+          "reference": "Juan 3:16-17",
+          "title": "Dahil Tumatanggi ang Diyos sa Mundo",
+          "text": "Dahil tumatanggi ang Diyos sa mundo, na ibigay ang kanyang bugtong na Anak, upang ang sinumang nananampalataya sa kanya ay hindi malagay sa impyerno ngunit magkaroon ng buhay na walang hanggan. Dahil hindi ipinadala ng Diyos ang kanyang Anak sa mundo upang parusahan ang mundo, kundi upang ang mundo ay maligtas sa pamamagitan niya."
+        }
+      },
+      "apostlesCreed": "Sumasampalataya ako sa Diyos Ama na Makapangyarihan sa lahat, na Lumikha ng langit at lupa. At kay Jesucristo, kaisa niyang Anak, Panginoon natin, na ipinaglihi sa pamamagitan ng Espiritu Santo, ipinanganak kay Maria na Birhen, nagdusa sa kapangyarihan ni Poncio Pilato, ipinako sa krus, namatay at inilibing, bumaba sa impyerno, muling nabuhay nang ikatlong araw, umakyat sa langit, nakaupo sa kanan ng Diyos Ama na Makapangyarihan sa lahat, at mula roon ay babalik upang hatulan ang mga buhay at patay. Sumasampalataya ako sa Espiritu Santo, sa banal na Simbahang Katolika, sa pakikipagkakaisa ng mga banal, sa kapatawaran ng mga kasalanan, sa muling pagkabuhay ng katawan, at sa buhay na walang hanggan. Amen.",
+      "prayers": {
+        "lordsPrayer": "Ama namin, sumasalangit Ka, sambahin ang ngalan Mo. Mapasaamin ang kaharian Mo. Sundin ang loob Mo, dito sa lupa para nang sa langit. Bigyan Mo kami ngayon ng aming kakanin sa araw-araw. At patawarin Mo kami sa aming mga sala, para nang pagpapatawad namin sa nagsasala sa amin. At huwag Mo kaming ipahintulot sa tukso, at iadya Mo kami sa lahat ng masama. Amen.",
+        "prayerToStMichael": "San Miguel Arkanghel, ipagtanggol kami sa labanan. Maging aming proteksyon laban sa kasamaan at mga patibong ng diyablo; Maaaring husgahan siya ng Diyos, kami ay nagpapalakas ng aming panalangin; At ikaw, O Prinsipe ng Lahat ng mga Anghel, sa pamamagitan ng kapangyarihan ng Diyos, itulak sa impyerno si Satanas at lahat ng mga masasamang espiritu na gumagala sa mundo para sa pagkasira ng mga kaluluwa. Amen.",
+        "collect": "Makapangyarihang Diyos, nagpapasalamat kami sa Inyo sa regalo ng araw na ito. Habang nagsisimula kami sa aming paglalakbay sa araw na ito, bigyan kami ng karunungan upang makita ang iyong kamay sa lahat ng bagay, ang lakas upang sundin ang iyong kalooban, at ang pananampalataya upang maniwala sa iyong pagpapala. Nawa'y ang araw na ito ay puno ng iyong kapayapaan, iyong kasiyahan, at iyong maraming pagpapala. Sa pamamagitan ni Jesucristo, aming Panginoon. Amen."
+      },
+      "signOfTheCrossEnd": "Sa pangalan ng Ama, at ng Anak, at ng Banal na Espiritu. Amen.",
+      "reflection": "Habang nagsisimula kami sa araw na ito, hayaan tayong mag-isip-isip sa pag-ibig ng Diyos para sa amin tulad ng ipinakita sa Kanyang Salita at sa Kanyang Anak na si Jesucristo. Nawa'y tayo ay maglakad sa Kanyang liwanag at sundin ang Kanyang gabay sa lahat ng aming mga araw.",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "feast": "",
+        "source": "Book of Common Prayer",
+        "sourceReference": "Prayer Guide PDF, Mga Pahina 8-20",
+        "createdAt": "2026-02-06T04:10:43.652Z",
+        "updatedAt": "2026-02-06T04:10:43.652Z"
+      }
+    },
+    {
+      "id": "2026-02-06-noon",
+      "date": "2026-02-06",
+      "timeOfDay": "noon",
+      "title": "Ang Pangunahing's Panalangin ng Tanghali Devotion",
+      "signOfTheCross": "Sa pangalan ng Ama, at ng Anak, at ng Banal na Espiritu. Amen.",
+      "confession": "Panginoon Hesukristo, at this midday hour, we pause from our activities to acknowledge our sins. We have been hurried, distracted, and sometimes unkind. Forgive us, Panginoon, for the ways we have fallen short. Renew us with your Spirit and guide our actions for the rest of the day. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 121",
+        "title": "I Lift Up Ang Aking Eyes to the Hills",
+        "text": "I lift up my eyes to the hills. From where does my help come? Ang Aking help comes from the Panginoon, who made heaven and earth. He will not let your foot be moved; he who keeps you will not slumber. Behold, he who keeps Israel will neither slumber nor sleep. The Panginoon is your keeper; the Panginoon is your shade on your right hand. The sun shall not strike you by day, nor the moon by night. The Panginoon will keep you from all evil; he will keep your life. The Panginoon will keep your going out and your coming in from this time forth and forevermore."
+      },
+      "gloriaPatri": "Luwalhati sa Diyos sa kaitaasan, at sa lupa ay kapayapaan sa mga taong may mabuting kalooban. Pinupuri namin Kayo, pinagmamalaki namin Kayo, sinasamba namin Kayo, niluluwalhati namin Kayo, nagpapasalamat kami sa Inyo dahil sa inyong dakila at malaking kaluwalhatian.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Proverbs 3:5-6",
+          "title": "Trust in the Panginoon",
+          "text": "Trust in the Panginoon with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths."
+        },
+        "canticle1": {
+          "reference": "Canticle of Simeon",
+          "title": "Nunc Dimittis",
+          "text": "Panginoon, now you are letting your servant depart in peace, according to your word; for my eyes have seen your salvation that you have prepared in the presence of all peoples, a light for revelation to the Gentiles, and for glory to your people Israel."
+        },
+        "newTestament": {
+          "reference": "Matthew 11:28-30",
+          "title": "Come to Me, All Who Labor",
+          "text": "Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "Ang Aking soul magnifies the Panginoon, and my spirit rejoices in God my Savior, because he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed; for he who is mighty has done great things for me, and holy is his name."
+        },
+        "gospel": {
+          "reference": "Luke 12:19-21",
+          "title": "The Rich Fool",
+          "text": "And I will say to my soul, 'Soul, you have ample goods laid up for many years; relax, eat, drink, be merry.' But God said to him, 'Fool! This night your soul is required of you, and the things you have prepared, whose will they be?' So is the one who lays up treasure for himself and is not rich toward God."
+        }
+      },
+      "apostlesCreed": "Sumasampalataya ako sa Diyos Ama na Makapangyarihan sa lahat, na Lumikha ng langit at lupa. At kay Jesucristo, kaisa niyang Anak, Panginoon natin, na ipinaglihi sa pamamagitan ng Espiritu Santo, ipinanganak kay Maria na Birhen, nagdusa sa kapangyarihan ni Poncio Pilato, ipinako sa krus, namatay at inilibing, bumaba sa impyerno, muling nabuhay nang ikatlong araw, umakyat sa langit, nakaupo sa kanan ng Diyos Ama na Makapangyarihan sa lahat, at mula roon ay babalik upang hatulan ang mga buhay at patay. Sumasampalataya ako sa Espiritu Santo, sa banal na Simbahang Katolika, sa pakikipagkakaisa ng mga banal, sa kapatawaran ng mga kasalanan, sa muling pagkabuhay ng katawan, at sa buhay na walang hanggan. Amen.",
+      "prayers": {
+        "lordsPrayer": "Ama namin, sumasalangit Ka, sambahin ang ngalan Mo. Mapasaamin ang kaharian Mo. Sundin ang loob Mo, dito sa lupa para nang sa langit. Bigyan Mo kami ngayon ng aming kakanin sa araw-araw. At patawarin Mo kami sa aming mga sala, para nang pagpapatawad namin sa nagsasala sa amin. At huwag Mo kaming ipahintulot sa tukso, at iadya Mo kami sa lahat ng masama. Amen.",
+        "prayerToStMichael": "San Miguel Arkanghel, ipagtanggol kami sa labanan. Maging aming proteksyon laban sa kasamaan at mga patibong ng diyablo; Maaaring husgahan siya ng Diyos, kami ay nagpapalakas ng aming panalangin; At ikaw, O Prinsipe ng Lahat ng mga Anghel, sa pamamagitan ng kapangyarihan ng Diyos, itulak sa impyerno si Satanas at lahat ng mga masasamang espiritu na gumagala sa mundo para sa pagkasira ng mga kaluluwa. Amen.",
+        "collect": "Panginoon Hesukristo, at this midday pause, we thank you for your presence with us. Renew our strength for the tasks ahead. Help us to focus on what is true, noble, right, pure, lovely, and admirable. Guide our thoughts and actions for the rest of this day. In your name we pray. Amen."
+      },
+      "signOfTheCrossEnd": "Sa pangalan ng Ama, at ng Anak, at ng Banal na Espiritu. Amen.",
+      "reflection": "At this midpoint of the day, let us pause to refocus on God's presence. Let us let go of the stresses and distractions of the morning, and prepare our hearts and minds for the afternoon ahead. May we walk in peace and trust, knowing that God is with us every step of the way.",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "feast": "",
+        "source": "Book of Common Prayer",
+        "sourceReference": "Prayer Guide PDF, Mga Pahina 8-20",
+        "createdAt": "2026-02-06T04:28:33.455Z",
+        "updatedAt": "2026-02-06T04:28:33.455Z"
+      }
+    },
+    {
+      "id": "2026-02-06-evtling",
+      "date": "2026-02-06",
+      "timeOfDay": "evening",
+      "title": "Ang Pangunahing's Panalangin ng Gabi Devotion",
+      "signOfTheCross": "Sa pangalan ng Ama, at ng Anak, at ng Banal na Espiritu. Amen.",
+      "confession": "Almighty God, as the day comes to a close, we confess our sins and failures. We have been impatient, selfish, and unkind. We have rushed through our days without taking time to appreciate your blessings. Forgive us, Panginoon, and grant us your peace. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 42",
+        "title": "As the Deer Pants for Water",
+        "text": "As a deer pants for flowing streams, so pants my soul for you, O God. Ang Aking soul thirsts for God, for the living God. When shall I come and appear before God? Ang Aking tears have been my food day and night, while they say to me all the day long, 'Where is your God?' These things I remember, as I pour out my soul: how I would go with the throng and lead them in procession to the house of God with glad shouts and songs of praise, a multitude keeping festival."
+      },
+      "gloriaPatri": "Luwalhati sa Diyos sa kaitaasan, at sa lupa ay kapayapaan sa mga taong may mabuting kalooban. Pinupuri namin Kayo, pinagmamalaki namin Kayo, sinasamba namin Kayo, niluluwalhati namin Kayo, nagpapasalamat kami sa Inyo dahil sa inyong dakila at malaking kaluwalhatian.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Ecclesiastes 3:1-8",
+          "title": "To Everything There is a Season",
+          "text": "For everything there is a season, and a time for every matter under heaven: a time to be born, and a time to die; a time to plant, and a time to pluck up what is planted; a time to kill, and a time to heal; a time to break down, and a time to build up; a time to weep, and a time to laugh; a time to mourn, and a time to dance; a time to cast away stones, and a time to gather stones together; a time to embrace, and a time to refrain from embracing; a time to seek, and a time to lose; a time to keep, and a time to cast away; a time to tear, and a time to sew; a time to keep silence, and a time to speak; a time to love, and a time to hate; a time for war, and a time for peace."
+        },
+        "canticle1": {
+          "reference": "Canticle of Zechariah",
+          "title": "Benedictus",
+          "text": "Blessed be the Panginoon God of Israel, for he has visited and redeemed his people and has raised up a horn of salvation for us in the house of his servant David, as he spoke by the mouth of his holy prophets from of old, salvation from our enemies and from the hand of all who hate us, to show mercy to our fathers and to remember his holy covenant."
+        },
+        "newTestament": {
+          "reference": "Philippians 4:6-7",
+          "title": "Be Anxious for Nothing",
+          "text": "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "Ang Aking soul magnifies the Panginoon, and my spirit rejoices in God my Savior, because he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed; for he who is mighty has done great things for me, and holy is his name."
+        },
+        "gospel": {
+          "reference": "John 14:27",
+          "title": "Peace I Leave with You",
+          "text": "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid."
+        }
+      },
+      "apostlesCreed": "Sumasampalataya ako sa Diyos Ama na Makapangyarihan sa lahat, na Lumikha ng langit at lupa. At kay Jesucristo, kaisa niyang Anak, Panginoon natin, na ipinaglihi sa pamamagitan ng Espiritu Santo, ipinanganak kay Maria na Birhen, nagdusa sa kapangyarihan ni Poncio Pilato, ipinako sa krus, namatay at inilibing, bumaba sa impyerno, muling nabuhay nang ikatlong araw, umakyat sa langit, nakaupo sa kanan ng Diyos Ama na Makapangyarihan sa lahat, at mula roon ay babalik upang hatulan ang mga buhay at patay. Sumasampalataya ako sa Espiritu Santo, sa banal na Simbahang Katolika, sa pakikipagkakaisa ng mga banal, sa kapatawaran ng mga kasalanan, sa muling pagkabuhay ng katawan, at sa buhay na walang hanggan. Amen.",
+      "prayers": {
+        "lordsPrayer": "Ama namin, sumasalangit Ka, sambahin ang ngalan Mo. Mapasaamin ang kaharian Mo. Sundin ang loob Mo, dito sa lupa para nang sa langit. Bigyan Mo kami ngayon ng aming kakanin sa araw-araw. At patawarin Mo kami sa aming mga sala, para nang pagpapatawad namin sa nagsasala sa amin. At huwag Mo kaming ipahintulot sa tukso, at iadya Mo kami sa lahat ng masama. Amen.",
+        "prayerToStMichael": "San Miguel Arkanghel, ipagtanggol kami sa labanan. Maging aming proteksyon laban sa kasamaan at mga patibong ng diyablo; Maaaring husgahan siya ng Diyos, kami ay nagpapalakas ng aming panalangin; At ikaw, O Prinsipe ng Lahat ng mga Anghel, sa pamamagitan ng kapangyarihan ng Diyos, itulak sa impyerno si Satanas at lahat ng mga masasamang espiritu na gumagala sa mundo para sa pagkasira ng mga kaluluwa. Amen.",
+        "collect": "Gracious God, as this day ends, we thank you for your faithfulness. We remember your blessings, your guidance, and your love. Forgive us for our mistakes and failures. Grant us restful sleep and restore us for tomorrow. Watch over our loved ones and all who are in need. In your mercy, hear our prayer. Amen."
+      },
+      "signOfTheCrossEnd": "Sa pangalan ng Ama, at ng Anak, at ng Banal na Espiritu. Amen.",
+      "reflection": "As we end this day, let us reflect on God's faithfulness throughout the day. Let us release the events of the day into God's hands and trust in his providence for tomorrow. May we rest in his peace and wake refreshed to serve him again.",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "feast": "",
+        "source": "Book of Common Prayer",
+        "sourceReference": "Prayer Guide PDF, Mga Pahina 8-20",
+        "createdAt": "2026-02-06T04:28:33.455Z",
+        "updatedAt": "2026-02-06T04:28:33.455Z"
+      }
+    },
+    {
+      "id": "2026-02-06-family",
+      "date": "2026-02-06",
+      "timeOfDay": "family",
+      "title": "Ang Pangunahing's Panalangin ng Pamilya Devotion",
+      "signOfTheCross": "Sa pangalan ng Ama, at ng Anak, at ng Banal na Espiritu. Amen.",
+      "confession": "Heavenly Father, we come as a family to confess our sins. We have been selfish, impatient, and unkind to one another. We have not loved each other as you love us. Forgive us, Panginoon, and help us to love one another as you have loved us. Amen.",
+      "psalmForTheDay": {
+        "reference": "Psalm 133",
+        "title": "How Good and Pleasant",
+        "text": "Behold, how good and pleasant it is when brothers dwell in unity! It is like the precious oil on the head, running down on the beard, on the beard of Aaron, running down on the collar of his robes! It is like the dew of Hermon, which falls on the mountains of Zion! For there the Panginoon has commanded the blessing, life forevermore."
+      },
+      "gloriaPatri": "Luwalhati sa Diyos sa kaitaasan, at sa lupa ay kapayapaan sa mga taong may mabuting kalooban. Pinupuri namin Kayo, pinagmamalaki namin Kayo, sinasamba namin Kayo, niluluwalhati namin Kayo, nagpapasalamat kami sa Inyo dahil sa inyong dakila at malaking kaluwalhatian.",
+      "readings": {
+        "oldTestament": {
+          "reference": "Deuteronomy 6:4-9",
+          "title": "Love the Panginoon Ang Iyong God",
+          "text": "Hear, O Israel: The Panginoon our God, the Panginoon is one. You shall love the Panginoon your God with all your heart and with all your soul and with all your might. And these words that I command you today shall be on your heart. You shall teach them diligently to your children, and shall talk of them when you sit in your house, and when you walk by the way, and when you lie down, and when you rise. You shall bind them as a sign on your hand, and they shall be as frontlets between your eyes. You shall write them on the doorposts of your house and on your gates."
+        },
+        "canticle1": {
+          "reference": "Canticle of Simeon",
+          "title": "Nunc Dimittis",
+          "text": "Panginoon, now you are letting your servant depart in peace, according to your word; for my eyes have seen your salvation that you have prepared in the presence of all peoples, a light for revelation to the Gentiles, and for glory to your people Israel."
+        },
+        "newTestament": {
+          "reference": "Ephesians 6:1-4",
+          "title": "Fathers and Children",
+          "text": "Children, obey your parents in the Panginoon, for this is right. \"Honor your father and mother\" (this is the first commandment with a promise), \"that it may go well with you and that you may live long in the land.\" Fathers, do not provoke your children to anger, but bring them up in the discipline and instruction of the Panginoon."
+        },
+        "canticle2": {
+          "reference": "Canticle of Mary",
+          "title": "Magnificat",
+          "text": "Ang Aking soul magnifies the Panginoon, and my spirit rejoices in God my Savior, because he has looked on the humble estate of his servant. For behold, from now on all generations will call me blessed; for he who is mighty has done great things for me, and holy is his name."
+        },
+        "gospel": {
+          "reference": "Matthew 18:20",
+          "title": "Where Two or Three Are Gathered",
+          "text": "For where two or three are gathered in my name, there am I among them."
+        }
+      },
+      "apostlesCreed": "Sumasampalataya ako sa Diyos Ama na Makapangyarihan sa lahat, na Lumikha ng langit at lupa. At kay Jesucristo, kaisa niyang Anak, Panginoon natin, na ipinaglihi sa pamamagitan ng Espiritu Santo, ipinanganak kay Maria na Birhen, nagdusa sa kapangyarihan ni Poncio Pilato, ipinako sa krus, namatay at inilibing, bumaba sa impyerno, muling nabuhay nang ikatlong araw, umakyat sa langit, nakaupo sa kanan ng Diyos Ama na Makapangyarihan sa lahat, at mula roon ay babalik upang hatulan ang mga buhay at patay. Sumasampalataya ako sa Espiritu Santo, sa banal na Simbahang Katolika, sa pakikipagkakaisa ng mga banal, sa kapatawaran ng mga kasalanan, sa muling pagkabuhay ng katawan, at sa buhay na walang hanggan. Amen.",
+      "prayers": {
+        "lordsPrayer": "Ama namin, sumasalangit Ka, sambahin ang ngalan Mo. Mapasaamin ang kaharian Mo. Sundin ang loob Mo, dito sa lupa para nang sa langit. Bigyan Mo kami ngayon ng aming kakanin sa araw-araw. At patawarin Mo kami sa aming mga sala, para nang pagpapatawad namin sa nagsasala sa amin. At huwag Mo kaming ipahintulot sa tukso, at iadya Mo kami sa lahat ng masama. Amen.",
+        "prayerToStMichael": "San Miguel Arkanghel, ipagtanggol kami sa labanan. Maging aming proteksyon laban sa kasamaan at mga patibong ng diyablo; Maaaring husgahan siya ng Diyos, kami ay nagpapalakas ng aming panalangin; At ikaw, O Prinsipe ng Lahat ng mga Anghel, sa pamamagitan ng kapangyarihan ng Diyos, itulak sa impyerno si Satanas at lahat ng mga masasamang espiritu na gumagala sa mundo para sa pagkasira ng mga kaluluwa. Amen.",
+        "collect": "Heavenly Father, bless our family. Help us to love one another, to forgive one another, and to support one another. Teach us to walk in your ways and to honor your name. Protect us from harm and guide us in your truth. In Jesus' name we pray. Amen."
+      },
+      "signOfTheCrossEnd": "Sa pangalan ng Ama, at ng Anak, at ng Banal na Espiritu. Amen.",
+      "reflection": "As a family, let us commit to growing in faith together. Let us make time for prayer, for reading God's word, and for serving one another. May our home be a place of love, peace, and joy, reflecting the love of Christ to all who enter. Amen.",
+      "metadata": {
+        "liturgicalSeason": "ordinary",
+        "feast": "",
+        "source": "Book of Common Prayer",
+        "sourceReference": "Prayer Guide PDF, Mga Pahina 8-20",
+        "createdAt": "2026-02-06T04:28:33.455Z",
+        "updatedAt": "2026-02-06T04:28:33.455Z"
+      }
+    }
+  ]
+}
