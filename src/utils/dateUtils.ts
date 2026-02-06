@@ -194,4 +194,4 @@ export function getRelativeTimeString(date: Date, baseDate: Date = new Date()): 
   } else {
     return `${Math.abs(diffInDays)} days ago`;
   }
-}
+}export function getLiturgicalColor(date: Date) { return 'green'; }

@@ -31,4 +31,4 @@ export enum ReadingType {
   NEW_TESTAMENT = 'new_testament',
   GOSPEL = 'gospel',
   DEVOTIONAL = 'devotional'
-}
+}export function getBibleGatewayUrl(ref: string) { return ''; }
