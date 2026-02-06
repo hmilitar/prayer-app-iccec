@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
+    "@types/fbemitter": "^2.0.35",
     "@types/jest": "^29.4.0",
     "@types/react": "~19.1.0",
     "@typescript-eslint/eslint-plugin": "^7.7.0",
