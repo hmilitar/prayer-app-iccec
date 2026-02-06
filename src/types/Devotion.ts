@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export interface ReadingSection {
   reference?: string;
   text: string;
@@ -46,6 +47,8 @@ export interface LiturgicalDevotion {
   };
 }
 
+=======
+>>>>>>> 828180ffeabee9906add19b3bcf9df32c2115fa0
 export interface DailyDevotion {
   id?: string;
   date: string;
@@ -59,8 +62,15 @@ export interface DailyDevotion {
 
 export interface DevotionDay {
   date: string;
+<<<<<<< HEAD
   morning?: LiturgicalDevotion;
   evening?: LiturgicalDevotion;
   noon?: LiturgicalDevotion;
   family?: LiturgicalDevotion;
+=======
+  morning?: DailyDevotion;
+  evening?: DailyDevotion;
+  noon?: DailyDevotion;
+  family?: DailyDevotion;
+>>>>>>> 828180ffeabee9906add19b3bcf9df32c2115fa0
 }

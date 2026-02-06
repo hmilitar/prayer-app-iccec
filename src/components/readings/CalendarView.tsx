@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState, useMemo, useEffect } from 'react';
 import {
   View,
@@ -418,3 +419,13 @@ const createStyles = (theme: Theme & { userFontSize: string }) => StyleSheet.cre
     fontSize: getScaledFontSize(theme.typography.fontSize.sm, theme.userFontSize),
   },
 });
+=======
+import React from 'react';
+import { View, Text } from 'react-native';
+
+export const CalendarView = (props: any) => (
+    <View>
+        <Text>Calendar</Text>
+    </View>
+);
+>>>>>>> 828180ffeabee9906add19b3bcf9df32c2115fa0
