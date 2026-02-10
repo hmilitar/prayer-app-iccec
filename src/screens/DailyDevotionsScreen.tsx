@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import {
   View,
@@ -472,15 +471,3 @@ const styles = StyleSheet.create({
     fontWeight: '500',
   },
 });
-=======
-import React from 'react';
-import { View, Text } from 'react-native';
-
-export default function DailyDevotionsScreen() {
-    return (
-        <View>
-            <Text>Daily Devotions</Text>
-        </View>
-    );
-}
->>>>>>> 828180ffeabee9906add19b3bcf9df32c2115fa0
