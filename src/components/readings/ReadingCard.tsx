@@ -6,7 +6,29 @@ import { Ionicons } from '@expo/vector-icons';
 import { DailyReading, ReadingType } from '../../types/Reading';
 import { Theme } from '../../styles/theme';
 import { useTheme } from '../../hooks/useTheme';
+import { useLocalization } from '../../hooks/useLocalization';
 import { getScaledFontSize } from '../../utils/fontScaling';
+
+/** Map i18n language code → BCP-47 locale for Intl.DateTimeFormat */
+const LOCALE_MAP: Record<string, string> = {
+  en: 'en-US',
+  tl: 'fil-PH',
+  et: 'et-EE',
+  es: 'es-ES',
+  it: 'it-IT',
+  fr: 'fr-FR',
+  de: 'de-DE',
+  pl: 'pl-PL',
+};
+
+/** Map ReadingType enum values → translation keys under readings.* */
+const READING_TYPE_KEYS: Record<string, string> = {
+  OLD_TESTAMENT: 'readings.oldTestament',
+  PSALM: 'readings.psalm',
+  NEW_TESTAMENT: 'readings.newTestament',
+  GOSPEL: 'readings.gospel',
+  DEVOTIONAL: 'readings.devotional',
+};
 
 export interface ReadingCardProps {
   reading: DailyReading;
@@ -24,20 +46,27 @@ export default function ReadingCard({
   variant = 'default'
 }: Readonly<ReadingCardProps>) {
   const theme = useTheme();
+  const { t, currentLanguage } = useLocalization();
   const styles = createStyles(theme);
 
   const handlePress = () => {
     onPress(reading);
   };
 
+  /** Format date in the user's selected language */
   const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-      weekday: compact ? 'short' : 'long',
-      year: 'numeric',
-      month: compact ? 'short' : 'long',
-      day: 'numeric'
-    });
+    try {
+      const date = new Date(dateString);
+      const locale = LOCALE_MAP[currentLanguage] ?? 'en-US';
+      return date.toLocaleDateString(locale, {
+        weekday: compact ? 'short' : 'long',
+        year: 'numeric',
+        month: compact ? 'short' : 'long',
+        day: 'numeric'
+      });
+    } catch {
+      return dateString;
+    }
   };
 
   const getReadingTypeIcon = (type: ReadingType) => {
@@ -90,7 +119,16 @@ export default function ReadingCard({
     return baseStyles;
   };
 
-  const formatReadingType = (type: string) => {
+  /** Translate reading type enum to localized label */
+  const formatReadingType = (type: string): string => {
+    const translationKey = READING_TYPE_KEYS[type];
+    if (translationKey) {
+      const translated = t(translationKey);
+      if (translated && translated !== translationKey) {
+        return translated;
+      }
+    }
+    // Fallback: title-case the enum value
     return type.replace('_', ' ').replace(/\b\w/g, l => l.toUpperCase());
   };
 
@@ -98,9 +136,9 @@ export default function ReadingCard({
     <TouchableOpacity
       style={getContainerStyle()}
       onPress={handlePress}
-      accessibilityLabel={`Daily reading: ${reading.title}`}
+      accessibilityLabel={`${t('readings.daily') || 'Daily reading'}: ${reading.title}`}
       accessibilityRole="button"
-      accessibilityHint="Tap to read full daily reading"
+      accessibilityHint={t('readings.tapToRead') || 'Tap to read full daily reading'}
       activeOpacity={0.7}
     >
       <View style={styles.header}>
@@ -134,7 +172,7 @@ export default function ReadingCard({
               style={styles.seasonIcon}
             />
             <Text style={styles.season}>
-      {String(reading.metadata.liturgicalSeason).toUpperCase()}
+      {t(`liturgical.${String(reading.metadata.liturgicalSeason).toLowerCase()}`) || String(reading.metadata.liturgicalSeason).toUpperCase()}
             </Text>
           </View>
         )}

@@ -8,3 +8,5 @@ export type { HeaderProps } from './Header';
 
 export { default as PrimaryButton } from './PrimaryButton';
 export type { PrimaryButtonProps } from './PrimaryButton';
+
+export { ErrorBoundary } from './ErrorBoundary';

@@ -74,7 +74,7 @@ export function useLocalization() {
     }
   };
 
-  const translate = (key: string, options?: any): string => {
+  const translate = (key: string, options?: Record<string, string | number>): string => {
     return localizationService.translate(key, options);
   };
 

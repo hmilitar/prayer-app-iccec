@@ -7,6 +7,7 @@ import AppNavigator from './src/navigation/AppNavigator';
 import { useLocalization } from './src/hooks/useLocalization';
 import { useSettings } from './src/hooks/useSettings';
 import { lightTheme, darkTheme } from './src/styles/theme';
+import { ErrorBoundary } from './src/components/common/ErrorBoundary';
 
 function AppContent() {
   const { loading: localizationLoading, error: localizationError, t } = useLocalization();
@@ -54,18 +55,20 @@ function AppContent() {
   }
 
   return (
-    <SafeAreaProvider>
+    <>
       <AppNavigator />
       <StatusBar style={isDarkMode ? 'light' : 'dark'} />
-    </SafeAreaProvider>
+    </>
   );
 }
 
 export default function App() {
   return (
-    <SafeAreaProvider>
-      <AppContent />
-    </SafeAreaProvider>
+    <ErrorBoundary>
+      <SafeAreaProvider>
+        <AppContent />
+      </SafeAreaProvider>
+    </ErrorBoundary>
   );
 }
 

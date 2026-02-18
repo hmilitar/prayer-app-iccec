@@ -1,0 +1,314 @@
+{
+  "prayers": [
+    {
+      "id": "lords-prayer",
+      "title": "Vaterunser",
+      "category": "liturgical",
+      "content": "Vater unser im Himmel, geheiligt werde dein Name. Dein Reich komme. Dein Wille geschehe, wie im Himmel so auf Erden. Unser tägliches Brot gib uns heute. Und vergib uns unsere Schuld, wie auch wir vergeben unseren Schuldigern. Und führe uns nicht in Versuchung, sondern erlöse uns von dem Bösen. Denn dein ist das Reich und die Kraft und die Herrlichkeit in Ewigkeit. Amen.",
+      "source": "Matthäus 6:9-13",
+      "tags": ["traditionell", "jesus", "grundlegend"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "gloria-patri",
+      "title": "Ehre sei dem Vater",
+      "category": "liturgical",
+      "content": "Ehre sei dem Vater und dem Sohn und dem Heiligen Geist. Wie es war im Anfang, jetzt und immerdar und von Ewigkeit zu Ewigkeit. Amen.",
+      "source": "Traditionell",
+      "tags": ["traditionell", "dreifaltigkeit", "doxologie"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "apostles-creed",
+      "title": "Apostolisches Glaubensbekenntnis",
+      "category": "liturgical",
+      "content": "Ich glaube an Gott, den Vater, den Allmächtigen, den Schöpfer des Himmels und der Erde. Und an Jesus Christus, seinen eingeborenen Sohn, unsern Herrn, empfangen durch den Heiligen Geist, geboren von der Jungfrau Maria, gelitten unter Pontius Pilatus, gekreuzigt, gestorben und begraben, hinabgestiegen in das Reich des Todes, am dritten Tage auferstanden von den Toten, aufgefahren in den Himmel; er sitzt zur Rechten Gottes, des allmächtigen Vaters; von dort wird er kommen, zu richten die Lebenden und die Toten. Ich glaube an den Heiligen Geist, die heilige katholische Kirche, Gemeinschaft der Heiligen, Vergebung der Sünden, Auferstehung der Toten und das ewige Leben. Amen.",
+      "source": "Traditionell",
+      "tags": ["glaubensbekenntnis", "glaube", "grundlegend"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "come-holy-spirit",
+      "title": "Komm, Heiliger Geist",
+      "category": "charismatic",
+      "content": "Komm, Heiliger Geist, erfülle die Herzen deiner Gläubigen und entzünde in ihnen das Feuer deiner Liebe. Sende aus deinen Geist und sie werden erschaffen, und du wirst das Antlitz der Erde erneuern. O Gott, der du durch das Licht des Heiligen Geistes die Herzen der Gläubigen belehrt hast, gib uns durch denselben Geist, dass wir wahrhaft weise sind und uns stets seiner Tröstung erfreuen. Durch Christus, unseren Herrn. Amen.",
+      "source": "Traditionelles charismatisches Gebet",
+      "tags": ["heiliger-geist", "charismatisch", "pfingsten", "erneuerung"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "morning-prayer",
+      "title": "Morgengebet",
+      "category": "morning",
+      "content": "Allmächtiger Gott, wir danken dir für das Geschenk dieses neuen Tages. Wenn die Sonne aufgeht, möge dein Licht auf uns scheinen und unsere Schritte leiten. Schenke uns Weisheit in unseren Entscheidungen, Kraft in unseren Herausforderungen und Frieden in unseren Herzen. Hilf uns, dir treu zu dienen und unseren Nächsten zu lieben. Durch Jesus Christus, unseren Herrn. Amen.",
+      "source": "Tradition des Book of Common Prayer",
+      "tags": ["morgen", "täglich", "führung"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "evening-prayer",
+      "title": "Abendgebet",
+      "category": "evening",
+      "content": "Barmherziger Gott, am Ende dieses Tages danken wir dir für deine unzähligen Segnungen. Vergib uns unsere Schwächen und Fehler. Schenke uns einen friedlichen Schlaf und erneuere unsere Seelen. Wache über unsere Lieben und alle, die in Not sind. Im Namen Jesu. Amen.",
+      "source": "Traditionell",
+      "tags": ["abend", "ruhe", "vergebung"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-spiritual-gifts",
+      "title": "Gebet um geistliche Gaben",
+      "category": "charismatic",
+      "content": "Himmlischer Vater, wir danken dir für die Gaben deines Heiligen Geistes. Schenke uns die Weisheit, diese Gaben zur Erbauung deiner Kirche und zur Förderung deines Reiches einzusetzen. Erfülle uns erneut mit deinem Geist, damit wir in Kraft dienen und deine Liebe der Welt zeigen können. Durch Jesus Christus, unseren Herrn. Amen.",
+      "source": "1. Korinther 12-14",
+      "tags": ["geistliche-gaben", "charismatisch", "dienst", "heiliger-geist"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-before-communion",
+      "title": "Gebet vor der Heiligen Kommunion",
+      "category": "sacramental",
+      "content": "Allmächtiger Gott, vor dem alle Herzen offen sind, alle Wünsche bekannt sind, und vor dem kein Geheimnis verborgen ist: Reinige die Gedanken unserer Herzen durch die Eingebung deines Heiligen Geistes, auf dass wir dich vollkommen lieben und deinen heiligen Namen würdig preisen können; durch Christus, unseren Herrn. Amen.",
+      "source": "Tradition des Book of Common Prayer",
+      "tags": ["kommunion", "eucharistie", "sakramental", "vorbereitung"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-before-meals",
+      "title": "Tischgebet",
+      "category": "thanksgiving",
+      "content": "Segne uns, o Herr, und diese deine Gaben, die wir von deiner Güte empfangen werden. Durch Christus, unseren Herrn. Amen.",
+      "source": "Traditionell",
+      "tags": ["mahlzeit", "segen", "dankbarkeit"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-peace",
+      "title": "Gebet um den Frieden",
+      "category": "intercession",
+      "content": "Herr, mache mich zu einem Werkzeug deines Friedens. Wo Hass ist, lass mich Liebe säen; wo Unrecht, Verzeihen; wo Zweifel, Glauben; wo Verzweiflung, Hoffnung; wo Finsternis, Licht; wo Traurigkeit, Freude. O göttlicher Meister, lass mich nicht so sehr danach trachten, getröstet zu werden, als zu trösten; verstanden zu werden, als zu verstehen; geliebt zu werden, als zu lieben. Denn im Geben empfangen wir; im Verzeihen wird uns verziehen; und im Sterben werden wir zum ewigen Leben geboren. Amen.",
+      "source": "Gebet des Heiligen Franziskus",
+      "tags": ["frieden", "dienst", "franziskus"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-healing",
+      "title": "Gebet um Heilung",
+      "category": "intercession",
+      "content": "Himmlischer Vater, wir kommen vor dich und suchen deine heilende Berührung. Du bist der große Arzt, und nichts ist unmöglich für dich. Wir beten für die, die krank sind an Leib, Seele oder Geist. Stelle sie wieder her nach deinem vollkommenen Willen. Durch Jesus Christus, unseren Herrn. Amen.",
+      "source": "Zeitgenössisch",
+      "tags": ["heilung", "krankheit", "trost"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-of-confession",
+      "title": "Beichtgebet",
+      "category": "confession",
+      "content": "Barmherziger Gott, wir bekennen, dass wir gegen dich gesündigt haben in Gedanken, Worten und Werken, durch das, was wir getan haben, und durch das, was wir unterlassen haben. Wir haben dich nicht mit ganzem Herzen geliebt; wir haben unseren Nächsten nicht geliebt wie uns selbst. Wir bereuen aufrichtig und bitten demütig um Vergebung. Um deines Sohnes Jesu Christi willen, erbarme dich unser und vergib uns. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["beichte", "reue", "vergebung"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-of-thanksgiving",
+      "title": "Dankgebet",
+      "category": "thanksgiving",
+      "content": "Allmächtiger Gott, Vater aller Barmherzigkeit, wir deine unwürdigen Diener danken dir demütig für all deine Güte und Liebe zu uns und zu allen, die du geschaffen hast. Wir preisen dich für unsere Schöpfung, Erhaltung und alle Segnungen dieses Lebens; vor allem aber für deine unermessliche Liebe in der Erlösung der Welt durch unseren Herrn Jesus Christus. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["danksagung", "dankbarkeit", "lobpreis"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "serenity-prayer",
+      "title": "Gelassenheitsgebet",
+      "category": "contemporary",
+      "content": "Gott, gib mir die Gelassenheit, Dinge hinzunehmen, die ich nicht ändern kann, den Mut, Dinge zu ändern, die ich ändern kann, und die Weisheit, das eine vom anderen zu unterscheiden. Einen Tag nach dem anderen leben; einen Augenblick nach dem anderen genießen; Schwierigkeiten als Weg zum Frieden annehmen. Amen.",
+      "source": "Reinhold Niebuhr",
+      "tags": ["gelassenheit", "annahme", "weisheit"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-guidance",
+      "title": "Gebet um Führung",
+      "category": "personal",
+      "content": "Liebender Gott, du kennst den Weg, der vor uns liegt. Wenn wir unsicher sind, sei unser Führer. Wenn wir Angst haben, sei unsere Stärke. Wenn wir überwältigt sind, schenke uns deine Weisheit. Hilf uns, auf dein vollkommenes Timing zu vertrauen und im Glauben zu wandeln. Durch Jesus Christus, unseren Herrn. Amen.",
+      "source": "Zeitgenössisch",
+      "tags": ["führung", "weisheit", "vertrauen"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-family",
+      "title": "Gebet für die Familie",
+      "category": "intercession",
+      "content": "Himmlischer Vater, wir danken dir für das Geschenk der Familie. Segne unsere Häuser mit deiner Gegenwart und fülle sie mit Liebe, Freude und Frieden. Hilf uns, geduldig miteinander zu sein, schnell zu vergeben und einander zu unterstützen. Beschütze unsere Kinder und führe sie auf deinen Wegen. Durch Jesus Christus, unseren Herrn. Amen.",
+      "source": "Zeitgenössisch",
+      "tags": ["familie", "zuhause", "kinder"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-world",
+      "title": "Gebet für die Welt",
+      "category": "intercession",
+      "content": "Allmächtiger Gott, Herrscher aller Nationen, wir beten für unsere Welt. Bringe Frieden, wo Konflikt ist, Hoffnung, wo Verzweiflung ist, und Heilung, wo Leid ist. Führe unsere Führer mit Weisheit und Integrität. Dein Reich komme auf Erden wie im Himmel. Durch Jesus Christus, unseren Herrn. Amen.",
+      "source": "Zeitgenössisch",
+      "tags": ["welt", "frieden", "gerechtigkeit"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-strength",
+      "title": "Gebet um Kraft",
+      "category": "personal",
+      "content": "Herr Gott, wenn wir schwach sind, bist du stark. Wenn wir müde sind, gibst du uns Ruhe. Wenn wir überwältigt sind, bist du unsere Zuflucht. Schenke uns die Kraft, die wir für diesen Tag brauchen. Erneuere unseren Geist und erfrische unsere Seelen. Durch Jesus Christus, unseren Herrn. Amen.",
+      "source": "Zeitgenössisch",
+      "tags": ["kraft", "schwäche", "zuflucht"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "noon-prayer",
+      "title": "Mittagsgebet",
+      "category": "noon",
+      "content": "Herr Jesus Christus, um diese Stunde des Tages halten wir inne in unseren Tätigkeiten, um uns an deine Gegenwart zu erinnern. Erneuere unsere Kräfte für die Aufgaben, die noch anstehen. Hilf uns, mit dir durch den Rest dieses Tages zu gehen. In deinem Namen beten wir. Amen.",
+      "source": "Liturgische Tradition",
+      "tags": ["mittag", "pause", "erneuerung"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "family-prayer",
+      "title": "Familiengebet",
+      "category": "family",
+      "content": "Himmlischer Vater, wir danken dir für das Geschenk der Familie. Segne unsere Häuser mit deiner Gegenwart und fülle sie mit Liebe, Freude und Frieden. Beschütze unsere Kinder und führe sie auf deinen Wegen. Stärke die Bande zwischen uns. Durch Jesus Christus, unseren Herrn. Amen.",
+      "source": "Zeitgenössisch",
+      "tags": ["familie", "zuhause", "kinder"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-before-exam",
+      "title": "Gebet vor einer Prüfung",
+      "category": "occasions",
+      "content": "Herr, ich bitte um deinen Segen, während ich mich auf diese Prüfung vorbereite. Beruhige meine Nerven und kläre meinen Geist. Hilf mir, mich an das Gelernte zu erinnern und mein Bestes zu geben. Amen.",
+      "source": "Zeitgenössisch",
+      "tags": ["student", "prüfung", "ruhe", "anlässe"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-travel",
+      "title": "Reisegebet",
+      "category": "occasions",
+      "content": "Allmächtiger Gott, wir bitten um deinen Schutz auf dieser Reise. Bewahre alle Reisenden vor Gefahren und Unfällen. Schenke ihnen eine sichere Reise und ein frohes Wiedersehen mit ihren Lieben. Durch Christus, unseren Herrn. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["reise", "schutz", "sicherheit", "anlässe"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-new-job",
+      "title": "Gebet für eine neue Arbeit",
+      "category": "occasions",
+      "content": "Himmlischer Vater, ich danke dir für diese neue Gelegenheit. Führe mich, wenn ich dieses neue Kapitel meines Lebens beginne. Gib mir Weisheit zum Lernen, Gnade im Umgang mit anderen und Kraft, Herausforderungen zu begegnen. Im Namen Jesu. Amen.",
+      "source": "Zeitgenössisch",
+      "tags": ["arbeit", "neuanfang", "führung", "anlässe"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-anxiety",
+      "title": "Gebet in Zeiten der Angst",
+      "category": "occasions",
+      "content": "Gott des Friedens, mein Herz ist beunruhigt und mein Geist ist rastlos. Bringe deine Ruhe in meinen aufgewühlten Geist. Hilf mir, dir mit ganzem Herzen zu vertrauen. Erinnere mich daran, dass du die Kontrolle hast und dass deine Pläne für mich gut sind. Erfülle mein Herz mit deinem Frieden, der alles Verstehen übersteigt. Im Namen Jesu. Amen.",
+      "source": "Zeitgenössisch - basierend auf Philipper 4:6-7",
+      "tags": ["angst", "frieden", "vertrauen", "anlässe"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "lutheri-hommikupalve",
+      "title": "Luthers Morgengebet",
+      "category": "liturgical",
+      "content": "Ich danke dir, mein himmlischer Vater, durch Jesus Christus, deinen lieben Sohn, dass du mich diese Nacht vor allem Schaden und Gefahr behütet hast; und bitte dich, du wollest mich diesen Tag auch behüten vor Sünden und allem Übel, dass dir all mein Tun und Leben gefalle. Denn ich befehle mich, meinen Leib und Seele und alles in deine Hände. Dein heiliger Engel sei mit mir. Amen.",
+      "source": "Martin Luther",
+      "tags": ["luther", "morgen", "schutz"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "angelus",
+      "title": "Der Engel des Herrn",
+      "category": "liturgical",
+      "content": "Der Engel des Herrn brachte Maria die Botschaft. Und sie empfing vom Heiligen Geist. Gegrüßet seist du, Maria... Maria sprach: Siehe, ich bin die Magd des Herrn. Mir geschehe nach deinem Wort. Gegrüßet seist du, Maria... Und das Wort ist Fleisch geworden. Und hat unter uns gewohnt. Gegrüßet seist du, Maria... Bitte für uns, heilige Gottesmutter. Dass wir würdig werden der Verheißungen Christi. Lasset uns beten: Gieße, o Herr, deine Gnade in unsere Herzen. Durch denselben Christus, unseren Herrn. Amen.",
+      "source": "Traditionell",
+      "tags": ["angelus", "Maria", "menschwerdung"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "confession",
+      "title": "Allgemeines Sündenbekenntnis",
+      "category": "liturgical",
+      "content": "Allmächtiger und barmherziger Vater, wir haben geirrt und sind von deinen Wegen abgewichen wie verlorene Schafe. Wir sind zu sehr den Wünschen und Begierden unserer eigenen Herzen gefolgt. Wir haben gegen deine heiligen Gesetze verstoßen. Wir haben das unterlassen, was wir hätten tun sollen; und wir haben das getan, was wir nicht hätten tun sollen; und es ist kein Heil in uns. Aber du, o Herr, erbarme dich unser, elender Sünder. Verschone, o Gott, die ihre Schuld bekennen. Stelle die wieder her, die Buße tun; gemäß deinen Verheißungen, die der Menschheit in Christus Jesus, unserem Herrn, gegeben sind. Und gewähre, o barmherziger Vater, um seinetwillen; dass wir fortan ein gottgefälliges, gerechtes und nüchternes Leben führen, zur Ehre deines heiligen Namens. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["bekenntnis", "reue", "tägliches-gebet"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "benedictus",
+      "title": "Benedictus (Lobgesang des Zacharias)",
+      "category": "liturgical",
+      "content": "Gelobt sei der Herr, der Gott Israels, denn er hat sein Volk besucht und erlöst; und hat uns aufgerichtet eine mächtige Rettung im Hause seines Dieners David; wie er geredet hat durch den Mund seiner heiligen Propheten seit Anbeginn der Welt: dass wir gerettet werden von unseren Feinden und aus der Hand aller, die uns hassen; dass er Barmherzigkeit erweist unseren Vätern und seines heiligen Bundes gedenkt; des Eides, den er geschworen hat unserem Vater Abraham, uns zu geben; dass wir, erlöst aus der Hand unserer Feinde, ihm ohne Furcht dienen können; in Heiligkeit und Gerechtigkeit vor ihm alle Tage unseres Lebens. Und du, Kind, wirst Prophet des Höchsten heißen, denn du wirst dem Herrn vorangehen, seine Wege zu bereiten; seinem Volk Erkenntnis des Heils zu geben durch Vergebung ihrer Sünden, durch die herzliche Barmherzigkeit unseres Gottes; durch die uns der Aufgang aus der Höhe besucht hat; um die zu erleuchten, die in Finsternis und Schatten des Todes sitzen, und unsere Füße auf den Weg des Friedens zu lenken.",
+      "source": "Lukas 1:68-79",
+      "tags": ["lobgesang", "zacharias", "morgengebet", "tägliches-gebet"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "magnificat",
+      "title": "Magnificat (Lobgesang Marias)",
+      "category": "liturgical",
+      "content": "Meine Seele erhebt den Herrn, und mein Geist hat frohlockt in Gott, meinem Heiland. Denn er hat angesehen die Niedrigkeit seiner Magd. Siehe, von nun an werden mich selig preisen alle Geschlechter. Denn er hat große Dinge an mir getan, der da mächtig ist, und heilig ist sein Name. Und seine Barmherzigkeit währt von Geschlecht zu Geschlecht bei denen, die ihn fürchten. Er hat Gewaltiges getan mit seinem Arm; er hat zerstreut die Hoffärtigen in ihres Herzens Sinn. Er hat die Mächtigen von ihren Thronen gestürzt und die Niedrigen erhoben. Die Hungrigen hat er mit Gütern gefüllt und die Reichen leer ausgehen lassen. Er hat sich seines Knechtes Israel angenommen, eingedenk seiner Barmherzigkeit, wie er geredet hat zu unseren Vätern, Abraham und seinem Geschlecht in Ewigkeit.",
+      "source": "Lukas 1:46-55",
+      "tags": ["lobgesang", "Maria", "abendgebet", "tägliches-gebet"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "nunc-dimittis",
+      "title": "Nunc Dimittis (Lobgesang des Simeon)",
+      "category": "liturgical",
+      "content": "Herr, nun lässt du deinen Diener in Frieden fahren, wie du gesagt hast. Denn meine Augen haben dein Heil gesehen, das du bereitet hast vor allen Völkern; ein Licht, zu erleuchten die Heiden, und zur Verherrlichung deines Volkes Israel.",
+      "source": "Lukas 2:29-32",
+      "tags": ["lobgesang", "simeon", "abendgebet", "tägliches-gebet"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "st-michael-prayer",
+      "title": "Gebet zum Heiligen Erzengel Michael",
+      "category": "liturgical",
+      "content": "Heiliger Erzengel Michael, verteidige uns im Kampfe. Sei unser Schutz gegen die Bosheit und die Nachstellungen des Teufels. Gott gebiete ihm, so bitten wir flehentlich; und du, Fürst der himmlischen Heerscharen, stürze den Satan und die anderen bösen Geister, die in der Welt umhergehen, um die Seelen zu verderben, durch die Kraft Gottes in die Hölle hinab. Amen.",
+      "source": "Papst Leo XIII., 1886",
+      "tags": ["heiliger-michael", "erzengel", "schutz", "geistlicher-kampf"],
+      "language": "de",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    }
+  ]
+}

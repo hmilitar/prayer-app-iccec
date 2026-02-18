@@ -1,0 +1,314 @@
+{
+  "prayers": [
+    {
+      "id": "lords-prayer",
+      "title": "Notre Père",
+      "category": "liturgical",
+      "content": "Notre Père, qui es aux cieux, que ton nom soit sanctifié. Que ton règne vienne. Que ta volonté soit faite sur la terre comme au ciel. Donne-nous aujourd'hui notre pain de ce jour. Pardonne-nous nos offenses, comme nous pardonnons aussi à ceux qui nous ont offensés. Et ne nous laisse pas entrer en tentation, mais délivre-nous du mal. Car c'est à toi qu'appartiennent le règne, la puissance et la gloire, pour les siècles des siècles. Amen.",
+      "source": "Matthieu 6:9-13",
+      "tags": ["traditionnel", "jésus", "fondamental"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "gloria-patri",
+      "title": "Gloire au Père",
+      "category": "liturgical",
+      "content": "Gloire au Père, au Fils et au Saint-Esprit. Comme il était au commencement, maintenant et toujours, pour les siècles des siècles. Amen.",
+      "source": "Traditionnel",
+      "tags": ["traditionnel", "trinité", "doxologie"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "apostles-creed",
+      "title": "Symbole des Apôtres",
+      "category": "liturgical",
+      "content": "Je crois en Dieu, le Père tout-puissant, créateur du ciel et de la terre. Et en Jésus-Christ, son Fils unique, notre Seigneur, qui a été conçu du Saint-Esprit, est né de la Vierge Marie, a souffert sous Ponce Pilate, a été crucifié, est mort et a été enseveli, est descendu aux enfers ; le troisième jour est ressuscité des morts, est monté aux cieux, est assis à la droite de Dieu le Père tout-puissant, d'où il viendra juger les vivants et les morts. Je crois en l'Esprit Saint, à la sainte Église catholique, à la communion des saints, à la rémission des péchés, à la résurrection de la chair, à la vie éternelle. Amen.",
+      "source": "Traditionnel",
+      "tags": ["credo", "foi", "fondamental"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "come-holy-spirit",
+      "title": "Viens, Esprit Saint",
+      "category": "charismatic",
+      "content": "Viens, Esprit Saint, remplis le cœur de tes fidèles et allume en eux le feu de ton amour. Envoie ton Esprit et ils seront créés, et tu renouvelleras la face de la terre. Ô Dieu, qui par la lumière du Saint-Esprit as instruit les cœurs des fidèles, accorde-nous par le même Esprit d'être toujours véritablement sages et de jouir de sa consolation. Par le Christ notre Seigneur. Amen.",
+      "source": "Prière charismatique traditionnelle",
+      "tags": ["esprit-saint", "charismatique", "pentecôte", "renouveau"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "morning-prayer",
+      "title": "Prière du Matin",
+      "category": "morning",
+      "content": "Dieu tout-puissant, nous te remercions pour le don de ce nouveau jour. Au lever du soleil, que ta lumière brille sur nous et guide nos pas. Accorde-nous sagesse dans nos décisions, force dans nos défis et paix dans nos cœurs. Aide-nous à te servir fidèlement et à aimer notre prochain. Par Jésus-Christ notre Seigneur. Amen.",
+      "source": "Tradition du Book of Common Prayer",
+      "tags": ["matin", "quotidien", "guide"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "evening-prayer",
+      "title": "Prière du Soir",
+      "category": "evening",
+      "content": "Dieu miséricordieux, alors que cette journée touche à sa fin, nous te remercions pour tes innombrables bénédictions. Pardonne nos manquements et nos faiblesses. Accorde-nous un repos paisible et restaure nos âmes. Veille sur nos proches et sur tous ceux qui sont dans le besoin. Au nom de Jésus. Amen.",
+      "source": "Traditionnel",
+      "tags": ["soir", "repos", "pardon"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-spiritual-gifts",
+      "title": "Prière pour les Dons Spirituels",
+      "category": "charismatic",
+      "content": "Père céleste, nous te remercions pour les dons de ton Saint-Esprit. Accorde-nous la sagesse d'utiliser ces dons pour l'édification de ton Église et l'avancement de ton Royaume. Remplis-nous de nouveau de ton Esprit, afin que nous puissions servir avec puissance et manifester ton amour au monde. Par Jésus-Christ notre Seigneur. Amen.",
+      "source": "1 Corinthiens 12-14",
+      "tags": ["dons-spirituels", "charismatique", "ministère", "esprit-saint"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-before-communion",
+      "title": "Prière avant la Sainte Communion",
+      "category": "sacramental",
+      "content": "Dieu tout-puissant, devant qui tous les cœurs sont ouverts, tous les désirs connus, et de qui aucun secret n'est caché : Purifie les pensées de nos cœurs par l'inspiration de ton Saint-Esprit, afin que nous puissions t'aimer parfaitement et dignement magnifier ton saint Nom ; par le Christ notre Seigneur. Amen.",
+      "source": "Tradition du Book of Common Prayer",
+      "tags": ["communion", "eucharistie", "sacramentel", "préparation"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-before-meals",
+      "title": "Bénédicité",
+      "category": "thanksgiving",
+      "content": "Bénis-nous, Seigneur, et bénis ces dons que nous allons recevoir de ta bonté. Par le Christ notre Seigneur. Amen.",
+      "source": "Traditionnel",
+      "tags": ["repas", "bénédiction", "gratitude"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-peace",
+      "title": "Prière pour la Paix",
+      "category": "intercession",
+      "content": "Seigneur, fais de moi un instrument de ta paix. Là où il y a de la haine, que je mette l'amour ; là où il y a l'offense, que je mette le pardon ; là où il y a le doute, la foi ; là où il y a le désespoir, l'espérance ; là où il y a les ténèbres, la lumière ; là où il y a la tristesse, la joie. Ô Maître divin, que je ne cherche pas tant à être consolé qu'à consoler ; à être compris qu'à comprendre ; à être aimé qu'à aimer. Car c'est en donnant qu'on reçoit ; c'est en pardonnant qu'on est pardonné ; c'est en mourant qu'on ressuscite à la vie éternelle. Amen.",
+      "source": "Prière de Saint François",
+      "tags": ["paix", "service", "françois"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-healing",
+      "title": "Prière pour la Guérison",
+      "category": "intercession",
+      "content": "Père céleste, nous venons devant toi cherchant ta touche guérisseuse. Tu es le Grand Médecin, et rien n'est impossible pour toi. Nous prions pour ceux qui sont malades dans leur corps, leur esprit ou leur âme. Restaure-les selon ta parfaite volonté. Par Jésus-Christ notre Seigneur. Amen.",
+      "source": "Contemporain",
+      "tags": ["guérison", "maladie", "consolation"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-of-confession",
+      "title": "Prière de Confession",
+      "category": "confession",
+      "content": "Dieu miséricordieux, nous confessons que nous avons péché contre toi en pensées, en paroles et en actes, par ce que nous avons fait et par ce que nous avons omis de faire. Nous ne t'avons pas aimé de tout notre cœur ; nous n'avons pas aimé notre prochain comme nous-mêmes. Nous sommes vraiment repentants et nous nous humilions dans le repentir. Par amour pour ton Fils Jésus-Christ, aie pitié de nous et pardonne-nous. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["confession", "repentance", "pardon"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-of-thanksgiving",
+      "title": "Prière d'Action de Grâce",
+      "category": "thanksgiving",
+      "content": "Dieu tout-puissant, Père de toutes les miséricordes, nous tes indignes serviteurs te rendons d'humbles grâces pour toute ta bonté et ton amour envers nous et envers tous ceux que tu as créés. Nous te bénissons pour notre création, notre conservation et toutes les bénédictions de cette vie ; mais surtout pour ton amour incommensurable dans la rédemption du monde par notre Seigneur Jésus-Christ. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["action-de-grâce", "gratitude", "louange"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "serenity-prayer",
+      "title": "Prière de la Sérénité",
+      "category": "contemporary",
+      "content": "Mon Dieu, donne-moi la sérénité d'accepter les choses que je ne peux changer, le courage de changer les choses que je peux, et la sagesse d'en connaître la différence. Vivant un jour à la fois ; savourant un moment à la fois ; acceptant les épreuves comme un chemin vers la paix. Amen.",
+      "source": "Reinhold Niebuhr",
+      "tags": ["sérénité", "acceptation", "sagesse"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-guidance",
+      "title": "Prière pour la Direction",
+      "category": "personal",
+      "content": "Dieu d'amour, tu connais le chemin qui nous attend. Quand nous sommes incertains, sois notre guide. Quand nous avons peur, sois notre force. Quand nous sommes accablés, accorde-nous ta sagesse. Aide-nous à faire confiance à ton timing parfait et à marcher dans la foi. Par Jésus-Christ notre Seigneur. Amen.",
+      "source": "Contemporain",
+      "tags": ["direction", "sagesse", "confiance"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-family",
+      "title": "Prière pour la Famille",
+      "category": "intercession",
+      "content": "Père céleste, nous te remercions pour le don de la famille. Bénis nos foyers de ta présence et remplis-les d'amour, de joie et de paix. Aide-nous à être patients les uns envers les autres, à pardonner rapidement et à nous soutenir mutuellement. Protège nos enfants et guide-les dans tes voies. Par Jésus-Christ notre Seigneur. Amen.",
+      "source": "Contemporain",
+      "tags": ["famille", "foyer", "enfants"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-world",
+      "title": "Prière pour le Monde",
+      "category": "intercession",
+      "content": "Dieu tout-puissant, souverain de toutes les nations, nous prions pour notre monde. Apporte la paix là où il y a conflit, l'espérance là où il y a désespoir, et la guérison là où il y a souffrance. Guide nos dirigeants avec sagesse et intégrité. Que ton règne vienne sur la terre comme au ciel. Par Jésus-Christ notre Seigneur. Amen.",
+      "source": "Contemporain",
+      "tags": ["monde", "paix", "justice"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-strength",
+      "title": "Prière pour la Force",
+      "category": "personal",
+      "content": "Seigneur Dieu, quand nous sommes faibles, tu es fort. Quand nous sommes fatigués, tu nous donnes le repos. Quand nous sommes accablés, tu es notre refuge. Accorde-nous la force dont nous avons besoin pour ce jour. Renouvelle notre esprit et rafraîchis nos âmes. Par Jésus-Christ notre Seigneur. Amen.",
+      "source": "Contemporain",
+      "tags": ["force", "faiblesse", "refuge"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "noon-prayer",
+      "title": "Prière de Midi",
+      "category": "noon",
+      "content": "Seigneur Jésus-Christ, à cette heure du jour, nous faisons une pause dans nos activités pour nous souvenir de ta présence. Renouvelle nos forces pour les tâches qui restent. Aide-nous à marcher avec toi pour le reste de cette journée. En ton nom nous prions. Amen.",
+      "source": "Tradition liturgique",
+      "tags": ["midi", "pause", "renouveau"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "family-prayer",
+      "title": "Prière en Famille",
+      "category": "family",
+      "content": "Père céleste, nous te remercions pour le don de la famille. Bénis nos foyers de ta présence et remplis-les d'amour, de joie et de paix. Protège nos enfants et guide-les dans tes voies. Renforce les liens entre nous. Par Jésus-Christ notre Seigneur. Amen.",
+      "source": "Contemporain",
+      "tags": ["famille", "foyer", "enfants"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-before-exam",
+      "title": "Prière avant un Examen",
+      "category": "occasions",
+      "content": "Seigneur, je te demande ta bénédiction alors que je me prépare pour cet examen. Calme mes nerfs et éclaircis mon esprit. Aide-moi à me souvenir de ce que j'ai étudié et à donner le meilleur de moi-même. Amen.",
+      "source": "Contemporain",
+      "tags": ["étudiant", "examen", "calme", "occasions"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-travel",
+      "title": "Prière pour le Voyage",
+      "category": "occasions",
+      "content": "Dieu tout-puissant, nous te demandons ta protection pour ce voyage. Garde tous les voyageurs des dangers et des accidents. Accorde-leur un voyage sûr et d'heureuses retrouvailles avec leurs proches. Par le Christ notre Seigneur. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["voyage", "protection", "sécurité", "occasions"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-new-job",
+      "title": "Prière pour un Nouveau Travail",
+      "category": "occasions",
+      "content": "Père céleste, je te remercie pour cette nouvelle opportunité. Guide-moi alors que je commence ce nouveau chapitre de ma vie. Donne-moi la sagesse d'apprendre, la grâce de me rapporter aux autres et la force de faire face aux défis. Au nom de Jésus. Amen.",
+      "source": "Contemporain",
+      "tags": ["travail", "nouveau-départ", "direction", "occasions"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-anxiety",
+      "title": "Prière en Temps d'Anxiété",
+      "category": "occasions",
+      "content": "Dieu de paix, mon cœur est troublé et mon esprit est agité. Apporte ton calme à mon esprit tourmenté. Aide-moi à te faire confiance de tout mon cœur. Rappelle-moi que tu as le contrôle et que tes plans pour moi sont bons. Remplis mon cœur de ta paix qui surpasse toute intelligence. Au nom de Jésus. Amen.",
+      "source": "Contemporain - basé sur Philippiens 4:6-7",
+      "tags": ["anxiété", "paix", "confiance", "occasions"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "lutheri-hommikupalve",
+      "title": "Prière Matinale de Luther",
+      "category": "liturgical",
+      "content": "Je te rends grâce, Père céleste, par Jésus-Christ, ton Fils bien-aimé, de m'avoir gardé cette nuit de tout mal et de tout danger ; et je te prie de me garder aussi aujourd'hui du péché et de tout mal. Car je remets entre tes mains mon corps, mon âme et toutes choses. Que ton saint ange soit avec moi. Amen.",
+      "source": "Martin Luther",
+      "tags": ["luther", "matin", "protection"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "angelus",
+      "title": "L'Angélus",
+      "category": "liturgical",
+      "content": "L'Ange du Seigneur porta l'annonce à Marie. Et elle conçut du Saint-Esprit. Je vous salue Marie... Voici la servante du Seigneur. Qu'il me soit fait selon ta parole. Je vous salue Marie... Et le Verbe s'est fait chair. Et il a habité parmi nous. Je vous salue Marie... Priez pour nous, sainte Mère de Dieu. Afin que nous soyons rendus dignes des promesses du Christ. Prions : Répands, Seigneur, ta grâce dans nos cœurs. Par le même Jésus-Christ notre Seigneur. Amen.",
+      "source": "Traditionnel",
+      "tags": ["angélus", "Marie", "incarnation"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "confession",
+      "title": "Confession Générale",
+      "category": "liturgical",
+      "content": "Père tout-puissant et miséricordieux, nous avons erré et nous nous sommes égarés de tes voies comme des brebis perdues. Nous avons trop suivi les désirs et les penchants de nos propres cœurs. Nous avons péché contre tes saintes lois. Nous avons omis de faire ce que nous aurions dû faire ; et nous avons fait ce que nous n'aurions pas dû faire ; et il n'y a pas de santé en nous. Mais toi, ô Seigneur, aie pitié de nous, misérables pécheurs. Épargne, ô Dieu, ceux qui confessent leurs fautes. Restaure ceux qui se repentent ; selon tes promesses déclarées à l'humanité en Christ Jésus notre Seigneur. Et accorde, ô Père miséricordieux, pour l'amour de lui ; que nous vivions désormais une vie pieuse, juste et sobre, pour la gloire de ton saint Nom. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["confession", "repentance", "office-quotidien"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "benedictus",
+      "title": "Benedictus (Cantique de Zacharie)",
+      "category": "liturgical",
+      "content": "Béni soit le Seigneur, le Dieu d'Israël, car il a visité et racheté son peuple ; et il nous a suscité un puissant salut dans la maison de David, son serviteur ; comme il avait parlé par la bouche de ses saints prophètes depuis les temps anciens : un salut qui nous délivre de nos ennemis et de la main de tous ceux qui nous haïssent ; pour manifester la miséricorde promise à nos pères et se souvenir de sa sainte alliance ; du serment qu'il a juré à Abraham, notre père, de nous accorder, délivrés de la main de nos ennemis, de le servir sans crainte ; dans la sainteté et la justice devant lui, tous les jours de notre vie. Et toi, petit enfant, tu seras appelé prophète du Très-Haut, car tu marcheras devant le Seigneur pour préparer ses voies ; pour donner à son peuple la connaissance du salut par la rémission de ses péchés, grâce à la tendre miséricorde de notre Dieu, par laquelle l'astre d'en haut nous a visités ; pour éclairer ceux qui sont assis dans les ténèbres et l'ombre de la mort, et pour guider nos pas dans le chemin de la paix.",
+      "source": "Luc 1:68-79",
+      "tags": ["cantique", "zacharie", "prière-matinale", "office-quotidien"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "magnificat",
+      "title": "Magnificat (Cantique de Marie)",
+      "category": "liturgical",
+      "content": "Mon âme exalte le Seigneur, et mon esprit s'est réjoui en Dieu mon Sauveur. Car il a regardé l'humilité de sa servante. Voici que désormais toutes les générations me diront bienheureuse. Car le Tout-Puissant a fait pour moi de grandes choses, et saint est son Nom. Et sa miséricorde s'étend d'âge en âge sur ceux qui le craignent. Il a déployé la force de son bras ; il a dispersé les orgueilleux dans les pensées de leur cœur. Il a renversé les puissants de leurs trônes, et il a élevé les humbles. Il a comblé de biens les affamés, et il a renvoyé les riches les mains vides. Il a secouru Israël son serviteur, se souvenant de sa miséricorde, comme il l'avait promis à nos pères, à Abraham et à sa descendance pour toujours.",
+      "source": "Luc 1:46-55",
+      "tags": ["cantique", "Marie", "prière-du-soir", "office-quotidien"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "nunc-dimittis",
+      "title": "Nunc Dimittis (Cantique de Siméon)",
+      "category": "liturgical",
+      "content": "Maintenant, Seigneur, tu laisses ton serviteur s'en aller en paix, selon ta parole. Car mes yeux ont vu ton salut, que tu as préparé à la face de tous les peuples ; lumière pour éclairer les nations, et gloire de ton peuple Israël.",
+      "source": "Luc 2:29-32",
+      "tags": ["cantique", "siméon", "prière-du-soir", "office-quotidien"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "st-michael-prayer",
+      "title": "Prière à Saint Michel Archange",
+      "category": "liturgical",
+      "content": "Saint Michel Archange, défendez-nous dans le combat. Soyez notre protecteur contre la méchanceté et les embûches du démon. Que Dieu le commande, nous vous en supplions ; et vous, Prince de la milice céleste, par la puissance divine, précipitez en enfer Satan et les autres esprits mauvais qui rôdent dans le monde pour la perte des âmes. Amen.",
+      "source": "Pape Léon XIII, 1886",
+      "tags": ["saint-michel", "archange", "protection", "combat-spirituel"],
+      "language": "fr",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    }
+  ]
+}

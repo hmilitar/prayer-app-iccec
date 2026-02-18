@@ -108,7 +108,7 @@ export class LocalizationService {
     }
   }
 
-  public translate(key: string, options?: any): string {
+  public translate(key: string, options?: Record<string, string | number>): string {
     return this.i18n.t(key, options);
   }
 

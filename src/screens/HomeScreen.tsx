@@ -158,7 +158,7 @@ export default function HomeScreen() {
           <View style={styles.liturgicalContainer}>
             <View style={styles.liturgicalBadge}>
               <Text style={styles.liturgicalText}>
-                {t(`liturgical.${liturgicalSeason.toLowerCase()}`) || liturgicalSeason} Season
+                {t(`liturgical.${liturgicalSeason.toLowerCase()}`) || liturgicalSeason}
               </Text>
             </View>
           </View>

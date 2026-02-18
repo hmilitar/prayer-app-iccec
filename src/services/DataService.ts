@@ -1,9 +1,38 @@
 // Data Service - Business logic & data access abstraction
 
+declare const __DEV__: boolean | undefined;
+
 import { Prayer, SupportedLanguage } from '../types/Prayer';
 import { DailyReading, Reading, ReadingType } from '../types/Reading';
-import { DailyDevotion, DevotionDay } from '../types/Devotion';
+import { DailyDevotion, DevotionDay, DevotionTimeOfDay } from '../types/Devotion';
 import { getMappedPrayerId, getAllEquivalentPrayerIds } from '../utils/prayerMapping';
+import { buildDevotion, buildDevotionDay } from '../data/devotions/devotionBuilder';
+
+/** Shape of the imported prayer JSON modules */
+interface PrayerJsonModule {
+  readonly prayers?: Prayer[];
+}
+
+/** Shape of a single raw reading entry from JSON */
+interface RawReadingEntry {
+  readonly id?: string;
+  readonly date?: string;
+  readonly title?: string;
+  readonly season?: string;
+  readonly language?: string;
+  readonly reflection?: string;
+  readonly readings?: {
+    readonly first?: { readonly reference?: string; readonly text?: string; readonly title?: string };
+    readonly psalm?: { readonly reference?: string; readonly text?: string; readonly title?: string };
+    readonly second?: { readonly reference?: string; readonly text?: string; readonly title?: string };
+    readonly gospel?: { readonly reference?: string; readonly text?: string; readonly title?: string };
+  };
+}
+
+/** Shape of the imported reading JSON modules */
+interface ReadingJsonModule {
+  readonly readings?: RawReadingEntry[];
+}
 
 // Import local data files
 import enPrayers from '../data/prayers/en.json';
@@ -19,14 +48,6 @@ import tlReadings from '../data/readings/tl_new.json';
 import etReadings from '../data/readings/et_new.json';
 import esReadings from '../data/readings/es.json';
 import itReadings from '../data/readings/it.json';
-import enDevotions from '../data/devotions/en.json';
-import tlDevotions from '../data/devotions/tl.json';
-import etDevotions from '../data/devotions/et.json';
-import esDevotions from '../data/devotions/es.json';
-import itDevotions from '../data/devotions/it.json';
-import frDevotions from '../data/devotions/fr.json';
-import deDevotions from '../data/devotions/de.json';
-import plDevotions from '../data/devotions/pl.json';
 
 // Data source interface for future API integration
 export interface DataSource {
@@ -40,43 +61,50 @@ export interface DataSource {
 
 // Local JSON data source implementation
 export class LocalDataSource implements DataSource {
-  private readonly prayerData: Record<SupportedLanguage, Prayer[]> = {
-    en: (enPrayers as any).prayers || [],
-    tl: (tlPrayers as any).prayers || [],
-    et: (etPrayers as any).prayers || [],
-    es: (esPrayers as any).prayers || [],
-    it: (itPrayers as any).prayers || [],
-    fr: (frPrayers as any).prayers || [],
-    de: (dePrayers as any).prayers || [],
-    pl: (plPrayers as any).prayers || []
-  };
-
-  private readonly readingData: Record<SupportedLanguage, DailyReading[]> = {
-    en: (enReadings as any).readings || [],
-    tl: (tlReadings as any).readings || [],
-    et: (etReadings as any).readings || [],
-    es: (esReadings as any).readings || [],
-    it: (itReadings as any).readings || [],
-    fr: [],
-    de: [],
-    pl: []
-  };
-
-  private readonly devotionData: Record<string, DailyDevotion[]> = {
-    en: (enDevotions as any).devotions || [],
-    tl: (tlDevotions as any).devotions || [],
-    et: (etDevotions as any).devotions || [],
-    es: (esDevotions as any).devotions || [],
-    it: (itDevotions as any).devotions || [],
-    fr: (frDevotions as any).devotions || [],
-    de: (deDevotions as any).devotions || [],
-    pl: (plDevotions as any).devotions || []
-  };
+  private readonly prayerData: Record<SupportedLanguage, Prayer[]>;
+  private readonly readingData: Record<SupportedLanguage, RawReadingEntry[]>;
 
   constructor() {
-    console.log('LocalDataSource initialized with prayers:', Object.keys(this.prayerData).map(lang => `${lang}: ${(this.prayerData as any)[lang].length}`));
-    console.log('LocalDataSource initialized with readings:', Object.keys(this.readingData).map(lang => `${lang}: ${(this.readingData as any)[lang].length}`));
-    console.log('LocalDataSource initialized with devotions:', Object.keys(this.devotionData).map(lang => `${lang}: ${(this.devotionData as any)[lang].length}`));
+    /** Safely extract the prayers array from a JSON module. */
+    const extractPrayers = (mod: PrayerJsonModule): Prayer[] =>
+      Array.isArray(mod?.prayers) ? mod.prayers : [];
+
+    /** Safely extract the readings array from a JSON module. */
+    const extractReadings = (mod: ReadingJsonModule): RawReadingEntry[] =>
+      Array.isArray(mod?.readings) ? mod.readings : [];
+
+    this.prayerData = {
+      en: extractPrayers(enPrayers as PrayerJsonModule),
+      tl: extractPrayers(tlPrayers as PrayerJsonModule),
+      et: extractPrayers(etPrayers as PrayerJsonModule),
+      es: extractPrayers(esPrayers as PrayerJsonModule),
+      it: extractPrayers(itPrayers as PrayerJsonModule),
+      fr: extractPrayers(frPrayers as PrayerJsonModule),
+      de: extractPrayers(dePrayers as PrayerJsonModule),
+      pl: extractPrayers(plPrayers as PrayerJsonModule),
+    };
+
+    this.readingData = {
+      en: extractReadings(enReadings as ReadingJsonModule),
+      tl: extractReadings(tlReadings as ReadingJsonModule),
+      et: extractReadings(etReadings as ReadingJsonModule),
+      es: extractReadings(esReadings as ReadingJsonModule),
+      it: extractReadings(itReadings as ReadingJsonModule),
+      fr: [],
+      de: [],
+      pl: [],
+    };
+
+    if (typeof __DEV__ !== 'undefined' && __DEV__) {
+      console.log(
+        'LocalDataSource initialized with prayers:',
+        (Object.keys(this.prayerData) as SupportedLanguage[]).map(lang => `${lang}: ${this.prayerData[lang].length}`),
+      );
+      console.log(
+        'LocalDataSource initialized with readings:',
+        (Object.keys(this.readingData) as SupportedLanguage[]).map(lang => `${lang}: ${this.readingData[lang].length}`),
+      );
+    }
   }
 
   async getPrayers(language: SupportedLanguage): Promise<Prayer[]> {
@@ -126,7 +154,7 @@ export class LocalDataSource implements DataSource {
     try {
       const readings = this.readingData[language] || [];
       console.log(`getDailyReadings(${date}, ${language}): found ${readings.length} total readings`);
-      const raw = readings.find((r: any) => r.date === date);
+      const raw = readings.find(r => r.date === date);
       console.log(`getDailyReadings(${date}, ${language}): found reading:`, !!raw);
       if (!raw) {
         throw new Error(`Reading for date ${date} not found`);
@@ -146,22 +174,22 @@ export class LocalDataSource implements DataSource {
       const end = new Date(endDate);
       
       return readings
-        .filter((reading: any) => {
-          const readingDate = new Date(reading.date);
+        .filter(reading => {
+          const readingDate = new Date(reading.date ?? '');
           return readingDate >= start && readingDate <= end;
         })
-        .sort((a: any, b: any) => new Date(a.date).getTime() - new Date(b.date).getTime())
-        .map((raw: any) => this.normalizeDailyReading(raw, language));
+        .sort((a, b) => new Date(a.date ?? '').getTime() - new Date(b.date ?? '').getTime())
+        .map(raw => this.normalizeDailyReading(raw, language));
     } catch (error) {
       console.error('Error loading readings range:', error);
       return [];
     }
   }
 
-  // Normalize raw JSON reading (from *_new.json) to DailyReading shape expected by UI
-  private normalizeDailyReading(raw: any, languageFallback: SupportedLanguage): DailyReading {
-    const date: string = raw.date ?? raw.id;
-    const language: SupportedLanguage = (raw.language as SupportedLanguage) || languageFallback;
+  /** Normalize raw JSON reading (from *_new.json) to DailyReading shape expected by UI */
+  private normalizeDailyReading(raw: RawReadingEntry, languageFallback: SupportedLanguage): DailyReading {
+    const date: string = raw.date ?? raw.id ?? '';
+    const language: SupportedLanguage = (raw.language as SupportedLanguage | undefined) ?? languageFallback;
     const season: string | undefined = raw.season;
 
     const nowIso = new Date().toISOString();
@@ -228,22 +256,7 @@ export class LocalDataSource implements DataSource {
 
   async getDailyDevotions(date: string, language: SupportedLanguage): Promise<DevotionDay | null> {
     try {
-      const devotions = this.devotionData[language] || [];
-      const dayDevotions = devotions.filter((d: DailyDevotion) => d.date === date);
-      
-      if (dayDevotions.length === 0) {
-        return null;
-      }
-
-      const devotionDay: DevotionDay = {
-        date,
-        morning: dayDevotions.find(d => d.timeOfDay === 'morning'),
-        noon: dayDevotions.find(d => d.timeOfDay === 'noon'),
-        evening: dayDevotions.find(d => d.timeOfDay === 'evening'),
-        family: dayDevotions.find(d => d.timeOfDay === 'family'),
-      };
-
-      return devotionDay;
+      return buildDevotionDay(date, language);
     } catch (error) {
       console.error('Error loading daily devotions:', error);
       return null;
@@ -252,9 +265,8 @@ export class LocalDataSource implements DataSource {
 
   async getDevotionsByTimeOfDay(date: string, timeOfDay: string, language: SupportedLanguage): Promise<DailyDevotion | null> {
     try {
-      const devotions = this.devotionData[language] || [];
-      const devotion = devotions.find((d: DailyDevotion) => d.date === date && d.timeOfDay === timeOfDay);
-      return devotion || null;
+      const validTimeOfDay = timeOfDay as DevotionTimeOfDay;
+      return buildDevotion(date, validTimeOfDay, language);
     } catch (error) {
       console.error('Error loading devotion by time of day:', error);
       return null;

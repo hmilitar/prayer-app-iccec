@@ -161,6 +161,7 @@
     "nextDay": "Next day",
     "today": "Today",
     "selectDate": "Select Date",
+    "tapToRead": "Tap to read full daily reading",
     "oldTestament": "Old Testament",
     "psalm": "Psalm",
     "newTestament": "New Testament",
@@ -230,7 +231,10 @@
       "tl": "Tagalog",
       "et": "Estonian",
       "es": "Español",
-      "it": "Italiano"
+      "it": "Italiano",
+      "fr": "Français",
+      "de": "Deutsch",
+      "pl": "Polski"
     },
     "fontSizes": {
       "small": "Small",
@@ -431,7 +435,51 @@
     "viewAll": "View All Devotions",
     "selectTime": "Select Time of Day",
     "noDevotions": "No devotions available for this date",
-    "loadingDevotions": "Loading devotions..."
+    "loadingDevotions": "Loading devotions...",
+    "bibleGateway": {
+      "errorMessage": "Check your internet connection and try again."
+    },
+    "readings": {
+      "firstReading": "First Reading",
+      "psalm": "Psalm",
+      "secondReading": "Second Reading",
+      "gospel": "Gospel"
+    },
+    "sections": {
+      "signOfCross": "Sign of the Cross",
+      "confession": "Confession",
+      "gloriaPatri": "Gloria Patri",
+      "benedictus": "Canticle: Benedictus",
+      "magnificat": "Canticle: Magnificat",
+      "nuncDimittis": "Canticle: Nunc Dimittis",
+      "apostlesCreed": "Apostles' Creed",
+      "lordsPlayer": "The Lord's Prayer",
+      "stMichaelPrayer": "Prayer to St. Michael",
+      "prayers": "Prayers"
+    },
+    "timeTitle": {
+      "morningPrayer": "Morning Prayer",
+      "middayPrayer": "Midday Prayer",
+      "eveningPrayer": "Evening Prayer",
+      "familyDevotion": "Family Devotion",
+      "prayer": "Prayer"
+    },
+    "rubrics": {
+      "readingFromScripture": "A Reading from Holy Scripture",
+      "holyGospel": "The Holy Gospel",
+      "officiantBegins": "The Officiant begins:",
+      "familyGathers": "The family gathers and one member begins:",
+      "freePrayerIntercessions": "Here may follow free prayer and intercessions.",
+      "confessionRubric": "The following confession may be said together:"
+    },
+    "content": {
+      "signOfCross": "✠ In the Name of the Father, and of the Son, and of the Holy Spirit. Amen.",
+      "morningOpening": "O Lord, open thou our lips.\nAnd our mouth shall show forth thy praise.\n\nO God, make speed to save us.\nO Lord, make haste to help us.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.\n\nPraise the Lord.\nThe Lord's Name be praised.",
+      "middayOpening": "O God, make speed to save us.\nO Lord, make haste to help us.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.",
+      "eveningOpening": "O Lord, open thou our lips.\nAnd our mouth shall show forth thy praise.\n\nO God, make speed to save us.\nO Lord, make haste to help us.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.\n\nPraise the Lord.\nThe Lord's Name be praised.",
+      "familyOpening": "The Lord Almighty grant us a peaceful night and a perfect end.\nAmen.\n\nOur help is in the Name of the Lord;\nThe maker of heaven and earth.",
+      "prayersVersicles": "O Lord, hear our prayer;\nAnd let our cry come unto thee.\n\nLet us pray."
+    }
   },
   "calendar": "Calendar",
   "daily": "Daily",
