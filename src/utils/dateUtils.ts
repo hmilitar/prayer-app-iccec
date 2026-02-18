@@ -165,6 +165,27 @@ export function getEasterDate(year: number): Date {
 /**
  * Format date for display based on locale
  */
+/** Map i18n language code → BCP-47 locale for Intl formatting */
+const LOCALE_MAP: Record<string, string> = {
+  en: 'en-US',
+  tl: 'fil-PH',
+  et: 'et-EE',
+  es: 'es-ES',
+  it: 'it-IT',
+  fr: 'fr-FR',
+  de: 'de-DE',
+  pl: 'pl-PL',
+};
+
+/**
+ * Convert a 2-letter app language code to a BCP-47 locale string
+ * suitable for use with Intl.DateTimeFormat and toLocaleDateString.
+ * Returns the input unchanged if it is already a full locale or unknown.
+ */
+export function getBcp47Locale(language: string): string {
+  return LOCALE_MAP[language] ?? language;
+}
+
 export function formatDisplayDate(date: Date, locale: string = 'en'): string {
   const options: Intl.DateTimeFormatOptions = {
     weekday: 'long',
@@ -173,7 +194,8 @@ export function formatDisplayDate(date: Date, locale: string = 'en'): string {
     day: 'numeric'
   };
   
-  return new Intl.DateTimeFormat(locale, options).format(date);
+  const bcp47Locale = LOCALE_MAP[locale] ?? locale;
+  return new Intl.DateTimeFormat(bcp47Locale, options).format(date);
 }
 
 /**
@@ -194,4 +216,27 @@ export function getRelativeTimeString(date: Date, baseDate: Date = new Date()): 
   } else {
     return `${Math.abs(diffInDays)} days ago`;
   }
+}
+
+/**
+ * Return the liturgical colour hex string for a given date,
+ * derived from the current liturgical season.
+ *
+ * Colour mapping follows traditional Western usage:
+ *   - Advent / Lent → purple
+ *   - Christmas / Easter → gold / white
+ *   - Ordinary Time → green
+ *   - Pentecost → red
+ */
+export function getLiturgicalColor(date: Date): string {
+  const season = getLiturgicalSeason(date);
+  const colorMap: Record<string, string> = {
+    Advent: '#800080',    // purple
+    Christmas: '#FFD700', // gold
+    Lent: '#800080',      // purple
+    Easter: '#FFD700',    // gold
+    Ordinary: '#008000',  // green
+    Pentecost: '#FF0000', // red
+  };
+  return colorMap[season] ?? '#008000';
 }

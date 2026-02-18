@@ -369,6 +369,76 @@
         "updatedAt": "2024-01-01T00:00:00Z",
         "version": 1
       }
+    },
+    {
+      "id": "confession",
+      "title": "Üldine pihtimus",
+      "category": "liturgical",
+      "content": "Kõigeväeline ja halastusrikas Isa, me oleme eksinud ja kõrvale kaldunud Sinu teedelt nagu eksinud lambad. Me oleme liiga palju järginud oma südamete soove ja ihasid. Me oleme rikkunud Sinu pühasid seadusi. Me oleme jätnud tegemata need asjad, mida me oleksime pidanud tegema; ja me oleme teinud neid asju, mida me ei oleks pidanud tegema; ja meis ei ole tervist. Aga Sina, oo Issand, halasta meie, viletsate patustajate peale. Säästa neid, oo Jumal, kes tunnistavad oma süüd. Taasta need, kes kahetsevad; vastavalt Sinu tõotustele, mis on antud inimkonnale Kristuses Jeesuses, meie Issandas. Ja anna, oo halastusrikas Isa, Tema pärast; et me edaspidi elaksime jumalakartlikku, õiget ja kainust elu, Sinu püha Nime auks. Aamen.",
+      "source": "Book of Common Prayer",
+      "tags": ["pihtimus", "kahetsus", "igapäevane-palve"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "benedictus",
+      "title": "Benedictus (Sakariase laul)",
+      "category": "liturgical",
+      "content": "Kiidetud olgu Issand, Iisraeli Jumal, sest ta on tulnud oma rahva juurde ja lunastanud nad; ja on meile tõstnud vägevat päästet oma sulase Taaveti soost; nagu ta on rääkinud oma pühade prohvetite suu läbi, kes on olnud maailma algusest: et meid päästetaks meie vaenlaste käest ja kõigi nende käest, kes meid vihkavad; et ta näitaks halastust meie esiisadele ja mäletaks oma püha lepingut; vandeks, mille ta vandus meie esiisa Aabrahamile, et ta annab meile; et me, olles päästetud oma vaenlaste käest, teeniks teda kartuseta; pühaduses ja õiguses tema ees kõik meie elupäevad. Ja sina, laps, sind nimetatakse Kõigekõrgema prohvetiks, sest sa lähed Issanda ees tema teed valmistama; andma tema rahvale päästmise tunnetust nende pattude andeksandmiseks, meie Jumala südamliku halastuse pärast; mille läbi kõrgustest koidu päike on meid tulnud vaatama; valgustama neid, kes istuvad pimeduses ja surma varjus, ja juhtima meie jalgu rahu teele.",
+      "source": "Luuka 1:68-79",
+      "tags": ["kantik", "sakarias", "hommikupalve", "igapäevane-palve"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "magnificat",
+      "title": "Magnificat (Maarja laul)",
+      "category": "liturgical",
+      "content": "Minu hing ülistab Issandat ja mu vaim rõõmutseb Jumalast, minu Päästjast. Sest ta on vaadanud oma teenija madalust. Sest vaata, nüüdsest peale kiidavad mind õndsaks kõik sugupõlved. Sest Vägev on teinud mulle suuri asju, ja püha on tema Nimi. Ja tema halastus on põlvest põlve nende üle, kes teda kardavad. Ta on näidanud väge oma käsivarres; ta on pillutanud need, kes on uhked oma südame mõtetes. Ta on tõuganud maha vägevad oma troonidelt ja ülendanud alandlikke. Ta on täitnud näljased heade asjadega ja rikkad saatnud ära tühjalt. Ta on mäletanud oma halastust ja aidanud oma sulast Iisraeli, nagu ta tõotas meie esiisadele, Aabrahamile ja tema seemele igavesti.",
+      "source": "Luuka 1:46-55",
+      "tags": ["kantik", "Maria", "õhtupalve", "igapäevane-palve"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "nunc-dimittis",
+      "title": "Nunc Dimittis (Siimeoni laul)",
+      "category": "liturgical",
+      "content": "Issand, nüüd lased sa oma sulase rahus minna, nagu sa oled lubanud. Sest minu silmad on näinud sinu päästet, mille sa oled valmistanud kõigi rahvaste nähes; valguseks, mis valgustab paganaid, ja auks sinu rahvale Iisraelile.",
+      "source": "Luuka 2:29-32",
+      "tags": ["kantik", "siimeon", "õhtupalve", "igapäevane-palve"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "st-michael-prayer",
+      "title": "Palve Püha Miikaeli poole",
+      "category": "liturgical",
+      "content": "Püha Miikael Peaingel, kaitse meid lahingu päeval. Ole meie kaitseks kuradi kurjuse ja kiusatuste vastu. Palume alandlikult, et Jumal teda noomiks; ja sina, oo taevase väe Vürst, Jumala väe läbi, tõuka põrgusse Saatan ja kõik kurjad vaimud, kes maailmas ringi hulkuvad, otsides hingede hävitamist. Aamen.",
+      "source": "Paavst Leo XIII, 1886",
+      "tags": ["püha-miikael", "peaingel", "kaitse", "vaimulik-sõda"],
+      "language": "et",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
     }
   ]
 }

@@ -22,7 +22,8 @@ import {
   parseISODate,
   getLiturgicalSeason,
   getLiturgicalColor,
-  formatDateToISO
+  formatDateToISO,
+  getBcp47Locale,
 } from '../utils/dateUtils';
 
 type DailyReadingsScreenNavigationProp = StackNavigationProp<TabParamList, 'DailyReadings'>;
@@ -118,7 +119,7 @@ export default function DailyReadingsScreen() {
   };
 
   const openBibleLink = (reference: string) => {
-    const url = getBibleGatewayUrl(reference);
+    const url = getBibleGatewayUrl(reference, currentLanguage);
     Linking.openURL(url).catch(err => console.error('Failed to open Bible link:', err));
   };
 
@@ -191,7 +192,7 @@ export default function DailyReadingsScreen() {
                 size="small"
               />
               <Text style={styles.monthText}>
-                {currentMonth.toLocaleDateString(currentLanguage, { month: 'long', year: 'numeric' })}
+                {currentMonth.toLocaleDateString(getBcp47Locale(currentLanguage), { month: 'long', year: 'numeric' })}
               </Text>
               <PrimaryButton
                 title="→"

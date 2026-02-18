@@ -131,6 +131,7 @@
     "title": "Araw-araw na Pagbabasa",
     "todaysReadings": "Mga Pagbabasa Ngayong Araw",
     "selectDate": "Pumili ng Petsa",
+    "tapToRead": "I-tap upang basahin ang buong pagbabasa",
     "oldTestament": "Lumang Tipan",
     "psalm": "Awit",
     "newTestament": "Bagong Tipan",
@@ -195,7 +196,12 @@
     "languages": {
       "en": "Ingles",
       "tl": "Tagalog",
-      "et": "Estonian"
+      "et": "Estonian",
+      "es": "Espanyol",
+      "it": "Italyano",
+      "fr": "Pranses",
+      "de": "Aleman",
+      "pl": "Polako"
     },
     "fontSize": {
       "title": "Laki ng Font",
@@ -285,6 +291,13 @@
     "thisYear": "Taong Ito"
   },
   "liturgical": {
+    "advent": "Adbento",
+    "christmas": "Pasko",
+    "epiphany": "Epipaniya",
+    "lent": "Kuwaresma",
+    "easter": "Pasko ng Pagkabuhay",
+    "pentecost": "Pentekostes",
+    "ordinary": "Ordinaryong Panahon",
     "seasons": {
       "advent": "Adbento",
       "christmas": "Pasko",
@@ -352,12 +365,6 @@
     "offlineContent": "Offline na Content",
     "syncWhenOnline": "Mag-sync kapag online"
   },
-  "dailyReadings": "Araw-araw na Pagbabasa",
-  "goToToday": "Pumunta sa Ngayon",
-  "goToLatest": "Pumunta sa Pinakabago",
-  "loadingReading": "Naglo-load ng pagbabasa...",
-  "noReadingAvailable": "Walang nilalaman sa petsang ito",
-  "failedToLoadReading": "Hindi na-load ang pagbabasa",
   "prayerJournal": {
     "title": "Talaarawan ng Panalangin",
     "comingSoon": "Malapit Na",
@@ -369,6 +376,80 @@
     "pdfGuide": "Prayer Guide PDF",
     "page": "Pahina"
   },
+  "dailyReadings": "Pang-araw-araw na Debosyon",
+  "dailyDevotions": "Pang-araw-araw na Debosyon",
+  "devotions": {
+    "title": "Pang-araw-araw na Debosyon",
+    "morning": "Debosyon sa Umaga",
+    "morningSubtitle": "Simulan ang iyong araw",
+    "noon": "Debosyon sa Tanghali",
+    "noonSubtitle": "Huminto at magnilay",
+    "evening": "Debosyon sa Gabi",
+    "eveningSubtitle": "Tapusin ang iyong araw",
+    "family": "Debosyon ng Pamilya",
+    "familySubtitle": "Sama-samang manalangin",
+    "scriptures": "Mga Babasahin mula sa Kasulatan",
+    "prayers": "Mga Panalangin",
+    "reflection": "Pagninilay",
+    "viewAll": "Tingnan Lahat ng Debosyon",
+    "selectTime": "Pumili ng Oras ng Araw",
+    "noDevotions": "Walang debosyon na magagamit para sa petsang ito",
+    "loadingDevotions": "Nilo-load ang mga debosyon...",
+    "bibleGateway": {
+      "errorMessage": "Suriin ang iyong koneksyon sa internet at subukan muli."
+    },
+    "readings": {
+      "firstReading": "Unang Pagbasa",
+      "psalm": "Salmo",
+      "secondReading": "Ikalawang Pagbasa",
+      "gospel": "Ebanghelyo"
+    },
+    "sections": {
+      "signOfCross": "Tanda ng Krus",
+      "confession": "Pagkumpisal",
+      "gloriaPatri": "Gloria Patri",
+      "benedictus": "Kantiko: Benedictus",
+      "magnificat": "Kantiko: Magnificat",
+      "nuncDimittis": "Kantiko: Nunc Dimittis",
+      "apostlesCreed": "Kredo ng mga Apostol",
+      "lordsPlayer": "Ang Panalangin ng Panginoon",
+      "stMichaelPrayer": "Panalangin kay San Miguel",
+      "prayers": "Mga Panalangin"
+    },
+    "timeTitle": {
+      "morningPrayer": "Panalangin sa Umaga",
+      "middayPrayer": "Panalangin sa Tanghali",
+      "eveningPrayer": "Panalangin sa Gabi",
+      "familyDevotion": "Debosyon ng Pamilya",
+      "prayer": "Panalangin"
+    },
+    "rubrics": {
+      "readingFromScripture": "Isang Pagbasa mula sa Banal na Kasulatan",
+      "holyGospel": "Ang Banal na Ebanghelyo",
+      "officiantBegins": "Nagsisimula ang nangunguna:",
+      "familyGathers": "Nagtitipon ang pamilya at nagsisimula ang isang miyembro:",
+      "freePrayerIntercessions": "Maaaring sumunod ang malayang panalangin at pamamagitan.",
+      "confessionRubric": "Maaaring sabay-sabay sabihin ang sumusunod na pagkumpisal:"
+    },
+    "content": {
+      "signOfCross": "✠ Sa Ngalan ng Ama, at ng Anak, at ng Espiritu Santo. Amen.",
+      "morningOpening": "O Panginoon, buksan Mo ang aming mga labi.\nAt ang aming bibig ay magpapahayag ng Iyong papuri.\n\nO Diyos, magmadali Ka upang kami ay iligtas.\nO Panginoon, magmadali Ka upang kami ay tulungan.\n\nLuwalhati sa Ama, at sa Anak, at sa Espiritu Santo: kapara nang sa simula, ngayon at magpakailanman, walang katapusan. Amen.\n\nPurihin ang Panginoon.\nAng Ngalan ng Panginoon ay purihin.",
+      "middayOpening": "O Diyos, magmadali Ka upang kami ay iligtas.\nO Panginoon, magmadali Ka upang kami ay tulungan.\n\nLuwalhati sa Ama, at sa Anak, at sa Espiritu Santo: kapara nang sa simula, ngayon at magpakailanman, walang katapusan. Amen.",
+      "eveningOpening": "O Panginoon, buksan Mo ang aming mga labi.\nAt ang aming bibig ay magpapahayag ng Iyong papuri.\n\nO Diyos, magmadali Ka upang kami ay iligtas.\nO Panginoon, magmadali Ka upang kami ay tulungan.\n\nLuwalhati sa Ama, at sa Anak, at sa Espiritu Santo: kapara nang sa simula, ngayon at magpakailanman, walang katapusan. Amen.\n\nPurihin ang Panginoon.\nAng Ngalan ng Panginoon ay purihin.",
+      "familyOpening": "Ang Panginoong Makapangyarihan ay magbigay sa atin ng mapayapang gabi at ganap na katapusan.\nAmen.\n\nAng aming tulong ay nasa Pangalan ng Panginoon;\nAng lumikha ng langit at lupa.",
+      "prayersVersicles": "O Panginoon, dinggin Mo ang aming panalangin;\nAt ang aming daing ay makarating sa Iyo.\n\nManalangin tayo."
+    }
+  },
+  "calendar": "Kalendaryo",
+  "daily": "Araw-araw",
+  "hasReadings": "May Babasahin",
+  "liturgicalSeason": "Panahon ng Liturhiya",
+  "readOnline": "Basahin Online",
+  "goToToday": "Pumunta sa Ngayon",
+  "goToLatest": "Pumunta sa Pinakabago",
+  "loadingReading": "Nilo-load...",
+  "noReadingAvailable": "Walang nilalaman sa petsang ito",
+  "failedToLoadReading": "Hindi na-load ang nilalaman",
   "Ordinary": "Ordinaryong Panahon",
   "Advent": "Adbento",
   "Christmas": "Pasko",

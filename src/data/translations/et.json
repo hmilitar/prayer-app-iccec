@@ -131,6 +131,7 @@
     "title": "Igapäevased lugemised",
     "todaysReadings": "Tänased lugemised",
     "selectDate": "Vali kuupäev",
+    "tapToRead": "Puudutage täieliku lugemise avamiseks",
     "oldTestament": "Vana Testament",
     "psalm": "Psalm",
     "newTestament": "Uus Testament",
@@ -195,7 +196,12 @@
     "languages": {
       "en": "Inglise",
       "tl": "Tagalog",
-      "et": "Eesti"
+      "et": "Eesti",
+      "es": "Hispaania",
+      "it": "Itaalia",
+      "fr": "Prantsuse",
+      "de": "Saksa",
+      "pl": "Poola"
     },
     "fontSize": {
       "title": "Fondi suurus",
@@ -285,6 +291,13 @@
     "thisYear": "See aasta"
   },
   "liturgical": {
+    "advent": "Advent",
+    "christmas": "Jõulud",
+    "epiphany": "Ilmumine",
+    "lent": "Paastuaeg",
+    "easter": "Ülestõusmine",
+    "pentecost": "Nelipüha",
+    "ordinary": "Tavaline aeg",
     "seasons": {
       "advent": "Advent",
       "christmas": "Jõulud",
@@ -352,12 +365,6 @@
     "offlineContent": "Ühenduseta sisu",
     "syncWhenOnline": "Sünkroniseeritakse ühenduse korral"
   },
-  "dailyReadings": "Igapäevased lugemised",
-  "goToToday": "Mine tänasele",
-  "goToLatest": "Mine viimastele",
-  "loadingReading": "Lugemise laadimine...",
-  "noReadingAvailable": "Sellel kuupäeval sisu puudub",
-  "failedToLoadReading": "Lugemise laadimine ebaõnnestus",
   "prayerJournal": {
     "title": "Palvepäevik",
     "comingSoon": "Tulekul",
@@ -369,6 +376,80 @@
     "pdfGuide": "Palvejuhend PDF",
     "page": "Lehekülg"
   },
+  "dailyReadings": "Igapäevased palvused",
+  "dailyDevotions": "Igapäevased palvused",
+  "devotions": {
+    "title": "Igapäevased palvused",
+    "morning": "Hommikune palvus",
+    "morningSubtitle": "Alusta oma päeva",
+    "noon": "Keskpäevapalvus",
+    "noonSubtitle": "Peatu ja mõtiskle",
+    "evening": "Õhtune palvus",
+    "eveningSubtitle": "Lõpeta oma päev",
+    "family": "Perepalvus",
+    "familySubtitle": "Palvetage koos",
+    "scriptures": "Pühakirjalugemised",
+    "prayers": "Palved",
+    "reflection": "Mõtisklus",
+    "viewAll": "Vaata kõiki palvusi",
+    "selectTime": "Vali päeva aeg",
+    "noDevotions": "Selleks kuupäevaks pole palvusi saadaval",
+    "loadingDevotions": "Palvuste laadimine...",
+    "bibleGateway": {
+      "errorMessage": "Kontrollige oma internetiühendust ja proovige uuesti."
+    },
+    "readings": {
+      "firstReading": "Esimene lugemine",
+      "psalm": "Psalm",
+      "secondReading": "Teine lugemine",
+      "gospel": "Evangeelium"
+    },
+    "sections": {
+      "signOfCross": "Ristimärk",
+      "confession": "Patutunnistus",
+      "gloriaPatri": "Gloria Patri",
+      "benedictus": "Kantik: Benedictus",
+      "magnificat": "Kantik: Magnificat",
+      "nuncDimittis": "Kantik: Nunc Dimittis",
+      "apostlesCreed": "Apostlik usutunnistus",
+      "lordsPlayer": "Meie Isa palve",
+      "stMichaelPrayer": "Palve Püha Miikaeli poole",
+      "prayers": "Palved"
+    },
+    "timeTitle": {
+      "morningPrayer": "Hommikupalve",
+      "middayPrayer": "Keskpäevapalve",
+      "eveningPrayer": "Õhtupalve",
+      "familyDevotion": "Perepalvus",
+      "prayer": "Palve"
+    },
+    "rubrics": {
+      "readingFromScripture": "Lugemine Pühast Kirjast",
+      "holyGospel": "Püha Evangeelium",
+      "officiantBegins": "Juhataja alustab:",
+      "familyGathers": "Pere koguneb ja üks liige alustab:",
+      "freePrayerIntercessions": "Siin võib järgneda vaba palve ja eestpalved.",
+      "confessionRubric": "Järgmise patutunnistuse võib ühiselt lausuda:"
+    },
+    "content": {
+      "signOfCross": "✠ Isa ja Poja ja Püha Vaimu nimel. Aamen.",
+      "morningOpening": "Issand, ava meie huuled.\nJa meie suu kuulutagu Sinu kiitust.\n\nJumal, tõtta meid päästma.\nIssand, rutta meile appi.\n\nAu olgu Isale ja Pojale ja Pühale Vaimule: nõnda nagu alguses oli, nüüd on ja jääb igavesest ajast igavesti. Aamen.\n\nKiitke Issandat.\nIssanda nimi olgu kiidetud.",
+      "middayOpening": "Jumal, tõtta meid päästma.\nIssand, rutta meile appi.\n\nAu olgu Isale ja Pojale ja Pühale Vaimule: nõnda nagu alguses oli, nüüd on ja jääb igavesest ajast igavesti. Aamen.",
+      "eveningOpening": "Issand, ava meie huuled.\nJa meie suu kuulutagu Sinu kiitust.\n\nJumal, tõtta meid päästma.\nIssand, rutta meile appi.\n\nAu olgu Isale ja Pojale ja Pühale Vaimule: nõnda nagu alguses oli, nüüd on ja jääb igavesest ajast igavesti. Aamen.\n\nKiitke Issandat.\nIssanda nimi olgu kiidetud.",
+      "familyOpening": "Kõigeväeline Issand andku meile rahulik öö ja täiuslik lõpp.\nAamen.\n\nMeie abi on Issanda nimes;\nKes on teinud taeva ja maa.",
+      "prayersVersicles": "Issand, kuule meie palvet;\nJa meie hüüd jõudku Sinu ette.\n\nPalvetagem."
+    }
+  },
+  "calendar": "Kalender",
+  "daily": "Igapäevane",
+  "hasReadings": "Sisaldab lugemisi",
+  "liturgicalSeason": "Kirikuaasta aeg",
+  "readOnline": "Loe veebis",
+  "goToToday": "Mine tänase juurde",
+  "goToLatest": "Mine viimase juurde",
+  "loadingReading": "Laadimine...",
+  "noReadingAvailable": "Sellel kuupäeval sisu puudub",
+  "failedToLoadReading": "Sisu laadimine ebaõnnestus",
   "Ordinary": "Tavaline aeg",
   "Advent": "Advent",
   "Christmas": "Jõulud",

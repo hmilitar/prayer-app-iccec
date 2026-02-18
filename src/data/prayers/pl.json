@@ -1,0 +1,314 @@
+{
+  "prayers": [
+    {
+      "id": "lords-prayer",
+      "title": "Ojcze Nasz",
+      "category": "liturgical",
+      "content": "Ojcze nasz, któryś jest w niebie, święć się imię Twoje. Przyjdź królestwo Twoje. Bądź wola Twoja, jako w niebie tak i na ziemi. Chleba naszego powszedniego daj nam dzisiaj. I odpuść nam nasze winy, jako i my odpuszczamy naszym winowajcom. I nie wódź nas na pokuszenie, ale nas zbaw ode złego. Bo Twoje jest królestwo i potęga, i chwała na wieki. Amen.",
+      "source": "Mateusza 6:9-13",
+      "tags": ["tradycyjny", "jezus", "podstawowy"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "gloria-patri",
+      "title": "Chwała Ojcu",
+      "category": "liturgical",
+      "content": "Chwała Ojcu i Synowi, i Duchowi Świętemu. Jak była na początku, teraz i zawsze, i na wieki wieków. Amen.",
+      "source": "Tradycyjny",
+      "tags": ["tradycyjny", "trójca", "doksologia"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "apostles-creed",
+      "title": "Skład Apostolski",
+      "category": "liturgical",
+      "content": "Wierzę w Boga, Ojca wszechmogącego, Stworzyciela nieba i ziemi. I w Jezusa Chrystusa, Syna Jego jedynego, Pana naszego, który się począł z Ducha Świętego, narodził się z Maryi Panny, umęczon pod Poncjuszem Piłatem, ukrzyżowan, umarł i pogrzebion. Zstąpił do piekieł. Trzeciego dnia zmartwychwstał. Wstąpił na niebiosa, siedzi po prawicy Boga Ojca wszechmogącego. Stamtąd przyjdzie sądzić żywych i umarłych. Wierzę w Ducha Świętego, święty Kościół powszechny, świętych obcowanie, grzechów odpuszczenie, ciała zmartwychwstanie, żywot wieczny. Amen.",
+      "source": "Tradycyjny",
+      "tags": ["wyznanie-wiary", "wiara", "podstawowy"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "come-holy-spirit",
+      "title": "Przyjdź, Duchu Święty",
+      "category": "charismatic",
+      "content": "Przyjdź, Duchu Święty, napełnij serca Twoich wiernych i zapal w nich ogień Twojej miłości. Ześlij Ducha Twojego, a zostaną stworzone. I odnowisz oblicze ziemi. Boże, któryś przez światłość Ducha Świętego pouczył serca wiernych, daj nam w tymże Duchu poznać co jest prawe i Jego pociechą zawsze się radować. Przez Chrystusa, Pana naszego. Amen.",
+      "source": "Tradycyjna modlitwa charyzmatyczna",
+      "tags": ["duch-święty", "charyzmatyczny", "zesłanie", "odnowa"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "morning-prayer",
+      "title": "Modlitwa poranna",
+      "category": "morning",
+      "content": "Wszechmogący Boże, dziękujemy Ci za dar nowego dnia. Gdy słońce wschodzi, niech Twoje światło oświeca nasze kroki i prowadzi nas. Daj nam mądrość w podejmowaniu decyzji, siłę wobec wyzwań i pokój w naszych sercach. Pomóż nam wiernie Ci służyć i miłować naszych bliźnich. Przez Jezusa Chrystusa, Pana naszego. Amen.",
+      "source": "Tradycja Book of Common Prayer",
+      "tags": ["poranek", "codzienny", "prowadzenie"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "evening-prayer",
+      "title": "Modlitwa wieczorna",
+      "category": "evening",
+      "content": "Miłosierny Boże, u końca tego dnia dziękujemy Ci za niezliczone błogosławieństwa. Przebacz nam nasze słabości i przewinienia. Obdarz nas spokojnym snem i odnów nasze dusze. Czuwaj nad naszymi bliskimi i nad wszystkimi potrzebującymi. W imię Jezusa. Amen.",
+      "source": "Tradycyjny",
+      "tags": ["wieczór", "odpoczynek", "przebaczenie"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-spiritual-gifts",
+      "title": "Modlitwa o dary duchowe",
+      "category": "charismatic",
+      "content": "Ojcze niebieski, dziękujemy Ci za dary Twojego Ducha Świętego. Daj nam mądrość, by używać tych darów do budowania Twojego Kościoła i szerzenia Twojego królestwa. Napełnij nas na nowo Twoim Duchem, abyśmy mogli służyć w mocy i ukazywać Twoją miłość światu. Przez Jezusa Chrystusa, Pana naszego. Amen.",
+      "source": "1 Koryntian 12-14",
+      "tags": ["dary-duchowe", "charyzmatyczny", "służba", "duch-święty"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-before-communion",
+      "title": "Modlitwa przed Komunią Świętą",
+      "category": "sacramental",
+      "content": "Wszechmogący Boże, przed którym wszystkie serca są otwarte, wszystkie pragnienia znane i żadna tajemnica nie jest ukryta: oczyść myśli naszych serc natchnieniem Twojego Ducha Świętego, abyśmy mogli Cię doskonale miłować i godnie wielbić Twoje święte imię; przez Chrystusa, Pana naszego. Amen.",
+      "source": "Tradycja Book of Common Prayer",
+      "tags": ["komunia", "eucharystia", "sakramentalny", "przygotowanie"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-before-meals",
+      "title": "Modlitwa przed posiłkiem",
+      "category": "thanksgiving",
+      "content": "Pobłogosław nas, o Panie, i te dary, które z Twojej hojności będziemy spożywać. Przez Chrystusa, Pana naszego. Amen.",
+      "source": "Tradycyjny",
+      "tags": ["posiłek", "błogosławieństwo", "wdzięczność"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-peace",
+      "title": "Modlitwa o pokój",
+      "category": "intercession",
+      "content": "Panie, uczyń z nas narzędzia Twojego pokoju. Gdzie jest nienawiść, pozwól nam siać miłość; gdzie jest krzywda – przebaczenie; gdzie jest zwątpienie – wiarę; gdzie jest rozpacz – nadzieję; gdzie jest ciemność – światło; gdzie jest smutek – radość. O Boski Mistrzu, spraw, abyśmy nie tyle szukali pocieszenia, ile pocieszali; zrozumienia, ile rozumieli; miłości, ile miłowali. Bo dając – otrzymujemy; przebaczając – zyskujemy przebaczenie; a umierając – rodzimy się do życia wiecznego. Amen.",
+      "source": "Modlitwa Świętego Franciszka",
+      "tags": ["pokój", "służba", "franciszek"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-healing",
+      "title": "Modlitwa o uzdrowienie",
+      "category": "intercession",
+      "content": "Ojcze niebieski, przychodzimy do Ciebie szukając Twojego uzdrawiającego dotyku. Ty jesteś wielkim Lekarzem i nic nie jest dla Ciebie niemożliwe. Modlimy się za chorych na ciele, umyśle lub duchu. Przywróć ich do zdrowia według Twojej doskonałej woli. Przez Jezusa Chrystusa, Pana naszego. Amen.",
+      "source": "Współczesny",
+      "tags": ["uzdrowienie", "choroba", "pociecha"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-of-confession",
+      "title": "Modlitwa pokutna",
+      "category": "confession",
+      "content": "Miłosierny Boże, wyznajemy, że zgrzeszyliśmy przeciw Tobie myślą, mową i uczynkiem, tym co uczyniliśmy i tym, czego nie uczyniliśmy. Nie kochaliśmy Cię z całego serca; nie kochaliśmy bliźnich jak siebie samych. Szczerze żałujemy i pokornie prosimy o przebaczenie. Dla Twojego Syna, Jezusa Chrystusa, zmiłuj się nad nami i przebacz nam. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["spowiedź", "skrucha", "przebaczenie"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-of-thanksgiving",
+      "title": "Modlitwa dziękczynna",
+      "category": "thanksgiving",
+      "content": "Wszechmogący Boże, Ojcze wszelkiego miłosierdzia, my, niegodni słudzy Twoi, dziękujemy Ci pokornie za całą Twoją dobroć i miłość do nas i do wszystkich, których stworzyłeś. Wysławiamy Cię za nasze stworzenie, zachowanie i wszystkie błogosławieństwa tego życia; zwłaszcza za Twoją niezmierzoną miłość w odkupieniu świata przez naszego Pana Jezusa Chrystusa. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["dziękczynienie", "wdzięczność", "uwielbienie"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "serenity-prayer",
+      "title": "Modlitwa o pogodę ducha",
+      "category": "contemporary",
+      "content": "Boże, użycz mi pogody ducha, abym godził się z tym, czego nie mogę zmienić, odwagi, abym zmieniał to, co mogę zmienić, i mądrości, abym odróżniał jedno od drugiego. Żyjąc dniem dzisiejszym; ciesząc się chwilą obecną; przyjmując trudności jako drogę do pokoju. Amen.",
+      "source": "Reinhold Niebuhr",
+      "tags": ["pogoda-ducha", "akceptacja", "mądrość"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-guidance",
+      "title": "Modlitwa o prowadzenie",
+      "category": "personal",
+      "content": "Kochający Boże, Ty znasz drogę, która przed nami leży. Gdy jesteśmy niepewni, bądź naszym przewodnikiem. Gdy się boimy, bądź naszą siłą. Gdy jesteśmy przytłoczeni, daj nam Twoją mądrość. Pomóż nam zaufać Twojemu doskonałemu czasowi i kroczyć w wierze. Przez Jezusa Chrystusa, Pana naszego. Amen.",
+      "source": "Współczesny",
+      "tags": ["prowadzenie", "mądrość", "zaufanie"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-family",
+      "title": "Modlitwa za rodzinę",
+      "category": "intercession",
+      "content": "Ojcze niebieski, dziękujemy Ci za dar rodziny. Pobłogosław nasze domy swoją obecnością i napełnij je miłością, radością i pokojem. Pomóż nam być cierpliwymi wobec siebie, szybkimi w przebaczaniu i wzajemnym wspieraniu się. Chroń nasze dzieci i prowadź je Twoimi drogami. Przez Jezusa Chrystusa, Pana naszego. Amen.",
+      "source": "Współczesny",
+      "tags": ["rodzina", "dom", "dzieci"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-world",
+      "title": "Modlitwa za świat",
+      "category": "intercession",
+      "content": "Wszechmogący Boże, Władco wszystkich narodów, modlimy się za nasz świat. Przynieś pokój, gdzie jest konflikt, nadzieję, gdzie jest rozpacz, i uzdrowienie, gdzie jest cierpienie. Prowadź naszych przywódców mądrością i uczciwością. Przyjdź królestwo Twoje na ziemi, jako i w niebie. Przez Jezusa Chrystusa, Pana naszego. Amen.",
+      "source": "Współczesny",
+      "tags": ["świat", "pokój", "sprawiedliwość"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-strength",
+      "title": "Modlitwa o siłę",
+      "category": "personal",
+      "content": "Panie Boże, gdy jesteśmy słabi, Ty jesteś silny. Gdy jesteśmy zmęczeni, dajesz nam odpoczynek. Gdy jesteśmy przytłoczeni, jesteś naszą ucieczką. Daj nam siłę, której potrzebujemy na ten dzień. Odnów naszego ducha i odśwież nasze dusze. Przez Jezusa Chrystusa, Pana naszego. Amen.",
+      "source": "Współczesny",
+      "tags": ["siła", "słabość", "ucieczka"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "noon-prayer",
+      "title": "Modlitwa południowa",
+      "category": "noon",
+      "content": "Panie Jezu Chryste, o tej godzinie dnia zatrzymujemy się w naszych zajęciach, by przypomnieć sobie o Twojej obecności. Odnów nasze siły do zadań, które jeszcze przed nami stoją. Pomóż nam kroczyć z Tobą przez resztę tego dnia. W Twoje imię się modlimy. Amen.",
+      "source": "Tradycja liturgiczna",
+      "tags": ["południe", "przerwa", "odnowa"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "family-prayer",
+      "title": "Modlitwa rodzinna",
+      "category": "family",
+      "content": "Ojcze niebieski, dziękujemy Ci za dar rodziny. Pobłogosław nasze domy swoją obecnością i napełnij je miłością, radością i pokojem. Chroń nasze dzieci i prowadź je Twoimi drogami. Wzmocnij więzi między nami. Przez Jezusa Chrystusa, Pana naszego. Amen.",
+      "source": "Współczesny",
+      "tags": ["rodzina", "dom", "dzieci"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-before-exam",
+      "title": "Modlitwa przed egzaminem",
+      "category": "occasions",
+      "content": "Panie, proszę o Twoje błogosławieństwo, gdy przygotowuję się do tego egzaminu. Uspokój moje nerwy i rozjaśnij mój umysł. Pomóż mi przypomnieć sobie to, czego się nauczyłem, i dać z siebie wszystko. Amen.",
+      "source": "Współczesny",
+      "tags": ["student", "egzamin", "spokój", "okazje"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-travel",
+      "title": "Modlitwa podróżnych",
+      "category": "occasions",
+      "content": "Wszechmogący Boże, prosimy o Twoją ochronę w tej podróży. Strzeż wszystkich podróżnych od niebezpieczeństw i wypadków. Obdarz ich bezpieczną podróżą i radosnym powrotem do bliskich. Przez Chrystusa, Pana naszego. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["podróż", "ochrona", "bezpieczeństwo", "okazje"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-new-job",
+      "title": "Modlitwa o nową pracę",
+      "category": "occasions",
+      "content": "Ojcze niebieski, dziękuję Ci za tę nową możliwość. Prowadź mnie, gdy zaczynam ten nowy rozdział mojego życia. Daj mi mądrość do nauki, łaskę w kontaktach z ludźmi i siłę do stawiania czoła wyzwaniom. W imię Jezusa. Amen.",
+      "source": "Współczesny",
+      "tags": ["praca", "początek", "prowadzenie", "okazje"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "prayer-for-anxiety",
+      "title": "Modlitwa w chwilach lęku",
+      "category": "occasions",
+      "content": "Boże pokoju, moje serce jest niespokojne, a umysł pełen niepokoju. Przynieś swój spokój do mojej wzburzonej duszy. Pomóż mi zaufać Tobie z całego serca. Przypomnij mi, że Ty panasz nad wszystkim i że Twoje plany wobec mnie są dobre. Napełnij moje serce swoim pokojem, który przewyższa wszelkie zrozumienie. W imię Jezusa. Amen.",
+      "source": "Współczesny - na podstawie Filipian 4:6-7",
+      "tags": ["lęk", "pokój", "zaufanie", "okazje"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "lutheri-hommikupalve",
+      "title": "Poranna modlitwa Lutra",
+      "category": "liturgical",
+      "content": "Dziękuję Ci, mój niebieski Ojcze, przez Jezusa Chrystusa, Twojego drogiego Syna, żeś mnie tej nocy od wszelkiego złego i niebezpieczeństwa zachować raczył; i proszę Ciebie, abyś mnie i dnia dzisiejszego strzegł od grzechu i wszelkiego złego, aby Tobie podobało się wszelkie moje postępowanie i życie. Albowiem polecam się, ciało moje i duszę, i wszystko w Twoje ręce. Twój święty Anioł niech przy mnie będzie. Amen.",
+      "source": "Marcin Luter",
+      "tags": ["luter", "poranek", "ochrona"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "angelus",
+      "title": "Anioł Pański",
+      "category": "liturgical",
+      "content": "Anioł Pański zwiastował Pannie Maryi. I poczęła z Ducha Świętego. Zdrowaś Maryjo... Oto ja służebnica Pańska. Niech mi się stanie według słowa Twego. Zdrowaś Maryjo... A Słowo ciałem się stało. I zamieszkało między nami. Zdrowaś Maryjo... Módl się za nami, święta Boża Rodzicielko. Abyśmy się stali godnymi obietnic Chrystusowych. Módlmy się: Łaskę Twoją, prosimy Cię, Panie, racz wlać w serca nasze. Przez tegoż Chrystusa, Pana naszego. Amen.",
+      "source": "Tradycyjny",
+      "tags": ["anioł-pański", "maryja", "wcielenie"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "confession",
+      "title": "Ogólna spowiedź",
+      "category": "liturgical",
+      "content": "Wszechmogący i najmiłosierniejszy Ojcze, zbłądziliśmy i odeszliśmy od Twoich dróg jak zagubione owce. Zbyt mocno podążaliśmy za pragnieniami i pożądaniami własnych serc. Przekroczyliśmy Twoje święte prawa. Pozostawiliśmy niezbyte to, cośmy powinni byli uczynić; a uczyniiliśmy to, czegośmy nie powinni byli czynić; i nie masz zdrowia w nas. Lecz Ty, o Panie, zmiłuj się nad nami, nędznymi grzesznikami. Oszczędź, o Boże, tych, którzy wyznają swoje winy. Przywróć tych, którzy się nawracają; według Twoich obietnic danych ludzkości w Chrystusie Jezusie, Panu naszym. I dozwól, o najmiłosierniejszy Ojcze, ze względu na Niego; abyśmy odtąd wiedli życie pobożne, prawe i trzeźwe, ku chwale Twojego świętego imienia. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["spowiedź", "skrucha", "codzienna-modlitwa"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "benedictus",
+      "title": "Benedictus (Pieśń Zachariasza)",
+      "category": "liturgical",
+      "content": "Błogosławiony Pan, Bóg Izraela, bo nawiedził i odkupił lud swój; i wzbudził nam moc zbawienia w domu Dawida, sługi swego; jak zapowiedział od wieków przez usta swych świętych proroków: że nas wybawi od nieprzyjaciół i z ręki wszystkich, którzy nas nienawidzą; że okaże miłosierdzie ojcom naszym i wspomni na swoje święte przymierze; na przysięgę, którą złożył Abrahamowi, ojcu naszemu, że nam da; iż po wyzwoleniu z ręki nieprzyjaciół bez lęku służyć Mu będziemy; w świętości i sprawiedliwości przed Nim po wszystkie dni nasze. A i ty, dziecię, prorokiem Najwyższego zwane będziesz, bo pójdziesz przed Panem, torując Mu drogi; Jego ludowi dasz poznanie zbawienia przez odpuszczenie grzechów; dzięki litości serdecznej Boga naszego; przez którą nawiedzi nas Wschodzące Słońce z wysoka; by oświecić tych, co w ciemności i cieniu śmierci mieszkają, i skierować nasze kroki na drogę pokoju.",
+      "source": "Łukasza 1:68-79",
+      "tags": ["pieśń", "zachariasz", "modlitwa-poranna", "codzienna-modlitwa"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "magnificat",
+      "title": "Magnificat (Pieśń Maryi)",
+      "category": "liturgical",
+      "content": "Wielbi dusza moja Pana, i raduje się duch mój w Bogu, moim Zbawcy. Bo wejrzał na uniżenie Służebnicy swojej. Oto bowiem błogosławić mnie będą odtąd wszystkie pokolenia. Gdyż wielkie rzeczy uczynił mi Wszechmocny, a święte jest Jego imię. I Jego miłosierdzie z pokolenia na pokolenie nad tymi, co się Go boją. On okazał moc ramienia swego; rozproszył pyszniących się zamysłami serc swoich. Strącił władców z tronu, a wywyższył pokornych. Głodnych nasyca dobrami, a bogatych z niczym odprawia. Ujął się za sługą swoim, Izraelem, pomny na miłosierdzie swoje, jak przyobiecał naszym ojcom, Abrahamowi i jego potomstwu na wieki.",
+      "source": "Łukasza 1:46-55",
+      "tags": ["pieśń", "maryja", "modlitwa-wieczorna", "codzienna-modlitwa"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "nunc-dimittis",
+      "title": "Nunc Dimittis (Pieśń Symeona)",
+      "category": "liturgical",
+      "content": "Teraz, o Władco, pozwól odejść słudze Twemu w pokoju, według Twojego słowa. Bo moje oczy ujrzały Twoje zbawienie, któreś przygotował wobec wszystkich narodów; światło na oświecenie pogan i chwałę ludu Twego, Izraela.",
+      "source": "Łukasza 2:29-32",
+      "tags": ["pieśń", "symeon", "modlitwa-wieczorna", "codzienna-modlitwa"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    },
+    {
+      "id": "st-michael-prayer",
+      "title": "Modlitwa do Świętego Archanioła Michała",
+      "category": "liturgical",
+      "content": "Święty Michale Archaniele, broń nas w walce. Bądź naszą ochroną przeciwko złości i zasadzkom szatana. Niech go Bóg poskromi, pokornie prosimy; a Ty, Książę wojska niebieskiego, mocą Bożą strąć do piekła szatana i inne duchy złe, które po świecie krążą na zgubę dusz. Amen.",
+      "source": "Papież Leon XIII, 1886",
+      "tags": ["święty-michał", "archanioł", "ochrona", "walka-duchowa"],
+      "language": "pl",
+      "metadata": { "createdAt": "2024-01-01T00:00:00Z", "updatedAt": "2024-01-01T00:00:00Z", "version": 1 }
+    }
+  ]
+}
