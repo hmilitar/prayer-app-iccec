@@ -1,10 +1,18 @@
 // Date utility functions
 
 /**
- * Format a date to ISO string (YYYY-MM-DD)
+ * Format a date to ISO string (YYYY-MM-DD) using LOCAL date components.
+ *
+ * ⚠️  Do NOT use `date.toISOString()` here — that converts to UTC first,
+ * which shifts the date by one day for users in UTC+ timezones (e.g. UTC+12
+ * midnight is the previous UTC day) and causes display errors in UTC- timezones
+ * when paired with parseISODate (UTC-midnight parse → local day mismatch).
  */
 export function formatDateToISO(date: Date): string {
-  return date.toISOString().split('T')[0];
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
 }
 
 /**
@@ -15,10 +23,31 @@ export function getTodayISO(): string {
 }
 
 /**
- * Parse ISO date string to Date object
+ * Parse an ISO date string (YYYY-MM-DD) to a LOCAL-midnight Date object.
+ *
+ * ⚠️  Do NOT use `new Date(isoString)` directly — the ECMAScript spec defines
+ * date-only ISO strings (no time component) as UTC midnight. In any UTC-
+ * timezone (e.g. America/Los_Angeles, UTC-8), UTC midnight is still the
+ * *previous* calendar day locally, causing every displayed date to be one
+ * day behind. `new Date(year, month, day)` always creates local midnight.
+ *
+ * @param isoString - A date string in YYYY-MM-DD format
+ * @returns A Date at local midnight for the given calendar date
  */
 export function parseISODate(isoString: string): Date {
-  return new Date(isoString);
+  const parts = isoString.split('-');
+  if (parts.length !== 3) {
+    console.warn(`[parseISODate] Unexpected format: "${isoString}". Falling back to today.`);
+    return new Date();
+  }
+  const year = parseInt(parts[0] ?? '', 10);
+  const month = parseInt(parts[1] ?? '', 10) - 1; // JS months are 0-indexed
+  const day = parseInt(parts[2] ?? '', 10);
+  if (isNaN(year) || isNaN(month) || isNaN(day)) {
+    console.warn(`[parseISODate] Could not parse "${isoString}". Falling back to today.`);
+    return new Date();
+  }
+  return new Date(year, month, day); // local midnight — timezone-safe
 }
 
 /**
