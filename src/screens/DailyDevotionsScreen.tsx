@@ -47,6 +47,7 @@ import {
 } from '../data/devotions/devotionBuilder';
 import type { DailyDevotion, DevotionTimeOfDay, DevotionSection, DevotionReading } from '../types/Devotion';
 import type { Theme } from '../styles/theme';
+import type { SupportedLanguage } from '../types/Prayer';
 
 /** Route params optionally carry a pre-selected time of day */
 type DevotionRouteParams = {
@@ -107,24 +108,35 @@ export default function DailyDevotionsScreen() {
   const settingsKey = `${currentLanguage}-${settings?.fontSize ?? 'medium'}-${settings?.theme ?? 'light'}`;
 
   // ── Load devotion ────────────────────────────────────────────────────
+  // Track the latest language so we can detect stale async results
+  const latestLanguageRef = React.useRef(currentLanguage);
+  latestLanguageRef.current = currentLanguage;
+
   const loadDevotion = useCallback(
-    (date: string, time: DevotionTimeOfDay) => {
+    (date: string, time: DevotionTimeOfDay, language: SupportedLanguage) => {
       setLoading(true);
       try {
-        const result = buildDevotion(date, time, currentLanguage);
-        setDevotion(result);
+        const result = buildDevotion(date, time, language);
+
+        // Only apply result if the language hasn't changed since the call
+        if (latestLanguageRef.current === language) {
+          setDevotion(result);
+        }
       } catch (err) {
         console.error('Error building devotion:', err);
-        setDevotion(null);
+        if (latestLanguageRef.current === language) {
+          setDevotion(null);
+        }
       } finally {
         setLoading(false);
       }
     },
-    [currentLanguage],
+    [], // No dependencies — uses latestLanguageRef for staleness check
   );
 
+  // Rebuild devotion whenever the date, time, or language changes
   useEffect(() => {
-    loadDevotion(selectedDate, selectedTime);
+    loadDevotion(selectedDate, selectedTime, currentLanguage);
   }, [selectedDate, selectedTime, currentLanguage, loadDevotion]);
 
   // Apply route param time-of-day if changed externally
@@ -157,9 +169,9 @@ export default function DailyDevotionsScreen() {
 
   const handleRefresh = useCallback(async () => {
     setRefreshing(true);
-    loadDevotion(selectedDate, selectedTime);
+    loadDevotion(selectedDate, selectedTime, currentLanguage);
     setRefreshing(false);
-  }, [selectedDate, selectedTime, loadDevotion]);
+  }, [selectedDate, selectedTime, currentLanguage, loadDevotion]);
 
   /** Open a scripture reference in the in-app Bible Gateway modal */
   const openBibleLink = useCallback((ref: string) => {

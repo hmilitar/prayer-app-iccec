@@ -1,6 +1,6 @@
 // Custom hook for data management
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Prayer, SupportedLanguage } from '../types/Prayer';
 import { DailyReading } from '../types/Reading';
 import { DailyDevotion, DevotionDay } from '../types/Devotion';
@@ -12,15 +12,21 @@ export function useData() {
   const [devotions, setDevotions] = useState<DevotionDay[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [lastLoadedLanguage, setLastLoadedLanguage] = useState<SupportedLanguage | null>(null);
+
+  // Use a ref for lastLoadedLanguage so the loadPrayers callback always
+  // sees the current value — avoids stale-closure caching bugs that
+  // caused prayers to "stick" when switching languages back and forth.
+  const lastLoadedLanguageRef = useRef<SupportedLanguage | null>(null);
+  const prayersCountRef = useRef(0);
 
   // Use useMemo to create dataService only once
   const [dataService] = useState(() => new DataService(new LocalDataSource()));
 
   const loadPrayers = useCallback(async (language: SupportedLanguage, forceReload: boolean = false) => {
-    // Force reload if language changed
-    const languageChanged = lastLoadedLanguage !== null && lastLoadedLanguage !== language;
-    const shouldReload = forceReload || languageChanged || prayers.length === 0;
+    // Refs are always current — no stale closure issues
+    const lastLoaded = lastLoadedLanguageRef.current;
+    const languageChanged = lastLoaded !== null && lastLoaded !== language;
+    const shouldReload = forceReload || languageChanged || prayersCountRef.current === 0;
     
     if (!shouldReload) {
       return;
@@ -40,15 +46,17 @@ export function useData() {
       const prayerData = await dataService.getPrayers(language);
       console.log('useData: loadPrayers setting prayers:', prayerData.length, 'for language:', language);
       setPrayers(prayerData);
-      setLastLoadedLanguage(language);
+      prayersCountRef.current = prayerData.length;
+      lastLoadedLanguageRef.current = language;
     } catch (err) {
       console.error('useData: loadPrayers error:', err);
       setError(err instanceof Error ? err.message : 'Failed to load prayers');
       setPrayers([]);
+      prayersCountRef.current = 0;
     } finally {
       setLoading(false);
     }
-  }, [lastLoadedLanguage, prayers.length, dataService]);
+  }, [dataService]);
 
   const loadPrayerById = useCallback(async (id: string, language: SupportedLanguage): Promise<Prayer | null> => {
     try {
@@ -151,7 +159,8 @@ export function useData() {
     setPrayers([]);
     setReadings([]);
     setDevotions([]);
-    setLastLoadedLanguage(null);
+    lastLoadedLanguageRef.current = null;
+    prayersCountRef.current = 0;
     setError(null);
   }, []);
 
@@ -176,6 +185,6 @@ export function useData() {
     clearCache,
     refreshData,
     isDataLoaded: prayers.length > 0 || readings.length > 0 || devotions.length > 0,
-    lastLoadedLanguage,
+    lastLoadedLanguage: lastLoadedLanguageRef.current,
   };
 }
