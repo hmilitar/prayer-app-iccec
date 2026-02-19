@@ -1,8 +1,9 @@
 {
   "app": {
-    "name": "Prayer App - ICCEC Europe",
-    "shortName": "Prayer App",
-    "description": "A prayer and daily reading app for the ICCEC Europe community"
+    "name": "Cenacle",
+    "shortName": "Cenacle",
+    "subtitle": "(Upper Room)",
+    "description": "A comprehensive prayer and daily readings app"
   },
   "navigation": {
     "home": "Home",
@@ -283,8 +284,8 @@
       "personalizedContent": "Personalized Content"
     },
     "aboutInfo": {
-      "description": "A prayer and daily reading app for the ICCEC Europe community",
-      "developer": "ICCEC Europe",
+      "description": "A comprehensive prayer and daily readings app",
+      "developer": "Selah Studio PH",
       "contact": "Contact Us",
       "website": "Visit Website",
       "termsOfService": "Terms of Service",

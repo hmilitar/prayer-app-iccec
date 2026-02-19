@@ -1,5 +1,5 @@
 /**
- * DailyDevotionsScreen — ICCEC Daily Office
+ * DailyDevotionsScreen — Cenacle Daily Office
  *
  * Displays Morning, Midday, Evening, and Family devotions following
  * the ICCEC Prayer Guide outline (pages 8-20).

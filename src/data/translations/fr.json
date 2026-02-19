@@ -1,8 +1,9 @@
 {
   "app": {
-    "name": "Application de Prière - ICCEC Europe",
-    "shortName": "App de Prière",
-    "description": "Une application de prière et de lecture quotidienne pour la communauté ICCEC Europe"
+    "name": "Cenacle",
+    "shortName": "Cenacle",
+    "subtitle": "(Cénacle)",
+    "description": "Une application complète de prière et de lectures quotidiennes"
   },
   "navigation": {
     "home": "Accueil",

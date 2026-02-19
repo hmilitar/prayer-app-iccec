@@ -1,8 +1,9 @@
 {
   "app": {
-    "name": "Palve - ICCEC Europe",
-    "shortName": "Palve",
-    "description": "Palve- ja igapäevaste lugemiste rakendus ICCEC Europe kogukonnale"
+    "name": "Cenacle",
+    "shortName": "Cenacle",
+    "subtitle": "(Ülemine Tuba)",
+    "description": "Terviklik palve- ja igapäevaste lugemiste rakendus"
   },
   "navigation": {
     "home": "Kodu",

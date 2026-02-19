@@ -130,7 +130,8 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container} edges={['top']} key={settingsKey}>
       <Header
-        title={t('app.name') || 'Prayer App - ICCEC Europe'}
+        title={t('app.name') || 'Cenacle (Upper Room)'}
+        subtitle={t('app.subtitle') || '(Upper Room)'}
         variant="transparent"
       />
       

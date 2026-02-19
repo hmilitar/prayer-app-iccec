@@ -1,8 +1,9 @@
 {
   "app": {
-    "name": "Gebets-App - ICCEC Europa",
-    "shortName": "Gebets-App",
-    "description": "Eine Gebets- und tägliche Lesungs-App für die ICCEC-Europa-Gemeinde"
+    "name": "Cenacle",
+    "shortName": "Cenacle",
+    "subtitle": "(Abendmahlssaal)",
+    "description": "Eine umfassende Gebets- und tägliche Lesungs-App"
   },
   "navigation": {
     "home": "Startseite",

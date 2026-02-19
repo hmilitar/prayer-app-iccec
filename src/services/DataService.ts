@@ -43,6 +43,11 @@ import itPrayers from '../data/prayers/it.json';
 import frPrayers from '../data/prayers/fr.json';
 import dePrayers from '../data/prayers/de.json';
 import plPrayers from '../data/prayers/pl.json';
+import ruPrayers from '../data/prayers/ru.json';
+import nlPrayers from '../data/prayers/nl.json';
+import ptPrayers from '../data/prayers/pt.json';
+import svPrayers from '../data/prayers/sv.json';
+import roPrayers from '../data/prayers/ro.json';
 import enReadings from '../data/readings/en_new.json';
 import tlReadings from '../data/readings/tl_new.json';
 import etReadings from '../data/readings/et_new.json';
@@ -82,6 +87,11 @@ export class LocalDataSource implements DataSource {
       fr: extractPrayers(frPrayers as PrayerJsonModule),
       de: extractPrayers(dePrayers as PrayerJsonModule),
       pl: extractPrayers(plPrayers as PrayerJsonModule),
+      ru: extractPrayers(ruPrayers as PrayerJsonModule),
+      nl: extractPrayers(nlPrayers as PrayerJsonModule),
+      pt: extractPrayers(ptPrayers as PrayerJsonModule),
+      sv: extractPrayers(svPrayers as PrayerJsonModule),
+      ro: extractPrayers(roPrayers as PrayerJsonModule),
     };
 
     this.readingData = {
@@ -93,6 +103,11 @@ export class LocalDataSource implements DataSource {
       fr: [],
       de: [],
       pl: [],
+      ru: [],
+      nl: [],
+      pt: [],
+      sv: [],
+      ro: [],
     };
 
     if (typeof __DEV__ !== 'undefined' && __DEV__) {

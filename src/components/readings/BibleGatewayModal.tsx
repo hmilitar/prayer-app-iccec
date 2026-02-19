@@ -47,7 +47,7 @@ export interface BibleGatewayModalProps {
   readonly url: string;
   /** Human-readable scripture reference (e.g. "John 3:16-21") */
   readonly reference: string;
-  /** BibleGateway version code displayed as a badge (e.g. "ESV", "MBBTAG") */
+  /** BibleGateway version code displayed as a badge (e.g. "NKJV", "MBBTAG") */
   readonly bibleVersion?: string;
   /** Callback to close the modal */
   readonly onClose: () => void;

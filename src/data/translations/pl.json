@@ -1,8 +1,9 @@
 {
   "app": {
-    "name": "Aplikacja Modlitwy - ICCEC Europa",
-    "shortName": "Aplikacja Modlitwy",
-    "description": "Aplikacja modlitewna i codziennych czytań dla społeczności ICCEC Europa"
+    "name": "Cenacle",
+    "shortName": "Cenacle",
+    "subtitle": "(Wieczernik)",
+    "description": "Kompleksowa aplikacja modlitewna i codziennych czytań"
   },
   "navigation": {
     "home": "Strona Główna",

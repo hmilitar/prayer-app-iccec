@@ -14,6 +14,11 @@ import itTranslations from '../data/translations/it.json';
 import frTranslations from '../data/translations/fr.json';
 import deTranslations from '../data/translations/de.json';
 import plTranslations from '../data/translations/pl.json';
+import ruTranslations from '../data/translations/ru.json';
+import nlTranslations from '../data/translations/nl.json';
+import ptTranslations from '../data/translations/pt.json';
+import svTranslations from '../data/translations/sv.json';
+import roTranslations from '../data/translations/ro.json';
 
 export interface LocalizationConfig {
   defaultLanguage: SupportedLanguage;
@@ -33,14 +38,19 @@ export class LocalizationService {
     it: {},
     fr: {},
     de: {},
-    pl: {}
+    pl: {},
+    ru: {},
+    nl: {},
+    pt: {},
+    sv: {},
+    ro: {}
   };
 
   private constructor() {
     this.config = {
       defaultLanguage: 'en',
       fallbackLanguage: 'en',
-      supportedLanguages: ['en', 'tl', 'et', 'es', 'it', 'fr', 'de', 'pl']
+      supportedLanguages: ['en', 'tl', 'et', 'es', 'it', 'fr', 'de', 'pl', 'ru', 'nl', 'pt', 'sv', 'ro']
     };
 
     this.i18n = new I18n();
@@ -87,7 +97,12 @@ export class LocalizationService {
         it: itTranslations,
         fr: frTranslations,
         de: deTranslations,
-        pl: plTranslations
+        pl: plTranslations,
+        ru: ruTranslations,
+        nl: nlTranslations,
+        pt: ptTranslations,
+        sv: svTranslations,
+        ro: roTranslations
       };
 
       this.i18n.translations = this.translations;
@@ -102,7 +117,12 @@ export class LocalizationService {
         it: {},
         fr: {},
         de: {},
-        pl: {}
+        pl: {},
+        ru: {},
+        nl: {},
+        pt: {},
+        sv: {},
+        ro: {}
       };
       this.i18n.translations = this.translations;
     }

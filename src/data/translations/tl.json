@@ -1,8 +1,9 @@
 {
   "app": {
-    "name": "Panalangin - ICCEC Europe",
-    "shortName": "Panalangin",
-    "description": "Isang app para sa panalangin at araw-araw na pagbabasa para sa ICCEC Europe community"
+    "name": "Cenacle",
+    "shortName": "Cenacle",
+    "subtitle": "(Silid sa Itaas)",
+    "description": "Isang komprehensibong app para sa panalangin at araw-araw na pagbabasa"
   },
   "navigation": {
     "home": "Tahanan",

@@ -1,7 +1,7 @@
 {
   "name": "prayer-app-iccec",
   "version": "1.0.0",
-  "description": "Prayer App for ICCEC Europe - Multi-language prayer and daily readings app",
+  "description": "Cenacle (Upper Room) - Multi-language prayer and daily readings app",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",

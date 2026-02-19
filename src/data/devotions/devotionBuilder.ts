@@ -29,6 +29,11 @@ import prayersIt from '../prayers/it.json';
 import prayersFr from '../prayers/fr.json';
 import prayersDe from '../prayers/de.json';
 import prayersPl from '../prayers/pl.json';
+import prayersRu from '../prayers/ru.json';
+import prayersNl from '../prayers/nl.json';
+import prayersPt from '../prayers/pt.json';
+import prayersSv from '../prayers/sv.json';
+import prayersRo from '../prayers/ro.json';
 
 // ===================================================================
 // Prayer data lookup
@@ -46,6 +51,11 @@ const prayersByLanguage: Record<SupportedLanguage, PrayerFile> = {
   fr: prayersFr as PrayerFile,
   de: prayersDe as PrayerFile,
   pl: prayersPl as PrayerFile,
+  ru: prayersRu as PrayerFile,
+  nl: prayersNl as PrayerFile,
+  pt: prayersPt as PrayerFile,
+  sv: prayersSv as PrayerFile,
+  ro: prayersRo as PrayerFile,
 };
 
 /**

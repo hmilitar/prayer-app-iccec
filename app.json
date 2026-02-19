@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Prayer - ICCEC Europe",
+    "name": "Cenacle (Upper Room)",
     "slug": "prayer-app-iccec",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -36,8 +36,8 @@
         "NSSpeechRecognitionUsageDescription": "This app does not use speech recognition.",
         "NSAppleMusicUsageDescription": "This app does not access Apple Music.",
         "NSFaceIDUsageDescription": "This app does not use Face ID.",
-        "CFBundleDisplayName": "Prayer App",
-        "CFBundleName": "Prayer App",
+        "CFBundleDisplayName": "Cenacle",
+        "CFBundleName": "Cenacle",
         "LSApplicationCategoryType": "public.app-category.lifestyle"
       }
     },
@@ -64,7 +64,7 @@
     },
     "owner": "hmilitar",
     "primaryColor": "#6366f1",
-    "description": "A comprehensive prayer and daily readings app for ICCEC Europe community. Features multi-language support (English, Tagalog, Estonian), daily liturgical readings, traditional prayers, and seasonal content.",
+    "description": "Cenacle (Upper Room) — A comprehensive prayer and daily readings app. Features multi-language support, daily liturgical readings, traditional prayers, and seasonal content.",
     "githubUrl": "https://github.com/selahstudioph/prayer-app-iccec"
   }
 }

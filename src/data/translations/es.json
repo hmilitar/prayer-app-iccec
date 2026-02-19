@@ -1,8 +1,9 @@
 {
   "app": {
-    "name": "Aplicación de Oración - ICCEC Europa",
-    "shortName": "Aplicación de Oración",
-    "description": "Una aplicación de oración y lectura diaria para la comunidad ICCEC Europa"
+    "name": "Cenacle",
+    "shortName": "Cenacle",
+    "subtitle": "(Cenáculo)",
+    "description": "Una aplicación completa de oración y lecturas diarias"
   },
   "navigation": {
     "home": "Inicio",
