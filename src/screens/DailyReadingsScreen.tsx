@@ -1,12 +1,13 @@
 // Daily Readings Screen - Display daily scripture readings and reflections
 
 import React, { useEffect, useState, useCallback } from 'react';
-import { View, Text, StyleSheet, ScrollView, ActivityIndicator, RefreshControl, TouchableOpacity, Linking } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, ActivityIndicator, RefreshControl, TouchableOpacity, Linking, Platform } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { TabParamList } from '../types/Navigation';
 import { DailyReading, getBibleGatewayUrl } from '../types/Reading';
+import * as WebBrowser from 'expo-web-browser';
 import { Header, PrimaryButton } from '../components';
 import { ReadingCard, CalendarView } from '../components/readings';
 import { useLocalization } from '../hooks/useLocalization';
@@ -118,9 +119,30 @@ export default function DailyReadingsScreen() {
     setViewMode('daily'); // Switch to daily view when date is selected
   };
 
-  const openBibleLink = (reference: string) => {
+  /** Open a scripture reference.
+   * Android: Chrome Custom Tabs (in-app browser).
+   * iOS / fallback: external browser via Linking.
+   */
+  const openBibleLink = async (reference: string) => {
     const url = getBibleGatewayUrl(reference, currentLanguage);
-    Linking.openURL(url).catch(err => console.error('Failed to open Bible link:', err));
+    if (Platform.OS === 'android') {
+      try {
+        await WebBrowser.openBrowserAsync(url, {
+          showTitle: true,
+          toolbarColor: theme.colors.primary[500],
+          controlsColor: '#FFFFFF',
+          secondaryToolbarColor: theme.colors.background.primary,
+          enableBarCollapsing: true,
+          showInRecents: false,
+          createTask: false,
+        });
+      } catch (error) {
+        // Fallback to external browser
+        Linking.openURL(url).catch(err => console.error('Failed to open Bible link:', err));
+      }
+    } else {
+      Linking.openURL(url).catch(err => console.error('Failed to open Bible link:', err));
+    }
   };
 
   const isToday = selectedDate === today;

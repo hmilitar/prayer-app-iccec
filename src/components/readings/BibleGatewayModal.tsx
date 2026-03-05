@@ -9,6 +9,15 @@
  *   • theme-aware styling,
  *   • full accessibility support.
  *
+ * **Android-specific hardening:**
+ *   • `onRenderProcessGone` — catches Android WebView renderer crashes
+ *     (which otherwise take down the entire app) and shows an error/retry UI.
+ *   • `setSupportMultipleWindows={false}` — prevents Bible Gateway from
+ *     opening links in a new window (causes an instant crash on Android).
+ *   • `androidLayerType="hardware"` — ensures GPU compositing inside Modal.
+ *   • Deprecated `scalesPageToFit` removed (Android-only issue).
+ *   • `overScrollMode="never"` — avoids over-scroll rubber-banding on Android.
+ *
  * Usage:
  * ```tsx
  * <BibleGatewayModal
@@ -30,10 +39,12 @@ import {
   ActivityIndicator,
   Platform,
   StatusBar,
+  BackHandler,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { WebView, WebViewNavigation } from 'react-native-webview';
+import type { WebViewRenderProcessGoneDetail } from 'react-native-webview/lib/WebViewTypes';
 import { useTheme } from '../../hooks/useTheme';
 import { useLocalization } from '../../hooks/useLocalization';
 import type { Theme } from '../../styles/theme';
@@ -58,6 +69,11 @@ export interface BibleGatewayModalProps {
 /**
  * Full-screen modal that renders a Bible Gateway page inside a WebView.
  * Supports loading, error, and navigation states.
+ *
+ * On Android the WebView render process can be killed by the OS at any
+ * time (low memory, GPU driver issue, etc.).  Without an explicit
+ * `onRenderProcessGone` handler the crash propagates to the host app.
+ * This component catches that event and shows a user-friendly retry UI.
  */
 export function BibleGatewayModal({
   visible,
@@ -75,7 +91,104 @@ export function BibleGatewayModal({
   const [canGoBack, setCanGoBack] = useState(false);
   const [currentTitle, setCurrentTitle] = useState(reference);
 
+  /**
+   * Tracks whether the Android WebView render process crashed.
+   * When true we unmount + remount the WebView to get a fresh process.
+   */
+  const [androidRenderCrashed, setAndroidRenderCrashed] = useState(false);
+
+  /**
+   * Key used to force-remount the Android WebView after a render-process
+   * crash.  Incrementing it creates a brand-new native WebView instance.
+   */
+  const [webViewKey, setWebViewKey] = useState(0);
+
+  // ── Android back-button handling ───────────────────────────────────
+  // When the modal is open on Android, intercept hardware back to
+  // navigate within the WebView first, then close the modal.
+  React.useEffect(() => {
+    if (Platform.OS !== 'android' || !visible) return undefined;
+
+    const subscription = BackHandler.addEventListener('hardwareBackPress', () => {
+      if (canGoBack) {
+        webViewRef.current?.goBack();
+        return true; // consumed
+      }
+      // Close modal
+      onClose();
+      return true; // consumed
+    });
+
+    return () => subscription.remove();
+  }, [visible, canGoBack, onClose]);
+
   // ── Handlers ───────────────────────────────────────────────────────
+
+  /**
+   * Android cleanup JS — extracted as a constant so it can be:
+   *  1. Passed to `injectedJavaScript` (runs on first mount)
+   *  2. Re-injected via `injectJavaScript()` on every `onLoadEnd`
+   *
+   * The script is idempotent: it checks for an existing `<style id="bg-cleanup">`
+   * before inserting a new one, so multiple calls are harmless.
+   */
+  const androidCleanupJS = `
+    (function() {
+      try {
+        if (document.getElementById('bg-cleanup')) return;
+        var style = document.createElement('style');
+        style.setAttribute('id', 'bg-cleanup');
+        style.textContent = [
+          '.header-nav,',
+          '.navbar,',
+          '.bg-header,',
+          '#header,',
+          '.footer,',
+          '.site-footer,',
+          '#footer,',
+          '.sidebar,',
+          '.bg-sidebar,',
+          '.search-form,',
+          '.passage-resources,',
+          '.publisher-info-bottom,',
+          '.dropdown.header-nav-flyout,',
+          '.header-search,',
+          '#div-gpt-ad-top,',
+          '#div-gpt-ad-bottom,',
+          '#div-gpt-ad-sidebar,',
+          '[id^="div-gpt-ad"],',
+          '[id^="google_ads"],',
+          '.bg-ad-placeholder,',
+          '.ad-header,',
+          '.ad-footer,',
+          '.ad-slot {',
+          '  display: none !important;',
+          '  height: 0 !important;',
+          '  overflow: hidden !important;',
+          '}',
+          '.passage-text {',
+          '  font-size: 18px !important;',
+          '  line-height: 1.7 !important;',
+          '  padding: 12px 16px !important;',
+          '}',
+        ].join('\\n');
+        document.head.appendChild(style);
+        var attempts = 0;
+        var poll = setInterval(function() {
+          var p = document.querySelector('.passage-text');
+          if (p && p.textContent && p.textContent.trim().length > 10) {
+            p.style.fontSize = '18px';
+            p.style.lineHeight = '1.7';
+            p.style.padding = '12px 16px';
+            clearInterval(poll);
+          }
+          attempts++;
+          if (attempts > 20) clearInterval(poll);
+        }, 1000);
+      } catch(e) {}
+    })();
+    true;
+  `;
 
   const handleLoadStart = useCallback(() => {
     setLoading(true);
@@ -84,7 +197,29 @@ export function BibleGatewayModal({
 
   const handleLoadEnd = useCallback(() => {
     setLoading(false);
+    // On Android, re-inject the cleanup script on every page load.
+    // `injectedJavaScript` only runs on the FIRST mount.  If the
+    // WebView navigates internally (e.g. BG AJAX, redirects) the
+    // injected <style> may be lost.  Re-injecting is safe — the
+    // script checks for an existing <style id="bg-cleanup"> first.
+    if (Platform.OS === 'android' && webViewRef.current) {
+      webViewRef.current.injectJavaScript(androidCleanupJS);
+    }
   }, []);
+
+  /**
+   * Android safety net: if loading is still true after 8 seconds,
+   * force-clear it.  BibleGateway may trigger multiple load-start
+   * events (redirects, AJAX) without matching load-end events on
+   * older Android WebViews, leaving the overlay stuck.
+   */
+  React.useEffect(() => {
+    if (Platform.OS !== 'android' || !visible || !loading) return undefined;
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 8000);
+    return () => clearTimeout(timer);
+  }, [visible, loading]);
 
   const handleError = useCallback(() => {
     setLoading(false);
@@ -104,43 +239,132 @@ export function BibleGatewayModal({
 
   const handleReload = useCallback(() => {
     setHasError(false);
+    setAndroidRenderCrashed(false);
     setLoading(true);
-    webViewRef.current?.reload();
+    // Increment key to remount a fresh WebView (required after process crash)
+    setWebViewKey((prev) => prev + 1);
   }, []);
 
   const handleClose = useCallback(() => {
     // Reset state before closing so next open starts fresh
     setLoading(true);
     setHasError(false);
+    setAndroidRenderCrashed(false);
     setCanGoBack(false);
     setCurrentTitle(reference);
+    // Increment key so the next open creates a fresh WebView instance.
+    // This ensures injectedJavaScript runs again on the new mount.
+    setWebViewKey((prev) => prev + 1);
     onClose();
   }, [onClose, reference]);
+
+  /**
+   * Android-only: called when the WebView renderer process is killed.
+   * Without this handler the crash propagates and terminates the app.
+   */
+  const handleRenderProcessGone = useCallback(
+    (syntheticEvent: { nativeEvent: WebViewRenderProcessGoneDetail }) => {
+      const { didCrash } = syntheticEvent.nativeEvent ?? {};
+      // Whether it crashed or was killed by the OS, show the error UI
+      console.warn(
+        `[BibleGatewayModal] Android WebView render process gone (didCrash=${String(didCrash ?? false)})`,
+      );
+      setLoading(false);
+      setHasError(true);
+      setAndroidRenderCrashed(true);
+    },
+    [],
+  );
+
+  /**
+   * Prevent Bible Gateway (or ads) from opening new browser windows.
+   * On Android, `window.open()` without `setSupportMultipleWindows`
+   * crashes the WebView — we intercept and load in the same view.
+   */
+  /**
+   * Prevent third-party navigations (ads opening new pages).
+   *
+   * **iOS-only**: on iOS `onShouldStartLoadWithRequest` fires only for
+   * main-frame navigations, so blocking non-BibleGateway URLs is safe.
+   *
+   * **Android**: the callback fires for ALL resource loads (scripts, CSS,
+   * images, XHR).  Blocking those prevents the passage from rendering.
+   * We use `originWhitelist` for basic security on Android instead.
+   */
+  const handleShouldStartLoadWithRequest = useCallback(
+    (request: { url: string; navigationType: string; isTopFrame?: boolean }) => {
+      if (Platform.OS === 'android') {
+        // On Android allow all resources so the passage can load.
+        // originWhitelist already limits initial navigation to https.
+        return true;
+      }
+
+      // iOS: only allow Bible Gateway navigations
+      const requestUrl = request.url ?? '';
+      if (
+        requestUrl.startsWith('https://www.biblegateway.com') ||
+        requestUrl.startsWith('https://biblegateway.com') ||
+        requestUrl === 'about:blank'
+      ) {
+        return true;
+      }
+      return false;
+    },
+    [],
+  );
 
   const styles = createStyles(theme);
 
   // ── Injected JS: hide Bible Gateway UI chrome for cleaner reading ──
-  const injectedJS = `
+  //
+  // On **Android**: reuses `androidCleanupJS` (defined above) which is
+  // also re-injected on every `onLoadEnd` for reliability.
+  //
+  // On **iOS**: BibleGateway renders passage synchronously, so a single
+  // pass + MutationObserver is sufficient.
+  const injectedJS = Platform.OS === 'android'
+    ? androidCleanupJS
+    : `
     (function() {
       try {
-        // Hide header/footer/nav for cleaner reading
-        var selectors = [
+        var HIDE_SELECTORS = [
           '.header-nav', '.navbar', '.footer', '.bg-sidebar',
           '.sidebar', '.search-form', '#header', '#footer',
           '.passage-resources', '.publisher-info-bottom',
           '.dropdown.header-nav-flyout', '.header-search',
           '.bg-header', '.site-footer'
         ];
-        selectors.forEach(function(sel) {
-          var els = document.querySelectorAll(sel);
-          els.forEach(function(el) { el.style.display = 'none'; });
-        });
-        // Ensure passage text is readable
-        var passage = document.querySelector('.passage-text');
-        if (passage) {
-          passage.style.fontSize = '18px';
-          passage.style.lineHeight = '1.7';
-          passage.style.padding = '16px';
+
+        function hideChrome() {
+          HIDE_SELECTORS.forEach(function(sel) {
+            var els = document.querySelectorAll(sel);
+            els.forEach(function(el) { el.style.display = 'none'; });
+          });
+        }
+
+        function stylePassage() {
+          var passage = document.querySelector('.passage-text');
+          if (passage) {
+            passage.style.fontSize = '18px';
+            passage.style.lineHeight = '1.7';
+            passage.style.padding = '16px';
+            return true;
+          }
+          return false;
+        }
+
+        hideChrome();
+        var found = stylePassage();
+
+        if (!found && typeof MutationObserver !== 'undefined') {
+          var observer = new MutationObserver(function() {
+            hideChrome();
+            if (stylePassage()) {
+              observer.disconnect();
+            }
+          });
+          observer.observe(document.body, { childList: true, subtree: true });
+          setTimeout(function() { observer.disconnect(); }, 15000);
         }
       } catch(e) {}
     })();
@@ -151,9 +375,10 @@ export function BibleGatewayModal({
     <Modal
       visible={visible}
       animationType="slide"
-      presentationStyle="pageSheet"
+      presentationStyle={Platform.OS === 'ios' ? 'pageSheet' : 'fullScreen'}
       onRequestClose={handleClose}
       statusBarTranslucent={Platform.OS === 'android'}
+      hardwareAccelerated={Platform.OS === 'android'}
     >
       <SafeAreaView style={styles.container} edges={['top', 'bottom']}>
         {/* Toolbar */}
@@ -218,16 +443,25 @@ export function BibleGatewayModal({
           </View>
         ) : null}
 
-        {/* Error state */}
+        {/* Error / crash state */}
         {hasError ? (
           <View style={styles.errorContainer}>
-            <Ionicons name="cloud-offline-outline" size={64} color={theme.colors.text.tertiary} />
+            <Ionicons
+              name={androidRenderCrashed ? 'warning-outline' : 'cloud-offline-outline'}
+              size={64}
+              color={theme.colors.text.tertiary}
+            />
             <Text style={styles.errorTitle}>
-              {t('error.networkError') ?? 'Could not load passage'}
+              {androidRenderCrashed
+                ? (t('error.webViewCrash') ?? 'The page viewer encountered an issue')
+                : (t('error.networkError') ?? 'Could not load passage')}
             </Text>
             <Text style={styles.errorMessage}>
-              {t('devotions.bibleGateway.errorMessage') ??
-                'Check your internet connection and try again.'}
+              {androidRenderCrashed
+                ? (t('devotions.bibleGateway.crashMessage') ??
+                  'The Bible reader stopped unexpectedly. Tap Retry to reload.')
+                : (t('devotions.bibleGateway.errorMessage') ??
+                  'Check your internet connection and try again.')}
             </Text>
             <TouchableOpacity
               style={styles.retryBtn}
@@ -241,6 +475,7 @@ export function BibleGatewayModal({
           </View>
         ) : (
           <WebView
+            key={`bible-webview-${webViewKey}`}
             ref={webViewRef}
             source={{ uri: url }}
             style={styles.webview}
@@ -249,18 +484,51 @@ export function BibleGatewayModal({
             onError={handleError}
             onHttpError={handleError}
             onNavigationStateChange={handleNavChange}
+            onShouldStartLoadWithRequest={handleShouldStartLoadWithRequest}
             injectedJavaScript={injectedJS}
             javaScriptEnabled
             domStorageEnabled
             startInLoadingState={false}
-            allowsBackForwardNavigationGestures
-            allowsInlineMediaPlayback
-            scalesPageToFit
             showsVerticalScrollIndicator
             showsHorizontalScrollIndicator={false}
-            decelerationRate="normal"
             // Security: only allow Bible Gateway
             originWhitelist={['https://*']}
+            // ── iOS-only props ──────────────────────────────────────
+            allowsBackForwardNavigationGestures={Platform.OS === 'ios'}
+            allowsInlineMediaPlayback
+            // ── Android-specific hardening ──────────────────────────
+            // Prevents window.open() from crashing the WebView
+            setSupportMultipleWindows={false}
+            // Required: BibleGateway loads passage text via AJAX from
+            // API subdomains.  Android WebView blocks third-party cookies
+            // by default (since Android 5.0), causing the passage API
+            // calls to fail silently → empty passage area.
+            thirdPartyCookiesEnabled={Platform.OS === 'android'}
+            // Share cookies with the system browser for consent/session
+            sharedCookiesEnabled
+            // Use software layer on Android — "hardware" can cause blank
+            // rendering inside a Modal on certain GPU drivers/devices
+            androidLayerType="none"
+            // Prevents elastic over-scroll on Android
+            overScrollMode="never"
+            // Allow nested scrolling inside the Modal's ScrollView
+            nestedScrollEnabled={Platform.OS === 'android'}
+            // Catches Android renderer process crash — prevents app crash
+            onRenderProcessGone={
+              Platform.OS === 'android' ? handleRenderProcessGone : undefined
+            }
+            // Prevent file:// and content:// access for security
+            allowFileAccess={false}
+            // Disable geolocation (not needed)
+            geolocationEnabled={false}
+            // Let the system WebView use its default user agent.
+            // A custom UA can cause BibleGateway to serve incompatible content.
+            // Text-size accessibility: follow system setting on Android
+            textZoom={100}
+            // Mitigate mixed content issues on Android
+            mixedContentMode="compatibility"
+            // Enable disk/memory caching for offline resilience
+            cacheEnabled
           />
         )}
       </SafeAreaView>
@@ -285,6 +553,12 @@ const createStyles = (theme: Theme & { userFontSize: string }) =>
       borderBottomColor: theme.colors.border.light,
       backgroundColor: theme.colors.background.primary,
       minHeight: 48,
+      // Android: extra top padding inside fullScreen modal to prevent
+      // the close button / toolbar from being cut off by the status bar.
+      // StatusBar.currentHeight is only available on Android.
+      ...(Platform.OS === 'android' && StatusBar.currentHeight
+        ? { paddingTop: StatusBar.currentHeight }
+        : {}),
     },
     toolbarBtn: {
       minWidth: 44,

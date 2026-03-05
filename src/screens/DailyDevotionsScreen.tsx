@@ -17,6 +17,7 @@ import {
   TouchableOpacity,
   ActivityIndicator,
   RefreshControl,
+  Platform,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -40,6 +41,7 @@ import {
   getBcp47Locale,
 } from '../utils/dateUtils';
 import { getBibleGatewayUrl, getBibleVersionForLanguage } from '../types/Reading';
+import * as WebBrowser from 'expo-web-browser';
 import {
   buildDevotion,
   hasLectionaryData,
@@ -173,13 +175,54 @@ export default function DailyDevotionsScreen() {
     setRefreshing(false);
   }, [selectedDate, selectedTime, currentLanguage, loadDevotion]);
 
-  /** Open a scripture reference in the in-app Bible Gateway modal */
-  const openBibleLink = useCallback((ref: string) => {
+  /** Open a scripture reference in the in-app Bible Gateway reader.
+   *
+   * - **iOS**: opens BibleGatewayModal (WebView) — works perfectly.
+   * - **Android**: opens Chrome Custom Tabs via expo-web-browser.
+   *   Android WebView has persistent rendering issues with BibleGateway's
+   *   complex AJAX + ad-heavy page.  Chrome Custom Tabs uses the real
+   *   Chrome engine, renders perfectly, and provides a built-in close
+   *   button to return to the app.
+   */
+  const openBibleLink = useCallback(async (ref: string) => {
     const url = getBibleGatewayUrl(ref, currentLanguage);
-    setBibleModalRef(ref);
-    setBibleModalUrl(url);
-    setBibleModalVisible(true);
-  }, [currentLanguage]);
+
+    if (Platform.OS === 'android') {
+      // Chrome Custom Tabs — in-app modal browser powered by Chrome.
+      // Renders as a sheet overlay on top of the app activity.
+      // Has a built-in X (close) button in the toolbar to return to app.
+      // The user NEVER leaves the app.
+      try {
+        await WebBrowser.openBrowserAsync(url, {
+          // Show the page title in the toolbar
+          showTitle: true,
+          // App-branded toolbar color
+          toolbarColor: theme.colors.primary[500],
+          // White close button / controls for contrast on colored toolbar
+          controlsColor: '#FFFFFF',
+          // Secondary toolbar (bottom bar) color
+          secondaryToolbarColor: theme.colors.background.primary,
+          // Collapse URL bar on scroll for more reading space
+          enableBarCollapsing: true,
+          // Don't show in Android recents — keeps it modal-like
+          showInRecents: false,
+          // Launch as a new task overlay so it feels modal
+          createTask: false,
+        });
+      } catch (error) {
+        // Fallback: if Custom Tabs fails, show WebView modal
+        console.warn('[openBibleLink] Chrome Custom Tabs failed, falling back to WebView:', error);
+        setBibleModalRef(ref);
+        setBibleModalUrl(url);
+        setBibleModalVisible(true);
+      }
+    } else {
+      // iOS: use the in-app WebView modal (proven working)
+      setBibleModalRef(ref);
+      setBibleModalUrl(url);
+      setBibleModalVisible(true);
+    }
+  }, [currentLanguage, theme.colors.primary]);
 
   const closeBibleModal = useCallback(() => {
     setBibleModalVisible(false);
@@ -224,7 +267,11 @@ export default function DailyDevotionsScreen() {
         {section.reference && isLinkableReading ? (
           <TouchableOpacity
             style={styles.referenceBadge}
-            onPress={() => openBibleLink(section.reference ?? '')}
+            onPress={() => {
+              if (section.reference) {
+                openBibleLink(section.reference);
+              }
+            }}
             accessibilityLabel={`Open ${section.reference} on Bible Gateway`}
             accessibilityRole="link"
           >
