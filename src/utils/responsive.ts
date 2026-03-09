@@ -4,6 +4,32 @@ import { Dimensions, PixelRatio, Platform } from 'react-native';
 
 const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get('window');
 
+// Check if running on web platform
+export const isWebPlatform = (): boolean => {
+  return Platform.OS === 'web';
+};
+
+// Web-specific breakpoints (in pixels)
+export const WEB_BREAKPOINTS = {
+  small: 640,    // Mobile landscape
+  medium: 768,  // Tablet portrait
+  large: 1024,  // Tablet landscape / small desktop
+  xlarge: 1280, // Desktop
+  xxlarge: 1536, // Large desktop
+} as const;
+
+// Determine if we're on a web device with a large screen
+export const getWebDeviceType = (): 'web-mobile' | 'web-tablet' | 'web-desktop' | 'web-large' => {
+  if (!isWebPlatform()) return 'web-mobile';
+  
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.xlarge) return 'web-large';
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.large) return 'web-desktop';
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.medium) return 'web-tablet';
+  return 'web-mobile';
+};
+
+export const WEB_DEVICE_TYPE = getWebDeviceType();
+
 // Device types based on screen dimensions
 export const getDeviceType = () => {
   if (Platform.OS === 'ios') {
@@ -196,6 +222,48 @@ export const screen = {
   isSmallDevice: DEVICE_TYPE === 'phone-small',
   isTablet: DEVICE_TYPE.includes('tablet'),
   hasNotch: hasNotch(),
+  isWeb: isWebPlatform(),
+  isWebLarge: WEB_DEVICE_TYPE === 'web-desktop' || WEB_DEVICE_TYPE === 'web-large',
+};
+
+// Maximum content width for readability on larger screens
+export const getContentMaxWidth = (): number | '100%' => {
+  // On mobile platforms, use full width
+  if (!isWebPlatform()) {
+    return '100%';
+  }
+  
+  // On web, limit content width for readability
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.xlarge) return 900;
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.large) return 800;
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.medium) return 720;
+  return '100%';
+};
+
+// Sidebar width for web navigation
+export const getSidebarWidth = (): number => {
+  if (!isWebPlatform()) return 0;
+  
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.xlarge) return 280;
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.large) return 260;
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.medium) return 240;
+  return 0;
+};
+
+// Check if we should show sidebar navigation
+export const shouldShowSidebar = (): boolean => {
+  if (!isWebPlatform()) return false;
+  return SCREEN_WIDTH >= WEB_BREAKPOINTS.medium;
+};
+
+// Get web-specific spacing multiplier
+export const getWebSpacingMultiplier = (): number => {
+  if (!isWebPlatform()) return 1;
+  
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.xlarge) return 1.4;
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.large) return 1.2;
+  if (SCREEN_WIDTH >= WEB_BREAKPOINTS.medium) return 1.1;
+  return 1;
 };
 
 export default {
@@ -214,4 +282,12 @@ export default {
   getIconSize,
   screen,
   DEVICE_TYPE,
+  isWebPlatform,
+  getWebDeviceType,
+  WEB_DEVICE_TYPE,
+  WEB_BREAKPOINTS,
+  getContentMaxWidth,
+  getSidebarWidth,
+  shouldShowSidebar,
+  getWebSpacingMultiplier,
 };

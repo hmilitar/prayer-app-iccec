@@ -3,12 +3,29 @@
  */
 
 import React, { useMemo } from 'react';
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Platform } from 'react-native';
 import { useTheme } from '../../hooks/useTheme';
 import { useLocalization } from '../../hooks/useLocalization';
 import { getScaledFontSize } from '../../utils/fontScaling';
 import { formatDateToISO } from '../../utils/dateUtils';
 import type { Theme } from '../../styles/theme';
+
+/** Check if running on web platform */
+const isWebPlatform = (): boolean => Platform.OS === 'web';
+
+/** Get responsive cell size based on platform */
+const getCellSize = (baseSize: number): number => {
+  if (isWebPlatform()) {
+    // Taller cells for web with rectangular shape
+    return Math.round(baseSize * 0.7);
+  }
+  return baseSize;
+};
+
+/** Get responsive font size multiplier based on platform */
+const getFontMultiplier = (): number => {
+  return isWebPlatform() ? 0.7 : 1;
+};
 
 /** Map i18n language code → BCP-47 locale for Intl formatting */
 const LOCALE_MAP: Record<string, string> = {
@@ -59,8 +76,12 @@ export function CalendarView({
 }: CalendarViewProps) {
   const theme = useTheme();
   const { currentLanguage, t } = useLocalization();
-  const styles = createStyles(theme);
   const today = formatDateToISO(new Date());
+
+  // Responsive sizing based on platform
+  const cellSize = getCellSize(44);
+  const fontMultiplier = getFontMultiplier();
+  const styles = createStyles(theme, cellSize, fontMultiplier);
 
   /** Day-of-week headers — recomputed when language changes */
   const dayLabels = useMemo(() => getLocalizedDayLabels(currentLanguage), [currentLanguage]);
@@ -144,25 +165,25 @@ export function CalendarView({
   );
 }
 
-const createStyles = (theme: Theme & { userFontSize: string }) =>
+const createStyles = (theme: Theme & { userFontSize: string }, cellSize?: number, fontMultiplier?: number) =>
   StyleSheet.create({
     container: {
       backgroundColor: theme.colors.background.primary,
       borderRadius: theme.borderRadius.lg,
-      padding: theme.spacing.sm,
+      padding: isWebPlatform() ? theme.spacing.xs : theme.spacing.sm,
       ...theme.shadows.sm,
     },
     headerRow: {
       flexDirection: 'row',
-      marginBottom: theme.spacing.xs,
+      marginBottom: isWebPlatform() ? 2 : theme.spacing.xs,
     },
     headerCell: {
       flex: 1,
       alignItems: 'center',
-      paddingVertical: theme.spacing.xs,
+      paddingVertical: isWebPlatform() ? 2 : theme.spacing.xs,
     },
     headerText: {
-      fontSize: getScaledFontSize(12, theme.userFontSize),
+      fontSize: getScaledFontSize(12 * (fontMultiplier ?? 1), theme.userFontSize),
       fontWeight: '600',
       color: theme.colors.text.tertiary,
       textTransform: 'uppercase',
@@ -172,13 +193,14 @@ const createStyles = (theme: Theme & { userFontSize: string }) =>
     },
     dayCell: {
       flex: 1,
-      aspectRatio: 1,
+      aspectRatio: isWebPlatform() ? undefined : 1,
       alignItems: 'center',
       justifyContent: 'center',
-      borderRadius: theme.borderRadius.full,
-      margin: 2,
-      minHeight: 44,
-      minWidth: 44,
+      borderRadius: isWebPlatform() ? theme.borderRadius.sm : theme.borderRadius.full,
+      margin: isWebPlatform() ? 1 : 2,
+      minHeight: cellSize ?? 44,
+      minWidth: isWebPlatform() ? Math.round((cellSize ?? 44) * 0.85) : (cellSize ?? 44),
+      paddingVertical: isWebPlatform() ? 4 : 0,
     },
     selectedCell: {
       backgroundColor: theme.colors.primary[500],
@@ -188,7 +210,7 @@ const createStyles = (theme: Theme & { userFontSize: string }) =>
       borderColor: theme.colors.primary[400],
     },
     dayText: {
-      fontSize: getScaledFontSize(14, theme.userFontSize),
+      fontSize: getScaledFontSize(14 * (fontMultiplier ?? 1), theme.userFontSize),
       color: theme.colors.text.primary,
       fontWeight: '500',
     },
@@ -204,11 +226,11 @@ const createStyles = (theme: Theme & { userFontSize: string }) =>
       opacity: 0.4,
     },
     dot: {
-      width: 4,
-      height: 4,
-      borderRadius: 2,
+      width: isWebPlatform() ? 3 : 4,
+      height: isWebPlatform() ? 3 : 4,
+      borderRadius: isWebPlatform() ? 1.5 : 2,
       backgroundColor: theme.colors.primary[400],
-      marginTop: 2,
+      marginTop: 1,
     },
     dotSelected: {
       backgroundColor: '#FFFFFF',

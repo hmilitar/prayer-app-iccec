@@ -10,3 +10,9 @@ export { default as PrimaryButton } from './PrimaryButton';
 export type { PrimaryButtonProps } from './PrimaryButton';
 
 export { ErrorBoundary } from './ErrorBoundary';
+
+export { default as WebSidebar } from './WebSidebar';
+export type { WebSidebarProps } from './WebSidebar';
+
+export { default as WebContentContainer } from './WebContentContainer';
+export type { WebContentContainerProps } from './WebContentContainer';

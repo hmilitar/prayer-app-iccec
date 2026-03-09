@@ -155,6 +155,16 @@ export function useData() {
     }
   }, []);
 
+  const getAvailableReadingDates = useCallback(async (language: SupportedLanguage): Promise<string[]> => {
+    try {
+      setError(null);
+      return await dataService.getAvailableReadingDates(language);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to load available reading dates');
+      return [];
+    }
+  }, []);
+
   const clearCache = useCallback(() => {
     setPrayers([]);
     setReadings([]);
@@ -180,6 +190,7 @@ export function useData() {
     loadReadingsRange,
     loadDailyDevotions,
     loadDevotionByTimeOfDay,
+    getAvailableReadingDates,
     searchPrayers,
     getPrayersByCategory,
     clearCache,
