@@ -23,8 +23,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useRoute, RouteProp } from '@react-navigation/native';
 import { Header, PrimaryButton } from '../components';
-import { CalendarView } from '../components/readings';
-import { BibleGatewayModal } from '../components/readings/BibleGatewayModal';
+import { CalendarView, BibleGatewayModal, WebBibleGatewayModal } from '../components/readings';
 import { useLocalization } from '../hooks/useLocalization';
 import { useTheme } from '../hooks/useTheme';
 import { useSettings } from '../hooks/useSettings';
@@ -177,6 +176,7 @@ export default function DailyDevotionsScreen() {
 
   /** Open a scripture reference in the in-app Bible Gateway reader.
    *
+   * - **Web**: uses in-app modal with iframe.
    * - **iOS**: opens BibleGatewayModal (WebView) — works perfectly.
    * - **Android**: opens Chrome Custom Tabs via expo-web-browser.
    *   Android WebView has persistent rendering issues with BibleGateway's
@@ -187,7 +187,12 @@ export default function DailyDevotionsScreen() {
   const openBibleLink = useCallback(async (ref: string) => {
     const url = getBibleGatewayUrl(ref, currentLanguage);
 
-    if (Platform.OS === 'android') {
+    if (Platform.OS === 'web') {
+      // Web: Use in-app modal with iframe
+      setBibleModalRef(ref);
+      setBibleModalUrl(url);
+      setBibleModalVisible(true);
+    } else if (Platform.OS === 'android') {
       // Chrome Custom Tabs — in-app modal browser powered by Chrome.
       // Renders as a sheet overlay on top of the app activity.
       // Has a built-in X (close) button in the toolbar to return to app.
@@ -499,14 +504,24 @@ export default function DailyDevotionsScreen() {
         )}
       </ScrollView>
 
-      {/* Bible Gateway in-app reader */}
-      <BibleGatewayModal
-        visible={bibleModalVisible}
-        url={bibleModalUrl}
-        reference={bibleModalRef}
-        bibleVersion={getBibleVersionForLanguage(currentLanguage)}
-        onClose={closeBibleModal}
-      />
+      {/* Bible Gateway in-app reader - web uses iframe modal, mobile uses WebView */}
+      {Platform.OS === 'web' ? (
+        <WebBibleGatewayModal
+          visible={bibleModalVisible}
+          url={bibleModalUrl}
+          reference={bibleModalRef}
+          bibleVersion={getBibleVersionForLanguage(currentLanguage)}
+          onClose={closeBibleModal}
+        />
+      ) : (
+        <BibleGatewayModal
+          visible={bibleModalVisible}
+          url={bibleModalUrl}
+          reference={bibleModalRef}
+          bibleVersion={getBibleVersionForLanguage(currentLanguage)}
+          onClose={closeBibleModal}
+        />
+      )}
     </SafeAreaView>
   );
 }

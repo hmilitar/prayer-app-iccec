@@ -6,10 +6,10 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { TabParamList } from '../types/Navigation';
-import { DailyReading, getBibleGatewayUrl } from '../types/Reading';
+import { DailyReading, getBibleGatewayUrl, getBibleVersionForLanguage } from '../types/Reading';
 import * as WebBrowser from 'expo-web-browser';
 import { Header, PrimaryButton } from '../components';
-import { ReadingCard, CalendarView } from '../components/readings';
+import { ReadingCard, CalendarView, WebBibleGatewayModal } from '../components/readings';
 import { useLocalization } from '../hooks/useLocalization';
 import { useTheme } from '../hooks/useTheme';
 import { useData } from '../hooks/useData';
@@ -40,6 +40,11 @@ export default function DailyReadingsScreen() {
   const [refreshing, setRefreshing] = useState(false);
   const [viewMode, setViewMode] = useState<'daily' | 'calendar'>('calendar'); // Default to calendar view
   const [currentMonth, setCurrentMonth] = useState(new Date());
+  
+  // Bible Gateway modal state for web
+  const [bibleModalVisible, setBibleModalVisible] = useState(false);
+  const [bibleModalUrl, setBibleModalUrl] = useState('');
+  const [bibleModalRef, setBibleModalRef] = useState('');
   
   const theme = useTheme();
   const today = getTodayISO();
@@ -129,12 +134,19 @@ export default function DailyReadingsScreen() {
   };
 
   /** Open a scripture reference.
+   * Web: Uses in-app modal with iframe
    * Android: Chrome Custom Tabs (in-app browser).
    * iOS / fallback: external browser via Linking.
    */
   const openBibleLink = async (reference: string) => {
     const url = getBibleGatewayUrl(reference, currentLanguage);
-    if (Platform.OS === 'android') {
+    
+    if (Platform.OS === 'web') {
+      // Web: Use in-app modal with iframe
+      setBibleModalRef(reference);
+      setBibleModalUrl(url);
+      setBibleModalVisible(true);
+    } else if (Platform.OS === 'android') {
       try {
         await WebBrowser.openBrowserAsync(url, {
           showTitle: true,
@@ -337,6 +349,15 @@ export default function DailyReadingsScreen() {
           </>
         )}
       </ScrollView>
+
+      {/* Web Bible Gateway Modal - only renders on web platform */}
+      <WebBibleGatewayModal
+        visible={bibleModalVisible}
+        url={bibleModalUrl}
+        reference={bibleModalRef}
+        bibleVersion={getBibleVersionForLanguage(currentLanguage)}
+        onClose={() => setBibleModalVisible(false)}
+      />
     </SafeAreaView>
   );
 }

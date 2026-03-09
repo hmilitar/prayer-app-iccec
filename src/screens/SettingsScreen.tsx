@@ -9,7 +9,9 @@ import {
   TouchableOpacity, 
   Switch,
   Alert,
-  ActivityIndicator 
+  ActivityIndicator,
+  Linking,
+  Platform,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -340,6 +342,27 @@ export default function SettingsScreen() {
     );
   }, [resetSettings, t]);
 
+  // Open Selah Studio website - only works on web platform
+  const handleOpenSelahStudio = useCallback(async () => {
+    const url = 'https://selahstudio.ph/';
+    try {
+      if (Platform.OS === 'web') {
+        // On web, use window.open for proper navigation
+        window.open(url, '_blank', 'noopener,noreferrer');
+      } else {
+        // On mobile, use Linking
+        const canOpen = await Linking.canOpenURL(url);
+        if (canOpen) {
+          await Linking.openURL(url);
+        } else {
+          console.warn('Cannot open URL:', url);
+        }
+      }
+    } catch (err) {
+      console.error('Failed to open Selah Studio link:', err);
+    }
+  }, []);
+
   if (!settings) {
     return (
       <SafeAreaView style={createStyles(theme).container} edges={['top']}>
@@ -530,7 +553,19 @@ export default function SettingsScreen() {
             {t('settings.version') || 'Version'} 1.0.0
           </Text>
           <Text style={styles.appVersion}>
-            Powered by Selah Studio PH
+            Powered by{' '}
+            {Platform.OS === 'web' ? (
+              <TouchableOpacity
+                onPress={handleOpenSelahStudio}
+                accessibilityLabel="Visit Selah Studio PH website"
+                accessibilityRole="link"
+                style={styles.selahTouchable}
+              >
+                <Text style={styles.selahLink}>Selah Studio PH</Text>
+              </TouchableOpacity>
+            ) : (
+              <Text style={styles.appVersion}>Selah Studio PH</Text>
+            )}
           </Text>
         </View>
       </ScrollView>
@@ -658,5 +693,14 @@ const createStyles = (theme: Theme) => StyleSheet.create({
   appVersion: {
     fontSize: getScaledFontSize(theme.typography.fontSize.sm),
     color: theme.colors.text.secondary,
+  },
+  selahLink: {
+    fontSize: getScaledFontSize(theme.typography.fontSize.sm),
+    color: theme.colors.primary[500],
+    textDecorationLine: 'underline',
+    fontWeight: '500',
+  },
+  selahTouchable: {
+    alignSelf: 'flex-start',
   },
 });
