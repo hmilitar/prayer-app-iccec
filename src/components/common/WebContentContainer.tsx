@@ -1,6 +1,5 @@
-// WebContentContainer - Wrapper component for limiting content width on larger screens
-// This component ensures readable line lengths on desktop/tablet while
-// maintaining full-width layout on mobile
+// WebContentContainer - Enhanced wrapper for web content with Christian ambiance
+// Provides comfortable reading width, elegant spacing, and serene atmosphere
 
 import React from 'react';
 import { View, StyleSheet, useWindowDimensions, Platform } from 'react-native';
@@ -19,18 +18,26 @@ export interface WebContentContainerProps {
    * @default true
    */
   withPadding?: boolean;
+  /**
+   * Enable card-like styling with shadow for web
+   * @default false
+   */
+  withCard?: boolean;
 }
 
 /**
- * A container that limits content width on larger screens for better readability.
- * On mobile, it renders as a full-width container.
- * On web/tablet, it centers content with a maximum width.
+ * An enhanced container that provides:
+ * - Readable content widths on larger screens
+ * - Comfortable whitespace and breathing room
+ * - Optional card styling for a more elegant appearance
+ * - Mobile-first responsive design
  */
 export default function WebContentContainer({
   children,
   style,
   maxWidth: customMaxWidth,
   withPadding = true,
+  withCard = false,
 }: WebContentContainerProps): React.ReactElement {
   const { width: screenWidth } = useWindowDimensions();
   
@@ -44,7 +51,7 @@ export default function WebContentContainer({
   
   // Calculate padding for comfortable edge spacing on larger screens
   const horizontalPadding = withPadding && isWeb
-    ? Math.max(getSpacing(2), screenWidth * 0.03) // At least 16px or 3% of screen
+    ? Math.max(getSpacing(2), screenWidth * 0.04) // At least 16px or 4% of screen
     : 0;
 
   // If max width is 100% or we're not on web, render without width constraints
@@ -54,6 +61,7 @@ export default function WebContentContainer({
         style={[
           styles.container, 
           withPadding && styles.padding,
+          withCard && isWeb && styles.cardWeb,
           style
         ]}
       >
@@ -67,6 +75,7 @@ export default function WebContentContainer({
       style={[
         styles.container,
         withPadding && styles.padding,
+        withCard && isWeb && styles.cardWeb,
         style
       ]}
     >
@@ -95,5 +104,16 @@ const styles = StyleSheet.create({
   },
   contentWrapper: {
     alignSelf: 'center',
+  },
+  cardWeb: {
+    backgroundColor: '#ffffff',
+    borderRadius: 16,
+    margin: 24,
+    padding: 32,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.1,
+    shadowRadius: 12,
+    elevation: 5,
   },
 });
