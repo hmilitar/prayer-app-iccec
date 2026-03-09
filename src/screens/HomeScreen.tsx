@@ -130,7 +130,8 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container} edges={['top']} key={settingsKey}>
       <Header
-        title={t('app.name') || 'Prayer App - ICCEC Europe'}
+        title={t('app.name') || 'Cenacle (Upper Room)'}
+        subtitle={t('app.subtitle') || '(Upper Room)'}
         variant="transparent"
       />
       
@@ -158,7 +159,7 @@ export default function HomeScreen() {
           <View style={styles.liturgicalContainer}>
             <View style={styles.liturgicalBadge}>
               <Text style={styles.liturgicalText}>
-                {t(`liturgical.${liturgicalSeason.toLowerCase()}`) || liturgicalSeason} Season
+                {t(`liturgical.${liturgicalSeason.toLowerCase()}`) || liturgicalSeason}
               </Text>
             </View>
           </View>

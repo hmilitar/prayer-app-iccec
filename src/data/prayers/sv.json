@@ -1,0 +1,438 @@
+{
+  "prayers": [
+    {
+      "id": "lords-prayer",
+      "title": "Fader vår",
+      "category": "liturgical",
+      "content": "Fader vår, som är i himmelen. Helgat varde ditt namn. Tillkomme ditt rike. Ske din vilja, såsom i himmelen, så ock på jorden. Vårt dagliga bröd giv oss idag, och förlåt oss våra skulder, såsom ock vi förlåta dem oss skyldiga äro. Och inled oss icke i frestelse, utan fräls oss ifrån ondo. Ty riket är ditt och makten och härligheten i evighet. Amen.",
+      "source": "Matteus 6:9–13",
+      "tags": ["traditional", "jesus", "foundational"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "gloria-patri",
+      "title": "Ära vare Fadern",
+      "category": "liturgical",
+      "content": "Ära vare Fadern och Sonen och den helige Ande, såsom det var av begynnelsen, nu är och skall vara, från evighet till evighet. Amen.",
+      "source": "Traditionell",
+      "tags": ["traditional", "trinity", "doxology"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "apostles-creed",
+      "title": "Apostoliska trosbekännelsen",
+      "category": "liturgical",
+      "content": "Jag tror på Gud Fader allsmäktig, himmelens och jordens skapare. Jag tror ock på Jesus Kristus, hans enfödde Son, vår Herre, vilken är avlad av den helige Ande, född av jungfrun Maria, pinad under Pontius Pilatus, korsfäst, död och begraven, nederstigen till dödsriket, på tredje dagen uppstånden igen ifrån de döda, uppstigen till himmelen, sittande på allsmäktig Gud Faders högra sida, därifrån igenkommande till att döma levande och döda. Jag tror ock på den helige Ande, en helig allmännelig kyrka, de heligas samfund, syndernas förlåtelse, de dödas uppståndelse och ett evigt liv. Amen.",
+      "source": "Traditionell",
+      "tags": ["creed", "faith", "foundational"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "come-holy-spirit",
+      "title": "Kom, Helige Ande",
+      "category": "liturgical",
+      "content": "Kom, Helige Ande, uppfyll dina troendes hjärtan och tänd i dem din kärleks eld. Sänd ut din Ande och de skall skapas, och du skall förnya jordens ansikte. O Gud, som genom den Helige Andes ljus har undervisat de troendes hjärtan, giv oss att genom samme Ande ha det rätta sinnet och alltid glädjas av hans tröst. Genom Kristus, vår Herre. Amen.",
+      "source": "Traditionell karismatisk bön",
+      "tags": ["holy-spirit", "charismatic", "pentecost", "renewal"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "morning-prayer",
+      "title": "Morgonbön",
+      "category": "morning",
+      "content": "Allsmäktige Gud, vi tackar dig för gåvan av denna nya dag. Såsom solen går upp, låt ditt ljus lysa över oss och leda våra steg. Giv oss vishet i våra beslut, styrka i våra utmaningar och frid i våra hjärtan. Hjälp oss att troget tjäna dig och att älska våra medmänniskor som oss själva. Genom Jesus Kristus, vår Herre. Amen.",
+      "source": "Book of Common Prayer-traditionen",
+      "tags": ["morning", "daily", "guidance"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "evening-prayer",
+      "title": "Aftonbön",
+      "category": "evening",
+      "content": "Nådige Gud, då denna dag går mot sitt slut tackar vi dig för dina oräkneliga välsignelser. Förlåt oss våra brister och tillkortakommanden. Giv oss fridfull vila och förnya våra själar. Vaka över våra nära och kära och alla som är i nöd. Må dina änglar bevara oss genom natten, och må vi vakna utvilade för att tjäna dig i morgon. I Jesu namn. Amen.",
+      "source": "Traditionell",
+      "tags": ["evening", "rest", "forgiveness"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-spiritual-gifts",
+      "title": "Bön om Andliga Gåvor",
+      "category": "charismatic",
+      "content": "Himmelske Fader, vi tackar dig för den Helige Andes gåvor. Giv oss vishet att använda dessa gåvor till uppbyggnad av din kyrka och för ditt rikes framgång. Må vi ivrigt söka de andliga gåvorna, särskilt att vi må profetera och tala ditt ord med frimodighet. Uppfyll oss på nytt med din Ande, så att vi får tjäna i kraft och visa din kärlek för världen. Genom Jesus Kristus, vår Herre. Amen.",
+      "source": "1 Korintierbrevet 12–14",
+      "tags": ["spiritual-gifts", "charismatic", "ministry", "holy-spirit"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-communion",
+      "title": "Bön före Nattvarden",
+      "category": "sacramental",
+      "content": "Allsmäktige Gud, för vilken alla hjärtan är öppna, alla önskningar kända och inga hemligheter fördolda: Rena våra hjärtans tankar genom din Helige Andes ingivelse, så att vi fullkomligt må älska dig och värdigt prisa ditt heliga namn; genom Kristus, vår Herre. Vi dristar oss icke att komma till ditt bord, o barmhärtige Herre, förtröstande på vår egen rättfärdighet, utan på din mångfaldiga och stora barmhärtighet. Giv oss därför, nådige Herre, att så äta din käre Sons Jesu Kristi kropp och dricka hans blod, att våra syndiga kroppar må renas genom hans kropp och våra själar tvås genom hans dyrbara blod. Amen.",
+      "source": "Book of Common Prayer-traditionen",
+      "tags": ["communion", "eucharist", "sacramental", "preparation"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-meals",
+      "title": "Bordsbön",
+      "category": "thanksgiving",
+      "content": "Välsigna oss, o Herre, och dessa dina gåvor som vi nu ska ta emot av din godhet, genom Kristus, vår Herre. Amen.",
+      "source": "Traditionell",
+      "tags": ["meals", "blessing", "gratitude"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-peace",
+      "title": "Bön om Fred",
+      "category": "intercession",
+      "content": "Herre, gör mig till ett redskap för din frid. Där hat finns, låt mig så kärlek; där oförrätt, förlåtelse; där tvivel, tro; där förtvivlan, hopp; där mörker, ljus; där sorg, glädje. O gudomlige Mästare, giv att jag icke så mycket söker att bli tröstad som att trösta; att bli förstådd som att förstå; att bli älskad som att älska. Ty det är i givandet vi får; det är i förlåtandet vi blir förlåtna; och det är i döendet vi föds till evigt liv. Amen.",
+      "source": "Franciscus bön",
+      "tags": ["peace", "service", "francis"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-healing",
+      "title": "Bön om Helande",
+      "category": "intercession",
+      "content": "Himmelske Fader, vi kommer inför dig och söker din helande beröring. Du är den store Läkaren och inget är omöjligt för dig. Vi ber för dem som är sjuka till kropp, sinne eller ande. Återställ dem till helhet enligt din fullkomliga vilja. Giv styrka åt vårdgivare, tröst åt familjer och hopp åt alla som lider. Må din helande kraft flöda genom läkares och sjuksköterskors händer. Vi förtröstar på din kärlek och barmhärtighet. Genom Jesus Kristus, vår Herre. Amen.",
+      "source": "Nutida",
+      "tags": ["healing", "sick", "comfort"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-of-confession",
+      "title": "Syndabekännelse",
+      "category": "confession",
+      "content": "Barmhärtige Gud, vi bekänner att vi har syndat mot dig i tankar, ord och gärningar, genom det vi har gjort och det vi har underlåtit att göra. Vi har icke älskat dig av hela vårt hjärta; vi har icke älskat våra medmänniskor som oss själva. Vi ångrar oss uppriktigt och beder ödmjukt om förlåtelse. För din Son Jesu Kristi skull, förbarma dig över oss och förlåt oss, så att vi må glädja oss i din vilja och vandra på dina vägar, till ditt namns ära. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["confession", "repentance", "forgiveness"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-of-thanksgiving",
+      "title": "Tackbön",
+      "category": "thanksgiving",
+      "content": "Allsmäktige Gud, all barmhärtighets Fader, vi dina ovärdiga tjänare frambär vår ödmjuka tacksägelse för all din godhet och kärleksfullhet mot oss och alla dem du har skapat. Vi prisar dig för vår skapelse, vårt bevarande och alla välsignelser i detta liv; men framför allt för din omätliga kärlek i världens återlösning genom vår Herre Jesus Kristus, för nådens medel och för härlighetens hopp. Och vi ber dig: giv oss en sådan medvetenhet om din barmhärtighet, att vi med tacksamma hjärtan visar ditt lov, icke blott med våra läppar utan i våra liv, genom att överlämna oss till din tjänst och genom att vandra inför dig i helighet och rättfärdighet alla våra dagar; genom Jesus Kristus, vår Herre, honom som med dig och den Helige Ande tillhör ära och pris i alla evigheters evighet. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["thanksgiving", "gratitude", "praise"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "serenity-prayer",
+      "title": "Sinnesrobönen",
+      "category": "contemporary",
+      "content": "Gud, giv mig sinnesro att acceptera det jag inte kan förändra, mod att förändra det jag kan, och vishet att inse skillnaden. Att leva en dag i taget; att njuta ett ögonblick i taget; att ta emot motgångar som en väg till frid; att, såsom Han gjorde, ta denna syndiga värld som den är, inte som jag vill ha den; att förtrösta på att Han skall göra allting rätt om jag överlämnar mig åt Hans vilja; att jag må vara någorlunda lycklig i detta liv och till största nytta för Gud och mina medmänniskor. Amen.",
+      "source": "Reinhold Niebuhr",
+      "tags": ["serenity", "acceptance", "wisdom"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-guidance",
+      "title": "Bön om Vägledning",
+      "category": "personal",
+      "content": "Kärleksfulle Gud, du känner den väg som ligger framför oss. När vi är osäkra om vilken riktning vi ska ta, var vår vägvisare. När vi fruktar de utmaningar vi möter, var vår styrka. När vi överväldigas av de beslut som väntar oss, giv oss din vishet. Hjälp oss att lita på din fullkomliga timing och att vandra i tro, vetande att du alltid är med oss. Led oss på den eviga vägen. Genom Jesus Kristus, vår Herre. Amen.",
+      "source": "Nutida",
+      "tags": ["guidance", "wisdom", "trust"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-family",
+      "title": "Bön för Familjen",
+      "category": "intercession",
+      "content": "Himmelske Fader, vi tackar dig för familjens gåva. Välsigna våra hem med din närvaro och fyll dem med kärlek, glädje och frid. Hjälp oss att vara tålmodiga med varandra, att snabbt förlåta och att stödja varandra genom livets alla skeden. Beskydda våra barn och led dem på dina vägar. Stärk banden mellan oss och hjälp oss att vara en återspegling av din kärlek för världen. Genom Jesus Kristus, vår Herre. Amen.",
+      "source": "Nutida",
+      "tags": ["family", "home", "children"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-world",
+      "title": "Bön för Världen",
+      "category": "intercession",
+      "content": "Allsmäktige Gud, alla nationers härskare, vi ber för vår värld. Bringa fred där det råder konflikt, hopp där det råder förtvivlan och helande där det finns brokenhet. Led våra ledare med vishet och redlighet. Hjälp oss att vara goda förvaltare av din skapelse och att vårda oss om dem som är i nöd. Förena oss i vår gemensamma mänsklighet och hjälp oss att arbeta tillsammans för rättvisa och fred. Må ditt rike komma på jorden såsom i himmelen. Genom Jesus Kristus, vår Herre. Amen.",
+      "source": "Nutida",
+      "tags": ["world", "peace", "justice"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-strength",
+      "title": "Bön om Styrka",
+      "category": "personal",
+      "content": "Herre Gud, när vi är svaga är du stark. När vi är trötta ger du oss vila. När vi är överväldigade är du vår tillflykt. Giv oss den styrka vi behöver för denna dag. Hjälp oss att icke förlita oss på vår egen kraft, utan på din väldiga styrka. Förnya vår ande och vederkvick våra själar. Må vi finna vårt hopp och vår trygghet i dig allena. Genom Jesus Kristus, vår Herre. Amen.",
+      "source": "Nutida",
+      "tags": ["strength", "weakness", "refuge"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "noon-prayer",
+      "title": "Middagsbön",
+      "category": "noon",
+      "content": "Herre Jesus Kristus, vid denna tid på dagen gör vi uppehåll i våra sysslor för att minnas din närvaro. Förnya vår kraft för de uppgifter som återstår. Hjälp oss att vandra med dig genom resten av denna dag. I ditt namn ber vi. Amen.",
+      "source": "Liturgisk tradition",
+      "tags": ["noon", "midday", "pause", "renewal"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "family-prayer",
+      "title": "Familjebön",
+      "category": "family",
+      "content": "Himmelske Fader, vi tackar dig för familjens gåva. Välsigna våra hem med din närvaro och fyll dem med kärlek, glädje och frid. Hjälp oss att vara tålmodiga med varandra, att snabbt förlåta och att stödja varandra genom livets alla skeden. Beskydda våra barn och led dem på dina vägar. Stärk banden mellan oss och hjälp oss att vara en återspegling av din kärlek för världen. Genom Jesus Kristus, vår Herre. Amen.",
+      "source": "Nutida",
+      "tags": ["family", "home", "children"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-exam",
+      "title": "Bön före Examen",
+      "category": "occasions",
+      "content": "Herre, jag ber om din välsignelse inför denna examen. Lugna mina nerver och klarna mitt sinne. Hjälp mig att minnas det jag har studerat och att göra mitt bästa. Giv mig tillit till mina förmågor och frid i mitt hjärta. Må jag göra din vilja i allting. Amen.",
+      "source": "Nutida",
+      "tags": ["student", "exam", "calm", "occasions"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-travel",
+      "title": "Resebön",
+      "category": "occasions",
+      "content": "Allsmäktige Gud, vi ber om ditt beskydd på denna resa. Bevara alla resande från fara och olyckor. Låt dem resa tryggt och återförenas lyckligt med sina nära och kära. Välsigna alla som färdas till lands, till sjöss och i luften. Genom Kristus, vår Herre. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["travel", "protection", "safety", "occasions"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-new-job",
+      "title": "Bön för Nytt Arbete",
+      "category": "occasions",
+      "content": "Himmelske Fader, jag tackar dig för denna nya möjlighet. Led mig när jag påbörjar detta nya kapitel i mitt liv. Giv mig vishet att lära, nåd i mötet med andra och styrka att möta utmaningar. Må jag vara ett ljus för dig på denna plats. I Jesu namn. Amen.",
+      "source": "Nutida",
+      "tags": ["work", "new-beginning", "guidance", "occasions"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-anxiety",
+      "title": "Bön vid Ångest",
+      "category": "occasions",
+      "content": "Fridens Gud, mitt hjärta är oroligt och mitt sinne rastlöst. Bringa ditt lugn till min oroliga ande. Hjälp mig att förtrösta på dig av hela mitt hjärta och inte förlita mig på mitt eget förstånd. Påminn mig om att du har allt under kontroll och att dina planer för mig är goda. Fyll mitt hjärta med din frid som övergår allt förstånd. I Jesu namn. Amen.",
+      "source": "Nutida – efter Filipperbrevet 4:6–7",
+      "tags": ["anxiety", "peace", "trust", "occasions"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "lutheri-hommikupalve",
+      "title": "Luthers Morgonbön",
+      "category": "liturgical",
+      "content": "Jag tackar dig, min himmelske Fader, genom Jesus Kristus, din käre Son, att du denna natt har bevarat mig från all skada och fara; och jag ber dig att du denna dag också vill bevara mig från synd och allt ont, så att allt mitt görande och leverne må behaga dig. Ty i dina händer befaller jag mig, min kropp och min själ och allting. Låt din helige ängel vara med mig, så att den onde fienden icke får någon makt över mig. Amen.",
+      "source": "Martin Luther",
+      "tags": ["luther", "morning", "protection"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "angelus",
+      "title": "Angelus",
+      "category": "liturgical",
+      "content": "Herrens ängel förkunnade för Maria. Och hon blev havande av den Helige Ande. Var hälsad, Maria... Se, Herrens tjänarinna. Ske mig efter ditt ord. Var hälsad, Maria... Och Ordet blev kött. Och tog sin boning bland oss. Var hälsad, Maria... Bed för oss, heliga Guds Moder. Att vi må bli värdiga Kristi löften. Låt oss bedja: Utgjut, vi beder dig, o Herre, din nåd i våra hjärtan, att vi, som genom ängelns budskap fått kunskap om din Sons, Kristi, människoblivande, genom hans lidande och kors må föras till uppståndelsens härlighet. Genom densamme Kristus, vår Herre. Amen.",
+      "source": "Traditionell",
+      "tags": ["angelus", "mary", "incarnation"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "confession",
+      "title": "Allmän Bekännelse",
+      "category": "liturgical",
+      "content": "Allsmäktige och barmhärtige Fader, vi har farit vilse och avvikit från dina vägar liksom förlorade får. Vi har alltför mycket följt våra egna hjärtans ingifvelser och begärelser. Vi har brutit mot dina heliga bud. Vi har underlåtit att göra det vi borde ha gjort, och vi har gjort det vi icke borde ha gjort, och det finns ingen hälsa i oss. Men du, Herre, förbarma dig över oss, eländiga syndare. Skona dem, o Gud, som bekänner sina fel. Upprätta dem som bättrar sig, enligt dina löften givna åt människosläktet i Kristus Jesus, vår Herre. Och giv, o barmhärtige Fader, för hans skull, att vi hädanefter må leva ett gudfruktigt, rättfärdigt och nykter leverne, till ditt heliga namns ära. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["confession", "repentance", "daily-office"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "benedictus",
+      "title": "Benedictus (Sakarias lovsång)",
+      "category": "liturgical",
+      "content": "Lovad vare Herren, Israels Gud, ty han har besökt och förlossat sitt folk och har upprättat åt oss ett frälsningens horn i sin tjänare Davids hus, såsom han hade talat genom sina heliga profeters mun från urminnes tid: frälsning från våra fiender och ur alla deras hand som hatar oss, för att göra barmhärtighet med våra fäder och ihågkomma sitt heliga förbund, den ed som han svor vår fader Abraham, att han skulle giva oss, att vi, frälsta ur våra fienders hand, må tjäna honom utan fruktan, i helighet och rättfärdighet inför honom i alla våra dagar. Och du, barn, skall kallas den Högstes profet, ty du skall gå före Herren och bereda hans vägar, till att giva hans folk kunskap om frälsningen genom deras synders förlåtelse, för vår Guds innerliga barmhärtighets skull, genom vilken soluppgången från höjden har besökt oss, för att lysa över dem som sitter i mörker och dödens skugga och styra våra fötter in på fridens väg.",
+      "source": "Lukas 1:68–79",
+      "tags": ["canticle", "zechariah", "morning-prayer", "daily-office"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "magnificat",
+      "title": "Magnificat (Marias lovsång)",
+      "category": "liturgical",
+      "content": "Min själ prisar storligen Herren, och min ande fröjdar sig i Gud, min Frälsare. Ty han har sett till sin tjänarinnas ringhet. Se, härefter skola alla släkten prisa mig salig. Ty den Mäktige har gjort stora ting med mig, och heligt är hans namn. Och hans barmhärtighet varar från släkte till släkte över dem som fruktar honom. Han har utfört väldiga gärningar med sin arm; han har förskingrat dem som hade övermodiga tankar i sina hjärtan. Han har störtat härskare från deras troner och upphöjt de ringa. Hungriga har han mättat med sitt goda, och rika har han skickat bort med tomma händer. Han har tagit sig an sin tjänare Israel och kommit ihåg sin barmhärtighet, såsom han lovade våra fäder, Abraham och hans säd, till evig tid.",
+      "source": "Lukas 1:46–55",
+      "tags": ["canticle", "mary", "evening-prayer", "daily-office"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "nunc-dimittis",
+      "title": "Nunc Dimittis (Simeons lovsång)",
+      "category": "liturgical",
+      "content": "Herre, nu låter du din tjänare fara i frid, efter ditt ord. Ty mina ögon har sett din frälsning, som du har berett inför alla folk, ett ljus med uppenbarelse åt hedningarna och härlighet åt ditt folk Israel.",
+      "source": "Lukas 2:29–32",
+      "tags": ["canticle", "simeon", "evening-prayer", "daily-office"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "st-michael-prayer",
+      "title": "Bön till Ärkeängeln Mikael",
+      "category": "liturgical",
+      "content": "Helige Mikael, ärkeängel, försvara oss i striden. Var vårt värn mot djävulens ondska och försåt. Vi beder ödmjukt att Gud måtte tukta honom, och du, den himmelska härskarans furste, nedstörta med Guds kraft till helvetet Satan och alla onda andar som kringströvar i världen för att fördärva själar. Amen.",
+      "source": "Påve Leo XIII, 1886",
+      "tags": ["st-michael", "archangel", "protection", "spiritual-warfare"],
+      "language": "sv",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    }
+  ]
+}

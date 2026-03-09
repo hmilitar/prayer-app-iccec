@@ -89,15 +89,23 @@ export default function Header({
         )}
       </View>
       
-      <View style={styles.centerSection}>
-        <Text style={styles.title} numberOfLines={1}>
+      <View style={styles.centerSection} accessibilityRole="header">
+        <Text
+          style={styles.title}
+          numberOfLines={1}
+          accessibilityLabel={title}
+        >
           {title}
         </Text>
-        {subtitle && (
-          <Text style={styles.subtitle} numberOfLines={1}>
+        {subtitle ? (
+          <Text
+            style={styles.subtitle}
+            numberOfLines={1}
+            accessibilityLabel={subtitle}
+          >
             {subtitle}
           </Text>
-        )}
+        ) : null}
       </View>
       
       <View style={styles.rightSection}>
@@ -180,5 +188,6 @@ const createStyles = (theme: Theme & { userFontSize: string }) => StyleSheet.cre
     textAlign: 'center',
     marginTop: getSpacing(0.25),
     fontFamily: theme.typography.fontFamily.regular,
+    fontStyle: 'italic',
   },
 });

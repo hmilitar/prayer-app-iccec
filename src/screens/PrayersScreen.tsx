@@ -1,6 +1,6 @@
 // Prayers Screen - Browse and access prayer collections
 
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState, useCallback, useRef } from 'react';
 import { View, StyleSheet, Alert } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
@@ -28,7 +28,13 @@ export default function PrayersScreen() {
   const [refreshing, setRefreshing] = useState(false);
   
   const theme = useTheme();
-  const storageService = new AsyncStorageService();
+
+  // Stable singleton — prevents loadFavorites from being recreated every render
+  const [storageService] = useState(() => new AsyncStorageService());
+
+  // Track the latest language to detect stale async operations
+  const latestLanguageRef = useRef(currentLanguage);
+  latestLanguageRef.current = currentLanguage;
 
   const loadFavorites = useCallback(async () => {
     try {
@@ -63,41 +69,43 @@ export default function PrayersScreen() {
     }
   }, [currentLanguage, loadPrayers, loadFavorites, t]);
 
-  // Handle tab focus - refresh when tab is tapped
+  // Handle tab focus - reload favorites; prayers are already managed by language effect
   useFocusEffect(
     useCallback(() => {
-      // Simple reload without complex dependencies
-      if (!loading) {
-        // Trigger a simple reload
-        loadPrayers(currentLanguage).catch(console.error);
-      }
-    }, [loading, currentLanguage, loadPrayers])
+      // Only refresh favorites on focus—prayers are handled by the language effect below
+      loadFavorites().catch(console.error);
+    }, [loadFavorites])
   );
 
-  // Ensure component re-renders when settings change
+  // Load prayers when language changes — includes a stale-check to prevent
+  // race conditions where an older async load overwrites a newer one
   useEffect(() => {
-    // This effect will run whenever theme, currentLanguage, or settings change
-    // forcing a re-render of the component when settings are updated
-  }, [theme, currentLanguage, settings]);
-  useEffect(() => {
-    // This effect will run whenever theme or currentLanguage change
-    // forcing a re-render of the component when settings are updated
-  }, [theme, currentLanguage]);
+    let stale = false;
 
-  // Load prayers and favorites when language changes
-  useEffect(() => {
     const loadData = async () => {
       try {
-        // Force reload when language changes
+        // Force reload so the skip-guard in useData is bypassed
         await loadPrayers(currentLanguage, true);
+
+        // Stale-check: if the language changed while we were loading,
+        // discard this result silently — the newer effect will handle it
+        if (stale) return;
+
         await loadFavorites();
-      } catch (error) {
-        console.error('PrayersScreen: Error loading data:', error);
+      } catch (err) {
+        if (!stale) {
+          console.error('PrayersScreen: Error loading data:', err);
+        }
       }
     };
     
     loadData();
-  }, [currentLanguage]);
+
+    return () => {
+      // Mark this effect instance as stale so in-flight loads are discarded
+      stale = true;
+    };
+  }, [currentLanguage, loadPrayers, loadFavorites]);
 
   const handlePrayerPress = useCallback((prayer: Prayer) => {
     // Navigate to prayer detail screen

@@ -9,7 +9,7 @@ export type RootStackParamList = {
 // Tab navigator within the main screen
 export type TabParamList = {
   Home: undefined;
-  DailyReadings: { timeOfDay?: string } | undefined;
+  DailyReadings: { timeOfDay?: 'morning' | 'noon' | 'evening' | 'family' } | undefined;
   Prayers: undefined;
   Settings: undefined;
 };

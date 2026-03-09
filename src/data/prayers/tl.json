@@ -371,6 +371,76 @@
         "updatedAt": "2024-01-01T00:00:00Z",
         "version": 1
       }
+    },
+    {
+      "id": "confession",
+      "title": "Pangkalahatang Pagkumpisal",
+      "category": "liturgical",
+      "content": "Makapangyarihan at pinakamahabaging Ama, kami ay nagkamali at naligaw mula sa Iyong mga landas tulad ng nawawalang mga tupa. Masyadong sinunod namin ang mga kagustuhan at mga hangarin ng aming mga puso. Kami ay nagkasala laban sa Iyong mga banal na batas. Hindi namin ginawa ang mga bagay na dapat naming gawin; at ginawa namin ang mga bagay na hindi namin dapat gawin; at walang kalusugan sa amin. Ngunit Ikaw, O Panginoon, maawa Ka sa amin, mga kaawa-awang nagkasala. Iligtas Mo, O Diyos, ang mga nagpapahayag ng kanilang mga pagkakamali. Ibalik Mo ang mga nagsisisi; ayon sa Iyong mga pangako na ipinahayag sa sangkatauhan kay Kristo Hesus na aming Panginoon. At ipagkaloob Mo, O pinakamahabaging Ama, alang-alang sa Kanya; na mula ngayon ay mamuhay kami nang banal, matuwid, at mahinahon, sa kaluwalhatian ng Iyong banal na Pangalan. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["pagkumpisal", "pagsisisi", "pang-araw-araw-na-dasal"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "benedictus",
+      "title": "Benedictus (Awit ni Zacarias)",
+      "category": "liturgical",
+      "content": "Purihin ang Panginoong Diyos ng Israel, sapagkat dinalaw at tinubos niya ang kanyang bayan; at nagtaas siya ng makapangyarihang kaligtasan para sa atin, sa bahay ng kanyang lingkod na si David; gaya ng sinabi niya sa pamamagitan ng bibig ng kanyang mga banal na propeta, na mula pa noong una: na tayo ay iligtas mula sa ating mga kaaway, at mula sa kamay ng lahat ng napopoot sa atin; upang tuparin ang habag na ipinangako sa ating mga ninuno, at alalahanin ang kanyang banal na tipan; upang tuparin ang sumpa na kanyang isinumpa sa ating ninunong si Abraham, na ibibigay sa atin; na tayo na naligtas mula sa kamay ng ating mga kaaway ay maglingkod sa kanya nang walang takot; sa kabanalan at katuwiran sa kanyang harapan, sa lahat ng araw ng ating buhay. At ikaw, sanggol, ay tatawaging propeta ng Kataas-taasan, sapagkat magpapauna ka sa harapan ng Panginoon upang ihanda ang kanyang mga landas; upang magbigay ng kaalaman ng kaligtasan sa kanyang bayan para sa kapatawaran ng kanilang mga kasalanan, sa pamamagitan ng malambot na habag ng ating Diyos; kung saan ang bukang-liwayway mula sa kaitaasan ay dumalaw sa atin; upang magbigay ng liwanag sa mga nakaupo sa kadiliman, at sa lilim ng kamatayan, at upang gabayan ang ating mga paa sa daan ng kapayapaan.",
+      "source": "Lucas 1:68-79",
+      "tags": ["kantikulo", "zacarias", "panalangin-sa-umaga", "pang-araw-araw-na-dasal"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "magnificat",
+      "title": "Magnificat (Awit ni Maria)",
+      "category": "liturgical",
+      "content": "Dinadakila ng aking kaluluwa ang Panginoon, at nagalak ang aking espiritu sa Diyos na aking Tagapagligtas. Sapagkat nilingap niya ang kababaan ng kanyang lingkod. Sapagkat mula ngayon, tatawaging mapalad ako ng lahat ng salinlahi. Sapagkat ang Makapangyarihan ay gumawa ng mga dakilang bagay sa akin, at banal ang kanyang Pangalan. At ang kanyang habag ay sa mga natatakot sa kanya sa lahat ng salinlahi. Nagpakita siya ng kapangyarihan sa pamamagitan ng kanyang bisig; ikinalat niya ang mga palalo sa imahinasyon ng kanilang mga puso. Ibinaba niya ang mga makapangyarihan mula sa kanilang trono, at itinaas niya ang mga mababa at mapagpakumbaba. Pinuspos niya ng mabubuting bagay ang mga nagugutom, at pinalayas niya ang mga mayayaman nang walang dala. Inalala niya ang kanyang habag at tinulungan ang kanyang lingkod na Israel, gaya ng ipinangako niya sa ating mga ninuno, kay Abraham at sa kanyang lahi, magpakailanman.",
+      "source": "Lucas 1:46-55",
+      "tags": ["kantikulo", "maria", "panalangin-sa-gabi", "pang-araw-araw-na-dasal"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "nunc-dimittis",
+      "title": "Nunc Dimittis (Awit ni Simeon)",
+      "category": "liturgical",
+      "content": "Panginoon, ngayon ay pinahahayo Mo na ang Iyong lingkod nang payapa, ayon sa Iyong salita. Sapagkat nakita ng aking mga mata ang Iyong kaligtasan, na inihanda Mo sa harapan ng lahat ng tao; isang liwanag na magliliwanag sa mga Hentil, at kaluwalhatian ng Iyong bayang Israel.",
+      "source": "Lucas 2:29-32",
+      "tags": ["kantikulo", "simeon", "panalangin-sa-gabi", "pang-araw-araw-na-dasal"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "st-michael-prayer",
+      "title": "Panalangin kay San Miguel Arkanghel",
+      "category": "liturgical",
+      "content": "Banal na Miguel Arkanghel, ipagtanggol mo kami sa araw ng labanan. Maging aming sanggalang laban sa kasamaan at mga bitag ng diyablo. Nawa'y sawayin siya ng Diyos, mapagpakumbaba naming dalangin; at ikaw, O Prinsipe ng hukbong makalangit, sa pamamagitan ng kapangyarihan ng Diyos, itapon mo sa impiyerno si Satanas at lahat ng masasamang espiritu na gumagala sa mundo upang sirain ang mga kaluluwa. Amen.",
+      "source": "Papa Leon XIII, 1886",
+      "tags": ["san-miguel", "arkanghel", "proteksyon", "espirituwal-na-labanan"],
+      "language": "tl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
     }
   ]
 }

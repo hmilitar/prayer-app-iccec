@@ -1,0 +1,438 @@
+{
+  "prayers": [
+    {
+      "id": "lords-prayer",
+      "title": "Pai Nosso",
+      "category": "liturgical",
+      "content": "Pai Nosso, que estais no céu, santificado seja o vosso Nome. Venha a nós o vosso Reino. Seja feita a vossa vontade, assim na terra como no céu. O pão nosso de cada dia nos dai hoje. Perdoai-nos as nossas ofensas, assim como nós perdoamos a quem nos tem ofendido. E não nos deixeis cair em tentação, mas livrai-nos do mal. Pois vosso é o Reino, o poder e a glória, para sempre. Amém.",
+      "source": "Mateus 6:9-13",
+      "tags": ["traditional", "jesus", "foundational"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "gloria-patri",
+      "title": "Glória ao Pai",
+      "category": "liturgical",
+      "content": "Glória ao Pai, e ao Filho, e ao Espírito Santo. Assim como era no princípio, agora e sempre, por todos os séculos dos séculos. Amém.",
+      "source": "Tradicional",
+      "tags": ["traditional", "trinity", "doxology"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "apostles-creed",
+      "title": "Credo dos Apóstolos",
+      "category": "liturgical",
+      "content": "Creio em Deus Pai todo-poderoso, criador do céu e da terra. E em Jesus Cristo, seu único Filho, nosso Senhor, que foi concebido pelo poder do Espírito Santo, nasceu da Virgem Maria, padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu aos infernos. Ao terceiro dia ressuscitou dos mortos; subiu ao céu, está sentado à direita de Deus Pai todo-poderoso, de onde há de vir a julgar os vivos e os mortos. Creio no Espírito Santo, na santa Igreja católica, na comunhão dos santos, na remissão dos pecados, na ressurreição da carne, e na vida eterna. Amém.",
+      "source": "Tradicional",
+      "tags": ["creed", "faith", "foundational"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "come-holy-spirit",
+      "title": "Vinde, Espírito Santo",
+      "category": "liturgical",
+      "content": "Vinde, Espírito Santo, enchei os corações dos vossos fiéis e acendei neles o fogo do vosso amor. Enviai o vosso Espírito e tudo será criado, e renovareis a face da terra. Ó Deus, que instruístes os corações dos vossos fiéis com a luz do Espírito Santo, concedei-nos que, pelo mesmo Espírito, tenhamos o gosto do que é reto e gozemos sempre da sua consolação. Por Cristo, nosso Senhor. Amém.",
+      "source": "Oração Carismática Tradicional",
+      "tags": ["holy-spirit", "charismatic", "pentecost", "renewal"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "morning-prayer",
+      "title": "Oração da Manhã",
+      "category": "morning",
+      "content": "Deus todo-poderoso, agradecemos-vos pelo dom deste novo dia. Assim como o sol se levanta, que a vossa luz brilhe sobre nós e guie os nossos passos. Concedei-nos sabedoria nas nossas decisões, força nos nossos desafios e paz nos nossos corações. Ajudai-nos a servir-vos fielmente e a amar o próximo como a nós mesmos. Por Jesus Cristo, nosso Senhor. Amém.",
+      "source": "Tradição do Livro de Oração Comum",
+      "tags": ["morning", "daily", "guidance"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "evening-prayer",
+      "title": "Oração da Noite",
+      "category": "evening",
+      "content": "Deus misericordioso, ao chegar ao fim deste dia, agradecemos-vos pelas vossas inúmeras bênçãos. Perdoai-nos as nossas faltas e imperfeições. Concedei-nos um descanso pacífico e restaurai as nossas almas. Velai sobre os nossos entes queridos e todos os que estão em necessidade. Que os vossos anjos nos guardem durante a noite, e que despertemos renovados para vos servir amanhã. Em nome de Jesus. Amém.",
+      "source": "Tradicional",
+      "tags": ["evening", "rest", "forgiveness"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-spiritual-gifts",
+      "title": "Oração pelos Dons Espirituais",
+      "category": "charismatic",
+      "content": "Pai Celestial, agradecemos-vos pelos dons do vosso Espírito Santo. Concedei-nos sabedoria para usar esses dons na edificação da vossa Igreja e no avanço do vosso Reino. Que desejemos ardentemente os dons espirituais, especialmente o de profetizar e proclamar a vossa Palavra com ousadia. Enchei-nos de novo com o vosso Espírito, para que possamos ministrar com poder e demonstrar o vosso amor ao mundo. Por Jesus Cristo, nosso Senhor. Amém.",
+      "source": "1 Coríntios 12-14",
+      "tags": ["spiritual-gifts", "charismatic", "ministry", "holy-spirit"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-communion",
+      "title": "Oração antes da Comunhão",
+      "category": "sacramental",
+      "content": "Deus todo-poderoso, a quem todos os corações estão abertos, todos os desejos são conhecidos e de quem nenhum segredo está escondido: Purificai os pensamentos dos nossos corações pela inspiração do vosso Espírito Santo, para que vos amemos perfeitamente e dignamente magnifiquemos o vosso santo Nome; por Cristo, nosso Senhor. Não presumimos vir à vossa Mesa, ó Senhor misericordioso, confiando na nossa própria justiça, mas nas vossas múltiplas e grandes misericórdias. Concedei-nos pois, Senhor bondoso, comer a carne do vosso amado Filho Jesus Cristo e beber o seu sangue, para que os nossos corpos pecaminosos sejam purificados pelo seu corpo e as nossas almas lavadas pelo seu preciosíssimo sangue. Amém.",
+      "source": "Tradição do Livro de Oração Comum",
+      "tags": ["communion", "eucharist", "sacramental", "preparation"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-meals",
+      "title": "Oração antes das Refeições",
+      "category": "thanksgiving",
+      "content": "Abençoai-nos, ó Senhor, e a estes dons que vamos receber da vossa bondade, por Cristo, nosso Senhor. Amém.",
+      "source": "Tradicional",
+      "tags": ["meals", "blessing", "gratitude"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-peace",
+      "title": "Oração pela Paz",
+      "category": "intercession",
+      "content": "Senhor, fazei de mim um instrumento da vossa paz. Onde houver ódio, que eu leve o amor; onde houver ofensa, que eu leve o perdão; onde houver dúvida, que eu leve a fé; onde houver desespero, que eu leve a esperança; onde houver trevas, que eu leve a luz; onde houver tristeza, que eu leve a alegria. Ó Mestre Divino, fazei que eu procure mais consolar que ser consolado; compreender que ser compreendido; amar que ser amado. Pois é dando que se recebe; é perdoando que se é perdoado; e é morrendo que se nasce para a vida eterna. Amém.",
+      "source": "Oração de São Francisco de Assis",
+      "tags": ["peace", "service", "francis"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-healing",
+      "title": "Oração pela Cura",
+      "category": "intercession",
+      "content": "Pai Celestial, vimos diante de vós buscando o vosso toque de cura. Vós sois o Grande Médico e nada vos é impossível. Oramos por todos os que estão doentes no corpo, na mente ou no espírito. Restaurai-os à plenitude segundo a vossa perfeita vontade. Dai força aos cuidadores, consolo às famílias e esperança a todos os que sofrem. Que o vosso poder de cura flua pelas mãos dos médicos e enfermeiros. Confiamos no vosso amor e misericórdia. Por Jesus Cristo, nosso Senhor. Amém.",
+      "source": "Contemporânea",
+      "tags": ["healing", "sick", "comfort"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-of-confession",
+      "title": "Oração de Confissão",
+      "category": "confession",
+      "content": "Deus misericordiosíssimo, confessamos que pecámos contra vós em pensamento, palavra e obra, pelo que fizemos e pelo que deixámos de fazer. Não vos amámos de todo o coração; não amámos o próximo como a nós mesmos. Estamos verdadeiramente arrependidos e humildemente nos arrependemos. Pelo mérito do vosso Filho Jesus Cristo, tende piedade de nós e perdoai-nos; para que possamos nos deleitar na vossa vontade e andar nos vossos caminhos, para a glória do vosso Nome. Amém.",
+      "source": "Livro de Oração Comum",
+      "tags": ["confession", "repentance", "forgiveness"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-of-thanksgiving",
+      "title": "Oração de Ação de Graças",
+      "category": "thanksgiving",
+      "content": "Deus todo-poderoso, Pai de todas as misericórdias, nós, vossos indignos servos, rendemos-vos humilde ação de graças por toda a vossa bondade e benevolência para conosco e para com todos os que criastes. Bendizemo-vos pela nossa criação, preservação e todas as bênçãos desta vida; mas sobretudo pelo vosso incomensurável amor na redenção do mundo por nosso Senhor Jesus Cristo; pelos meios de graça e pela esperança de glória. E nós vos suplicamos, dai-nos uma consciência tão profunda das vossas misericórdias, que com corações verdadeiramente agradecidos possamos manifestar o vosso louvor, não apenas com os nossos lábios, mas nas nossas vidas, entregando-nos ao vosso serviço e andando diante de vós em santidade e justiça todos os nossos dias; por Jesus Cristo, nosso Senhor, a quem, convosco e com o Espírito Santo, seja toda honra e glória, por todos os séculos. Amém.",
+      "source": "Livro de Oração Comum",
+      "tags": ["thanksgiving", "gratitude", "praise"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "serenity-prayer",
+      "title": "Oração da Serenidade",
+      "category": "contemporary",
+      "content": "Deus, concedei-me a serenidade para aceitar as coisas que não posso mudar, coragem para mudar as coisas que posso, e sabedoria para distinguir uma da outra. Vivendo um dia de cada vez; desfrutando um momento de cada vez; aceitando as dificuldades como um caminho para a paz; aceitando, como Ele fez, este mundo pecador como ele é, e não como eu gostaria que fosse; confiando que Ele fará tudo certo se eu me entregar à sua vontade; para que eu possa ser razoavelmente feliz nesta vida e supremamente útil a Deus e aos meus semelhantes. Amém.",
+      "source": "Reinhold Niebuhr",
+      "tags": ["serenity", "acceptance", "wisdom"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-guidance",
+      "title": "Oração por Orientação",
+      "category": "personal",
+      "content": "Deus amoroso, vós conheceis o caminho que está diante de nós. Quando estivermos incertos sobre a direção a seguir, sede o nosso guia. Quando tivermos medo dos desafios que enfrentamos, sede a nossa força. Quando estivermos sobrecarregados pelas decisões que temos pela frente, concedei-nos a vossa sabedoria. Ajudai-nos a confiar no vosso tempo perfeito e a caminhar na fé, sabendo que estais sempre conosco. Guiai-nos no caminho da eternidade. Por Jesus Cristo, nosso Senhor. Amém.",
+      "source": "Contemporânea",
+      "tags": ["guidance", "wisdom", "trust"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-family",
+      "title": "Oração pela Família",
+      "category": "intercession",
+      "content": "Pai Celestial, agradecemos-vos pelo dom da família. Abençoai os nossos lares com a vossa presença e enchei-os de amor, alegria e paz. Ajudai-nos a ser pacientes uns com os outros, a perdoar rapidamente e a apoiar-nos mutuamente em todas as estações da vida. Protegei os nossos filhos e guiai-os nos vossos caminhos. Fortalecei os laços entre nós e ajudai-nos a ser um reflexo do vosso amor para o mundo. Por Jesus Cristo, nosso Senhor. Amém.",
+      "source": "Contemporânea",
+      "tags": ["family", "home", "children"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-world",
+      "title": "Oração pelo Mundo",
+      "category": "intercession",
+      "content": "Deus todo-poderoso, governante de todas as nações, oramos pelo nosso mundo. Trazei paz onde há conflito, esperança onde há desespero e cura onde há sofrimento. Guiai os nossos líderes com sabedoria e integridade. Ajudai-nos a ser bons administradores da vossa criação e a cuidar dos necessitados. Uni-nos na nossa humanidade comum e ajudai-nos a trabalhar juntos pela justiça e pela paz. Venha o vosso Reino assim na terra como no céu. Por Jesus Cristo, nosso Senhor. Amém.",
+      "source": "Contemporânea",
+      "tags": ["world", "peace", "justice"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-strength",
+      "title": "Oração por Força",
+      "category": "personal",
+      "content": "Senhor Deus, quando somos fracos, vós sois forte. Quando estamos cansados, vós nos dais descanso. Quando estamos sobrecarregados, vós sois o nosso refúgio. Concedei-nos a força de que necessitamos para este dia. Ajudai-nos a confiar não no nosso próprio poder, mas na vossa poderosa força. Renovai os nossos espíritos e restaurai as nossas almas. Que encontremos a nossa esperança e confiança somente em vós. Por Jesus Cristo, nosso Senhor. Amém.",
+      "source": "Contemporânea",
+      "tags": ["strength", "weakness", "refuge"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "noon-prayer",
+      "title": "Oração do Meio-Dia",
+      "category": "noon",
+      "content": "Senhor Jesus Cristo, nesta hora do dia, fazemos uma pausa nas nossas atividades para recordar a vossa presença. Renovai as nossas forças para as tarefas que ainda restam. Ajudai-nos a caminhar convosco durante o resto deste dia. Em vosso nome oramos. Amém.",
+      "source": "Tradição litúrgica",
+      "tags": ["noon", "midday", "pause", "renewal"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "family-prayer",
+      "title": "Oração em Família",
+      "category": "family",
+      "content": "Pai Celestial, agradecemos-vos pelo dom da família. Abençoai os nossos lares com a vossa presença e enchei-os de amor, alegria e paz. Ajudai-nos a ser pacientes uns com os outros, a perdoar rapidamente e a apoiar-nos mutuamente em todas as estações da vida. Protegei os nossos filhos e guiai-os nos vossos caminhos. Fortalecei os laços entre nós e ajudai-nos a ser um reflexo do vosso amor para o mundo. Por Jesus Cristo, nosso Senhor. Amém.",
+      "source": "Contemporânea",
+      "tags": ["family", "home", "children"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-exam",
+      "title": "Oração antes do Exame",
+      "category": "occasions",
+      "content": "Senhor, peço a vossa bênção enquanto me preparo para este exame. Acalmai os meus nervos e clareai a minha mente. Ajudai-me a lembrar do que estudei e a dar o meu melhor. Dai-me confiança nas minhas capacidades e paz no meu coração. Que eu faça a vossa vontade em todas as coisas. Amém.",
+      "source": "Contemporânea",
+      "tags": ["student", "exam", "calm", "occasions"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-travel",
+      "title": "Oração de Viagem",
+      "category": "occasions",
+      "content": "Deus todo-poderoso, pedimos a vossa proteção nesta viagem. Guardai todos os viajantes de perigos e acidentes. Concedei-lhes uma passagem segura e um feliz reencontro com os seus entes queridos. Abençoai todos os que viajam por terra, mar ou ar. Por Cristo, nosso Senhor. Amém.",
+      "source": "Livro de Oração Comum",
+      "tags": ["travel", "protection", "safety", "occasions"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-new-job",
+      "title": "Oração por um Novo Emprego",
+      "category": "occasions",
+      "content": "Pai Celestial, agradeço-vos por esta nova oportunidade. Guiai-me ao iniciar este novo capítulo da minha vida. Dai-me sabedoria para aprender, graça para me relacionar com os outros e força para enfrentar os desafios. Que eu seja uma luz para vós neste lugar. Em nome de Jesus. Amém.",
+      "source": "Contemporânea",
+      "tags": ["work", "new-beginning", "guidance", "occasions"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-anxiety",
+      "title": "Oração contra a Ansiedade",
+      "category": "occasions",
+      "content": "Deus de paz, o meu coração está perturbado e a minha mente inquieta. Trazei a vossa calma ao meu espírito atribulado. Ajudai-me a confiar em vós de todo o coração e a não me apoiar no meu próprio entendimento. Recordai-me de que vós estais no controlo e de que os vossos planos para mim são bons. Enchei o meu coração da vossa paz que excede todo o entendimento. Em nome de Jesus. Amém.",
+      "source": "Contemporânea - baseada em Filipenses 4:6-7",
+      "tags": ["anxiety", "peace", "trust", "occasions"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "lutheri-hommikupalve",
+      "title": "Oração Matinal de Lutero",
+      "category": "liturgical",
+      "content": "Agradeço-vos, meu Pai Celestial, por Jesus Cristo, vosso amado Filho, por me terdes guardado nesta noite de todo o mal e perigo; e peço-vos que me guardeis também neste dia do pecado e de todo o mal, para que todas as minhas ações e a minha vida vos agradem. Pois nas vossas mãos encomendo a mim mesmo, o meu corpo e a minha alma, e todas as coisas. Que o vosso santo anjo esteja comigo, para que o Maligno não tenha poder sobre mim. Amém.",
+      "source": "Martinho Lutero",
+      "tags": ["luther", "morning", "protection"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "angelus",
+      "title": "Angelus",
+      "category": "liturgical",
+      "content": "O Anjo do Senhor anunciou a Maria. E ela concebeu pelo Espírito Santo. Ave Maria... Eis aqui a serva do Senhor. Faça-se em mim segundo a vossa palavra. Ave Maria... E o Verbo se fez carne. E habitou entre nós. Ave Maria... Rogai por nós, Santa Mãe de Deus. Para que sejamos dignos das promessas de Cristo. Oremos: Derramai, Senhor, a vossa graça em nossas almas, para que nós, que pela anunciação do Anjo conhecemos a Encarnação de Cristo, vosso Filho, pela sua Paixão e Cruz sejamos levados à glória da Ressurreição. Pelo mesmo Cristo, nosso Senhor. Amém.",
+      "source": "Tradicional",
+      "tags": ["angelus", "mary", "incarnation"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "confession",
+      "title": "Confissão Geral",
+      "category": "liturgical",
+      "content": "Pai todo-poderoso e misericordiosíssimo, nós errámos e nos desviámos dos vossos caminhos como ovelhas perdidas. Seguimos demasiado os desígnios e desejos dos nossos próprios corações. Ofendemos as vossas santas leis. Deixámos de fazer o que devíamos ter feito; e fizemos o que não devíamos ter feito; e não há saúde em nós. Mas vós, ó Senhor, tende misericórdia de nós, miseráveis pecadores. Poupai, ó Deus, aqueles que confessam as suas faltas. Restaurai aqueles que estão arrependidos, segundo as vossas promessas declaradas à humanidade em Cristo Jesus, nosso Senhor. E concedei, ó Pai misericordiosísmo, por amor dele, que vivamos doravante uma vida piedosa, justa e sóbria, para a glória do vosso santo Nome. Amém.",
+      "source": "Livro de Oração Comum",
+      "tags": ["confession", "repentance", "daily-office"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "benedictus",
+      "title": "Benedictus (Cântico de Zacarias)",
+      "category": "liturgical",
+      "content": "Bendito seja o Senhor Deus de Israel, porque visitou e remiu o seu povo; e nos levantou uma poderosa salvação, na casa de David, seu servo; como falou pela boca dos seus santos profetas, desde o princípio do mundo: que nos salvaria dos nossos inimigos e da mão de todos os que nos odeiam; para manifestar misericórdia aos nossos pais e lembrar-se da sua santa aliança; para cumprir o juramento que fez a Abraão, nosso pai, de nos conceder que, livres da mão dos nossos inimigos, o servíssemos sem temor, em santidade e justiça perante ele, todos os dias da nossa vida. E tu, menino, serás chamado profeta do Altíssimo, porque irás adiante da face do Senhor a preparar os seus caminhos; para dar ao seu povo conhecimento da salvação, pela remissão dos seus pecados, pela entranhável misericórdia do nosso Deus, pela qual nos visitou o sol nascente das alturas; para iluminar os que estão nas trevas e na sombra da morte, e dirigir os nossos pés no caminho da paz.",
+      "source": "Lucas 1:68-79",
+      "tags": ["canticle", "zechariah", "morning-prayer", "daily-office"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "magnificat",
+      "title": "Magnificat (Cântico de Maria)",
+      "category": "liturgical",
+      "content": "A minha alma engrandece ao Senhor, e o meu espírito se alegrou em Deus, meu Salvador. Porque olhou para a humildade da sua serva. Pois eis que desde agora todas as gerações me chamarão bem-aventurada. Porque o Poderoso fez grandes coisas por mim, e santo é o seu Nome. E a sua misericórdia é de geração em geração sobre os que o temem. Com o seu braço agiu poderosamente; dispersou os soberbos nos pensamentos dos seus corações. Derrubou dos tronos os poderosos e exaltou os humildes. Encheu de bens os famintos e despediu vazios os ricos. Socorreu Israel, seu servo, lembrando-se da sua misericórdia, como prometera aos nossos pais, a Abraão e à sua descendência, para sempre.",
+      "source": "Lucas 1:46-55",
+      "tags": ["canticle", "mary", "evening-prayer", "daily-office"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "nunc-dimittis",
+      "title": "Nunc Dimittis (Cântico de Simeão)",
+      "category": "liturgical",
+      "content": "Agora, Senhor, despedis em paz o vosso servo, segundo a vossa palavra. Porque os meus olhos viram a vossa salvação, a qual preparastes perante a face de todos os povos; luz para iluminar as nações e para glória do vosso povo Israel.",
+      "source": "Lucas 2:29-32",
+      "tags": ["canticle", "simeon", "evening-prayer", "daily-office"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "st-michael-prayer",
+      "title": "Oração a São Miguel Arcanjo",
+      "category": "liturgical",
+      "content": "São Miguel Arcanjo, defendei-nos no combate. Sede o nosso refúgio contra a maldade e as ciladas do demónio. Que Deus sobre ele impere, humildemente vos pedimos; e vós, Príncipe da milícia celeste, pelo poder divino, precipitai no inferno Satanás e todos os espíritos malignos que vagam pelo mundo para a perdição das almas. Amém.",
+      "source": "Papa Leão XIII, 1886",
+      "tags": ["st-michael", "archangel", "protection", "spiritual-warfare"],
+      "language": "pt",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    }
+  ]
+}

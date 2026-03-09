@@ -1,12 +1,13 @@
 // Daily Readings Screen - Display daily scripture readings and reflections
 
 import React, { useEffect, useState, useCallback } from 'react';
-import { View, Text, StyleSheet, ScrollView, ActivityIndicator, RefreshControl, TouchableOpacity, Linking } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, ActivityIndicator, RefreshControl, TouchableOpacity, Linking, Platform } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { TabParamList } from '../types/Navigation';
 import { DailyReading, getBibleGatewayUrl } from '../types/Reading';
+import * as WebBrowser from 'expo-web-browser';
 import { Header, PrimaryButton } from '../components';
 import { ReadingCard, CalendarView } from '../components/readings';
 import { useLocalization } from '../hooks/useLocalization';
@@ -22,23 +23,23 @@ import {
   parseISODate,
   getLiturgicalSeason,
   getLiturgicalColor,
-  formatDateToISO
+  formatDateToISO,
+  getBcp47Locale,
 } from '../utils/dateUtils';
 
 type DailyReadingsScreenNavigationProp = StackNavigationProp<TabParamList, 'DailyReadings'>;
 
 export default function DailyReadingsScreen() {
   const { t, currentLanguage } = useLocalization();
-  const { loadDailyReading, getAvailableReadingDates } = useData();
+  const { loadDailyReading } = useData();
   const { settings } = useSettings();
-  
-  const [availableDates, setAvailableDates] = useState<string[]>([]);
   
   const [selectedDate, setSelectedDate] = useState(getTodayISO());
   const [currentReading, setCurrentReading] = useState<DailyReading | null>(null);
   const [loadingReading, setLoadingReading] = useState(false);
   const [refreshing, setRefreshing] = useState(false);
-  const [calendarVisible, setCalendarVisible] = useState(false);
+  const [viewMode, setViewMode] = useState<'daily' | 'calendar'>('calendar'); // Default to calendar view
+  const [currentMonth, setCurrentMonth] = useState(new Date());
   
   const theme = useTheme();
   const today = getTodayISO();
@@ -78,15 +79,9 @@ export default function DailyReadingsScreen() {
 
   // Removed useFocusEffect to prevent re-run loops tied to loading state changes
 
-  // Load available dates and reading when language changes
+  // Load reading when selected date or language changes
   useEffect(() => {
-    const loadData = async () => {
-      const dates = await getAvailableReadingDates(currentLanguage);
-      setAvailableDates(dates);
-      await loadReadingForDate(selectedDate);
-    };
-    
-    loadData().catch(() => setCurrentReading(null));
+    loadReadingForDate(selectedDate).catch(() => setCurrentReading(null));
   }, [selectedDate, currentLanguage]); // Removed loadReadingForDate from dependencies to prevent loop
 
   const navigateToDate = (direction: 'next' | 'previous') => {
@@ -109,10 +104,45 @@ export default function DailyReadingsScreen() {
   };
 
   const selectedDateObj = parseISODate(selectedDate);
+  const navigateMonth = (direction: 'next' | 'previous') => {
+    const newMonth = new Date(currentMonth);
+    if (direction === 'next') {
+      newMonth.setMonth(newMonth.getMonth() + 1);
+    } else {
+      newMonth.setMonth(newMonth.getMonth() - 1);
+    }
+    setCurrentMonth(newMonth);
+  };
 
-  const openBibleLink = (reference: string) => {
-    const url = getBibleGatewayUrl(reference);
-    Linking.openURL(url).catch(err => console.error('Failed to open Bible link:', err));
+  const handleDateSelectFromCalendar = (dateISO: string) => {
+    setSelectedDate(dateISO);
+    setViewMode('daily'); // Switch to daily view when date is selected
+  };
+
+  /** Open a scripture reference.
+   * Android: Chrome Custom Tabs (in-app browser).
+   * iOS / fallback: external browser via Linking.
+   */
+  const openBibleLink = async (reference: string) => {
+    const url = getBibleGatewayUrl(reference, currentLanguage);
+    if (Platform.OS === 'android') {
+      try {
+        await WebBrowser.openBrowserAsync(url, {
+          showTitle: true,
+          toolbarColor: theme.colors.primary[500],
+          controlsColor: '#FFFFFF',
+          secondaryToolbarColor: theme.colors.background.primary,
+          enableBarCollapsing: true,
+          showInRecents: false,
+          createTask: false,
+        });
+      } catch (error) {
+        // Fallback to external browser
+        Linking.openURL(url).catch(err => console.error('Failed to open Bible link:', err));
+      }
+    } else {
+      Linking.openURL(url).catch(err => console.error('Failed to open Bible link:', err));
+    }
   };
 
   const isToday = selectedDate === today;
@@ -129,14 +159,34 @@ export default function DailyReadingsScreen() {
         variant="elevated"
       />
 
-       {/* Calendar Button */}
-      <View style={styles.calendarButtonContainer}>
-        <PrimaryButton
-          title={t('calendar') || 'Calendar'}
-          onPress={() => setCalendarVisible(true)}
-          variant="outline"
-          size="small"
-        />
+      {/* View Toggle */}
+      <View style={styles.viewToggle}>
+        <TouchableOpacity
+          style={[styles.toggleButton, viewMode === 'calendar' && styles.toggleButtonActive]}
+          onPress={() => setViewMode('calendar')}
+        >
+          <Ionicons 
+            name="calendar-outline" 
+            size={20} 
+            color={viewMode === 'calendar' ? '#FFFFFF' : theme.colors.text.secondary} 
+          />
+          <Text style={[styles.toggleText, viewMode === 'calendar' && styles.toggleTextActive]}>
+            {t('calendar') || 'Calendar'}
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.toggleButton, viewMode === 'daily' && styles.toggleButtonActive]}
+          onPress={() => setViewMode('daily')}
+        >
+          <Ionicons 
+            name="book-outline" 
+            size={20} 
+            color={viewMode === 'daily' ? '#FFFFFF' : theme.colors.text.secondary} 
+          />
+          <Text style={[styles.toggleText, viewMode === 'daily' && styles.toggleTextActive]}>
+            {t('daily') || 'Daily'}
+          </Text>
+        </TouchableOpacity>
       </View>
       
       <ScrollView 
@@ -153,7 +203,36 @@ export default function DailyReadingsScreen() {
           />
         }
       >
-        {/* Daily View (always visible) */}
+        {viewMode === 'calendar' ? (
+          <>
+            {/* Month Navigation */}
+            <View style={styles.monthNavigation}>
+              <PrimaryButton
+                title="←"
+                onPress={() => navigateMonth('previous')}
+                variant="ghost"
+                size="small"
+              />
+              <Text style={styles.monthText}>
+                {currentMonth.toLocaleDateString(getBcp47Locale(currentLanguage), { month: 'long', year: 'numeric' })}
+              </Text>
+              <PrimaryButton
+                title="→"
+                onPress={() => navigateMonth('next')}
+                variant="ghost"
+                size="small"
+              />
+            </View>
+
+            {/* Calendar View */}
+            <CalendarView
+              currentMonth={currentMonth}
+              selectedDate={selectedDate}
+              onDateSelect={handleDateSelectFromCalendar}
+              availableDates={[]} // TODO: Load available dates from data
+            />
+          </>
+        ) : (
           <>
             {/* Date Navigation */}
             <View style={styles.dateNavigation}>
@@ -247,18 +326,8 @@ export default function DailyReadingsScreen() {
               </View>
             )}
           </>
+        )}
       </ScrollView>
-       {/* Calendar Popup */}
-      <CalendarView
-        visible={calendarVisible}
-        onClose={() => setCalendarVisible(false)}
-        selectedDate={selectedDate}
-        availableDates={availableDates}
-        onDateSelect={(dateISO) => {
-          setSelectedDate(dateISO);
-          setCalendarVisible(false);
-        }}
-      />
     </SafeAreaView>
   );
 }
@@ -273,10 +342,6 @@ const createStyles = (theme: Theme & { userFontSize: string }) => StyleSheet.cre
   content: {
     flex: 1,
     paddingHorizontal: theme.spacing.md,
-  },
-  calendarButtonContainer: {
-    paddingHorizontal: theme.spacing.md,
-    paddingVertical: theme.spacing.sm,
   },
   viewToggle: {
     flexDirection: 'row',

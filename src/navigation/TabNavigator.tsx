@@ -1,9 +1,10 @@
 // Bottom Tab Navigator - Main navigation tabs
+// Uses useTheme() to react to user-selected theme (dark/light/system) in real-time
 
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
-import { useColorScheme, Platform } from 'react-native';
+import { Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import HomeScreen from '../screens/HomeScreen';
@@ -12,15 +13,16 @@ import PrayersScreen from '../screens/PrayersScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import { TabParamList } from '../types/Navigation';
 import { useLocalization } from '../hooks/useLocalization';
-import { lightTheme, darkTheme } from '../styles/theme';
+import { useTheme } from '../hooks/useTheme';
 import { getTabBarHeight, getIconSize, getSpacing, DEVICE_TYPE } from '../utils/responsive';
 
 const Tab = createBottomTabNavigator<TabParamList>();
 
 export default function TabNavigator() {
   const { t } = useLocalization();
-  const colorScheme = useColorScheme();
-  const theme = colorScheme === 'dark' ? darkTheme : lightTheme;
+  // useTheme() resolves dark/light/system from user settings (via useSettings event emitter)
+  // and updates instantly when the theme is changed from the SettingsScreen
+  const theme = useTheme();
   const insets = useSafeAreaInsets();
   
   const tabBarHeight = getTabBarHeight();

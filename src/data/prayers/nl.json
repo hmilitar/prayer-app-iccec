@@ -1,0 +1,438 @@
+{
+  "prayers": [
+    {
+      "id": "lords-prayer",
+      "title": "Onze Vader",
+      "category": "liturgical",
+      "content": "Onze Vader, die in de hemelen zijt, uw naam worde geheiligd. Uw koninkrijk kome. Uw wil geschiede, gelijk in de hemel, alzo ook op de aarde. Geef ons heden ons dagelijks brood. En vergeef ons onze schulden, gelijk ook wij vergeven onze schuldenaren. En leid ons niet in verzoeking, maar verlos ons van de boze. Want van U is het koninkrijk en de kracht en de heerlijkheid, tot in eeuwigheid. Amen.",
+      "source": "Matteüs 6:9-13",
+      "tags": ["traditional", "jesus", "foundational"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "gloria-patri",
+      "title": "Eer aan de Vader",
+      "category": "liturgical",
+      "content": "Eer aan de Vader en de Zoon en de Heilige Geest. Zoals het was in het begin, nu en altijd, en in de eeuwen der eeuwen. Amen.",
+      "source": "Traditioneel",
+      "tags": ["traditional", "trinity", "doxology"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "apostles-creed",
+      "title": "Apostolische Geloofsbelijdenis",
+      "category": "liturgical",
+      "content": "Ik geloof in God, de almachtige Vader, Schepper van hemel en aarde. En in Jezus Christus, zijn enige Zoon, onze Heer, die ontvangen is van de Heilige Geest, geboren uit de Maagd Maria, die geleden heeft onder Pontius Pilatus, is gekruisigd, gestorven en begraven; die nedergedaald is ter helle. Op de derde dag is Hij opgestaan uit de doden; Hij is opgevaren ten hemel, zit aan de rechterhand van God, de almachtige Vader; vandaar zal Hij komen oordelen de levenden en de doden. Ik geloof in de Heilige Geest, de heilige algemene christelijke Kerk, de gemeenschap der heiligen, de vergeving van de zonden, de wederopstanding van het lichaam en het eeuwige leven. Amen.",
+      "source": "Traditioneel",
+      "tags": ["creed", "faith", "foundational"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "come-holy-spirit",
+      "title": "Kom, Heilige Geest",
+      "category": "liturgical",
+      "content": "Kom, Heilige Geest, vervul de harten van uw gelovigen en ontsteek in hen het vuur van uw liefde. Zend uw Geest uit en zij zullen geschapen worden, en Gij zult het aanschijn van de aarde vernieuwen. O God, die door het licht van de Heilige Geest de harten van de gelovigen hebt onderwezen, geef dat wij door diezelfde Geest de ware wijsheid mogen bezitten en ons altijd over zijn vertroosting mogen verheugen. Door Christus onze Heer. Amen.",
+      "source": "Traditioneel Charismatisch Gebed",
+      "tags": ["holy-spirit", "charismatic", "pentecost", "renewal"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "morning-prayer",
+      "title": "Ochtendgebed",
+      "category": "morning",
+      "content": "Almachtige God, wij danken U voor de gave van deze nieuwe dag. Zoals de zon opkomt, moge uw licht over ons schijnen en onze stappen leiden. Schenk ons wijsheid in onze beslissingen, kracht bij onze uitdagingen en vrede in ons hart. Help ons U trouw te dienen en onze naasten lief te hebben als onszelf. Door Jezus Christus onze Heer. Amen.",
+      "source": "Traditie van het Book of Common Prayer",
+      "tags": ["morning", "daily", "guidance"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "evening-prayer",
+      "title": "Avondgebed",
+      "category": "evening",
+      "content": "Genadige God, nu deze dag ten einde loopt, danken wij U voor uw ontelbare zegeningen. Vergeef ons onze tekortkomingen en fouten. Schenk ons vredige rust en verkwik onze zielen. Waak over onze dierbaren en over allen die in nood verkeren. Mogen uw engelen ons door de nacht bewaken, en mogen wij verfrist ontwaken om U morgen te dienen. In Jezus' naam. Amen.",
+      "source": "Traditioneel",
+      "tags": ["evening", "rest", "forgiveness"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-spiritual-gifts",
+      "title": "Gebed om Geestelijke Gaven",
+      "category": "charismatic",
+      "content": "Hemelse Vader, wij danken U voor de gaven van uw Heilige Geest. Schenk ons wijsheid om deze gaven te gebruiken voor de opbouw van uw Kerk en de bevordering van uw Koninkrijk. Mogen wij vurig verlangen naar de geestelijke gaven, vooral dat wij mogen profeteren en uw woord met vrijmoedigheid spreken. Vervul ons opnieuw met uw Geest, opdat wij in kracht mogen dienen en uw liefde aan de wereld mogen tonen. Door Jezus Christus onze Heer. Amen.",
+      "source": "1 Korintiërs 12-14",
+      "tags": ["spiritual-gifts", "charismatic", "ministry", "holy-spirit"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-communion",
+      "title": "Gebed voor de Communie",
+      "category": "sacramental",
+      "content": "Almachtige God, voor wie alle harten open zijn, alle verlangens bekend, en voor wie geen geheimen verborgen zijn: reinig de gedachten van onze harten door de ingeving van uw Heilige Geest, opdat wij U volmaakt mogen liefhebben en uw heilige Naam waardig mogen grootmaken; door Christus onze Heer. Wij durven niet tot uw Tafel te naderen, o barmhartige Heer, vertrouwend op onze eigen gerechtigheid, maar op uw menigvuldige en grote barmhartigheden. Geef ons daarom, genadige Heer, zo het vlees van uw dierbare Zoon Jezus Christus te eten en zijn bloed te drinken, dat onze zondige lichamen gereinigd mogen worden door zijn lichaam, en onze zielen gewassen door zijn kostbaar bloed. Amen.",
+      "source": "Traditie van het Book of Common Prayer",
+      "tags": ["communion", "eucharist", "sacramental", "preparation"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-meals",
+      "title": "Tafelgebed",
+      "category": "thanksgiving",
+      "content": "Zegen ons, o Heer, en deze uw gaven die wij uit uw mildheid zullen ontvangen, door Christus onze Heer. Amen.",
+      "source": "Traditioneel",
+      "tags": ["meals", "blessing", "gratitude"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-peace",
+      "title": "Gebed om Vrede",
+      "category": "intercession",
+      "content": "Heer, maak mij een instrument van uw vrede. Waar haat heerst, laat mij liefde zaaien; waar onrecht is, vergeving; waar twijfel heerst, geloof; waar wanhoop is, hoop; waar duisternis heerst, licht; waar droefheid is, vreugde. O goddelijke Meester, geef dat ik niet zozeer zoek getroost te worden als te troosten; begrepen te worden als te begrijpen; bemind te worden als lief te hebben. Want het is in het geven dat wij ontvangen; het is in het vergeven dat wij vergiffenis krijgen; en het is in het sterven dat wij geboren worden tot het eeuwige leven. Amen.",
+      "source": "Gebed van de Heilige Franciscus",
+      "tags": ["peace", "service", "francis"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-healing",
+      "title": "Gebed om Genezing",
+      "category": "intercession",
+      "content": "Hemelse Vader, wij komen voor U om uw genezende aanraking te zoeken. U bent de Grote Geneesheer, en niets is onmogelijk voor U. Wij bidden voor hen die ziek zijn naar lichaam, geest of ziel. Herstel hen tot heelheid naar uw volmaakte wil. Geef kracht aan verzorgers, troost aan families en hoop aan allen die lijden. Moge uw genezende kracht vloeien door de handen van artsen en verpleegkundigen. Wij vertrouwen op uw liefde en barmhartigheid. Door Jezus Christus onze Heer. Amen.",
+      "source": "Hedendaags",
+      "tags": ["healing", "sick", "comfort"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-of-confession",
+      "title": "Schuldbelijdenis",
+      "category": "confession",
+      "content": "Barmhartige God, wij belijden dat wij tegen U gezondigd hebben in gedachte, woord en daad, door wat wij gedaan hebben en door wat wij nagelaten hebben. Wij hebben U niet liefgehad met heel ons hart; wij hebben onze naasten niet liefgehad als onszelf. Het spijt ons oprecht en wij hebben diep berouw. Omwille van uw Zoon Jezus Christus, ontferm U over ons en vergeef ons; opdat wij ons mogen verheugen in uw wil en wandelen op uw wegen, tot eer van uw Naam. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["confession", "repentance", "forgiveness"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-of-thanksgiving",
+      "title": "Dankgebed",
+      "category": "thanksgiving",
+      "content": "Almachtige God, Vader van alle barmhartigheden, wij, uw onwaardige dienaren, brengen U nederige dank voor al uw goedheid en liefdevolle zorg voor ons en voor allen die Gij geschapen hebt. Wij prijzen U voor onze schepping, ons behoud en alle zegeningen van dit leven; maar bovenal voor uw onmetelijke liefde in de verlossing van de wereld door onze Heer Jezus Christus; voor de genademiddelen en voor de hoop op heerlijkheid. En wij bidden U, geef ons zulk een besef van uw barmhartigheden, dat wij met waarlijk dankbare harten uw lof mogen verkondigen, niet alleen met onze lippen, maar ook in ons leven, door onszelf te wijden aan uw dienst en door voor U te wandelen in heiligheid en gerechtigheid al onze dagen; door Jezus Christus onze Heer, aan wie, met U en de Heilige Geest, alle eer en heerlijkheid toekomt in alle eeuwen. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["thanksgiving", "gratitude", "praise"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "serenity-prayer",
+      "title": "Gebed om Sereniteit",
+      "category": "contemporary",
+      "content": "God, geef mij de sereniteit om te aanvaarden wat ik niet kan veranderen, de moed om te veranderen wat ik kan, en de wijsheid om het verschil te kennen. Levend van dag tot dag; genietend van elk moment; aanvaardend tegenslagen als de weg naar vrede; nemend, zoals Hij deed, deze zondige wereld zoals ze is, niet zoals ik haar zou willen; vertrouwend dat Hij alles goed zal maken als ik mij overgeef aan zijn wil; opdat ik redelijk gelukkig mag zijn in dit leven, en uiterst nuttig voor God en mijn medemensen. Amen.",
+      "source": "Reinhold Niebuhr",
+      "tags": ["serenity", "acceptance", "wisdom"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-guidance",
+      "title": "Gebed om Leiding",
+      "category": "personal",
+      "content": "Liefdevolle God, U kent de weg die voor ons ligt. Wanneer wij onzeker zijn over de richting die wij moeten gaan, wees dan onze gids. Wanneer wij bang zijn voor de uitdagingen die wij tegemoet treden, wees dan onze kracht. Wanneer wij overweldigd worden door de beslissingen die voor ons liggen, schenk ons dan uw wijsheid. Help ons te vertrouwen op uw volmaakte timing en in geloof te wandelen, wetend dat U altijd bij ons bent. Leid ons op de eeuwige weg. Door Jezus Christus onze Heer. Amen.",
+      "source": "Hedendaags",
+      "tags": ["guidance", "wisdom", "trust"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-family",
+      "title": "Gebed voor het Gezin",
+      "category": "intercession",
+      "content": "Hemelse Vader, wij danken U voor de gave van het gezin. Zegen onze huizen met uw aanwezigheid en vul ze met liefde, vreugde en vrede. Help ons geduldig met elkaar te zijn, snel te vergeven en elkaar te steunen door alle seizoenen van het leven. Bescherm onze kinderen en leid hen op uw wegen. Versterk de banden tussen ons en help ons een weerspiegeling van uw liefde te zijn voor de wereld. Door Jezus Christus onze Heer. Amen.",
+      "source": "Hedendaags",
+      "tags": ["family", "home", "children"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-world",
+      "title": "Gebed voor de Wereld",
+      "category": "intercession",
+      "content": "Almachtige God, Heerser over alle volken, wij bidden voor onze wereld. Breng vrede waar conflict is, hoop waar wanhoop heerst, en genezing waar gebrokenheid is. Leid onze leiders met wijsheid en integriteit. Help ons goede rentmeesters van uw schepping te zijn en te zorgen voor hen die in nood verkeren. Verenig ons in onze gemeenschappelijke menselijkheid en help ons samen te werken voor gerechtigheid en vrede. Moge uw koninkrijk komen op aarde zoals in de hemel. Door Jezus Christus onze Heer. Amen.",
+      "source": "Hedendaags",
+      "tags": ["world", "peace", "justice"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-strength",
+      "title": "Gebed om Kracht",
+      "category": "personal",
+      "content": "Here God, wanneer wij zwak zijn, bent U sterk. Wanneer wij vermoeid zijn, geeft U ons rust. Wanneer wij overweldigd worden, bent U onze toevlucht. Schenk ons de kracht die wij nodig hebben voor deze dag. Help ons niet op onze eigen macht te vertrouwen, maar op uw machtige kracht. Vernieuw onze geest en verkwik onze zielen. Mogen wij onze hoop en ons vertrouwen alleen in U vinden. Door Jezus Christus onze Heer. Amen.",
+      "source": "Hedendaags",
+      "tags": ["strength", "weakness", "refuge"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "noon-prayer",
+      "title": "Middaggebed",
+      "category": "noon",
+      "content": "Here Jezus Christus, op dit uur van de dag pauzeren wij van onze bezigheden om uw aanwezigheid te gedenken. Vernieuw onze kracht voor de taken die nog voor ons liggen. Help ons de rest van deze dag met U te wandelen. In uw naam bidden wij. Amen.",
+      "source": "Liturgische traditie",
+      "tags": ["noon", "midday", "pause", "renewal"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "family-prayer",
+      "title": "Gezinsgebed",
+      "category": "family",
+      "content": "Hemelse Vader, wij danken U voor de gave van het gezin. Zegen onze huizen met uw aanwezigheid en vul ze met liefde, vreugde en vrede. Help ons geduldig met elkaar te zijn, snel te vergeven en elkaar te steunen door alle seizoenen van het leven. Bescherm onze kinderen en leid hen op uw wegen. Versterk de banden tussen ons en help ons een weerspiegeling van uw liefde te zijn voor de wereld. Door Jezus Christus onze Heer. Amen.",
+      "source": "Hedendaags",
+      "tags": ["family", "home", "children"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-exam",
+      "title": "Gebed voor een Examen",
+      "category": "occasions",
+      "content": "Heer, ik vraag om uw zegen nu ik mij voorbereid op dit examen. Kalmeer mijn zenuwen en maak mijn gedachten helder. Help mij te herinneren wat ik gestudeerd heb en mijn best te doen. Geef mij vertrouwen in mijn capaciteiten en vrede in mijn hart. Moge ik in alles uw wil doen. Amen.",
+      "source": "Hedendaags",
+      "tags": ["student", "exam", "calm", "occasions"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-travel",
+      "title": "Reisgebed",
+      "category": "occasions",
+      "content": "Almachtige God, wij vragen om uw bescherming op deze reis. Bewaar alle reizigers voor gevaar en ongelukken. Schenk hun een veilige tocht en een blij weerzien met hun dierbaren. Zegen allen die reizen over land, zee of door de lucht. Door Christus onze Heer. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["travel", "protection", "safety", "occasions"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-new-job",
+      "title": "Gebed voor een Nieuwe Baan",
+      "category": "occasions",
+      "content": "Hemelse Vader, ik dank U voor deze nieuwe kans. Leid mij nu ik aan dit nieuwe hoofdstuk van mijn leven begin. Geef mij wijsheid om te leren, genade om met anderen om te gaan, en kracht om uitdagingen het hoofd te bieden. Moge ik een licht voor U zijn op deze plek. In Jezus' naam. Amen.",
+      "source": "Hedendaags",
+      "tags": ["work", "new-beginning", "guidance", "occasions"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-anxiety",
+      "title": "Gebed bij Angst",
+      "category": "occasions",
+      "content": "God van vrede, mijn hart is onrustig en mijn gedachten zijn rusteloos. Breng uw kalmte in mijn verontruste geest. Help mij met heel mijn hart op U te vertrouwen en niet te steunen op mijn eigen inzicht. Herinner mij eraan dat U de leiding hebt en dat uw plannen met mij goed zijn. Vul mijn hart met uw vrede die alle verstand te boven gaat. In Jezus' naam. Amen.",
+      "source": "Hedendaags - gebaseerd op Filippenzen 4:6-7",
+      "tags": ["anxiety", "peace", "trust", "occasions"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "lutheri-hommikupalve",
+      "title": "Luthers Ochtendgebed",
+      "category": "liturgical",
+      "content": "Ik dank U, mijn hemelse Vader, door Jezus Christus, uw lieve Zoon, dat Gij mij deze nacht genadiglijk bewaard hebt voor alle schade en gevaar; en ik bid U dat Gij mij deze dag ook wilt bewaren voor zonde en alle kwaad, opdat al mijn doen en laten U behage. Want in uw handen beveel ik mij, mijn lichaam en ziel, en alle dingen. Laat uw heilige engel bij mij zijn, opdat de boze vijand geen macht over mij krijge. Amen.",
+      "source": "Maarten Luther",
+      "tags": ["luther", "morning", "protection"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "angelus",
+      "title": "Het Angelus",
+      "category": "liturgical",
+      "content": "De Engel des Heren heeft aan Maria geboodschapt. En zij heeft ontvangen van de Heilige Geest. Wees gegroet, Maria... Zie de dienstmaagd des Heren. Mij geschiede naar uw woord. Wees gegroet, Maria... En het Woord is vlees geworden. En het heeft onder ons gewoond. Wees gegroet, Maria... Bid voor ons, heilige Moeder van God. Opdat wij de beloften van Christus waardig worden. Laat ons bidden: Heer, wij bidden U, stort uw genade in onze harten; opdat wij, die door de boodschap van de engel de menswording van Christus, uw Zoon, hebben leren kennen, door zijn lijden en kruis gebracht worden tot de heerlijkheid van zijn verrijzenis. Door dezelfde Christus onze Heer. Amen.",
+      "source": "Traditioneel",
+      "tags": ["angelus", "mary", "incarnation"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "confession",
+      "title": "Algemene Belijdenis",
+      "category": "liturgical",
+      "content": "Almachtige en barmhartige Vader, wij hebben gedwaald en zijn afgeweken van uw wegen als verloren schapen. Wij hebben te veel de ingevingen en begeerten van ons eigen hart gevolgd. Wij hebben gezondigd tegen uw heilige wetten. Wij hebben nagelaten te doen wat wij hadden moeten doen; en wij hebben gedaan wat wij niet hadden mogen doen; en er is geen gezondheid in ons. Maar Gij, o Heer, ontferm U over ons, ellendige zondaren. Spaar hen, o God, die hun schuld belijden. Herstel hen die berouw hebben; naar uw beloften aan de mensheid verkondigd in Christus Jezus onze Heer. En geef, o barmhartige Vader, om zijnentwil, dat wij voortaan een godvruchtig, rechtvaardig en ingetogen leven mogen leiden, tot eer van uw heilige Naam. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["confession", "repentance", "daily-office"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "benedictus",
+      "title": "Benedictus (Lofzang van Zacharias)",
+      "category": "liturgical",
+      "content": "Geloofd zij de Heer, de God van Israël, want Hij heeft zijn volk bezocht en verlost; en heeft ons een machtige redding opgericht in het huis van zijn dienaar David; zoals Hij gesproken heeft door de mond van zijn heilige profeten van oudsher: dat wij verlost zouden worden van onze vijanden en uit de hand van allen die ons haten; om barmhartigheid te bewijzen aan onze vaderen en zijn heilig verbond te gedenken; om de eed gestand te doen die Hij onze vader Abraham gezworen heeft, dat Hij ons zou geven; dat wij, verlost uit de hand van onze vijanden, Hem zouden dienen zonder vrees; in heiligheid en gerechtigheid voor zijn aangezicht, al de dagen van ons leven. En gij, kind, zult een profeet van de Allerhoogste genoemd worden, want gij zult voor het aangezicht van de Heer uitgaan om zijn wegen te bereiden; om zijn volk kennis van verlossing te geven in de vergeving van hun zonden, door de innige barmhartigheid van onze God; waardoor de Opgang uit de hoogte ons heeft bezocht; om te schijnen voor hen die gezeten zijn in duisternis en schaduw van de dood, om onze voeten te richten op de weg van de vrede.",
+      "source": "Lucas 1:68-79",
+      "tags": ["canticle", "zechariah", "morning-prayer", "daily-office"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "magnificat",
+      "title": "Magnificat (Lofzang van Maria)",
+      "category": "liturgical",
+      "content": "Mijn ziel maakt groot de Heer, en mijn geest heeft zich verheugd in God, mijn Zaligmaker. Want Hij heeft de nederigheid van zijn dienstmaagd aangezien. Want zie, van nu aan zullen alle geslachten mij zalig spreken. Want Hij die machtig is, heeft grote dingen aan mij gedaan, en heilig is zijn Naam. En zijn barmhartigheid is van geslacht tot geslacht over hen die Hem vrezen. Hij heeft een krachtig werk gedaan door zijn arm; Hij heeft de hoogmoedigen in de overlegging van hun hart verstrooid. Hij heeft machtigen van hun troon gestoten en nederigen verhoogd. Hongerigen heeft Hij met goede gaven vervuld en rijken heeft Hij ledig weggezonden. Hij heeft zich zijn dienaar Israël aangetrokken, gedachtig aan zijn barmhartigheid, zoals Hij gesproken heeft tot onze vaderen, Abraham en zijn nageslacht, tot in eeuwigheid.",
+      "source": "Lucas 1:46-55",
+      "tags": ["canticle", "mary", "evening-prayer", "daily-office"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "nunc-dimittis",
+      "title": "Nunc Dimittis (Lofzang van Simeon)",
+      "category": "liturgical",
+      "content": "Nu laat Gij, Heer, uw dienaar in vrede gaan, naar uw woord. Want mijn ogen hebben uw heil gezien, dat Gij bereid hebt voor het aangezicht van alle volken; een licht tot verlichting van de heidenen, en tot heerlijkheid van uw volk Israël.",
+      "source": "Lucas 2:29-32",
+      "tags": ["canticle", "simeon", "evening-prayer", "daily-office"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "st-michael-prayer",
+      "title": "Gebed tot de Heilige Aartsengel Michaël",
+      "category": "liturgical",
+      "content": "Heilige Aartsengel Michaël, verdedig ons in de strijd. Wees onze bescherming tegen de boosheid en de listen van de duivel. Moge God hem straffen, zo smeken wij ootmoedig; en gij, Vorst van de hemelse legerscharen, drijf door de kracht van God de satan en alle boze geesten die in de wereld ronddwalen tot verderf van de zielen, in de hel terug. Amen.",
+      "source": "Paus Leo XIII, 1886",
+      "tags": ["st-michael", "archangel", "protection", "spiritual-warfare"],
+      "language": "nl",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    }
+  ]
+}

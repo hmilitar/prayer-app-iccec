@@ -1,4 +1,14 @@
-import React, { useState, useEffect } from 'react';
+/**
+ * DailyDevotionsScreen — Cenacle Daily Office
+ *
+ * Displays Morning, Midday, Evening, and Family devotions following
+ * the ICCEC Prayer Guide outline (pages 8-20).
+ *
+ * Layout: time-of-day selector → scrollable devotion content
+ * with readings, prayers, canticles, and rubrics.
+ */
+
+import React, { useEffect, useState, useCallback, useMemo } from 'react';
 import {
   View,
   Text,
@@ -6,468 +16,760 @@ import {
   ScrollView,
   TouchableOpacity,
   ActivityIndicator,
-  Alert,
-  Modal
+  RefreshControl,
+  Platform,
 } from 'react-native';
-import { useLocalization } from '../hooks/useLocalization';
-import { useData } from '../hooks/useData';
-import { DevotionDay, LiturgicalDevotion } from '../types/Devotion';
-import { formatDateToISO, getTodayISO } from '../utils/dateUtils';
+import { SafeAreaView } from 'react-native-safe-area-context';
+import { Ionicons } from '@expo/vector-icons';
+import { useRoute, RouteProp } from '@react-navigation/native';
+import { Header, PrimaryButton } from '../components';
 import { CalendarView } from '../components/readings/CalendarView';
-import { WebView } from 'react-native-webview';
-import { CalendarDebug } from '../components/CalendarDebug';
+import { BibleGatewayModal } from '../components/readings/BibleGatewayModal';
+import { useLocalization } from '../hooks/useLocalization';
+import { useTheme } from '../hooks/useTheme';
+import { useSettings } from '../hooks/useSettings';
+import { getScaledFontSize } from '../utils/fontScaling';
+import {
+  formatDisplayDate,
+  getTodayISO,
+  getNextDay,
+  getPreviousDay,
+  parseISODate,
+  getLiturgicalSeason,
+  getLiturgicalColor,
+  formatDateToISO,
+  getBcp47Locale,
+} from '../utils/dateUtils';
+import { getBibleGatewayUrl, getBibleVersionForLanguage } from '../types/Reading';
+import * as WebBrowser from 'expo-web-browser';
+import {
+  buildDevotion,
+  hasLectionaryData,
+  getLectionaryDates,
+} from '../data/devotions/devotionBuilder';
+import type { DailyDevotion, DevotionTimeOfDay, DevotionSection, DevotionReading } from '../types/Devotion';
+import type { Theme } from '../styles/theme';
+import type { SupportedLanguage } from '../types/Prayer';
+
+/** Route params optionally carry a pre-selected time of day */
+type DevotionRouteParams = {
+  DailyReadings: { timeOfDay?: DevotionTimeOfDay } | undefined;
+};
+
+// ─── Time-of-day tab data ──────────────────────────────────────────────
+interface TimeTab {
+  readonly key: DevotionTimeOfDay;
+  readonly labelKey: string;
+  readonly fallbackLabel: string;
+  readonly icon: keyof typeof Ionicons.glyphMap;
+}
+
+const TIME_TABS: readonly TimeTab[] = [
+  { key: 'morning', labelKey: 'devotions.morning', fallbackLabel: 'Morning', icon: 'sunny-outline' },
+  { key: 'noon', labelKey: 'devotions.noon', fallbackLabel: 'Midday', icon: 'partly-sunny-outline' },
+  { key: 'evening', labelKey: 'devotions.evening', fallbackLabel: 'Evening', icon: 'moon-outline' },
+  { key: 'family', labelKey: 'devotions.family', fallbackLabel: 'Family', icon: 'people-outline' },
+] as const;
+
+// ═══════════════════════════════════════════════════════════════════════
+// Component
+// ═══════════════════════════════════════════════════════════════════════
 
 export default function DailyDevotionsScreen() {
-  const { currentLanguage, formatDate } = useLocalization();
-  const { loadDailyDevotions, getAvailableReadingDates } = useData();
-  const [devotionDay, setDevotionDay] = useState<DevotionDay | null>(null);
-  const [selectedTime, setSelectedTime] = useState<'morning' | 'noon' | 'evening' | 'family'>('morning');
+  const route = useRoute<RouteProp<DevotionRouteParams, 'DailyReadings'>>();
+  const { t, currentLanguage } = useLocalization();
+  const { settings } = useSettings();
+  const theme = useTheme();
+
+  // ── State ────────────────────────────────────────────────────────────
   const [selectedDate, setSelectedDate] = useState(getTodayISO());
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [calendarVisible, setCalendarVisible] = useState(false);
-  const [availableDates, setAvailableDates] = useState<string[]>([]);
+  const [selectedTime, setSelectedTime] = useState<DevotionTimeOfDay>(
+    route.params?.timeOfDay ?? getDefaultTimeOfDay(),
+  );
+  const [devotion, setDevotion] = useState<DailyDevotion | null>(null);
+  const [loading, setLoading] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
+  const [viewMode, setViewMode] = useState<'calendar' | 'devotion'>('devotion');
+  const [currentMonth, setCurrentMonth] = useState(new Date());
+
+  // Bible Gateway modal state
   const [bibleModalVisible, setBibleModalVisible] = useState(false);
-  const [bibleReference, setBibleReference] = useState<string>('');
+  const [bibleModalUrl, setBibleModalUrl] = useState('');
+  const [bibleModalRef, setBibleModalRef] = useState('');
 
-  useEffect(() => {
-    loadDevotions(selectedDate);
-    loadAvailableDates();
-  }, [currentLanguage, selectedDate]);
+  const today = getTodayISO();
+  const isToday = selectedDate === today;
+  const displayDate = formatDisplayDate(parseISODate(selectedDate), currentLanguage);
+  const liturgicalSeason = getLiturgicalSeason(parseISODate(selectedDate));
+  const liturgicalColor = getLiturgicalColor(parseISODate(selectedDate));
 
-  const loadDevotions = async (date: string) => {
-    try {
+  /** All lectionary dates for dot display on calendar */
+  const lectionaryDates = useMemo(() => getLectionaryDates(), []);
+
+  // Keys for forcing re-render on settings change
+  const settingsKey = `${currentLanguage}-${settings?.fontSize ?? 'medium'}-${settings?.theme ?? 'light'}`;
+
+  // ── Load devotion ────────────────────────────────────────────────────
+  // Track the latest language so we can detect stale async results
+  const latestLanguageRef = React.useRef(currentLanguage);
+  latestLanguageRef.current = currentLanguage;
+
+  const loadDevotion = useCallback(
+    (date: string, time: DevotionTimeOfDay, language: SupportedLanguage) => {
       setLoading(true);
-      setError(null);
-      const devotions = await loadDailyDevotions(date, currentLanguage);
-      setDevotionDay(devotions);
-    } catch (err) {
-      console.error('Error loading devotions:', err);
-      setError('Failed to load daily devotions. Please try again.');
-      Alert.alert('Error', 'Failed to load daily devotions. Please try again.');
-    } finally {
-      setLoading(false);
-    }
-  };
+      try {
+        const result = buildDevotion(date, time, language);
 
-  const loadAvailableDates = async () => {
-    try {
-      console.log('Loading available dates for language:', currentLanguage);
-      const dates = await getAvailableReadingDates(currentLanguage);
-      console.log('Available dates:', dates); // Debug log
-      if (!dates || dates.length === 0) {
-        console.warn('No available dates found for language:', currentLanguage);
+        // Only apply result if the language hasn't changed since the call
+        if (latestLanguageRef.current === language) {
+          setDevotion(result);
+        }
+      } catch (err) {
+        console.error('Error building devotion:', err);
+        if (latestLanguageRef.current === language) {
+          setDevotion(null);
+        }
+      } finally {
+        setLoading(false);
       }
-      setAvailableDates(dates || []);
-    } catch (err) {
-      console.error('Error loading available dates:', err);
-      setAvailableDates([]);
+    },
+    [], // No dependencies — uses latestLanguageRef for staleness check
+  );
+
+  // Rebuild devotion whenever the date, time, or language changes
+  useEffect(() => {
+    loadDevotion(selectedDate, selectedTime, currentLanguage);
+  }, [selectedDate, selectedTime, currentLanguage, loadDevotion]);
+
+  // Apply route param time-of-day if changed externally
+  useEffect(() => {
+    const routeTime = route.params?.timeOfDay;
+    if (routeTime && routeTime !== selectedTime) {
+      setSelectedTime(routeTime);
     }
+  }, [route.params?.timeOfDay]);
+
+  // ── Navigation helpers ───────────────────────────────────────────────
+  const navigateDate = (dir: 'next' | 'previous') => {
+    const dateObj = parseISODate(selectedDate);
+    const newDate = dir === 'next' ? getNextDay(dateObj) : getPreviousDay(dateObj);
+    setSelectedDate(formatDateToISO(newDate));
   };
 
-  const getBibleGatewayUrl = (reference: string) => {
-    return `https://www.biblegateway.com/passage/?search=${encodeURIComponent(reference)}&version=NIV`;
+  const goToToday = () => setSelectedDate(getTodayISO());
+
+  const navigateMonth = (dir: 'next' | 'previous') => {
+    const m = new Date(currentMonth);
+    m.setMonth(m.getMonth() + (dir === 'next' ? 1 : -1));
+    setCurrentMonth(m);
   };
 
-  const openBibleReference = (reference: string) => {
-    setBibleReference(reference);
-    setBibleModalVisible(true);
+  const handleDateFromCalendar = (iso: string) => {
+    setSelectedDate(iso);
+    setViewMode('devotion');
   };
 
-  const selectedDevotion = devotionDay?.[selectedTime];
+  const handleRefresh = useCallback(async () => {
+    setRefreshing(true);
+    loadDevotion(selectedDate, selectedTime, currentLanguage);
+    setRefreshing(false);
+  }, [selectedDate, selectedTime, currentLanguage, loadDevotion]);
 
-  const renderReadingSection = (section: any, title: string) => {
-    if (!section) return null;
-    
+  /** Open a scripture reference in the in-app Bible Gateway reader.
+   *
+   * - **iOS**: opens BibleGatewayModal (WebView) — works perfectly.
+   * - **Android**: opens Chrome Custom Tabs via expo-web-browser.
+   *   Android WebView has persistent rendering issues with BibleGateway's
+   *   complex AJAX + ad-heavy page.  Chrome Custom Tabs uses the real
+   *   Chrome engine, renders perfectly, and provides a built-in close
+   *   button to return to the app.
+   */
+  const openBibleLink = useCallback(async (ref: string) => {
+    const url = getBibleGatewayUrl(ref, currentLanguage);
+
+    if (Platform.OS === 'android') {
+      // Chrome Custom Tabs — in-app modal browser powered by Chrome.
+      // Renders as a sheet overlay on top of the app activity.
+      // Has a built-in X (close) button in the toolbar to return to app.
+      // The user NEVER leaves the app.
+      try {
+        await WebBrowser.openBrowserAsync(url, {
+          // Show the page title in the toolbar
+          showTitle: true,
+          // App-branded toolbar color
+          toolbarColor: theme.colors.primary[500],
+          // White close button / controls for contrast on colored toolbar
+          controlsColor: '#FFFFFF',
+          // Secondary toolbar (bottom bar) color
+          secondaryToolbarColor: theme.colors.background.primary,
+          // Collapse URL bar on scroll for more reading space
+          enableBarCollapsing: true,
+          // Don't show in Android recents — keeps it modal-like
+          showInRecents: false,
+          // Launch as a new task overlay so it feels modal
+          createTask: false,
+        });
+      } catch (error) {
+        // Fallback: if Custom Tabs fails, show WebView modal
+        console.warn('[openBibleLink] Chrome Custom Tabs failed, falling back to WebView:', error);
+        setBibleModalRef(ref);
+        setBibleModalUrl(url);
+        setBibleModalVisible(true);
+      }
+    } else {
+      // iOS: use the in-app WebView modal (proven working)
+      setBibleModalRef(ref);
+      setBibleModalUrl(url);
+      setBibleModalVisible(true);
+    }
+  }, [currentLanguage, theme.colors.primary]);
+
+  const closeBibleModal = useCallback(() => {
+    setBibleModalVisible(false);
+  }, []);
+
+  const styles = createStyles(theme);
+
+  // ═══════════════════════════════════════════════════════════════════
+  // Render helpers
+  // ═══════════════════════════════════════════════════════════════════
+
+  /** Render a single devotion section */
+  const renderSection = (section: DevotionSection, index: number) => {
+    // Sections that show a tappable BibleGateway reference badge
+    const isLinkableReading =
+      section.key === 'psalm' ||
+      section.key === 'reading_1st_label' ||
+      section.key === 'reading_2nd_label' ||
+      section.key === 'reading_gospel_label';
+
+    // Whether to use the indented reading-card style
+    const isReading =
+      section.key === 'reading_1st_label' ||
+      section.key === 'reading_2nd_label' ||
+      section.key === 'reading_gospel_label';
+
     return (
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>{title}</Text>
-        {section.reference && (
-          <TouchableOpacity onPress={() => openBibleReference(section.reference)}>
-            <Text style={styles.reference}>{section.reference}</Text>
+      <View
+        key={`${section.key}-${index}`}
+        style={[styles.sectionCard, isReading && styles.readingCard]}
+        accessibilityRole="text"
+      >
+        {/* Rubric */}
+        {section.rubric ? (
+          <Text style={styles.rubricText}>{section.rubric}</Text>
+        ) : null}
+
+        {/* Title */}
+        <Text style={styles.sectionTitle}>{section.title}</Text>
+
+        {/* Tappable reference badge (psalm + scripture readings) */}
+        {section.reference && isLinkableReading ? (
+          <TouchableOpacity
+            style={styles.referenceBadge}
+            onPress={() => {
+              if (section.reference) {
+                openBibleLink(section.reference);
+              }
+            }}
+            accessibilityLabel={`Open ${section.reference} on Bible Gateway`}
+            accessibilityRole="link"
+          >
+            <Ionicons name="book-outline" size={14} color={theme.colors.primary[500]} />
+            <Text style={styles.referenceText}>{section.reference}</Text>
+            <Ionicons name="reader-outline" size={12} color={theme.colors.text.tertiary} />
           </TouchableOpacity>
-        )}
-        <Text style={styles.content}>{section.text}</Text>
+        ) : null}
+
+        {/* Content — omit for linkable readings where content === reference (no verse text loaded) */}
+        {section.content && section.content !== section.reference ? (
+          <Text style={styles.sectionContent} selectable>
+            {section.content}
+          </Text>
+        ) : !isLinkableReading && section.content ? (
+          <Text style={styles.sectionContent} selectable>
+            {section.content}
+          </Text>
+        ) : null}
+
+        {/* Non-linkable reference footnote */}
+        {section.reference && !isLinkableReading ? (
+          <Text style={styles.refFootnote}>{section.reference}</Text>
+        ) : null}
+
+        {/* Response */}
+        {section.response ? (
+          <Text style={styles.responseText}>℟ {section.response}</Text>
+        ) : null}
       </View>
     );
   };
 
-  const renderPrayerSection = (prayer: string, title: string) => {
-    if (!prayer) return null;
-    
-    return (
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>{title}</Text>
-        <Text style={styles.content}>{prayer}</Text>
-      </View>
-    );
-  };
-
-  if (loading) {
-    return (
-      <View style={styles.centerContainer}>
-        <ActivityIndicator size="large" color="#007bff" />
-        <Text style={styles.loadingText}>Loading devotions...</Text>
-      </View>
-    );
-  }
+  // ═══════════════════════════════════════════════════════════════════
+  // Main render
+  // ═══════════════════════════════════════════════════════════════════
 
   return (
-    <View style={styles.container}>
-      <View style={styles.header}>
-        <Text style={styles.title}>Daily Devotions</Text>
-        <Text style={styles.date}>{formatDate(new Date(selectedDate), {
-          weekday: 'long',
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        })}</Text>
-        <TouchableOpacity 
-          style={styles.calendarButton}
-          onPress={() => setCalendarVisible(true)}
+    <SafeAreaView style={styles.container} edges={['top']} key={settingsKey}>
+      <Header
+        title={t('devotions.title') ?? 'Daily Devotions'}
+        variant="elevated"
+      />
+
+      {/* View Toggle */}
+      <View style={styles.viewToggle}>
+        <TouchableOpacity
+          style={[styles.toggleBtn, viewMode === 'calendar' && styles.toggleBtnActive]}
+          onPress={() => setViewMode('calendar')}
+          accessibilityLabel="Calendar view"
+          accessibilityRole="tab"
         >
-          <Text style={styles.calendarButtonText}>Select Date</Text>
+          <Ionicons
+            name="calendar-outline"
+            size={20}
+            color={viewMode === 'calendar' ? '#FFF' : theme.colors.text.secondary}
+          />
+          <Text style={[styles.toggleLabel, viewMode === 'calendar' && styles.toggleLabelActive]}>
+            {t('calendar') ?? 'Calendar'}
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={[styles.toggleBtn, viewMode === 'devotion' && styles.toggleBtnActive]}
+          onPress={() => setViewMode('devotion')}
+          accessibilityLabel="Devotion view"
+          accessibilityRole="tab"
+        >
+          <Ionicons
+            name="book-outline"
+            size={20}
+            color={viewMode === 'devotion' ? '#FFF' : theme.colors.text.secondary}
+          />
+          <Text style={[styles.toggleLabel, viewMode === 'devotion' && styles.toggleLabelActive]}>
+            {t('daily') ?? 'Daily'}
+          </Text>
         </TouchableOpacity>
       </View>
 
-      {/* Debug information */}
-      <CalendarDebug 
-        availableDates={availableDates} 
-        selectedDate={selectedDate} 
-      />
-
-      <View style={styles.timeSelector}>
-        {(['morning', 'noon', 'evening', 'family'] as const).map((time) => (
-          <TouchableOpacity
-            key={time}
-            style={[
-              styles.timeButton,
-              selectedTime === time && styles.selectedTimeButton
-            ]}
-            onPress={() => setSelectedTime(time)}
-          >
-            <Text style={[
-              styles.timeButtonText,
-              selectedTime === time && styles.selectedTimeButtonText
-            ]}>
-              {time.charAt(0).toUpperCase() + time.slice(1)}
-            </Text>
-          </TouchableOpacity>
-        ))}
-      </View>
-
-      <ScrollView style={styles.contentContainer}>
-        {selectedDevotion ? (
+      <ScrollView
+        style={styles.scroll}
+        contentContainerStyle={styles.scrollContent}
+        showsVerticalScrollIndicator={false}
+        refreshControl={
+          <RefreshControl
+            refreshing={refreshing}
+            onRefresh={handleRefresh}
+            colors={[theme.colors.primary[500]]}
+            tintColor={theme.colors.primary[500]}
+          />
+        }
+      >
+        {viewMode === 'calendar' ? (
           <>
-            {selectedDevotion.title && (
-              <Text style={styles.devotionTitle}>{selectedDevotion.title}</Text>
-            )}
-
-            {selectedDevotion.signOfTheCross && (
-              <View style={styles.section}>
-                <Text style={styles.content}>{selectedDevotion.signOfTheCross}</Text>
+            {/* Month nav */}
+            <View style={styles.monthNav}>
+              <PrimaryButton title="←" onPress={() => navigateMonth('previous')} variant="ghost" size="small" />
+              <Text style={styles.monthLabel}>
+                {currentMonth.toLocaleDateString(getBcp47Locale(currentLanguage), { month: 'long', year: 'numeric' })}
+              </Text>
+              <PrimaryButton title="→" onPress={() => navigateMonth('next')} variant="ghost" size="small" />
+            </View>
+            <CalendarView
+              currentMonth={currentMonth}
+              selectedDate={selectedDate}
+              onDateSelect={handleDateFromCalendar}
+              availableDates={lectionaryDates}
+            />
+          </>
+        ) : (
+          <>
+            {/* Date navigation */}
+            <View style={styles.dateNav}>
+              <PrimaryButton title="←" onPress={() => navigateDate('previous')} variant="ghost" size="small" />
+              <View style={styles.dateInfo}>
+                <Text style={styles.dateText}>{displayDate}</Text>
+                <View style={styles.seasonRow}>
+                  <View style={[styles.seasonDot, { backgroundColor: liturgicalColor }]} />
+                  <Text style={styles.seasonText}>
+                    {t(`liturgical.${liturgicalSeason.toLowerCase()}`) ?? liturgicalSeason}
+                  </Text>
+                </View>
               </View>
+              <PrimaryButton title="→" onPress={() => navigateDate('next')} variant="ghost" size="small" />
+            </View>
+
+            {/* Today button */}
+            {!isToday && (
+              <PrimaryButton
+                title={t('goToToday') ?? 'Go to Today'}
+                onPress={goToToday}
+                variant="outline"
+                size="small"
+                style={styles.todayBtn}
+              />
             )}
 
-            {selectedDevotion.confession && renderPrayerSection(selectedDevotion.confession, 'Confession')}
+            {/* Time-of-day tabs */}
+            <View style={styles.timeTabs}>
+              {TIME_TABS.map((tab) => (
+                <TouchableOpacity
+                  key={tab.key}
+                  style={[styles.timeTab, selectedTime === tab.key && styles.timeTabActive]}
+                  onPress={() => setSelectedTime(tab.key)}
+                  accessibilityLabel={tab.fallbackLabel}
+                  accessibilityRole="tab"
+                  accessibilityState={{ selected: selectedTime === tab.key }}
+                >
+                  <Ionicons
+                    name={tab.icon}
+                    size={20}
+                    color={selectedTime === tab.key ? '#FFF' : theme.colors.text.secondary}
+                  />
+                  <Text
+                    style={[
+                      styles.timeTabLabel,
+                      selectedTime === tab.key && styles.timeTabLabelActive,
+                    ]}
+                    numberOfLines={1}
+                  >
+                    {t(tab.labelKey) ?? tab.fallbackLabel}
+                  </Text>
+                </TouchableOpacity>
+              ))}
+            </View>
 
-            {selectedDevotion.psalmForTheDay && renderReadingSection(selectedDevotion.psalmForTheDay, 'Psalm for the Day')}
-
-            {selectedDevotion.gloriaPatri && renderPrayerSection(selectedDevotion.gloriaPatri, 'Gloria Patri')}
-
-            {selectedDevotion.readings && (
-              <>
-                {selectedDevotion.readings.oldTestament && renderReadingSection(selectedDevotion.readings.oldTestament, 'Old Testament')}
-                {selectedDevotion.readings.canticle1 && renderReadingSection(selectedDevotion.readings.canticle1, 'Canticle')}
-                {selectedDevotion.readings.newTestament && renderReadingSection(selectedDevotion.readings.newTestament, 'New Testament')}
-                {selectedDevotion.readings.canticle2 && renderReadingSection(selectedDevotion.readings.canticle2, 'Canticle')}
-                {selectedDevotion.readings.gospel && renderReadingSection(selectedDevotion.readings.gospel, 'Gospel')}
-              </>
-            )}
-
-            {selectedDevotion.apostlesCreed && renderPrayerSection(selectedDevotion.apostlesCreed, 'Apostle\'s Creed')}
-
-            {selectedDevotion.prayers && (
-              <>
-                {selectedDevotion.prayers.lordsPrayer && renderPrayerSection(selectedDevotion.prayers.lordsPrayer, 'The Lord\'s Prayer')}
-                {selectedDevotion.prayers.prayerToStMichael && renderPrayerSection(selectedDevotion.prayers.prayerToStMichael, 'Prayer to St. Michael')}
-                {selectedDevotion.prayers.collect && renderPrayerSection(selectedDevotion.prayers.collect, 'Collect')}
-              </>
-            )}
-
-            {selectedDevotion.signOfTheCrossEnd && (
-              <View style={styles.section}>
-                <Text style={styles.content}>{selectedDevotion.signOfTheCrossEnd}</Text>
+            {/* Content */}
+            {loading ? (
+              <View style={styles.centered}>
+                <ActivityIndicator size="large" color={theme.colors.primary[500]} />
+                <Text style={styles.loadingText}>
+                  {t('devotions.loadingDevotions') ?? 'Loading devotions...'}
+                </Text>
               </View>
-            )}
+            ) : devotion ? (
+              <View style={styles.devotionContent}>
+                {/* Devotion title */}
+                <Text style={styles.devotionTitle} accessibilityRole="header">
+                  {devotion.title}
+                </Text>
 
-            {selectedDevotion.reflection && renderPrayerSection(selectedDevotion.reflection, 'Reflection')}
+                {/* Sections */}
+                {devotion.sections.map((section: DevotionSection, idx: number) => renderSection(section, idx))}
 
-            {selectedDevotion.metadata && (
-              <View style={styles.metadataSection}>
-                {selectedDevotion.metadata.liturgicalSeason && (
-                  <Text style={styles.metadataText}>
-                    Season: {selectedDevotion.metadata.liturgicalSeason}
-                  </Text>
+                {/* Bible Gateway links */}
+                {devotion.readings.length > 0 && (
+                  <View style={styles.linksCard}>
+                    <Text style={styles.linksTitle}>
+                      {t('readOnline') ?? 'Read Online'}
+                    </Text>
+                    {devotion.readings.map((r: DevotionReading) => (
+                      <TouchableOpacity
+                        key={r.type}
+                        style={styles.linkRow}
+                        onPress={() => openBibleLink(r.reference)}
+                        accessibilityLabel={`Open ${r.reference} on Bible Gateway`}
+                        accessibilityRole="link"
+                      >
+                        <Ionicons name="book-outline" size={18} color={theme.colors.primary[500]} />
+                        <View style={styles.linkInfo}>
+                          <Text style={styles.linkLabel}>{r.label}</Text>
+                          <Text style={styles.linkRef}>{r.reference}</Text>
+                        </View>
+                        <Ionicons name="reader-outline" size={14} color={theme.colors.text.tertiary} />
+                      </TouchableOpacity>
+                    ))}
+                  </View>
                 )}
-                {selectedDevotion.metadata.feast && (
-                  <Text style={styles.metadataText}>
-                    Feast: {selectedDevotion.metadata.feast}
-                  </Text>
-                )}
-                {selectedDevotion.metadata.sourceReference && (
-                  <Text style={styles.metadataText}>
-                    Source: {selectedDevotion.metadata.sourceReference}
-                  </Text>
-                )}
+              </View>
+            ) : (
+              <View style={styles.emptyState}>
+                <Ionicons name="book-outline" size={48} color={theme.colors.text.tertiary} />
+                <Text style={styles.emptyTitle}>
+                  {t('devotions.noDevotions') ?? 'No devotions available for this date'}
+                </Text>
+                <PrimaryButton
+                  title={t('goToToday') ?? 'Go to Today'}
+                  onPress={goToToday}
+                  variant="outline"
+                  size="small"
+                  style={{ marginTop: theme.spacing.md }}
+                />
               </View>
             )}
           </>
-        ) : (
-          <View style={styles.noDevotionContainer}>
-            <Text style={styles.noDevotionText}>
-              No devotions available for this date.
-            </Text>
-            <TouchableOpacity style={styles.retryButton} onPress={() => loadDevotions(selectedDate)}>
-              <Text style={styles.retryButtonText}>Retry</Text>
-            </TouchableOpacity>
-          </View>
         )}
-       </ScrollView>
+      </ScrollView>
 
-      {/* Calendar Popup */}
-      <CalendarView
-        visible={calendarVisible}
-        onClose={() => setCalendarVisible(false)}
-        selectedDate={selectedDate}
-        availableDates={availableDates}
-        onDateSelect={(dateISO) => {
-          setSelectedDate(dateISO);
-          setCalendarVisible(false);
-        }}
-      />
-
-      {/* Bible Gateway Modal */}
-      <Modal
+      {/* Bible Gateway in-app reader */}
+      <BibleGatewayModal
         visible={bibleModalVisible}
-        animationType="slide"
-        transparent={true}
-        onRequestClose={() => setBibleModalVisible(false)}
-      >
-        <View style={styles.modalContainer}>
-          <View style={styles.modalContent}>
-            <View style={styles.modalHeader}>
-              <Text style={styles.modalTitle}>{bibleReference}</Text>
-              <TouchableOpacity 
-                style={styles.closeButton}
-                onPress={() => setBibleModalVisible(false)}
-              >
-                <Text style={styles.closeButtonText}>×</Text>
-              </TouchableOpacity>
-            </View>
-            <WebView
-              source={{ uri: getBibleGatewayUrl(bibleReference) }}
-              style={styles.webView}
-              startInLoadingState={true}
-              renderLoading={() => (
-                <View style={styles.loadingContainer}>
-                  <ActivityIndicator size="large" color="#007bff" />
-                  <Text style={styles.loadingText}>Loading Bible passage...</Text>
-                </View>
-              )}
-            />
-          </View>
-        </View>
-      </Modal>
-    </View>
+        url={bibleModalUrl}
+        reference={bibleModalRef}
+        bibleVersion={getBibleVersionForLanguage(currentLanguage)}
+        onClose={closeBibleModal}
+      />
+    </SafeAreaView>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#f5f5f5',
-  },
-  modalContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  },
-  modalContent: {
-    width: '90%',
-    height: '80%',
-    backgroundColor: 'white',
-    borderRadius: 10,
-    overflow: 'hidden',
-  },
-  modalHeader: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    padding: 15,
-    backgroundColor: '#007bff',
-  },
-  modalTitle: {
-    fontSize: 16,
-    fontWeight: 'bold',
-    color: 'white',
-    flex: 1,
-  },
-  closeButton: {
-    padding: 5,
-  },
-  closeButtonText: {
-    fontSize: 24,
-    color: 'white',
-    fontWeight: 'bold',
-  },
-  webView: {
-    flex: 1,
-  },
-  loadingContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-   calendarButton: {
-     marginTop: 10,
-     paddingHorizontal: 20,
-     paddingVertical: 8,
-     backgroundColor: 'rgba(255, 255, 255, 0.2)',
-     borderRadius: 20,
-   },
-   calendarButtonText: {
-     color: 'white',
-     fontSize: 14,
-     fontWeight: '500',
-   },
-   centerContainer: {
-     flex: 1,
-     justifyContent: 'center',
-     alignItems: 'center',
-     backgroundColor: '#f5f5f5',
-   },
-  header: {
-    backgroundColor: '#007bff',
-    padding: 20,
-    alignItems: 'center',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: 'white',
-    marginBottom: 5,
-  },
-  date: {
-    fontSize: 16,
-    color: 'white',
-    opacity: 0.9,
-  },
-  timeSelector: {
-    flexDirection: 'row',
-    backgroundColor: 'white',
-    padding: 10,
-    justifyContent: 'space-around',
-    borderBottomWidth: 1,
-    borderBottomColor: '#e0e0e0',
-  },
-  timeButton: {
-    paddingVertical: 8,
-    paddingHorizontal: 16,
-    borderRadius: 20,
-    backgroundColor: '#f0f0f0',
-  },
-  selectedTimeButton: {
-    backgroundColor: '#007bff',
-  },
-  timeButtonText: {
-    fontSize: 14,
-    fontWeight: '500',
-    color: '#666',
-  },
-  selectedTimeButtonText: {
-    color: 'white',
-  },
-  contentContainer: {
-    flex: 1,
-    padding: 16,
-  },
-  devotionTitle: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    color: '#333',
-    marginBottom: 20,
-    textAlign: 'center',
-  },
-  section: {
-    marginBottom: 20,
-    backgroundColor: 'white',
-    padding: 16,
-    borderRadius: 8,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 1 },
-    shadowOpacity: 0.2,
-    shadowRadius: 2,
-    elevation: 2,
-  },
-  sectionTitle: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    color: '#007bff',
-    marginBottom: 8,
-    textAlign: 'center',
-  },
-  reference: {
-    fontSize: 14,
-    color: '#666',
-    fontStyle: 'italic',
-    marginBottom: 8,
-    textAlign: 'center',
-  },
-  content: {
-    fontSize: 16,
-    lineHeight: 24,
-    color: '#333',
-    textAlign: 'justify',
-  },
-  metadataSection: {
-    marginTop: 20,
-    padding: 16,
-    backgroundColor: '#f8f9fa',
-    borderRadius: 8,
-  },
-  metadataText: {
-    fontSize: 14,
-    color: '#666',
-    marginBottom: 4,
-  },
-  loadingText: {
-    marginTop: 10,
-    fontSize: 16,
-    color: '#666',
-  },
-  noDevotionContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    padding: 20,
-  },
-  noDevotionText: {
-    fontSize: 16,
-    color: '#666',
-    textAlign: 'center',
-    marginBottom: 20,
-  },
-  retryButton: {
-    backgroundColor: '#007bff',
-    paddingHorizontal: 24,
-    paddingVertical: 12,
-    borderRadius: 24,
-  },
-  retryButtonText: {
-    color: 'white',
-    fontSize: 16,
-    fontWeight: '500',
-  },
-});
+// ═══════════════════════════════════════════════════════════════════════
+// Helpers
+// ═══════════════════════════════════════════════════════════════════════
+
+/** Guess a sensible default time of day based on the clock. */
+function getDefaultTimeOfDay(): DevotionTimeOfDay {
+  const hour = new Date().getHours();
+  if (hour >= 5 && hour < 12) return 'morning';
+  if (hour >= 12 && hour < 17) return 'noon';
+  if (hour >= 17 && hour < 21) return 'evening';
+  return 'family';
+}
+
+// ═══════════════════════════════════════════════════════════════════════
+// Styles
+// ═══════════════════════════════════════════════════════════════════════
+
+const createStyles = (theme: Theme & { userFontSize: string }) =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: theme.colors.background.secondary,
+    },
+    scroll: { flex: 1, paddingHorizontal: theme.spacing.md },
+    scrollContent: { paddingBottom: theme.spacing.xl * 2 },
+
+    // ── View toggle ────────────────────────────────────────────────────
+    viewToggle: {
+      flexDirection: 'row',
+      backgroundColor: theme.colors.background.primary,
+      marginHorizontal: theme.spacing.md,
+      marginTop: theme.spacing.sm,
+      borderRadius: theme.borderRadius.lg,
+      padding: theme.spacing.xs,
+      ...theme.shadows.sm,
+    },
+    toggleBtn: {
+      flex: 1,
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingVertical: theme.spacing.sm,
+      paddingHorizontal: theme.spacing.md,
+      borderRadius: theme.borderRadius.md,
+      gap: theme.spacing.xs,
+    },
+    toggleBtnActive: {
+      backgroundColor: theme.colors.primary[500],
+    },
+    toggleLabel: {
+      fontSize: getScaledFontSize(theme.typography.fontSize.sm, theme.userFontSize),
+      fontWeight: '600',
+      color: theme.colors.text.secondary,
+    },
+    toggleLabelActive: { color: '#FFFFFF' },
+
+    // ── Calendar ───────────────────────────────────────────────────────
+    monthNav: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      paddingVertical: theme.spacing.md,
+    },
+    monthLabel: {
+      fontSize: getScaledFontSize(theme.typography.fontSize.lg, theme.userFontSize),
+      fontWeight: '600',
+      color: theme.colors.text.primary,
+    },
+
+    // ── Date navigation ────────────────────────────────────────────────
+    dateNav: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      backgroundColor: theme.colors.background.primary,
+      padding: theme.spacing.md,
+      marginVertical: theme.spacing.sm,
+      borderRadius: theme.borderRadius.lg,
+      ...theme.shadows.sm,
+    },
+    dateInfo: { flex: 1, alignItems: 'center', paddingHorizontal: theme.spacing.md },
+    dateText: {
+      fontSize: getScaledFontSize(theme.typography.fontSize.lg, theme.userFontSize),
+      fontWeight: '600',
+      color: theme.colors.text.primary,
+      textAlign: 'center',
+    },
+    seasonRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginTop: theme.spacing.xs,
+      gap: theme.spacing.xs,
+    },
+    seasonDot: { width: 8, height: 8, borderRadius: 4 },
+    seasonText: {
+      fontSize: getScaledFontSize(theme.typography.fontSize.sm, theme.userFontSize),
+      fontStyle: 'italic',
+      color: theme.colors.primary[500],
+    },
+    todayBtn: { alignSelf: 'center', marginBottom: theme.spacing.md },
+
+    // ── Time tabs ──────────────────────────────────────────────────────
+    timeTabs: {
+      flexDirection: 'row',
+      backgroundColor: theme.colors.background.primary,
+      borderRadius: theme.borderRadius.lg,
+      padding: theme.spacing.xs,
+      marginBottom: theme.spacing.md,
+      ...theme.shadows.sm,
+    },
+    timeTab: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      paddingVertical: theme.spacing.sm,
+      paddingHorizontal: theme.spacing.xs,
+      borderRadius: theme.borderRadius.md,
+      gap: 2,
+      minHeight: 56,
+    },
+    timeTabActive: {
+      backgroundColor: theme.colors.primary[500],
+    },
+    timeTabLabel: {
+      fontSize: getScaledFontSize(11, theme.userFontSize),
+      fontWeight: '600',
+      color: theme.colors.text.secondary,
+      textAlign: 'center',
+    },
+    timeTabLabelActive: { color: '#FFFFFF' },
+
+    // ── Devotion content ───────────────────────────────────────────────
+    devotionContent: { marginTop: theme.spacing.sm },
+    devotionTitle: {
+      fontSize: getScaledFontSize(22, theme.userFontSize),
+      fontWeight: '700',
+      color: theme.colors.text.primary,
+      textAlign: 'center',
+      marginBottom: theme.spacing.lg,
+    },
+
+    // ── Section cards ──────────────────────────────────────────────────
+    sectionCard: {
+      backgroundColor: theme.colors.background.primary,
+      borderRadius: theme.borderRadius.lg,
+      padding: theme.spacing.md,
+      marginBottom: theme.spacing.md,
+      ...theme.shadows.sm,
+    },
+    readingCard: {
+      borderLeftWidth: 3,
+      borderLeftColor: theme.colors.primary[400],
+    },
+    sectionTitle: {
+      fontSize: getScaledFontSize(16, theme.userFontSize),
+      fontWeight: '700',
+      color: theme.colors.primary[600],
+      marginBottom: theme.spacing.sm,
+    },
+    sectionContent: {
+      fontSize: getScaledFontSize(15, theme.userFontSize),
+      lineHeight: getScaledFontSize(24, theme.userFontSize),
+      color: theme.colors.text.primary,
+    },
+    rubricText: {
+      fontSize: getScaledFontSize(12, theme.userFontSize),
+      fontStyle: 'italic',
+      color: theme.colors.text.tertiary,
+      marginBottom: theme.spacing.xs,
+    },
+    referenceBadge: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: `${theme.colors.primary[500]}10`,
+      alignSelf: 'flex-start',
+      borderRadius: theme.borderRadius.full,
+      paddingHorizontal: theme.spacing.sm,
+      paddingVertical: 4,
+      marginBottom: theme.spacing.sm,
+      gap: 4,
+      minHeight: 44,
+    },
+    referenceText: {
+      fontSize: getScaledFontSize(13, theme.userFontSize),
+      fontWeight: '600',
+      color: theme.colors.primary[500],
+    },
+    refFootnote: {
+      fontSize: getScaledFontSize(12, theme.userFontSize),
+      fontStyle: 'italic',
+      color: theme.colors.text.tertiary,
+      marginTop: theme.spacing.xs,
+    },
+    responseText: {
+      fontSize: getScaledFontSize(14, theme.userFontSize),
+      fontWeight: '600',
+      color: theme.colors.primary[500],
+      marginTop: theme.spacing.sm,
+    },
+
+    // ── Bible links ────────────────────────────────────────────────────
+    linksCard: {
+      backgroundColor: theme.colors.background.primary,
+      borderRadius: theme.borderRadius.lg,
+      padding: theme.spacing.md,
+      marginTop: theme.spacing.md,
+      ...theme.shadows.sm,
+    },
+    linksTitle: {
+      fontSize: getScaledFontSize(16, theme.userFontSize),
+      fontWeight: '600',
+      color: theme.colors.text.primary,
+      marginBottom: theme.spacing.sm,
+    },
+    linkRow: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      paddingVertical: theme.spacing.sm,
+      paddingHorizontal: theme.spacing.md,
+      backgroundColor: theme.colors.background.secondary,
+      borderRadius: theme.borderRadius.md,
+      marginTop: theme.spacing.xs,
+      gap: theme.spacing.sm,
+      minHeight: 48,
+    },
+    linkInfo: { flex: 1 },
+    linkLabel: {
+      fontSize: getScaledFontSize(13, theme.userFontSize),
+      fontWeight: '600',
+      color: theme.colors.text.primary,
+    },
+    linkRef: {
+      fontSize: getScaledFontSize(12, theme.userFontSize),
+      color: theme.colors.primary[500],
+      marginTop: 2,
+    },
+
+    // ── States ─────────────────────────────────────────────────────────
+    centered: {
+      alignItems: 'center',
+      paddingVertical: theme.spacing.xl * 2,
+    },
+    loadingText: {
+      fontSize: getScaledFontSize(14, theme.userFontSize),
+      color: theme.colors.text.secondary,
+      marginTop: theme.spacing.md,
+    },
+    emptyState: {
+      alignItems: 'center',
+      paddingVertical: theme.spacing.xl * 2,
+      backgroundColor: theme.colors.background.primary,
+      borderRadius: theme.borderRadius.lg,
+      padding: theme.spacing.xl,
+      ...theme.shadows.sm,
+    },
+    emptyTitle: {
+      fontSize: getScaledFontSize(16, theme.userFontSize),
+      color: theme.colors.text.secondary,
+      textAlign: 'center',
+      marginTop: theme.spacing.md,
+    },
+  });

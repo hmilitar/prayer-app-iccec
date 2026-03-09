@@ -1,10 +1,18 @@
 // Date utility functions
 
 /**
- * Format a date to ISO string (YYYY-MM-DD)
+ * Format a date to ISO string (YYYY-MM-DD) using LOCAL date components.
+ *
+ * ⚠️  Do NOT use `date.toISOString()` here — that converts to UTC first,
+ * which shifts the date by one day for users in UTC+ timezones (e.g. UTC+12
+ * midnight is the previous UTC day) and causes display errors in UTC- timezones
+ * when paired with parseISODate (UTC-midnight parse → local day mismatch).
  */
 export function formatDateToISO(date: Date): string {
-  return date.toISOString().split('T')[0];
+  const year = date.getFullYear();
+  const month = String(date.getMonth() + 1).padStart(2, '0');
+  const day = String(date.getDate()).padStart(2, '0');
+  return `${year}-${month}-${day}`;
 }
 
 /**
@@ -15,12 +23,31 @@ export function getTodayISO(): string {
 }
 
 /**
- * Parse ISO date string to Date object (YYYY-MM-DD format)
+ * Parse an ISO date string (YYYY-MM-DD) to a LOCAL-midnight Date object.
+ *
+ * ⚠️  Do NOT use `new Date(isoString)` directly — the ECMAScript spec defines
+ * date-only ISO strings (no time component) as UTC midnight. In any UTC-
+ * timezone (e.g. America/Los_Angeles, UTC-8), UTC midnight is still the
+ * *previous* calendar day locally, causing every displayed date to be one
+ * day behind. `new Date(year, month, day)` always creates local midnight.
+ *
+ * @param isoString - A date string in YYYY-MM-DD format
+ * @returns A Date at local midnight for the given calendar date
  */
 export function parseISODate(isoString: string): Date {
-  const [year, month, day] = isoString.split('-').map(Number);
-  console.log('Parsing ISO date:', isoString, 'to', year, month, day);
-  return new Date(year, month - 1, day); // Month is 0-based in JavaScript
+  const parts = isoString.split('-');
+  if (parts.length !== 3) {
+    console.warn(`[parseISODate] Unexpected format: "${isoString}". Falling back to today.`);
+    return new Date();
+  }
+  const year = parseInt(parts[0] ?? '', 10);
+  const month = parseInt(parts[1] ?? '', 10) - 1; // JS months are 0-indexed
+  const day = parseInt(parts[2] ?? '', 10);
+  if (isNaN(year) || isNaN(month) || isNaN(day)) {
+    console.warn(`[parseISODate] Could not parse "${isoString}". Falling back to today.`);
+    return new Date();
+  }
+  return new Date(year, month, day); // local midnight — timezone-safe
 }
 
 /**
@@ -167,6 +194,27 @@ export function getEasterDate(year: number): Date {
 /**
  * Format date for display based on locale
  */
+/** Map i18n language code → BCP-47 locale for Intl formatting */
+const LOCALE_MAP: Record<string, string> = {
+  en: 'en-US',
+  tl: 'fil-PH',
+  et: 'et-EE',
+  es: 'es-ES',
+  it: 'it-IT',
+  fr: 'fr-FR',
+  de: 'de-DE',
+  pl: 'pl-PL',
+};
+
+/**
+ * Convert a 2-letter app language code to a BCP-47 locale string
+ * suitable for use with Intl.DateTimeFormat and toLocaleDateString.
+ * Returns the input unchanged if it is already a full locale or unknown.
+ */
+export function getBcp47Locale(language: string): string {
+  return LOCALE_MAP[language] ?? language;
+}
+
 export function formatDisplayDate(date: Date, locale: string = 'en'): string {
   const options: Intl.DateTimeFormatOptions = {
     weekday: 'long',
@@ -175,7 +223,8 @@ export function formatDisplayDate(date: Date, locale: string = 'en'): string {
     day: 'numeric'
   };
   
-  return new Intl.DateTimeFormat(locale, options).format(date);
+  const bcp47Locale = LOCALE_MAP[locale] ?? locale;
+  return new Intl.DateTimeFormat(bcp47Locale, options).format(date);
 }
 
 /**
@@ -196,4 +245,27 @@ export function getRelativeTimeString(date: Date, baseDate: Date = new Date()): 
   } else {
     return `${Math.abs(diffInDays)} days ago`;
   }
-}export function getLiturgicalColor(date: Date) { return 'green'; }
+}
+
+/**
+ * Return the liturgical colour hex string for a given date,
+ * derived from the current liturgical season.
+ *
+ * Colour mapping follows traditional Western usage:
+ *   - Advent / Lent → purple
+ *   - Christmas / Easter → gold / white
+ *   - Ordinary Time → green
+ *   - Pentecost → red
+ */
+export function getLiturgicalColor(date: Date): string {
+  const season = getLiturgicalSeason(date);
+  const colorMap: Record<string, string> = {
+    Advent: '#800080',    // purple
+    Christmas: '#FFD700', // gold
+    Lent: '#800080',      // purple
+    Easter: '#FFD700',    // gold
+    Ordinary: '#008000',  // green
+    Pentecost: '#FF0000', // red
+  };
+  return colorMap[season] ?? '#008000';
+}

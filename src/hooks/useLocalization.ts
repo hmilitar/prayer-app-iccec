@@ -20,13 +20,14 @@ export function useLocalization() {
   useEffect(() => {
     initializeLocalization();
     
-    // Subscribe to language changes from other components
+    // Subscribe to language changes from other components.
+    // Always update state unconditionally — React will skip re-renders
+    // when the value hasn't actually changed. A stale-closure guard here
+    // would capture the initial 'en' and silently suppress later updates
+    // back to English (the bug that caused prayers to "stick").
     const subscription = languageEmitter.addListener(EVENT_LANGUAGE_CHANGED, (language: SupportedLanguage) => {
-      // Update local state if it differs
-      if (currentLanguage !== language) {
-        setCurrentLanguage(language);
-        localizationService.setLanguage(language); // Ensure service is synced
-      }
+      setCurrentLanguage(language);
+      localizationService.setLanguage(language); // Ensure service is synced
     });
 
     return () => {
@@ -74,7 +75,7 @@ export function useLocalization() {
     }
   };
 
-  const translate = (key: string, options?: any): string => {
+  const translate = (key: string, options?: Record<string, string | number>): string => {
     return localizationService.translate(key, options);
   };
 

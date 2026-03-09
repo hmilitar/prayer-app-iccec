@@ -1,0 +1,438 @@
+{
+  "prayers": [
+    {
+      "id": "lords-prayer",
+      "title": "Tatăl Nostru",
+      "category": "liturgical",
+      "content": "Tatăl nostru, care ești în ceruri, sfințească-se numele Tău. Vie împărăția Ta, facă-se voia Ta, precum în cer așa și pe pământ. Pâinea noastră cea de toate zilele dă-ne-o nouă astăzi. Și ne iartă nouă greșelile noastre, precum și noi iertăm greșiților noștri. Și nu ne duce pe noi în ispită, ci ne izbăvește de cel rău. Că a Ta este împărăția și puterea și slava în veci. Amin.",
+      "source": "Matei 6:9-13",
+      "tags": ["traditional", "jesus", "foundational"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "gloria-patri",
+      "title": "Slavă Tatălui",
+      "category": "liturgical",
+      "content": "Slavă Tatălui și Fiului și Sfântului Duh. Precum era la început, și acum, și pururea, și în vecii vecilor. Amin.",
+      "source": "Tradițional",
+      "tags": ["traditional", "trinity", "doxology"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "apostles-creed",
+      "title": "Crezul Apostolilor",
+      "category": "liturgical",
+      "content": "Cred în Dumnezeu, Tatăl Atotputernic, Făcătorul cerului și al pământului. Și în Iisus Hristos, Fiul Său cel Unul-Născut, Domnul nostru, care S-a zămislit de la Duhul Sfânt, S-a născut din Fecioara Maria, a pătimit sub Ponțiu Pilat, S-a răstignit, a murit și S-a îngropat; S-a coborât la cei morți. A treia zi a înviat din morți; S-a suit la ceruri, și șade de-a dreapta lui Dumnezeu, Tatăl Atotputernic; de unde va veni să judece viii și morții. Cred în Duhul Sfânt, sfânta Biserică universală, comuniunea sfinților, iertarea păcatelor, învierea trupului și viața veșnică. Amin.",
+      "source": "Tradițional",
+      "tags": ["creed", "faith", "foundational"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "come-holy-spirit",
+      "title": "Vino, Duhule Sfinte",
+      "category": "liturgical",
+      "content": "Vino, Duhule Sfinte, umple inimile credincioșilor Tăi și aprinde în ele focul iubirii Tale. Trimite Duhul Tău și toate se vor zidi, și vei înnoi fața pământului. Dumnezeule, care prin lumina Duhului Sfânt ai învățat inimile credincioșilor, dă-ne ca prin același Duh să cugetăm cele drepte și totdeauna să ne bucurăm de mângâierea Lui. Prin Hristos, Domnul nostru. Amin.",
+      "source": "Rugăciune tradițională carismatică",
+      "tags": ["holy-spirit", "charismatic", "pentecost", "renewal"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "morning-prayer",
+      "title": "Rugăciunea de Dimineață",
+      "category": "morning",
+      "content": "Atotputernice Dumnezeule, Îți mulțumim pentru darul acestei noi zile. Precum răsare soarele, fie ca lumina Ta să strălucească asupra noastră și să ne călăuzească pașii. Dăruiește-ne înțelepciune în deciziile noastre, putere în încercările noastre și pace în inimile noastre. Ajută-ne să Te slujim cu credincioșie și să ne iubim aproapele ca pe noi înșine. Prin Iisus Hristos, Domnul nostru. Amin.",
+      "source": "Tradiția Cărții de Rugăciuni Comune",
+      "tags": ["morning", "daily", "guidance"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "evening-prayer",
+      "title": "Rugăciunea de Seară",
+      "category": "evening",
+      "content": "Milostive Dumnezeule, pe când această zi se apropie de sfârșit, Îți mulțumim pentru nenumăratele Tale binecuvântări. Iartă-ne neajunsurile și greșelile noastre. Dăruiește-ne odihnă liniștită și reînnoiește sufletele noastre. Veghează asupra celor dragi nouă și asupra tuturor celor aflați în nevoie. Fie ca îngerii Tăi să ne păzească în timpul nopții, și să ne trezim împrospătați pentru a Te sluji mâine. În numele lui Iisus. Amin.",
+      "source": "Tradițional",
+      "tags": ["evening", "rest", "forgiveness"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-spiritual-gifts",
+      "title": "Rugăciune pentru Darurile Duhului",
+      "category": "charismatic",
+      "content": "Părinte ceresc, Îți mulțumim pentru darurile Duhului Tău Sfânt. Dă-ne înțelepciunea de a folosi aceste daruri pentru zidirea Bisericii Tale și înaintarea Împărăției Tale. Fie ca noi să dorim cu ardoare darurile duhovnicești, mai ales ca să profețim și să vestim Cuvântul Tău cu îndrăzneală. Umple-ne din nou cu Duhul Tău, ca să slujim în putere și să arătăm iubirea Ta lumii. Prin Iisus Hristos, Domnul nostru. Amin.",
+      "source": "1 Corinteni 12-14",
+      "tags": ["spiritual-gifts", "charismatic", "ministry", "holy-spirit"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-communion",
+      "title": "Rugăciune înainte de Împărtășanie",
+      "category": "sacramental",
+      "content": "Atotputernice Dumnezeule, înaintea căruia toate inimile sunt deschise, toate dorințele cunoscute și de la care niciun secret nu este ascuns: Curățește gândurile inimilor noastre prin inspirația Duhului Tău Sfânt, ca să Te iubim desăvârșit și să preaslăvim cu vrednicie sfântul Tău Nume; prin Hristos, Domnul nostru. Nu îndrăznim să venim la această Masă a Ta, Doamne milostiv, încrezându-ne în dreptatea noastră, ci în îndurările Tale cele multe și mari. Dă-ne deci, Doamne plin de har, să mâncăm trupul scumpului Tău Fiu Iisus Hristos și să bem sângele Lui, ca trupurile noastre păcătoase să fie curățite prin trupul Lui, iar sufletele noastre spălate prin preascumpul Lui sânge. Amin.",
+      "source": "Tradiția Cărții de Rugăciuni Comune",
+      "tags": ["communion", "eucharist", "sacramental", "preparation"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-meals",
+      "title": "Rugăciunea înainte de Masă",
+      "category": "thanksgiving",
+      "content": "Binecuvântează-ne, Doamne, și aceste daruri ale Tale, pe care suntem gata să le primim din bunătatea Ta, prin Hristos, Domnul nostru. Amin.",
+      "source": "Tradițional",
+      "tags": ["meals", "blessing", "gratitude"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-peace",
+      "title": "Rugăciune pentru Pace",
+      "category": "intercession",
+      "content": "Doamne, fă-mă unealtă a păcii Tale. Unde este ură, lasă-mă să semăn iubire; unde este rănire, iertare; unde este îndoială, credință; unde este deznădejde, nădejde; unde este întuneric, lumină; unde este tristețe, bucurie. O, Învățătorule Divin, dă-mi să nu caut atât să fiu mângâiat, cât să mângâi; să fiu înțeles, cât să înțeleg; să fiu iubit, cât să iubesc. Căci dăruind, primim; iertând, suntem iertați; și murind, ne naștem la viața veșnică. Amin.",
+      "source": "Rugăciunea Sfântului Francisc",
+      "tags": ["peace", "service", "francis"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-healing",
+      "title": "Rugăciune pentru Vindecare",
+      "category": "intercession",
+      "content": "Părinte ceresc, venim înaintea Ta căutând atingerea Ta vindecătoare. Tu ești Marele Medic și nimic nu este cu neputință pentru Tine. Ne rugăm pentru cei bolnavi cu trupul, cu mintea sau cu sufletul. Readă-i la deplinătate după voia Ta desăvârșită. Dă putere îngrijitorilor, mângâiere familiilor și nădejde tuturor celor ce suferă. Fie ca puterea Ta vindecătoare să curgă prin mâinile medicilor și asistentelor. Ne încredem în iubirea și mila Ta. Prin Iisus Hristos, Domnul nostru. Amin.",
+      "source": "Contemporan",
+      "tags": ["healing", "sick", "comfort"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-of-confession",
+      "title": "Rugăciune de Mărturisire",
+      "category": "confession",
+      "content": "Preaîndurătorule Dumnezeule, mărturisim că am păcătuit împotriva Ta în gând, cuvânt și faptă, prin ceea ce am făcut și prin ceea ce am lăsat nefăcut. Nu Te-am iubit din toată inima noastră; nu am iubit aproapele nostru ca pe noi înșine. Ne pare cu adevărat rău și ne pocăim cu smerenie. De dragul Fiului Tău, Iisus Hristos, ai milă de noi și iartă-ne; ca să ne desfătăm în voia Ta și să umblăm pe căile Tale, spre slava Numelui Tău. Amin.",
+      "source": "Cartea de Rugăciuni Comune",
+      "tags": ["confession", "repentance", "forgiveness"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-of-thanksgiving",
+      "title": "Rugăciune de Mulțumire",
+      "category": "thanksgiving",
+      "content": "Atotputernice Dumnezeule, Părinte al tuturor îndurărilor, noi, nevrednicii Tăi slujitori, Îți aducem smerite mulțumiri pentru toată bunătatea și iubirea Ta față de noi și față de toți cei pe care i-ai creat. Te binecuvântăm pentru crearea noastră, pentru ocrotirea noastră și pentru toate binecuvântările acestei vieți; dar mai presus de toate pentru nemărginita Ta iubire în răscumpărarea lumii prin Domnul nostru Iisus Hristos; pentru mijloacele harului și pentru nădejdea slavei. Și Te rugăm, dă-ne o asemenea conștientizare a îndurărilor Tale, încât cu inimi cu adevărat recunoscătoare să arătăm lauda Ta, nu doar cu buzele noastre, ci și în viețile noastre, dăruindu-ne pe noi înșine slujirii Tale și umblând înaintea Ta în sfințenie și dreptate în toate zilele noastre; prin Iisus Hristos, Domnul nostru, căruia, împreună cu Tine și cu Duhul Sfânt, I se cuvine cinstea și slava în vecii vecilor. Amin.",
+      "source": "Cartea de Rugăciuni Comune",
+      "tags": ["thanksgiving", "gratitude", "praise"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "serenity-prayer",
+      "title": "Rugăciunea Serenității",
+      "category": "contemporary",
+      "content": "Dumnezeule, dăruiește-mi seninătatea de a accepta lucrurile pe care nu le pot schimba, curajul de a schimba lucrurile pe care le pot schimba și înțelepciunea de a deosebi între ele. Trăind o zi pe rând; bucurându-mă de o clipă pe rând; acceptând greutățile ca pe o cale spre pace; luând, așa cum a făcut El, această lume păcătoasă așa cum este, nu cum aș vrea eu să fie; încrezându-mă că El va îndrepta toate lucrurile dacă mă supun voii Sale; ca să fiu rezonabil de fericit în această viață și pe deplin de folos lui Dumnezeu și semenilor mei. Amin.",
+      "source": "Reinhold Niebuhr",
+      "tags": ["serenity", "acceptance", "wisdom"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-guidance",
+      "title": "Rugăciune pentru Călăuzire",
+      "category": "personal",
+      "content": "Iubitorule Dumnezeule, Tu cunoști calea ce se deschide înaintea noastră. Când suntem nesiguri de direcția de urmat, fii călăuza noastră. Când ne temem de provocările pe care le întâmpinăm, fii tăria noastră. Când suntem copleșiți de deciziile dinaintea noastră, dăruiește-ne înțelepciunea Ta. Ajută-ne să ne încredem în planul Tău desăvârșit și să umblăm prin credință, știind că ești mereu cu noi. Călăuzește-ne pe calea cea veșnică. Prin Iisus Hristos, Domnul nostru. Amin.",
+      "source": "Contemporan",
+      "tags": ["guidance", "wisdom", "trust"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-family",
+      "title": "Rugăciune pentru Familie",
+      "category": "intercession",
+      "content": "Părinte ceresc, Îți mulțumim pentru darul familiei. Binecuvântează casele noastre cu prezența Ta și umple-le cu iubire, bucurie și pace. Ajută-ne să fim răbdători unii cu alții, să iertăm repede și să ne sprijinim reciproc în toate anotimpurile vieții. Ocrotește copiii noștri și călăuzește-i pe căile Tale. Întărește legăturile dintre noi și ajută-ne să fim o oglindă a iubirii Tale pentru lume. Prin Iisus Hristos, Domnul nostru. Amin.",
+      "source": "Contemporan",
+      "tags": ["family", "home", "children"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-world",
+      "title": "Rugăciune pentru Lume",
+      "category": "intercession",
+      "content": "Atotputernice Dumnezeule, stăpânitor al tuturor neamurilor, ne rugăm pentru lumea noastră. Adu pace acolo unde este conflict, nădejde acolo unde este deznădejde și vindecare acolo unde este suferință. Călăuzește conducătorii noștri cu înțelepciune și integritate. Ajută-ne să fim buni chivernisitori ai creației Tale și să ne pese de cei aflați în nevoie. Unește-ne în umanitatea noastră comună și ajută-ne să lucrăm împreună pentru dreptate și pace. Vie împărăția Ta pe pământ, precum în cer. Prin Iisus Hristos, Domnul nostru. Amin.",
+      "source": "Contemporan",
+      "tags": ["world", "peace", "justice"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-strength",
+      "title": "Rugăciune pentru Putere",
+      "category": "personal",
+      "content": "Doamne Dumnezeule, când suntem slabi, Tu ești tare. Când suntem obosiți, Tu ne dai odihnă. Când suntem copleșiți, Tu ești adăpostul nostru. Dă-ne puterea de care avem nevoie pentru această zi. Ajută-ne să nu ne bizuim pe propria noastră putere, ci pe tăria Ta cea mare. Reînnoiește duhurile noastre și împrospătează sufletele noastre. Fie ca nădejdea și încrederea noastră să fie doar în Tine. Prin Iisus Hristos, Domnul nostru. Amin.",
+      "source": "Contemporan",
+      "tags": ["strength", "weakness", "refuge"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "noon-prayer",
+      "title": "Rugăciunea de la Amiază",
+      "category": "noon",
+      "content": "Doamne Iisuse Hristoase, în acest ceas al zilei, ne oprim din activitățile noastre pentru a ne aminti de prezența Ta. Reînnoiește-ne puterea pentru lucrurile ce ne așteaptă. Ajută-ne să umblăm cu Tine în restul acestei zile. În numele Tău ne rugăm. Amin.",
+      "source": "Tradiție liturgică",
+      "tags": ["noon", "midday", "pause", "renewal"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "family-prayer",
+      "title": "Rugăciune în Familie",
+      "category": "family",
+      "content": "Părinte ceresc, Îți mulțumim pentru darul familiei. Binecuvântează casele noastre cu prezența Ta și umple-le cu iubire, bucurie și pace. Ajută-ne să fim răbdători unii cu alții, să iertăm repede și să ne susținem reciproc în toate anotimpurile vieții. Ocrotește copiii noștri și călăuzește-i pe căile Tale. Întărește legăturile dintre noi și ajută-ne să fim o reflecție a iubirii Tale pentru lume. Prin Iisus Hristos, Domnul nostru. Amin.",
+      "source": "Contemporan",
+      "tags": ["family", "home", "children"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-before-exam",
+      "title": "Rugăciune înainte de Examen",
+      "category": "occasions",
+      "content": "Doamne, Îți cer binecuvântarea în timp ce mă pregătesc pentru acest examen. Liniștește-mi nervii și limpezește-mi mintea. Ajută-mă să-mi amintesc ce am învățat și să dau tot ce am mai bun. Dă-mi încredere în abilitățile mele și pace în inimă. Fie ca în toate să fac voia Ta. Amin.",
+      "source": "Contemporan",
+      "tags": ["student", "exam", "calm", "occasions"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-travel",
+      "title": "Rugăciune pentru Călătorie",
+      "category": "occasions",
+      "content": "Atotputernice Dumnezeule, cerem ocrotirea Ta pentru această călătorie. Păzește-i pe toți călătorii de pericol și de accidente. Dăruiește-le drum bun și reîntâlniri fericite cu cei dragi. Binecuvântează pe toți cei ce călătoresc pe uscat, pe mare sau prin aer. Prin Hristos, Domnul nostru. Amin.",
+      "source": "Cartea de Rugăciuni Comune",
+      "tags": ["travel", "protection", "safety", "occasions"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-new-job",
+      "title": "Rugăciune pentru un Loc de Muncă Nou",
+      "category": "occasions",
+      "content": "Părinte ceresc, Îți mulțumesc pentru această nouă oportunitate. Călăuzește-mă pe când încep acest nou capitol din viața mea. Dă-mi înțelepciunea de a învăța, harul de a mă înțelege cu ceilalți și puterea de a face față provocărilor. Fie ca eu să fiu o lumină pentru Tine în acest loc. În numele lui Iisus. Amin.",
+      "source": "Contemporan",
+      "tags": ["work", "new-beginning", "guidance", "occasions"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "prayer-for-anxiety",
+      "title": "Rugăciune contra Anxietății",
+      "category": "occasions",
+      "content": "Dumnezeul păcii, inima mea este tulburată și mintea mea este neliniștită. Adu liniștea Ta asupra duhului meu tulburat. Ajută-mă să mă încred în Tine din toată inima și să nu mă bizui pe înțelegerea mea. Reamintește-mi că Tu ești la cârmă și că planurile Tale pentru mine sunt bune. Umple-mi inima cu pacea Ta care întrece orice pricepere. În numele lui Iisus. Amin.",
+      "source": "Contemporan - bazat pe Filipeni 4:6-7",
+      "tags": ["anxiety", "peace", "trust", "occasions"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "lutheri-hommikupalve",
+      "title": "Rugăciunea de Dimineață a lui Luther",
+      "category": "liturgical",
+      "content": "Îți mulțumesc, Părinte ceresc, prin Iisus Hristos, scumpul Tău Fiu, că m-ai păzit în această noapte de orice rău și primejdie; și Te rog să mă păzești și în această zi de păcat și de orice rău, ca toate faptele și viața mea să-Ți fie plăcute. Căci în mâinile Tale mă încredințez pe mine, trupul meu și sufletul meu, și toate cele ce sunt ale mele. Fie ca sfântul Tău înger să fie cu mine, ca Cel Rău să nu aibă putere asupra mea. Amin.",
+      "source": "Martin Luther",
+      "tags": ["luther", "morning", "protection"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "angelus",
+      "title": "Angelus",
+      "category": "liturgical",
+      "content": "Îngerul Domnului a vestit Mariei. Și ea a zămislit de la Duhul Sfânt. Bucură-te, Marie... Iată slujitoarea Domnului. Fie mie după cuvântul tău. Bucură-te, Marie... Și Cuvântul S-a făcut trup. Și S-a sălășluit între noi. Bucură-te, Marie... Roagă-te pentru noi, Sfântă Născătoare de Dumnezeu. Ca să ne facem vrednici de făgăduințele lui Hristos. Să ne rugăm: Revarsă, Te rugăm, Doamne, harul Tău în inimile noastre; ca noi, cărora ni s-a făcut cunoscută Întruparea lui Hristos, Fiul Tău, prin vestirea îngerului, să fim duși prin Patima și Crucea Lui la slava Învierii Sale. Prin același Hristos, Domnul nostru. Amin.",
+      "source": "Tradițional",
+      "tags": ["angelus", "mary", "incarnation"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "confession",
+      "title": "Mărturisirea Generală",
+      "category": "liturgical",
+      "content": "Atotputernice și preaîndurătorule Părinte, am rătăcit și ne-am abătut de la căile Tale ca niște oi pierdute. Am urmat prea mult poftele și dorințele inimilor noastre. Am păcătuit împotriva sfintelor Tale legi. Am lăsat nefăcute lucrurile pe care ar fi trebuit să le facem; și am făcut lucrurile pe care nu ar fi trebuit să le facem; și nu este sănătate întru noi. Dar Tu, Doamne, ai milă de noi, ticăloșii păcătoși. Cruță-i pe cei ce-și mărturisesc greșelile, Dumnezeule. Ridică-i pe cei ce se pocăiesc, după făgăduințele Tale vestite omenirii prin Hristos Iisus, Domnul nostru. Și dăruiește-ne, Preaîndurătorule Părinte, de dragul Lui, ca de acum înainte să trăim o viață evlavioasă, dreaptă și cumpătată, spre slava sfântului Tău Nume. Amin.",
+      "source": "Cartea de Rugăciuni Comune",
+      "tags": ["confession", "repentance", "daily-office"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "benedictus",
+      "title": "Benedictus (Cântarea lui Zaharia)",
+      "category": "liturgical",
+      "content": "Binecuvântat fie Domnul Dumnezeul lui Israel, că a cercetat și a răscumpărat pe poporul Său; și ne-a ridicat putere de mântuire în casa lui David, slujitorul Său; precum a grăit prin gura sfinților Săi prooroci din veac: mântuire de vrăjmașii noștri și din mâna tuturor celor ce ne urăsc; ca să facă milă cu părinții noștri și să-Și aducă aminte de legământul Său cel sfânt; de jurământul pe care l-a jurat lui Avraam, părintele nostru, că ne va da nouă; ca, izbăviți din mâna vrăjmașilor noștri, să-I slujim fără frică, în sfințenie și dreptate înaintea Lui, în toate zilele vieții noastre. Și tu, pruncule, prooroc al Celui Preaînalt te vei chema, că vei merge înaintea feței Domnului ca să-I pregătești căile; să dai poporului Său cunoștința mântuirii întru iertarea păcatelor lor, prin milostivirea cea mare a Dumnezeului nostru, cu care ne-a cercetat Răsăritul cel de Sus, ca să lumineze pe cei ce șed în întuneric și în umbra morții, și să îndrepte picioarele noastre pe calea păcii.",
+      "source": "Luca 1:68-79",
+      "tags": ["canticle", "zechariah", "morning-prayer", "daily-office"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "magnificat",
+      "title": "Magnificat (Cântarea Mariei)",
+      "category": "liturgical",
+      "content": "Mărește sufletul meu pe Domnul și s-a bucurat duhul meu de Dumnezeu, Mântuitorul meu. Că a căutat spre smerenia roabei Sale. Că iată, de acum mă vor ferici toate neamurile. Că mi-a făcut mie mărire Cel Puternic și sfânt este Numele Lui. Și mila Lui din neam în neam spre cei ce se tem de Dânsul. Făcut-a tărie cu brațul Său; risipit-a pe cei mândri în cugetul inimii lor. Pogorât-a pe cei puternici de pe scaune și a înălțat pe cei smeriți. Pe cei flămânzi i-a umplut de bunătăți, iar pe cei bogați i-a scos afară deșerți. Luat-a pe Israel, slujitorul Său, aducându-Și aminte de milă, precum a grăit către părinții noștri, lui Avraam și seminției lui în veac.",
+      "source": "Luca 1:46-55",
+      "tags": ["canticle", "mary", "evening-prayer", "daily-office"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "nunc-dimittis",
+      "title": "Nunc Dimittis (Cântarea lui Simeon)",
+      "category": "liturgical",
+      "content": "Acum slobozește pe robul Tău, Stăpâne, după cuvântul Tău, în pace. Că văzură ochii mei mântuirea Ta, pe care ai gătit-o înaintea feței tuturor popoarelor; lumină spre descoperirea neamurilor și slavă poporului Tău Israel.",
+      "source": "Luca 2:29-32",
+      "tags": ["canticle", "simeon", "evening-prayer", "daily-office"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "st-michael-prayer",
+      "title": "Rugăciune către Sfântul Arhanghel Mihail",
+      "category": "liturgical",
+      "content": "Sfinte Arhanghele Mihail, apără-ne în ziua luptei. Fii scutul nostru împotriva răutății și curselor diavolului. Poruncească-i Dumnezeu, cu smerenie Te rugăm; iar tu, căpetenie a oștirilor cerești, cu puterea lui Dumnezeu, aruncă în iad pe satana și pe toate duhurile rele care umblă prin lume căutând pieirea sufletelor. Amin.",
+      "source": "Papa Leon al XIII-lea, 1886",
+      "tags": ["st-michael", "archangel", "protection", "spiritual-warfare"],
+      "language": "ro",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    }
+  ]
+}

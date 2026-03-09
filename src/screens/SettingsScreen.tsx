@@ -368,7 +368,12 @@ export default function SettingsScreen() {
       it: 'Italiano',
       fr: 'Français',
       de: 'Deutsch',
-      pl: 'Polski'
+      pl: 'Polski',
+      ru: 'Русский',
+      nl: 'Nederlands',
+      pt: 'Português',
+      sv: 'Svenska',
+      ro: 'Română'
     };
     
     return { 
@@ -519,7 +524,7 @@ export default function SettingsScreen() {
         {/* App Info */}
         <View style={styles.appInfo}>
           <Text style={styles.appInfoText}>
-            {t('app.name') || 'Prayer App - ICCEC Europe'}
+            {t('app.name') || 'Cenacle (Upper Room)'}
           </Text>
           <Text style={styles.appVersion}>
             {t('settings.version') || 'Version'} 1.0.0

@@ -21,7 +21,10 @@ export function useSettings() {
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
 
-  const storageService = new AsyncStorageService();
+  // Stable singleton — AsyncStorageService is stateless so a single instance is safe.
+  // Using useState initializer guarantees this is only created once per hook lifetime,
+  // preventing every downstream useCallback from being recreated on every render.
+  const [storageService] = useState(() => new AsyncStorageService());
 
   useEffect(() => {
     // If we don't have settings yet (fresh app launch), load them

@@ -372,6 +372,76 @@
         "updatedAt": "2024-01-01T00:00:00Z",
         "version": 1
       }
+    },
+    {
+      "id": "confession",
+      "title": "General Confession",
+      "category": "liturgical",
+      "content": "Almighty and most merciful Father, we have erred and strayed from thy ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against thy holy laws. We have left undone those things which we ought to have done; and we have done those things which we ought not to have done; and there is no health in us. But thou, O Lord, have mercy upon us, miserable offenders. Spare thou those, O God, who confess their faults. Restore thou those who are penitent; according to thy promises declared unto mankind in Christ Jesus our Lord. And grant, O most merciful Father, for his sake; that we may hereafter live a godly, righteous, and sober life, to the glory of thy holy Name. Amen.",
+      "source": "Book of Common Prayer",
+      "tags": ["confession", "repentance", "daily-office"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "benedictus",
+      "title": "Benedictus (Canticle of Zechariah)",
+      "category": "liturgical",
+      "content": "Blessed be the Lord God of Israel, for he hath visited and redeemed his people; and hath raised up a mighty salvation for us, in the house of his servant David; as he spake by the mouth of his holy prophets, which have been since the world began: that we should be saved from our enemies, and from the hand of all that hate us; to perform the mercy promised to our forefathers, and to remember his holy covenant; to perform the oath which he sware to our forefather Abraham, that he would give us; that we being delivered out of the hand of our enemies might serve him without fear; in holiness and righteousness before him, all the days of our life. And thou, child, shalt be called the prophet of the Highest, for thou shalt go before the face of the Lord to prepare his ways; to give knowledge of salvation unto his people for the remission of their sins, through the tender mercy of our God; whereby the dayspring from on high hath visited us; to give light to them that sit in darkness, and in the shadow of death, and to guide our feet into the way of peace.",
+      "source": "Luke 1:68-79",
+      "tags": ["canticle", "zechariah", "morning-prayer", "daily-office"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "magnificat",
+      "title": "Magnificat (Canticle of Mary)",
+      "category": "liturgical",
+      "content": "My soul doth magnify the Lord, and my spirit hath rejoiced in God my Saviour. For he hath regarded the lowliness of his handmaiden. For behold, from henceforth all generations shall call me blessed. For he that is mighty hath magnified me, and holy is his Name. And his mercy is on them that fear him throughout all generations. He hath showed strength with his arm; he hath scattered the proud in the imagination of their hearts. He hath put down the mighty from their seat, and hath exalted the humble and meek. He hath filled the hungry with good things, and the rich he hath sent empty away. He remembering his mercy hath holpen his servant Israel, as he promised to our forefathers, Abraham and his seed, for ever.",
+      "source": "Luke 1:46-55",
+      "tags": ["canticle", "mary", "evening-prayer", "daily-office"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "nunc-dimittis",
+      "title": "Nunc Dimittis (Canticle of Simeon)",
+      "category": "liturgical",
+      "content": "Lord, now lettest thou thy servant depart in peace, according to thy word. For mine eyes have seen thy salvation, which thou hast prepared before the face of all people; to be a light to lighten the Gentiles, and to be the glory of thy people Israel.",
+      "source": "Luke 2:29-32",
+      "tags": ["canticle", "simeon", "evening-prayer", "daily-office"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
+    },
+    {
+      "id": "st-michael-prayer",
+      "title": "Prayer to St. Michael the Archangel",
+      "category": "liturgical",
+      "content": "Holy Michael the Archangel, defend us in the day of battle. Be our safeguard against the wickedness and snares of the devil. May God rebuke him, we humbly pray; and do thou, O Prince of the heavenly host, by the power of God, thrust into hell Satan and all the evil spirits who prowl about the world seeking the ruin of souls. Amen.",
+      "source": "Pope Leo XIII, 1886",
+      "tags": ["st-michael", "archangel", "protection", "spiritual-warfare"],
+      "language": "en",
+      "metadata": {
+        "createdAt": "2024-01-01T00:00:00Z",
+        "updatedAt": "2024-01-01T00:00:00Z",
+        "version": 1
+      }
     }
   ]
 }
