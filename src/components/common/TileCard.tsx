@@ -1,11 +1,13 @@
 // TileCard component - Reusable card component for navigation tiles
+// Includes hover state support for web platforms
 
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, ViewStyle } from 'react-native';
+import React, { useState } from 'react';
+import { View, Text, TouchableOpacity, StyleSheet, ViewStyle, Platform } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { Theme } from '../../styles/theme';
 import { useTheme } from '../../hooks/useTheme';
 import { getScaledFontSize } from '../../utils/fontScaling';
+import { isWebPlatform } from '../../utils/responsive';
 
 export interface TileCardProps {
   title: string;
@@ -32,15 +34,30 @@ export default function TileCard({
 }: Readonly<TileCardProps>) {
   const theme = useTheme();
   const styles = createStyles(theme);
+  const isWeb = isWebPlatform();
+  const [isPressed, setIsPressed] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   
   const getContainerStyle = () => {
+    const baseStyles = [styles.container];
+    
     if (variant === 'primary') {
-      return [styles.container, styles.primaryContainer];
+      baseStyles.push(styles.primaryContainer);
     } else if (variant === 'secondary') {
-      return [styles.container, styles.secondaryContainer];
+      baseStyles.push(styles.secondaryContainer);
     }
     
-    return [styles.container];
+    // Add hover state style for web
+    if (isWeb && isHovered && !isPressed) {
+      baseStyles.push(styles.hoverContainer);
+    }
+    
+    // Add pressed state
+    if (isPressed) {
+      baseStyles.push(styles.pressedContainer);
+    }
+    
+    return baseStyles;
   };
 
   const getIconColor = () => {
@@ -53,6 +70,8 @@ export default function TileCard({
     <TouchableOpacity
       style={[getContainerStyle(), style]}
       onPress={onPress}
+      onPressIn={() => setIsPressed(true)}
+      onPressOut={() => setIsPressed(false)}
       accessibilityLabel={accessibilityLabel || title}
       accessibilityRole="button"
       accessibilityHint={subtitle ? `${title}. ${subtitle}` : title}
@@ -88,46 +107,63 @@ export default function TileCard({
   );
 }
 
-const createStyles = (theme: Theme) => StyleSheet.create({
-  container: {
+const createStyles = (theme: Theme) => {
+  const baseContainer = {
     backgroundColor: theme.colors.background.primary,
-    borderRadius: theme.borderRadius.lg,
-    padding: theme.spacing.md,
-    marginVertical: theme.spacing.sm,
+    borderRadius: theme.borderRadius.lg as number,
+    padding: theme.spacing.md as number,
+    marginVertical: theme.spacing.sm as number,
     minHeight: 120,
     ...theme.shadows.md,
-  },
-  primaryContainer: {
-    backgroundColor: theme.colors.primary[500],
-  },
-  secondaryContainer: {
-    backgroundColor: theme.colors.background.secondary,
-  },
-  content: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-  },
-  iconContainer: {
-    marginBottom: theme.spacing.sm,
-  },
-  title: {
-    fontSize: getScaledFontSize(theme.typography.fontSize.lg),
-    fontWeight: '600',
-    color: theme.colors.text.primary,
-    textAlign: 'center',
-    marginBottom: theme.spacing.xs,
-  },
-  primaryTitle: {
-    color: theme.colors.text.inverse,
-  },
-  subtitle: {
-    fontSize: getScaledFontSize(theme.typography.fontSize.sm),
-    color: theme.colors.text.secondary,
-    textAlign: 'center',
-  },
-  primarySubtitle: {
-    color: theme.colors.text.inverse,
-    opacity: 0.9,
-  },
-});
+  };
+
+  return StyleSheet.create({
+    container: baseContainer,
+    primaryContainer: {
+      ...baseContainer,
+      backgroundColor: theme.colors.primary[500],
+    },
+    secondaryContainer: {
+      ...baseContainer,
+      backgroundColor: theme.colors.background.secondary,
+    },
+    hoverContainer: {
+      ...baseContainer,
+      backgroundColor: theme.colors.background.secondary,
+      transform: [{ translateY: -2 }] as any,
+      ...theme.shadows.lg,
+    },
+    pressedContainer: {
+      ...baseContainer,
+      transform: [{ translateY: 1 }] as any,
+      opacity: 0.9,
+    },
+    content: {
+      alignItems: 'center',
+      justifyContent: 'center',
+      flex: 1,
+    } as ViewStyle,
+    iconContainer: {
+      marginBottom: theme.spacing.sm,
+    },
+    title: {
+      fontSize: getScaledFontSize(theme.typography.fontSize.lg),
+      fontWeight: '600',
+      color: theme.colors.text.primary,
+      textAlign: 'center',
+      marginBottom: theme.spacing.xs,
+    },
+    primaryTitle: {
+      color: theme.colors.text.inverse,
+    },
+    subtitle: {
+      fontSize: getScaledFontSize(theme.typography.fontSize.sm),
+      color: theme.colors.text.secondary,
+      textAlign: 'center',
+    },
+    primarySubtitle: {
+      color: theme.colors.text.inverse,
+      opacity: 0.9,
+    },
+  });
+};
