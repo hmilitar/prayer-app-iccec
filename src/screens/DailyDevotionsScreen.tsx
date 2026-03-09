@@ -23,7 +23,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import { useRoute, RouteProp } from '@react-navigation/native';
 import { Header, PrimaryButton } from '../components';
-import { CalendarView } from '../components/readings/CalendarView';
+import { CalendarView } from '../components/readings';
 import { BibleGatewayModal } from '../components/readings/BibleGatewayModal';
 import { useLocalization } from '../hooks/useLocalization';
 import { useTheme } from '../hooks/useTheme';
@@ -365,7 +365,7 @@ export default function DailyDevotionsScreen() {
       >
         {viewMode === 'calendar' ? (
           <>
-            {/* Month nav */}
+            {/* Month nav - Traditional calendar grid for both web and mobile */}
             <View style={styles.monthNav}>
               <PrimaryButton title="←" onPress={() => navigateMonth('previous')} variant="ghost" size="small" />
               <Text style={styles.monthLabel}>

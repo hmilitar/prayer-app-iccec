@@ -2,7 +2,7 @@
 // Features warm, spiritual design elements that create a serene atmosphere
 
 import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, Platform } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, Platform, Image } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
@@ -73,13 +73,13 @@ export default function WebSidebar({ currentRoute, onNavigate, style }: WebSideb
       style={[styles.container, style]}
       accessibilityLabel="Navigation sidebar"
     >
-      {/* Elegant Header with Cross Symbol */}
+      {/* Elegant Header with Logo Image */}
       <View style={styles.header}>
         <View style={styles.logoContainer}>
-          <Ionicons 
-            name="rose-outline" 
-            size={36} 
-            color={theme.colors.primary[500]} 
+          <Image 
+            source={require('../../../assets/web-icon.png')}
+            style={styles.logoImage}
+            resizeMode="contain"
           />
         </View>
         <View style={styles.titleContainer}>
@@ -206,6 +206,11 @@ const createStyles = (theme: Theme, insets: { top: number; bottom: number; left:
       marginRight: 14,
       borderWidth: 1,
       borderColor: `${theme.colors.primary[100] || '#fecaca'}`,
+      overflow: 'hidden',
+    },
+    logoImage: {
+      width: 40,
+      height: 40,
     },
     titleContainer: {
       flex: 1,

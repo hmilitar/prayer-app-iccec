@@ -114,6 +114,15 @@ export default function DailyReadingsScreen() {
     setCurrentMonth(newMonth);
   };
 
+  // Navigate week for web week calendar
+  const navigateWeek = (direction: 'next' | 'previous') => {
+    const currentDateObj = parseISODate(selectedDate);
+    const newDate = direction === 'next' 
+      ? getNextDay(currentDateObj) 
+      : getPreviousDay(currentDateObj);
+    setSelectedDate(newDate.toISOString().split('T')[0]);
+  };
+
   const handleDateSelectFromCalendar = (dateISO: string) => {
     setSelectedDate(dateISO);
     setViewMode('daily'); // Switch to daily view when date is selected
@@ -205,7 +214,7 @@ export default function DailyReadingsScreen() {
       >
         {viewMode === 'calendar' ? (
           <>
-            {/* Month Navigation */}
+            {/* Month Navigation - Traditional calendar grid */}
             <View style={styles.monthNavigation}>
               <PrimaryButton
                 title="←"
@@ -224,12 +233,12 @@ export default function DailyReadingsScreen() {
               />
             </View>
 
-            {/* Calendar View */}
+            {/* Calendar View - Traditional grid layout */}
             <CalendarView
               currentMonth={currentMonth}
               selectedDate={selectedDate}
               onDateSelect={handleDateSelectFromCalendar}
-              availableDates={[]} // TODO: Load available dates from data
+              availableDates={[]}
             />
           </>
         ) : (
