@@ -208,6 +208,19 @@
       "light": "Clair",
       "dark": "Sombre",
       "system": "Système"
+    },
+    "ministryApps": {
+      "sectionTitle": "Découvrez les Apps Ministérielles",
+      "sectionSubtitle": "Outils pour renforcer votre ministère et votre adoration",
+      "mslmBadge": "Musique d'Adoration",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "par Selah Studio",
+      "mslmDesc": "Organisez vos répertoires de culte, visualisez les partitions, transposez les tonalités et collaborez avec votre équipe musicale.",
+      "missionLinkerBadge": "Église et Missions",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Connecter. Servir. Transformer.",
+      "missionLinkerDesc": "Connectez les églises, les missionnaires et les partenaires ministériels pour servir les communautés du monde entier.",
+      "getApp": "Obtenir l'App"
     }
   },
   "errors": {
@@ -326,9 +339,9 @@
     },
     "content": {
       "signOfCross": "✠ Au Nom du Père, et du Fils, et du Saint-Esprit. Amen.",
-      "morningOpening": "Seigneur, ouvre nos lèvres.\nEt notre bouche proclamera ta louange.\n\nÔ Dieu, viens \u00e0 notre aide.\nSeigneur, \u00e0 notre secours.\n\nGloire au Père, et au Fils, et au Saint-Esprit : comme il \u00e9tait au commencement, maintenant et toujours, et dans les si\u00e8cles des si\u00e8cles. Amen.\n\nLouez le Seigneur.\nLe Nom du Seigneur soit lou\u00e9.",
+      "morningOpening": "Seigneur, ouvre nos lèvres.\nEt notre bouche proclamera ta louange.\n\nGloire au Père, et au Fils, et au Saint-Esprit : comme il \u00e9tait au commencement, maintenant et toujours, et dans les si\u00e8cles des si\u00e8cles. Amen.\n\nLouez le Seigneur.\nLe Nom du Seigneur soit lou\u00e9.",
       "middayOpening": "Ô Dieu, viens \u00e0 notre aide.\nSeigneur, \u00e0 notre secours.\n\nGloire au P\u00e8re, et au Fils, et au Saint-Esprit : comme il \u00e9tait au commencement, maintenant et toujours, et dans les si\u00e8cles des si\u00e8cles. Amen.",
-      "eveningOpening": "Seigneur, ouvre nos l\u00e8vres.\nEt notre bouche proclamera ta louange.\n\n\u00d4 Dieu, viens \u00e0 notre aide.\nSeigneur, \u00e0 notre secours.\n\nGloire au P\u00e8re, et au Fils, et au Saint-Esprit : comme il \u00e9tait au commencement, maintenant et toujours, et dans les si\u00e8cles des si\u00e8cles. Amen.\n\nLouez le Seigneur.\nLe Nom du Seigneur soit lou\u00e9.",
+      "eveningOpening": "Seigneur, ouvre nos l\u00e8vres.\nEt notre bouche proclamera ta louange.\n\nGloire au P\u00e8re, et au Fils, et au Saint-Esprit : comme il \u00e9tait au commencement, maintenant et toujours, et dans les si\u00e8cles des si\u00e8cles. Amen.\n\nLouez le Seigneur.\nLe Nom du Seigneur soit lou\u00e9.",
       "familyOpening": "Le Seigneur Tout-Puissant nous accorde une nuit paisible et une fin parfaite.\nAmen.\n\nNotre aide est dans le Nom du Seigneur ;\nLe cr\u00e9ateur du ciel et de la terre.",
       "prayersVersicles": "Seigneur, \u00e9coute notre pri\u00e8re ;\nEt que notre cri parvienne jusqu'\u00e0 toi.\n\nPrions."
     }

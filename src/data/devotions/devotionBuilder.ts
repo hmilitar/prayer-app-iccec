@@ -97,21 +97,21 @@ function getPrayerText(prayerId: string, language: SupportedLanguage): string {
   // 3. Hardcoded English defaults as absolute last resort
   const prayerDefaults: Readonly<Record<string, string>> = {
    'confession':
-      "Almighty God, Father of our Lord Jesus Christ, maker of all things, judge of all men: We acknowledge and bewail our manifold sins and wickedness, which we from time to time most grievously have committed, by thought, word, and deed, against thy divine Majesty, provoking most justly thy wrath and indignation against us. We do earnestly repent, and are heartily sorry for these our misdoings; the remembrance of them is grievous unto us, the burden of them is intolerable. Have mercy upon us, have mercy upon us, most merciful Father; for thy Son our Lord Jesus Christ's sake, forgive us all that is past; and grant that we may ever hereafter serve and please thee in newness of life, to the honor and glory of thy Name; through Jesus Christ our Lord. Amen.",
+      "Almighty God, Father of our Lord Jesus Christ, maker of all things, judge of all people: We acknowledge and confess our manifold sins and wickedness, which we have committed by thought, word, and deed, against your divine Majesty, provoking your wrath and indignation against us. We earnestly repent, and are heartily sorry for these our wrongdoings; the remembrance of them is grievous to us, the burden of them is intolerable. Have mercy on us, have mercy on us, most merciful Father; for the sake of your Son our Lord Jesus Christ, forgive us all that is past; and grant that we may hereafter serve and please you in newness of life, to the honor and glory of your Name; through Jesus Christ our Lord. Amen.",
     'gloria-patri':
       'Glory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.',
     'benedictus':
-      'Blessed be the Lord God of Israel, for he hath visited and redeemed his people; and hath raised up a horn of salvation for us in the house of his servant David; as he spake by the mouth of his holy prophets, which have been since the world began: that we should be saved from our enemies, and from the hand of all that hate us; to perform the mercy promised to our fathers, and to remember his holy covenant; the oath which he sware to our father Abraham, that he would grant unto us, that we being delivered out of the hand of our enemies might serve him without fear, in holiness and righteousness before him, all the days of our life. And thou, child, shalt be called the prophet of the Highest: for thou shalt go before the face of the Lord to prepare his ways; to give knowledge of salvation unto his people by the remission of their sins, through the tender mercy of our God; whereby the dayspring from on high hath visited us, to give light to them that sit in darkness and in the shadow of death, to guide our feet into the way of peace.',
+      'Blessed be the Lord God of Israel, for he has come to his people and set them free; and has raised up for us a mighty Savior, born of the house of his servant David; as he spoke by the mouth of his holy prophets from of old: that we should be saved from our enemies and from the hand of all who hate us; to perform the mercy promised to our ancestors, and to remember his holy covenant; the oath which he swore to our father Abraham, to grant us: that we, being rescued from the hand of our enemies, might serve him without fear, in holiness and righteousness before him all the days of our life. And you, child, shall be called the prophet of the Most High; for you will go before the Lord to prepare his ways; to give knowledge of salvation to his people in the forgiveness of their sins, through the tender mercy of our God; whereby the dawn from on high shall come to us, to give light to those who sit in darkness and in the shadow of death, and to guide our feet into the way of peace.',
     'magnificat':
-      'My soul doth magnify the Lord, and my spirit hath rejoiced in God my Savior. For he hath regarded the low estate of his handmaiden: for, behold, from henceforth all generations shall call me blessed. For he that is mighty hath done to me great things; and holy is his name. And his mercy is on them that fear him from generation to generation. He hath shewed strength with his arm; he hath scattered the proud in the imagination of their hearts. He hath put down the mighty from their seats, and exalted them of low degree. He hath filled the hungry with good things; and the rich he hath sent empty away. He hath helped his servant Israel, in remembrance of his mercy; as he spake to our fathers, to Abraham, and to his seed for ever.',
+      'My soul magnifies the Lord, and my spirit rejoices in God my Savior. For he has looked with favor on the lowliness of his servant; for behold, from now on all generations will call me blessed. For the Mighty One has done great things for me, and holy is his Name. His mercy is for those who fear him from generation to generation. He has shown strength with his arm; he has scattered the proud in the imagination of their hearts. He has brought down the powerful from their thrones, and lifted up the lowly. He has filled the hungry with good things, and sent the rich away empty. He has helped his servant Israel, in remembrance of his mercy, as he promised to our ancestors, to Abraham and to his descendants forever.',
     'nunc-dimittis':
-      'Lord, now lettest thou thy servant depart in peace, according to thy word: for mine eyes have seen thy salvation, which thou hast prepared before the face of all people; a light to lighten the Gentiles, and the glory of thy people Israel.',
+      'Lord, now let your servant depart in peace, according to your word; for my eyes have seen your salvation, which you have prepared in the presence of all peoples; a light to lighten the nations, and the glory of your people Israel.',
     'apostles-creed':
-      'I believe in God, the Father Almighty, maker of heaven and earth; and in Jesus Christ his only Son our Lord; who was conceived by the Holy Ghost, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, dead, and buried. He descended into hell. The third day he rose again from the dead. He ascended into heaven, and sitteth on the right hand of God the Father Almighty. From thence he shall come to judge the quick and the dead. I believe in the Holy Ghost, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.',
+      'I believe in God, the Father Almighty, maker of heaven and earth; and in Jesus Christ his only Son our Lord; who was conceived by the Holy Spirit, born of the Virgin Mary, suffered under Pontius Pilate, was crucified, died, and was buried. He descended to the dead. On the third day he rose again from the dead. He ascended into heaven, and is seated at the right hand of God the Father Almighty. From there he will come to judge the living and the dead. I believe in the Holy Spirit, the holy catholic Church, the communion of saints, the forgiveness of sins, the resurrection of the body, and the life everlasting. Amen.',
     'lords-prayer':
-      "Our Father, who art in heaven, hallowed be thy Name, thy kingdom come, thy will be done, on earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. For thine is the kingdom, and the power, and the glory, for ever and ever. Amen.",
+      "Our Father in heaven, hallowed be your Name, your kingdom come, your will be done, on earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, as we forgive those who trespass against us. And lead us not into temptation, but deliver us from evil. For yours is the kingdom, and the power, and the glory, for ever and ever. Amen.",
     'st-michael-prayer':
-      'Holy Michael the Archangel, defend us in the day of battle. Be our safeguard against the wickedness and snares of the devil. May God rebuke him, we humbly pray; and do thou, O Prince of the heavenly host, by the power of God, thrust into hell Satan and all the evil spirits who prowl about the world seeking the ruin of souls. Amen.',
+      'Holy Michael the Archangel, defend us in the day of battle. Be our safeguard against the wickedness and snares of the devil. May God rebuke him, we humbly pray; and do you, O Prince of the heavenly host, by the power of God, thrust into hell Satan and all the evil spirits who prowl about the world seeking the ruin of souls. Amen.',
   };
 
   return prayerDefaults[prayerId] ?? '';
@@ -234,7 +234,7 @@ function getMorningOpening(_language: SupportedLanguage): DevotionSection {
     title: t('devotions.timeTitle.morningPrayer', 'Morning Prayer'),
     content: t(
       'devotions.content.morningOpening',
-      "O Lord, open thou our lips.\nAnd our mouth shall show forth thy praise.\n\nO God, make speed to save us.\nO Lord, make haste to help us.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.\n\nPraise the Lord.\nThe Lord's Name be praised.",
+      "O Lord, open our lips.\nAnd our mouth shall proclaim your praise.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.\n\nPraise the Lord.\nThe Lord's Name be praised.",
     ),
     rubric: t('devotions.rubrics.officiantBegins', 'The Officiant begins:'),
   };
@@ -258,7 +258,7 @@ function getEveningOpening(_language: SupportedLanguage): DevotionSection {
     title: t('devotions.timeTitle.eveningPrayer', 'Evening Prayer'),
     content: t(
       'devotions.content.eveningOpening',
-      "O Lord, open thou our lips.\nAnd our mouth shall show forth thy praise.\n\nO God, make speed to save us.\nO Lord, make haste to help us.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.\n\nPraise the Lord.\nThe Lord's Name be praised.",
+      "O Lord, open our lips.\nAnd our mouth shall proclaim your praise.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.\n\nPraise the Lord.\nThe Lord's Name be praised.",
     ),
     rubric: t('devotions.rubrics.officiantBegins', 'The Officiant begins:'),
   };
@@ -282,7 +282,7 @@ function getPrayersSection(_language: SupportedLanguage): DevotionSection {
     title: t('devotions.sections.prayers', 'Prayers'),
     content: t(
       'devotions.content.prayersVersicles',
-      'O Lord, hear our prayer;\nAnd let our cry come unto thee.\n\nLet us pray.',
+      'O Lord, hear our prayer;\nAnd let our cry come to you.\n\nLet us pray.',
     ),
     rubric: t('devotions.rubrics.freePrayerIntercessions', 'Here may follow free prayer and intercessions.'),
   };

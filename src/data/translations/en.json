@@ -292,6 +292,19 @@
       "privacyPolicy": "Privacy Policy",
       "acknowledgments": "Acknowledgments",
       "openSource": "Open Source Licenses"
+    },
+    "ministryApps": {
+      "sectionTitle": "Discover Ministry Apps",
+      "sectionSubtitle": "Tools to strengthen your ministry and worship",
+      "mslmBadge": "Worship Music",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "by Selah Studio",
+      "mslmDesc": "Organize worship sets, view sheet music, transpose keys, and collaborate with your music ministry team.",
+      "missionLinkerBadge": "Church & Missions",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Connect. Serve. Transform.",
+      "missionLinkerDesc": "Connect churches, missionaries, and ministry partners to serve communities around the world.",
+      "getApp": "Get App"
     }
   },
   "errors": {
@@ -475,11 +488,11 @@
     },
     "content": {
       "signOfCross": "✠ In the Name of the Father, and of the Son, and of the Holy Spirit. Amen.",
-      "morningOpening": "O Lord, open thou our lips.\nAnd our mouth shall show forth thy praise.\n\nO God, make speed to save us.\nO Lord, make haste to help us.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.\n\nPraise the Lord.\nThe Lord's Name be praised.",
+      "morningOpening": "O Lord, open our lips.\nAnd our mouth shall proclaim your praise.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.\n\nPraise the Lord.\nThe Lord's Name be praised.",
       "middayOpening": "O God, make speed to save us.\nO Lord, make haste to help us.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.",
-      "eveningOpening": "O Lord, open thou our lips.\nAnd our mouth shall show forth thy praise.\n\nO God, make speed to save us.\nO Lord, make haste to help us.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.\n\nPraise the Lord.\nThe Lord's Name be praised.",
+      "eveningOpening": "O Lord, open our lips.\nAnd our mouth shall proclaim your praise.\n\nGlory be to the Father, and to the Son, and to the Holy Spirit: as it was in the beginning, is now, and ever shall be, world without end. Amen.\n\nPraise the Lord.\nThe Lord's Name be praised.",
       "familyOpening": "The Lord Almighty grant us a peaceful night and a perfect end.\nAmen.\n\nOur help is in the Name of the Lord;\nThe maker of heaven and earth.",
-      "prayersVersicles": "O Lord, hear our prayer;\nAnd let our cry come unto thee.\n\nLet us pray."
+      "prayersVersicles": "O Lord, hear our prayer;\nAnd let our cry come to you.\n\nLet us pray."
     }
   },
   "calendar": "Calendar",

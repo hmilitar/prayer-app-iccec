@@ -208,6 +208,19 @@
       "light": "Chiaro",
       "dark": "Scuro",
       "system": "Sistema"
+    },
+    "ministryApps": {
+      "sectionTitle": "Scopri le App per il Ministero",
+      "sectionSubtitle": "Strumenti per rafforzare il tuo ministero e la tua adorazione",
+      "mslmBadge": "Musica di Adorazione",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "da Selah Studio",
+      "mslmDesc": "Organizza le scalette di culto, visualizza gli spartiti, trasporta le tonalità e collabora con il tuo team musicale ministeriale.",
+      "missionLinkerBadge": "Chiesa e Missioni",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Connetti. Servi. Trasforma.",
+      "missionLinkerDesc": "Collega chiese, missionari e partner ministeriali per servire le comunità in tutto il mondo.",
+      "getApp": "Ottieni l'App"
     }
   },
   "errors": {
@@ -326,9 +339,9 @@
     },
     "content": {
       "signOfCross": "✠ Nel Nome del Padre, e del Figlio, e dello Spirito Santo. Amen.",
-      "morningOpening": "O Signore, apri le nostre labbra.\nE la nostra bocca proclamerà la tua lode.\n\nO Dio, vieni a salvarci.\nSignore, vieni presto in nostro aiuto.\n\nGloria al Padre e al Figlio e allo Spirito Santo: come era nel principio, e ora e sempre, nei secoli dei secoli. Amen.\n\nLodate il Signore.\nIl Nome del Signore sia lodato.",
+      "morningOpening": "O Signore, apri le nostre labbra.\nE la nostra bocca proclamerà la tua lode.\n\nGloria al Padre e al Figlio e allo Spirito Santo: come era nel principio, e ora e sempre, nei secoli dei secoli. Amen.\n\nLodate il Signore.\nIl Nome del Signore sia lodato.",
       "middayOpening": "O Dio, vieni a salvarci.\nSignore, vieni presto in nostro aiuto.\n\nGloria al Padre e al Figlio e allo Spirito Santo: come era nel principio, e ora e sempre, nei secoli dei secoli. Amen.",
-      "eveningOpening": "O Signore, apri le nostre labbra.\nE la nostra bocca proclamerà la tua lode.\n\nO Dio, vieni a salvarci.\nSignore, vieni presto in nostro aiuto.\n\nGloria al Padre e al Figlio e allo Spirito Santo: come era nel principio, e ora e sempre, nei secoli dei secoli. Amen.\n\nLodate il Signore.\nIl Nome del Signore sia lodato.",
+      "eveningOpening": "O Signore, apri le nostre labbra.\nE la nostra bocca proclamerà la tua lode.\n\nGloria al Padre e al Figlio e allo Spirito Santo: come era nel principio, e ora e sempre, nei secoli dei secoli. Amen.\n\nLodate il Signore.\nIl Nome del Signore sia lodato.",
       "familyOpening": "Il Signore Onnipotente ci conceda una notte di pace e una fine perfetta.\nAmen.\n\nIl nostro aiuto \u00e8 nel Nome del Signore;\nIl creatore del cielo e della terra.",
       "prayersVersicles": "O Signore, ascolta la nostra preghiera;\nE il nostro grido giunga a te.\n\nPreghiamo."
     }

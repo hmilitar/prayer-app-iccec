@@ -297,6 +297,19 @@
       "privacyPolicy": "Privacybeleid",
       "acknowledgments": "Dankbetuigingen",
       "openSource": "Open source licenties"
+    },
+    "ministryApps": {
+      "sectionTitle": "Ontdek Dienst-Apps",
+      "sectionSubtitle": "Hulpmiddelen om uw dienst en aanbidding te versterken",
+      "mslmBadge": "Aanbiddingsmuziek",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "door Selah Studio",
+      "mslmDesc": "Organiseer uw aanbiddingssets, bekijk bladmuziek, transponeer toonsoorten en werk samen met uw muziekministerium.",
+      "missionLinkerBadge": "Kerk & Zending",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Verbinden. Dienen. Transformeren.",
+      "missionLinkerDesc": "Verbind kerken, missionarissen en dienstpartners om gemeenschappen over de hele wereld te dienen.",
+      "getApp": "Haal App"
     }
   },
   "errors": {
@@ -480,9 +493,9 @@
     },
     "content": {
       "signOfCross": "✠ In de Naam van de Vader en de Zoon en de Heilige Geest. Amen.",
-      "morningOpening": "Heer, open onze lippen.\nEn onze mond zal Uw lof verkondigen.\n\nO God, kom ons te hulp.\nHeer, haast U ons te helpen.\n\nEer aan de Vader en de Zoon en de Heilige Geest: zoals het was in het begin, nu en altijd en in de eeuwen der eeuwen. Amen.\n\nLoof de Heer.\nDe Naam des Heren zij geprezen.",
+      "morningOpening": "Heer, open onze lippen.\nEn onze mond zal Uw lof verkondigen.\n\nEer aan de Vader en de Zoon en de Heilige Geest: zoals het was in het begin, nu en altijd en in de eeuwen der eeuwen. Amen.\n\nLoof de Heer.\nDe Naam des Heren zij geprezen.",
       "middayOpening": "O God, kom ons te hulp.\nHeer, haast U ons te helpen.\n\nEer aan de Vader en de Zoon en de Heilige Geest: zoals het was in het begin, nu en altijd en in de eeuwen der eeuwen. Amen.",
-      "eveningOpening": "Heer, open onze lippen.\nEn onze mond zal Uw lof verkondigen.\n\nO God, kom ons te hulp.\nHeer, haast U ons te helpen.\n\nEer aan de Vader en de Zoon en de Heilige Geest: zoals het was in het begin, nu en altijd en in de eeuwen der eeuwen. Amen.\n\nLoof de Heer.\nDe Naam des Heren zij geprezen.",
+      "eveningOpening": "Heer, open onze lippen.\nEn onze mond zal Uw lof verkondigen.\n\nEer aan de Vader en de Zoon en de Heilige Geest: zoals het was in het begin, nu en altijd en in de eeuwen der eeuwen. Amen.\n\nLoof de Heer.\nDe Naam des Heren zij geprezen.",
       "familyOpening": "De almachtige Heer schenke ons een vredige nacht en een zalig einde.\nAmen.\n\nOnze hulp is in de Naam van de Heer;\nDie hemel en aarde gemaakt heeft.",
       "prayersVersicles": "Heer, hoor ons gebed;\nEn laat ons roepen tot U komen.\n\nLaat ons bidden."
     }

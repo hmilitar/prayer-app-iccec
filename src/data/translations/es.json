@@ -208,6 +208,19 @@
       "light": "Claro",
       "dark": "Oscuro",
       "system": "Sistema"
+    },
+    "ministryApps": {
+      "sectionTitle": "Descubre Apps para el Ministerio",
+      "sectionSubtitle": "Herramientas para fortalecer tu ministerio y adoración",
+      "mslmBadge": "Música de Adoración",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "de Selah Studio",
+      "mslmDesc": "Organiza tus repertorios de adoración, visualiza partituras, transponé tonos y colabora con tu equipo de música ministerial.",
+      "missionLinkerBadge": "Iglesia y Misiones",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Conecta. Sirve. Transforma.",
+      "missionLinkerDesc": "Conecta iglesias, misioneros y socios ministeriales para servir a comunidades de todo el mundo.",
+      "getApp": "Obtener App"
     }
   },
   "errors": {
@@ -326,9 +339,9 @@
     },
     "content": {
       "signOfCross": "✠ En el Nombre del Padre, y del Hijo, y del Espíritu Santo. Amén.",
-      "morningOpening": "Señor, abre nuestros labios.\nY nuestra boca proclamará tu alabanza.\n\nOh Dios, apresúrate a salvarnos.\nSeñor, date prisa en socorrernos.\n\nGloria al Padre, y al Hijo, y al Espíritu Santo: como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.\n\nAlabad al Señor.\nEl Nombre del Señor sea alabado.",
+      "morningOpening": "Señor, abre nuestros labios.\nY nuestra boca proclamará tu alabanza.\n\nGloria al Padre, y al Hijo, y al Espíritu Santo: como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.\n\nAlabad al Señor.\nEl Nombre del Señor sea alabado.",
       "middayOpening": "Oh Dios, apresúrate a salvarnos.\nSeñor, date prisa en socorrernos.\n\nGloria al Padre, y al Hijo, y al Espíritu Santo: como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.",
-      "eveningOpening": "Señor, abre nuestros labios.\nY nuestra boca proclamará tu alabanza.\n\nOh Dios, apresúrate a salvarnos.\nSeñor, date prisa en socorrernos.\n\nGloria al Padre, y al Hijo, y al Espíritu Santo: como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.\n\nAlabad al Señor.\nEl Nombre del Señor sea alabado.",
+      "eveningOpening": "Señor, abre nuestros labios.\nY nuestra boca proclamará tu alabanza.\n\nGloria al Padre, y al Hijo, y al Espíritu Santo: como era en el principio, ahora y siempre, por los siglos de los siglos. Amén.\n\nAlabad al Señor.\nEl Nombre del Señor sea alabado.",
       "familyOpening": "El Señor Todopoderoso nos conceda una noche de paz y un fin perfecto.\nAmén.\n\nNuestra ayuda está en el Nombre del Señor;\nEl creador del cielo y de la tierra.",
       "prayersVersicles": "Señor, escucha nuestra oración;\nY llegue a ti nuestro clamor.\n\nOremos."
     }

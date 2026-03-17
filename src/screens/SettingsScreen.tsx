@@ -12,6 +12,8 @@ import {
   ActivityIndicator,
   Linking,
   Platform,
+  Image,
+  ImageSourcePropType,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -207,6 +209,90 @@ const SettingsPicker: React.FC<SettingsPickerProps> = ({
         </View>
       )}
     </View>
+  );
+};
+
+// ─────────────────────────────────────────────────────────────────
+// Ministry App Card
+// ─────────────────────────────────────────────────────────────────
+
+interface MinistryAppCardProps {
+  logo: ImageSourcePropType;
+  badge: string;
+  appName: string;
+  tagline: string;
+  description: string;
+  url: string;
+  accentColor: string;
+  getAppLabel: string;
+}
+
+const MinistryAppCard: React.FC<MinistryAppCardProps> = ({
+  logo,
+  badge,
+  appName,
+  tagline,
+  description,
+  url,
+  accentColor,
+  getAppLabel,
+}) => {
+  const theme = useTheme();
+  const styles = createStyles(theme);
+
+  const handleOpen = useCallback(async () => {
+    try {
+      if (Platform.OS === 'web') {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        (window as any).open(url, '_blank', 'noopener,noreferrer');
+      } else {
+        const canOpen = await Linking.canOpenURL(url);
+        if (canOpen) {
+          await Linking.openURL(url);
+        }
+      }
+    } catch (err) {
+      console.error('MinistryAppCard: failed to open URL', err);
+    }
+  }, [url]);
+
+  return (
+    <TouchableOpacity
+      style={styles.ministryCard}
+      onPress={handleOpen}
+      activeOpacity={0.88}
+      accessibilityRole="link"
+      accessibilityLabel={appName}
+    >
+      {/* Accent bar */}
+      <View style={[styles.ministryAccentBar, { backgroundColor: accentColor }]} />
+
+      <View style={styles.ministryCardBody}>
+        {/* Header row: icon + meta */}
+        <View style={styles.ministryCardHeader}>
+          <View style={[styles.ministryIconWrap, { borderColor: `${accentColor}30` }]}>
+            <Image source={logo} style={styles.ministryLogo} resizeMode="contain" />
+          </View>
+          <View style={styles.ministryCardMeta}>
+            <View style={[styles.ministryBadge, { backgroundColor: `${accentColor}1A` }]}>
+              <Text style={[styles.ministryBadgeText, { color: accentColor }]}>{badge}</Text>
+            </View>
+            <Text style={styles.ministryAppName} numberOfLines={1}>{appName}</Text>
+            <Text style={[styles.ministryTagline, { color: accentColor }]}>{tagline}</Text>
+          </View>
+        </View>
+
+        {/* Description */}
+        <Text style={styles.ministryDescription} numberOfLines={3}>{description}</Text>
+
+        {/* CTA */}
+        <View style={[styles.ministryButton, { backgroundColor: accentColor }]}>
+          <Ionicons name="download-outline" size={15} color="#fff" style={styles.ministryButtonIcon} />
+          <Text style={styles.ministryButtonText}>{getAppLabel}</Text>
+          <Ionicons name="arrow-forward" size={14} color="rgba(255,255,255,0.7)" />
+        </View>
+      </View>
+    </TouchableOpacity>
   );
 };
 
@@ -544,13 +630,49 @@ export default function SettingsScreen() {
           </View>
         </SettingsSection>
 
+        {/* Ministry Apps */}
+        <View style={styles.ministrySection}>
+          <Text style={styles.ministrySectionTitle}>
+            {t('settings.ministryApps.sectionTitle') || 'Discover Ministry Apps'}
+          </Text>
+          <Text style={styles.ministrySectionSubtitle}>
+            {t('settings.ministryApps.sectionSubtitle') || 'Tools to strengthen your ministry and worship'}
+          </Text>
+          <MinistryAppCard
+            logo={require('../../assets/mslm-logo.png') as ImageSourcePropType}
+            badge={t('settings.ministryApps.mslmBadge') || 'Worship Music'}
+            appName={t('settings.ministryApps.mslmName') || 'Music Sheet Lineup Manager'}
+            tagline={t('settings.ministryApps.mslmTagline') || 'by Selah Studio'}
+            description={
+              t('settings.ministryApps.mslmDesc') ||
+              'Organize worship sets, view sheet music, transpose keys, and collaborate with your music ministry team.'
+            }
+            url="https://mslm.selahstudio.ph"
+            accentColor="#57378c"
+            getAppLabel={t('settings.ministryApps.getApp') || 'Get App'}
+          />
+          <MinistryAppCard
+            logo={require('../../assets/missionlinker-icon.png') as ImageSourcePropType}
+            badge={t('settings.ministryApps.missionLinkerBadge') || 'Church & Missions'}
+            appName={t('settings.ministryApps.missionLinkerName') || 'MissionLinker'}
+            tagline={t('settings.ministryApps.missionLinkerTagline') || 'Connect. Serve. Transform.'}
+            description={
+              t('settings.ministryApps.missionLinkerDesc') ||
+              'Connect churches, missionaries, and ministry partners to serve communities around the world.'
+            }
+            url="https://www.missionlinker.com"
+            accentColor="#3A9EA5"
+            getAppLabel={t('settings.ministryApps.getApp') || 'Get App'}
+          />
+        </View>
+
         {/* App Info */}
         <View style={styles.appInfo}>
           <Text style={styles.appInfoText}>
-            {t('app.name') || 'Cenacle (Upper Room)'}
+            ICCEC EUROPE
           </Text>
           <Text style={styles.appVersion}>
-            {t('settings.version') || 'Version'} 1.0.0
+            {t('settings.version') || 'Version'} 1.0.1
           </Text>
           <Text style={styles.appVersion}>
             Powered by{' '}
@@ -685,8 +807,8 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     marginTop: theme.spacing.lg,
   },
   appInfoText: {
-    fontSize: getScaledFontSize(theme.typography.fontSize.base),
-    fontWeight: '600',
+    fontSize: getScaledFontSize(theme.typography.fontSize['2xl']),
+    fontWeight: '800',
     color: theme.colors.text.primary,
     marginBottom: theme.spacing.xs,
   },
@@ -695,12 +817,112 @@ const createStyles = (theme: Theme) => StyleSheet.create({
     color: theme.colors.text.secondary,
   },
   selahLink: {
-    fontSize: getScaledFontSize(theme.typography.fontSize.sm),
+    fontSize: getScaledFontSize(theme.typography.fontSize.xs),
     color: theme.colors.primary[500],
     textDecorationLine: 'underline',
     fontWeight: '500',
   },
   selahTouchable: {
     alignSelf: 'flex-start',
+  },
+  // ── Ministry Apps ──────────────────────────────────────────────
+  ministrySection: {
+    paddingHorizontal: theme.spacing.md,
+    marginBottom: theme.spacing.lg,
+  },
+  ministrySectionTitle: {
+    fontSize: getScaledFontSize(theme.typography.fontSize.lg),
+    fontWeight: '700',
+    color: theme.colors.text.primary,
+    marginBottom: theme.spacing.xs,
+  },
+  ministrySectionSubtitle: {
+    fontSize: getScaledFontSize(theme.typography.fontSize.sm),
+    color: theme.colors.text.secondary,
+    marginBottom: theme.spacing.md,
+  },
+  ministryCard: {
+    backgroundColor: theme.colors.background.primary,
+    borderRadius: theme.borderRadius.xl,
+    marginBottom: theme.spacing.md,
+    overflow: 'hidden',
+    ...theme.shadows.md,
+  },
+  ministryAccentBar: {
+    height: 4,
+    width: '100%',
+  },
+  ministryCardBody: {
+    padding: theme.spacing.md,
+  },
+  ministryCardHeader: {
+    flexDirection: 'row',
+    alignItems: 'flex-start',
+    marginBottom: theme.spacing.sm,
+  },
+  ministryIconWrap: {
+    width: 64,
+    height: 64,
+    borderRadius: theme.borderRadius.lg,
+    borderWidth: 1.5,
+    overflow: 'hidden',
+    marginRight: theme.spacing.md,
+    backgroundColor: theme.colors.background.secondary,
+    flexShrink: 0,
+  },
+  ministryLogo: {
+    width: '100%',
+    height: '100%',
+  },
+  ministryCardMeta: {
+    flex: 1,
+    justifyContent: 'flex-start',
+  },
+  ministryBadge: {
+    alignSelf: 'flex-start',
+    paddingHorizontal: theme.spacing.sm,
+    paddingVertical: 2,
+    borderRadius: theme.borderRadius.full ?? 999,
+    marginBottom: theme.spacing.xs,
+  },
+  ministryBadgeText: {
+    fontSize: getScaledFontSize(theme.typography.fontSize.xs),
+    fontWeight: '700',
+    textTransform: 'uppercase',
+    letterSpacing: 0.6,
+  },
+  ministryAppName: {
+    fontSize: getScaledFontSize(theme.typography.fontSize.base),
+    fontWeight: '700',
+    color: theme.colors.text.primary,
+    marginBottom: 1,
+  },
+  ministryTagline: {
+    fontSize: getScaledFontSize(theme.typography.fontSize.xs),
+    fontWeight: '500',
+  },
+  ministryDescription: {
+    fontSize: getScaledFontSize(theme.typography.fontSize.sm),
+    color: theme.colors.text.secondary,
+    lineHeight: getScaledFontSize(theme.typography.fontSize.sm) * 1.55,
+    marginBottom: theme.spacing.md,
+  },
+  ministryButton: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: theme.borderRadius.md,
+    paddingVertical: theme.spacing.sm,
+    paddingHorizontal: theme.spacing.md,
+  },
+  ministryButtonIcon: {
+    marginRight: theme.spacing.xs,
+  },
+  ministryButtonText: {
+    flex: 1,
+    fontSize: getScaledFontSize(theme.typography.fontSize.sm),
+    fontWeight: '700',
+    color: '#fff',
+    textAlign: 'center',
   },
 });

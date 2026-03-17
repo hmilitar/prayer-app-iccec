@@ -165,7 +165,7 @@ export default function WebSidebar({ currentRoute, onNavigate, style }: WebSideb
       <View style={styles.footer}>
         <View style={styles.footerDivider} />
         <Text style={styles.versionText}>
-          v1.0.0 • Cenacle Prayer App
+          v1.0.1 • ICCEC EUROPE • Powered by Selah Studio PH
         </Text>
       </View>
     </View>

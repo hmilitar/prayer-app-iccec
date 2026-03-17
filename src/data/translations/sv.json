@@ -297,6 +297,19 @@
       "privacyPolicy": "Integritetspolicy",
       "acknowledgments": "Erkännanden",
       "openSource": "Öppen källkod-licenser"
+    },
+    "ministryApps": {
+      "sectionTitle": "Utforska Ministeriappar",
+      "sectionSubtitle": "Verktyg för att stärka din tjänst och tillbedjan",
+      "mslmBadge": "Tillbedjanmusik",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "av Selah Studio",
+      "mslmDesc": "Organisera dina tillbedjansset, visa noter, transponera tonarter och samarbeta med ditt musikministerieteam.",
+      "missionLinkerBadge": "Kyrka & Mission",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Koppla. Tjäna. Förvandla.",
+      "missionLinkerDesc": "Koppla samman kyrkor, missionärer och ministeriumspartners för att tjäna samhällen runt om i världen.",
+      "getApp": "Hämta App"
     }
   },
   "errors": {
@@ -480,9 +493,9 @@
     },
     "content": {
       "signOfCross": "✠ I Faderns och Sonens och den Helige Andes namn. Amen.",
-      "morningOpening": "Herre, öppna våra läppar.\nOch vår mun skall förkunna ditt lov.\n\nO Gud, skynda till vår räddning.\nHerre, skynda till vår hjälp.\n\nÄra vare Fadern och Sonen och den Helige Ande: som det var i begynnelsen, nu och alltid och i evigheters evighet. Amen.\n\nLova Herren.\nHerrens namn vare prisat.",
+      "morningOpening": "Herre, öppna våra läppar.\nOch vår mun skall förkunna ditt lov.\n\nÄra vare Fadern och Sonen och den Helige Ande: som det var i begynnelsen, nu och alltid och i evigheters evighet. Amen.\n\nLova Herren.\nHerrens namn vare prisat.",
       "middayOpening": "O Gud, skynda till vår räddning.\nHerre, skynda till vår hjälp.\n\nÄra vare Fadern och Sonen och den Helige Ande: som det var i begynnelsen, nu och alltid och i evigheters evighet. Amen.",
-      "eveningOpening": "Herre, öppna våra läppar.\nOch vår mun skall förkunna ditt lov.\n\nO Gud, skynda till vår räddning.\nHerre, skynda till vår hjälp.\n\nÄra vare Fadern och Sonen och den Helige Ande: som det var i begynnelsen, nu och alltid och i evigheters evighet. Amen.\n\nLova Herren.\nHerrens namn vare prisat.",
+      "eveningOpening": "Herre, öppna våra läppar.\nOch vår mun skall förkunna ditt lov.\n\nÄra vare Fadern och Sonen och den Helige Ande: som det var i begynnelsen, nu och alltid och i evigheters evighet. Amen.\n\nLova Herren.\nHerrens namn vare prisat.",
       "familyOpening": "Herren den Allsmäktige give oss en fridfull natt och ett saligt slut.\nAmen.\n\nVår hjälp är i Herrens namn;\nSom har gjort himmel och jord.",
       "prayersVersicles": "Herre, hör vår bön;\nOch låt vårt rop komma inför dig.\n\nLåt oss bedja."
     }

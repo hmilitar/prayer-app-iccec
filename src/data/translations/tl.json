@@ -248,6 +248,19 @@
       "privacyPolicy": "Privacy Policy",
       "acknowledgments": "Mga Pagkilala",
       "openSource": "Mga Open Source License"
+    },
+    "ministryApps": {
+      "sectionTitle": "Tuklasin ang Mga Ministry App",
+      "sectionSubtitle": "Mga kagamitan para palakasin ang iyong ministeryo at pagsamba",
+      "mslmBadge": "Musika ng Pagsamba",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "ng Selah Studio",
+      "mslmDesc": "Ayusin ang inyong mga worship set, tingnan ang sheet music, i-transpose ang mga key, at makipagtulungan sa inyong music ministry team.",
+      "missionLinkerBadge": "Simbahan at Misyon",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Kumonekta. Maglingkod. Magbago.",
+      "missionLinkerDesc": "Ikonekta ang mga simbahan, misyonero, at mga ministry partner para mapagsilbihan ang mga komunidad sa buong mundo.",
+      "getApp": "Kunin ang App"
     }
   },
   "errors": {
@@ -434,9 +447,9 @@
     },
     "content": {
       "signOfCross": "✠ Sa Ngalan ng Ama, at ng Anak, at ng Espiritu Santo. Amen.",
-      "morningOpening": "O Panginoon, buksan Mo ang aming mga labi.\nAt ang aming bibig ay magpapahayag ng Iyong papuri.\n\nO Diyos, magmadali Ka upang kami ay iligtas.\nO Panginoon, magmadali Ka upang kami ay tulungan.\n\nLuwalhati sa Ama, at sa Anak, at sa Espiritu Santo: kapara nang sa simula, ngayon at magpakailanman, walang katapusan. Amen.\n\nPurihin ang Panginoon.\nAng Ngalan ng Panginoon ay purihin.",
+      "morningOpening": "O Panginoon, buksan Mo ang aming mga labi.\nAt ang aming bibig ay magpapahayag ng Iyong papuri.\n\nLuwalhati sa Ama, at sa Anak, at sa Espiritu Santo: kapara nang sa simula, ngayon at magpakailanman, walang katapusan. Amen.\n\nPurihin ang Panginoon.\nAng Ngalan ng Panginoon ay purihin.",
       "middayOpening": "O Diyos, magmadali Ka upang kami ay iligtas.\nO Panginoon, magmadali Ka upang kami ay tulungan.\n\nLuwalhati sa Ama, at sa Anak, at sa Espiritu Santo: kapara nang sa simula, ngayon at magpakailanman, walang katapusan. Amen.",
-      "eveningOpening": "O Panginoon, buksan Mo ang aming mga labi.\nAt ang aming bibig ay magpapahayag ng Iyong papuri.\n\nO Diyos, magmadali Ka upang kami ay iligtas.\nO Panginoon, magmadali Ka upang kami ay tulungan.\n\nLuwalhati sa Ama, at sa Anak, at sa Espiritu Santo: kapara nang sa simula, ngayon at magpakailanman, walang katapusan. Amen.\n\nPurihin ang Panginoon.\nAng Ngalan ng Panginoon ay purihin.",
+      "eveningOpening": "O Panginoon, buksan Mo ang aming mga labi.\nAt ang aming bibig ay magpapahayag ng Iyong papuri.\n\nLuwalhati sa Ama, at sa Anak, at sa Espiritu Santo: kapara nang sa simula, ngayon at magpakailanman, walang katapusan. Amen.\n\nPurihin ang Panginoon.\nAng Ngalan ng Panginoon ay purihin.",
       "familyOpening": "Ang Panginoong Makapangyarihan ay magbigay sa atin ng mapayapang gabi at ganap na katapusan.\nAmen.\n\nAng aming tulong ay nasa Pangalan ng Panginoon;\nAng lumikha ng langit at lupa.",
       "prayersVersicles": "O Panginoon, dinggin Mo ang aming panalangin;\nAt ang aming daing ay makarating sa Iyo.\n\nManalangin tayo."
     }

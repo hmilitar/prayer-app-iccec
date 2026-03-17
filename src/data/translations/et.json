@@ -248,6 +248,19 @@
       "privacyPolicy": "Privaatsuspoliitika",
       "acknowledgments": "Tänuavaldused",
       "openSource": "Avatud lähtekoodiga litsentsid"
+    },
+    "ministryApps": {
+      "sectionTitle": "Avasta ministeeriumirakendused",
+      "sectionSubtitle": "Tööriistad oma teenistuse ja kummarduse tugevdamiseks",
+      "mslmBadge": "Kummardusmuusika",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "Selah Studio poolt",
+      "mslmDesc": "Korraldage jumalateenistuse komplekte, vaadake noodilehti, transponeerige helivõtmeid ja tehke koostööd oma muusikameeskonnaga.",
+      "missionLinkerBadge": "Kirik ja Misjon",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Ühenda. Teeni. Muuda.",
+      "missionLinkerDesc": "Ühendage kirikud, misjonärid ja ministeeriumi partnerid, et teenida kogukondi üle maailma.",
+      "getApp": "Hangi rakendus"
     }
   },
   "errors": {
@@ -434,9 +447,9 @@
     },
     "content": {
       "signOfCross": "✠ Isa ja Poja ja Püha Vaimu nimel. Aamen.",
-      "morningOpening": "Issand, ava meie huuled.\nJa meie suu kuulutagu Sinu kiitust.\n\nJumal, tõtta meid päästma.\nIssand, rutta meile appi.\n\nAu olgu Isale ja Pojale ja Pühale Vaimule: nõnda nagu alguses oli, nüüd on ja jääb igavesest ajast igavesti. Aamen.\n\nKiitke Issandat.\nIssanda nimi olgu kiidetud.",
+      "morningOpening": "Issand, ava meie huuled.\nJa meie suu kuulutagu Sinu kiitust.\n\nAu olgu Isale ja Pojale ja Pühale Vaimule: nõnda nagu alguses oli, nüüd on ja jääb igavesest ajast igavesti. Aamen.\n\nKiitke Issandat.\nIssanda nimi olgu kiidetud.",
       "middayOpening": "Jumal, tõtta meid päästma.\nIssand, rutta meile appi.\n\nAu olgu Isale ja Pojale ja Pühale Vaimule: nõnda nagu alguses oli, nüüd on ja jääb igavesest ajast igavesti. Aamen.",
-      "eveningOpening": "Issand, ava meie huuled.\nJa meie suu kuulutagu Sinu kiitust.\n\nJumal, tõtta meid päästma.\nIssand, rutta meile appi.\n\nAu olgu Isale ja Pojale ja Pühale Vaimule: nõnda nagu alguses oli, nüüd on ja jääb igavesest ajast igavesti. Aamen.\n\nKiitke Issandat.\nIssanda nimi olgu kiidetud.",
+      "eveningOpening": "Issand, ava meie huuled.\nJa meie suu kuulutagu Sinu kiitust.\n\nAu olgu Isale ja Pojale ja Pühale Vaimule: nõnda nagu alguses oli, nüüd on ja jääb igavesest ajast igavesti. Aamen.\n\nKiitke Issandat.\nIssanda nimi olgu kiidetud.",
       "familyOpening": "Kõigeväeline Issand andku meile rahulik öö ja täiuslik lõpp.\nAamen.\n\nMeie abi on Issanda nimes;\nKes on teinud taeva ja maa.",
       "prayersVersicles": "Issand, kuule meie palvet;\nJa meie hüüd jõudku Sinu ette.\n\nPalvetagem."
     }

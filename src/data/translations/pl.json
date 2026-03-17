@@ -208,6 +208,19 @@
       "light": "Jasny",
       "dark": "Ciemny",
       "system": "Systemowy"
+    },
+    "ministryApps": {
+      "sectionTitle": "Odkryj Aplikacje Służby",
+      "sectionSubtitle": "Narzędzia wzmacniające Twoją służbę i uwielbienie",
+      "mslmBadge": "Muzyka Uwielbienia",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "od Selah Studio",
+      "mslmDesc": "Organizuj zestawy uwielbienia, przeglądaj nuty, transponuj tonacje i współpracuj ze swoim zespołem muzycznym.",
+      "missionLinkerBadge": "Koścół i Misje",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Łącz. Służ. Zmieniaj.",
+      "missionLinkerDesc": "Łącz kościoły, misjonarzy i partnerów służby, aby służyć społecznościom na całym świecie.",
+      "getApp": "Pobierz Aplikację"
     }
   },
   "errors": {
@@ -326,9 +339,9 @@
     },
     "content": {
       "signOfCross": "✠ W Imię Ojca i Syna, i Ducha Świętego. Amen.",
-      "morningOpening": "Panie, otwórz wargi nasze.\nA usta nasze będą głosić Twoją chwałę.\n\nBoże, wejrzyj ku wspomożeniu naszemu.\nPanie, pośpiesz ku ratunkowi naszemu.\n\nChwała Ojcu i Synowi, i Duchowi Świętemu: jak była na początku, teraz i zawsze, i na wieki wieków. Amen.\n\nChwalcie Pana.\nImię Pańskie niech będzie pochwalone.",
+      "morningOpening": "Panie, otwórz wargi nasze.\nA usta nasze będą głosić Twoją chwałę.\n\nChwała Ojcu i Synowi, i Duchowi Świętemu: jak była na początku, teraz i zawsze, i na wieki wieków. Amen.\n\nChwalcie Pana.\nImię Pańskie niech będzie pochwalone.",
       "middayOpening": "Boże, wejrzyj ku wspomożeniu naszemu.\nPanie, pośpiesz ku ratunkowi naszemu.\n\nChwała Ojcu i Synowi, i Duchowi Świętemu: jak była na początku, teraz i zawsze, i na wieki wieków. Amen.",
-      "eveningOpening": "Panie, otwórz wargi nasze.\nA usta nasze będą głosić Twoją chwałę.\n\nBoże, wejrzyj ku wspomożeniu naszemu.\nPanie, pośpiesz ku ratunkowi naszemu.\n\nChwała Ojcu i Synowi, i Duchowi Świętemu: jak była na początku, teraz i zawsze, i na wieki wieków. Amen.\n\nChwalcie Pana.\nImię Pańskie niech będzie pochwalone.",
+      "eveningOpening": "Panie, otwórz wargi nasze.\nA usta nasze będą głosić Twoją chwałę.\n\nChwała Ojcu i Synowi, i Duchowi Świętemu: jak była na początku, teraz i zawsze, i na wieki wieków. Amen.\n\nChwalcie Pana.\nImię Pańskie niech będzie pochwalone.",
       "familyOpening": "Pan Wszechmogący niech nam udzieli spokojnej nocy i doskonałego końca.\nAmen.\n\nNasza pomoc jest w Imieniu Pana;\nKtóry stworzył niebo i ziemię.",
       "prayersVersicles": "Panie, wysłuchaj modlitwy naszej;\nI wołanie nasze niech do Ciebie przyjdzie.\n\nMódlmy się."
     }

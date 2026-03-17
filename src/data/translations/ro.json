@@ -296,8 +296,19 @@
       "termsOfService": "Termeni și condiții",
       "privacyPolicy": "Politica de confidențialitate",
       "acknowledgments": "Mulțumiri",
-      "openSource": "Licențe open source"
-    }
+      "openSource": "Licențe open source"    },
+    "ministryApps": {
+      "sectionTitle": "Descoper\u0103 Aplica\u021bii pentru Ministeriu",
+      "sectionSubtitle": "Instrumente pentru a \u00eent\u0103ri ministerul \u015fi \u00eenchinarea ta",
+      "mslmBadge": "Muzic\u0103 de \u00cenchinare",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "de la Selah Studio",
+      "mslmDesc": "Organizeaz\u0103 setele de \u00eenchinare, vizualizeaz\u0103 partiturile, transpune tonalit\u0103\u021bile \u015fi colaboreaz\u0103 cu echipa ta muzical\u0103 ministerial\u0103.",
+      "missionLinkerBadge": "Biseric\u0103 \u015fi Misiuni",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Conecteaz\u0103. Serve\u015fti. Transformi.",
+      "missionLinkerDesc": "Conecteaz\u0103 biserici, misionari \u015fi parteneri ministeriali pentru a sluji comunit\u0103\u021bilor din \u00eentreaga lume.",
+      "getApp": "Ob\u021bine Aplica\u021bia"    }
   },
   "errors": {
     "title": "Eroare",
@@ -480,9 +491,9 @@
     },
     "content": {
       "signOfCross": "✠ În Numele Tatălui și al Fiului și al Sfântului Duh. Amin.",
-      "morningOpening": "Doamne, deschide buzele noastre.\nȘi gura noastră va vesti lauda Ta.\n\nDumnezeule, grăbește-Te să ne mântuiești.\nDoamne, grăbește-Te să ne ajuți.\n\nSlavă Tatălui și Fiului și Sfântului Duh: precum era la început, acum și pururea și în vecii vecilor. Amin.\n\nLăudați pe Domnul.\nNumele Domnului fie lăudat.",
+      "morningOpening": "Doamne, deschide buzele noastre.\nȘi gura noastră va vesti lauda Ta.\n\nSlavă Tatălui și Fiului și Sfântului Duh: precum era la început, acum și pururea și în vecii vecilor. Amin.\n\nLăudați pe Domnul.\nNumele Domnului fie lăudat.",
       "middayOpening": "Dumnezeule, grăbește-Te să ne mântuiești.\nDoamne, grăbește-Te să ne ajuți.\n\nSlavă Tatălui și Fiului și Sfântului Duh: precum era la început, acum și pururea și în vecii vecilor. Amin.",
-      "eveningOpening": "Doamne, deschide buzele noastre.\nȘi gura noastră va vesti lauda Ta.\n\nDumnezeule, grăbește-Te să ne mântuiești.\nDoamne, grăbește-Te să ne ajuți.\n\nSlavă Tatălui și Fiului și Sfântului Duh: precum era la început, acum și pururea și în vecii vecilor. Amin.\n\nLăudați pe Domnul.\nNumele Domnului fie lăudat.",
+      "eveningOpening": "Doamne, deschide buzele noastre.\nȘi gura noastră va vesti lauda Ta.\n\nSlavă Tatălui și Fiului și Sfântului Duh: precum era la început, acum și pururea și în vecii vecilor. Amin.\n\nLăudați pe Domnul.\nNumele Domnului fie lăudat.",
       "familyOpening": "Domnul Atotputernic să ne dea o noapte liniștită și un sfârșit fericit.\nAmin.\n\nAjutorul nostru este în Numele Domnului;\nCare a făcut cerul și pământul.",
       "prayersVersicles": "Doamne, ascultă rugăciunea noastră;\nȘi strigarea noastră să ajungă la Tine.\n\nSă ne rugăm."
     }

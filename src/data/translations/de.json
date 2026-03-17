@@ -208,6 +208,19 @@
       "light": "Hell",
       "dark": "Dunkel",
       "system": "System"
+    },
+    "ministryApps": {
+      "sectionTitle": "Ministerium-Apps entdecken",
+      "sectionSubtitle": "Werkzeuge zur Stärkung Ihres Dienstes und Ihrer Anbetung",
+      "mslmBadge": "Lobpreismusik",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "von Selah Studio",
+      "mslmDesc": "Organisieren Sie Gottesdienst-Setlists, betrachten Sie Notenblätter, transponieren Sie Tonarten und arbeiten Sie mit Ihrem Musikministerium zusammen.",
+      "missionLinkerBadge": "Kirche & Mission",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Verbinden. Dienen. Verändern.",
+      "missionLinkerDesc": "Verbinden Sie Kirchen, Missionare und Ministeriumspartner, um Gemeinschaften auf der ganzen Welt zu dienen.",
+      "getApp": "App holen"
     }
   },
   "errors": {
@@ -326,9 +339,9 @@
     },
     "content": {
       "signOfCross": "✠ Im Namen des Vaters und des Sohnes und des Heiligen Geistes. Amen.",
-      "morningOpening": "Herr, \u00f6ffne unsere Lippen.\nUnd unser Mund wird dein Lob verk\u00fcnden.\n\nO Gott, eile uns zu retten.\nHerr, eile uns zu helfen.\n\nEhre sei dem Vater und dem Sohn und dem Heiligen Geist: wie es war im Anfang, jetzt und immerdar und von Ewigkeit zu Ewigkeit. Amen.\n\nLobet den Herrn.\nDes Herrn Name sei gelobt.",
+      "morningOpening": "Herr, \u00f6ffne unsere Lippen.\nUnd unser Mund wird dein Lob verk\u00fcnden.\n\nEhre sei dem Vater und dem Sohn und dem Heiligen Geist: wie es war im Anfang, jetzt und immerdar und von Ewigkeit zu Ewigkeit. Amen.\n\nLobet den Herrn.\nDes Herrn Name sei gelobt.",
       "middayOpening": "O Gott, eile uns zu retten.\nHerr, eile uns zu helfen.\n\nEhre sei dem Vater und dem Sohn und dem Heiligen Geist: wie es war im Anfang, jetzt und immerdar und von Ewigkeit zu Ewigkeit. Amen.",
-      "eveningOpening": "Herr, \u00f6ffne unsere Lippen.\nUnd unser Mund wird dein Lob verk\u00fcnden.\n\nO Gott, eile uns zu retten.\nHerr, eile uns zu helfen.\n\nEhre sei dem Vater und dem Sohn und dem Heiligen Geist: wie es war im Anfang, jetzt und immerdar und von Ewigkeit zu Ewigkeit. Amen.\n\nLobet den Herrn.\nDes Herrn Name sei gelobt.",
+      "eveningOpening": "Herr, \u00f6ffne unsere Lippen.\nUnd unser Mund wird dein Lob verk\u00fcnden.\n\nEhre sei dem Vater und dem Sohn und dem Heiligen Geist: wie es war im Anfang, jetzt und immerdar und von Ewigkeit zu Ewigkeit. Amen.\n\nLobet den Herrn.\nDes Herrn Name sei gelobt.",
       "familyOpening": "Der allm\u00e4chtige Herr schenke uns eine friedliche Nacht und ein seliges Ende.\nAmen.\n\nUnsere Hilfe ist im Namen des Herrn;\nDer Himmel und Erde gemacht hat.",
       "prayersVersicles": "Herr, erh\u00f6re unser Gebet;\nUnd lass unser Rufen zu dir kommen.\n\nLasset uns beten."
     }

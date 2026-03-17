@@ -297,6 +297,19 @@
       "privacyPolicy": "Política de privacidade",
       "acknowledgments": "Agradecimentos",
       "openSource": "Licenças de código aberto"
+    },
+    "ministryApps": {
+      "sectionTitle": "Descubra Apps para o Ministério",
+      "sectionSubtitle": "Ferramentas para fortalecer o seu ministério e adoração",
+      "mslmBadge": "Música de Adoração",
+      "mslmName": "Music Sheet Lineup Manager",
+      "mslmTagline": "por Selah Studio",
+      "mslmDesc": "Organize os repertórios de culto, visualize partituras, transponha tonalidades e colabore com a sua equipa musical ministerial.",
+      "missionLinkerBadge": "Igreja e Missões",
+      "missionLinkerName": "MissionLinker",
+      "missionLinkerTagline": "Conectar. Servir. Transformar.",
+      "missionLinkerDesc": "Conecte igrejas, missionários e parceiros ministeriais para servir comunidades em todo o mundo.",
+      "getApp": "Obter App"
     }
   },
   "errors": {
@@ -480,9 +493,9 @@
     },
     "content": {
       "signOfCross": "✠ Em Nome do Pai e do Filho e do Espírito Santo. Amém.",
-      "morningOpening": "Senhor, abri os nossos lábios.\nE a nossa boca proclamará o Vosso louvor.\n\nÓ Deus, vinde em nosso auxílio.\nSenhor, apressai-Vos em nos socorrer.\n\nGlória ao Pai e ao Filho e ao Espírito Santo: como era no princípio, agora e sempre e pelos séculos dos séculos. Amém.\n\nLouvai o Senhor.\nO Nome do Senhor seja louvado.",
+      "morningOpening": "Senhor, abri os nossos lábios.\nE a nossa boca proclamará o Vosso louvor.\n\nGlória ao Pai e ao Filho e ao Espírito Santo: como era no princípio, agora e sempre e pelos séculos dos séculos. Amém.\n\nLouvai o Senhor.\nO Nome do Senhor seja louvado.",
       "middayOpening": "Ó Deus, vinde em nosso auxílio.\nSenhor, apressai-Vos em nos socorrer.\n\nGlória ao Pai e ao Filho e ao Espírito Santo: como era no princípio, agora e sempre e pelos séculos dos séculos. Amém.",
-      "eveningOpening": "Senhor, abri os nossos lábios.\nE a nossa boca proclamará o Vosso louvor.\n\nÓ Deus, vinde em nosso auxílio.\nSenhor, apressai-Vos em nos socorrer.\n\nGlória ao Pai e ao Filho e ao Espírito Santo: como era no princípio, agora e sempre e pelos séculos dos séculos. Amém.\n\nLouvai o Senhor.\nO Nome do Senhor seja louvado.",
+      "eveningOpening": "Senhor, abri os nossos lábios.\nE a nossa boca proclamará o Vosso louvor.\n\nGlória ao Pai e ao Filho e ao Espírito Santo: como era no princípio, agora e sempre e pelos séculos dos séculos. Amém.\n\nLouvai o Senhor.\nO Nome do Senhor seja louvado.",
       "familyOpening": "O Senhor Todo-Poderoso nos conceda uma noite tranquila e um fim perfeito.\nAmém.\n\nO nosso auxílio está no Nome do Senhor;\nQue fez o céu e a terra.",
       "prayersVersicles": "Senhor, ouvi a nossa oração;\nE chegue até Vós o nosso clamor.\n\nOremos."
     }
